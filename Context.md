@@ -39,7 +39,7 @@
 Создавать и поддерживать следующую модульную структуру проекта:
 
 ```text
-microgravity-fire/
+fire-in-freefall/
 ├── app.py                      # Главная точка входа Streamlit, навигация и футер SI Disclosure
 ├── Context.md                  # Данная архитектурная спецификация
 ├── Dockerfile                  # Лёгкий контейнер Python 3.12 для Google Cloud Run (порт 8080)
@@ -69,12 +69,12 @@ microgravity-fire/
 │   └── ranking.py              # Детерминированный движок расчёта Research Relevance Score
 ├── database/
 │   ├── connection.py           # Инициализация SQLite и создание трёхуровневой схемы таблиц
-│   ├── seed_catalog.py         # Предзаполненный каталог метаданных и DOI по 18 исследованиям PSI
+│   ├── seed_catalog.py         # Предзаполненный каталог метаданных и DOI по исследованиям PSI
 │   └── repository.py           # Слой CRUD-операций и аналитических SQL-запросов
 ├── scripts/
 │   └── warm_cache.py           # Скрипт прогрева llm_cache в research.db до демо/деплоя
 ├── pages/
-│   ├── 1_Overview.py           # KPI миссий, карточки 18 исследований с DOI, уроки истории и Spin-offs
+│   ├── 1_Overview.py           # KPI миссий, карточки исследований с DOI, уроки истории и Spin-offs
 │   ├── 2_Explorer.py           # Фильтруемый реестр прогонов + ручной загрузчик новых файлов в память
 │   ├── 3_Compare.py            # Графики Plotly: коридор 0g–1g, карты O2/обдува, токсичность CO/CO2
 │   ├── 4_Ranking.py            # Конфигуратор сценария миссии и прозрачный рейтинг исследований
@@ -84,3 +84,204 @@ microgravity-fire/
     ├── processed/              # Очищенные промежуточные JSON/CSV артефакты
     └── database/
         └── research.db         # Предзаполненная база данных с прогретым кэшем
+```
+
+---
+
+## 4. Трёхуровневая гибридная схема базы данных (`research.db`)
+Поскольку команда будет вручную догружать файлы разных экспериментов NASA PSI, структура таблиц в `database/connection.py` строится по **трёхуровневой гибридной схеме**, гарантирующей приём любых таблиц без потери данных и без изменения DDL базы:
+1. **Уровень 1 — Строгое физическое ядро (`investigations`, `experiments`, `samples`, `conditions`):** хранит универсальные граничные условия горения, общие для всех экспериментов (состав атмосферы, давление, скорость/направление потока, уровень гравитации, материал и исход горения).
+2. **Уровень 2 — Универсальная таблица замеров (`measurements` по паттерну EAV):** позволяет вертикально записывать любые специфические метрики датчиков (от скорости распространения пламени в `мм/с` до размера частиц сажи в `нм` и концентрации инертных газов-подавителей) после стандартизации единиц через `Pint`.
+3. **Уровень 3 — Страховочная JSON-колонка (`raw_attributes_json`):** сохраняет полную исходную строку CSV в виде JSON-объекта, чтобы ни одна нестандартная колонка из загруженных вручную таблиц не потерялась и была доступна для анализа в `5_SI_Insights.py`.
+
+Реализовать в `database/connection.py` следующие таблицы:
+
+- **`investigations` (Справочник исследований PSI):**
+  - `psi_id` (TEXT PRIMARY KEY — например, `'PSI-25'`, `'PSI-69'`, `'PSI-102'`, `'DAFT-1/2'`)
+  - `acronym` (TEXT — например, `'BASS-II'`, `'FLEX'`, `'SAME'`, `'SAFFIRE-I'`, `'ACME CFI-G'`)
+  - `title` (TEXT)
+  - `doi` (TEXT NOT NULL — официальный постоянный идентификатор DOI со страницы PSI *"Cite this Investigation"*)
+  - `psi_url` (TEXT — прямая ссылка на `https://psi.nasa.gov/physci/repo/data/investigations/...`)
+  - `citation_text` (TEXT — готовая библиографическая строка NASA)
+  - `safety_pillar` (TEXT: `'Prevention'`, `'Detection'`, `'Suppression'`, `'Multi'`)
+  - `fuel_category` (TEXT: `'Solid'`, `'Liquid'`, `'Gas'`, `'Aerosol/Smoke'`)
+  - `hardware_facility` (TEXT: `'MSG'`, `'CIR'`, `'MDCA'`, `'Saffire/Cygnus'`)
+  - `objectives` (TEXT)
+  - `summary` (TEXT)
+  - `earth_spinoff_text` (TEXT)
+  - `related_psi_ids` (TEXT JSON array — перекрёстные ссылки на смежные лётные и наземные CFD-проекты, например `'["PSI-26", "PSI-107", "PSI-62"]'`)
+- **`experiments` (Отдельные экспериментальные прогоны / тесты):**
+  - `test_id` (TEXT PRIMARY KEY — например, `'B1'`, `'M10'`, `'P13a'`, `'FLEX-01'`)
+  - `psi_id` (TEXT FOREIGN KEY -> `investigations.psi_id`)
+  - `pi_name` (TEXT — главный исследователь, например `'Bhattacharjee'`, `'Ferkul'`, `'Miller'`, `'Olson'`, `'Fernandez-Pello'`, `'T'ien'`, `'Dietrich'`, `'Urban'`)
+  - `sample_id` (TEXT)
+  - `is_reused_sample` (BOOLEAN — `True`, если `sample_id` оканчивается на `'m'`/`'M'` или в примечаниях указан повторный поджиг)
+  - `flow_direction` (TEXT: `'Opposed'`, `'Concurrent'`, `'Stagnation'`, `'Quiescent'`, `'Unknown'`)
+  - `outcome` (TEXT: `'Sustained'`, `'Quenched'`, `'Blowoff'`, `'No Ignition'`, `'Unknown'`)
+  - `observations` (TEXT)
+  - `raw_attributes_json` (TEXT — полный JSON-словарь всех исходных колонок строки CSV для исключения потери любых нестандартных параметров при ручной загрузке)
+- **`samples` (Образцы материалов и геометрия горелок):**
+  - `id` (INTEGER PRIMARY KEY AUTOINCREMENT)
+  - `test_id` (TEXT FOREIGN KEY -> `experiments.test_id`)
+  - `material_name` (TEXT — например, `'PMMA'`, `'SIBAL Cotton-Fiberglass'`, `'Nomex III'`, `'Heptane'`, `'n-Dodecane'`, `'Pyrell Foam'`, `'Propane'`)
+  - `geometry` (TEXT: `'Thin Film'`, `'Thick Slab'`, `'Rod'`, `'Sphere'`, `'Fabric'`, `'Droplet'`, `'Porous Burner'`)
+  - `thickness_mm` (REAL NULLABLE)
+  - `width_cm` (REAL NULLABLE)
+  - `diameter_mm` (REAL NULLABLE)
+- **`conditions` (Граничные условия среды и вентиляции):**
+  - `id` (INTEGER PRIMARY KEY AUTOINCREMENT)
+  - `test_id` (TEXT FOREIGN KEY -> `experiments.test_id`)
+  - `o2_initial_pct` (REAL NULLABLE — strictly по калиброванным показаниям датчиков)
+  - `o2_final_pct` (REAL NULLABLE)
+  - `pressure_psi` (REAL DEFAULT 14.7)
+  - `diluent_gas` (TEXT NULLABLE — например, `'N2'`, `'CO2'`, `'He'`)
+  - `diluent_pct` (REAL NULLABLE)
+  - `flow_velocity_initial_cm_s` (REAL NULLABLE)
+  - `flow_velocity_min_cm_s` (REAL NULLABLE)
+  - `flow_velocity_extinction_cm_s` (REAL NULLABLE)
+  - `flow_sequence_raw` (TEXT)
+  - `gravity_level` (TEXT: `'0g'`, `'1g'`, `'Simulated Partial-g'`)
+- **`measurements` (Универсальная EAV-таблица замеров датчиков):**
+  - `id` (INTEGER PRIMARY KEY AUTOINCREMENT)
+  - `psi_id` (TEXT FOREIGN KEY)
+  - `test_id` (TEXT NULLABLE FOREIGN KEY)
+  - `parameter` (TEXT — каноническое имя метрики, например `'co_final_ppm'`, `'co2_final_pct'`, `'flame_spread_rate_mm_s'`, `'extinction_velocity_cm_s'`, `'burning_rate_constant_mm2_s'`, `'limiting_oxygen_index_pct'`, `'hrr_watts'`, `'smoke_particle_diameter_nm'`)
+  - `value` (REAL)
+  - `unit` (TEXT)
+  - `is_over_range` (BOOLEAN DEFAULT 0)
+  - `value_type` (TEXT: `'exact'`, `'approximate'`, `'threshold'`)
+  - `source_doc` (TEXT)
+  - `source_page` (INTEGER NULLABLE)
+  - `verification_status` (TEXT: `'verified'`, `'needs_review'`, `'conflict'`)
+- **`findings` (Верифицированные научные выводы и цитаты из отчётов):**
+  - `id` (INTEGER PRIMARY KEY AUTOINCREMENT)
+  - `psi_id` (TEXT FOREIGN KEY)
+  - `category` (TEXT: `'Flammability Limit'`, `'Toxicity'`, `'Suppression'`, `'Detection'`, `'Partial Gravity'`, `'Earth Spin-off'`, `'Hardware Link'`)
+  - `claim` (TEXT)
+  - `evidence_quote` (TEXT)
+  - `source_doc` (TEXT)
+  - `source_page` (INTEGER NULLABLE)
+- **`sources` и `processing_jobs`:**
+  - Отслеживают `file_path`, `sha256_hash`, `psi_id`, `processed_at` и `status` для предотвращения повторной обработки дубликатов.
+- **`llm_cache` (КРИТИЧНО ДЛЯ ЗАЩИТЫ И СТАБИЛЬНОСТИ В CLOUD RUN):**
+  - `prompt_hash` (TEXT PRIMARY KEY)
+  - `model_name` (TEXT)
+  - `response_json` (TEXT)
+  - `created_at` (TIMESTAMP)
+
+---
+
+## 5. Адаптивный парсинг, правила очистки данных NASA и каталог исследований
+
+### 5.1. Двухэтапный адаптивный конвейер для ручной загрузки новых таблиц (`ingestion/schema_mapper.py` и `csv_parser.py`)
+Чтобы пользователь мог вручную загружать любые CSV-файлы из репозитория PSI без правки кода под каждый новый эксперимент:
+1. **Этап 1 — Детерминированный словарь синонимов колонок в Python:**
+   - Перед сравнением заголовки очищаются от лишних пробелов и приводятся к нижнему регистру.
+   - Встроенный словарь регулярных выражений автоматически распознаёт типовые колонки NASA (например, `Calibrated initial O2 %`, `XO2`, `O2_pct` $\rightarrow$ `o2_initial_pct`; `Pressure`, `P_atm`, `P_psi` $\rightarrow$ `pressure_psi` с автоконвертацией из `atm`/`kPa`/`bar` в `psi` через `Pint`; `Air display`, `Flow rate`, `V_air` $\rightarrow$ `flow_velocity_initial_cm_s`; `Spread rate`, `Vf` $\rightarrow$ `measurements[parameter='flame_spread_rate_mm_s']`; `K_burn`, `Burning rate constant` $\rightarrow$ `measurements[parameter='burning_rate_constant_mm2_s']`).
+2. **Этап 2 — Разовый авто-маппинг неизвестных колонок через `gemini-3.5-flash-lite` (необязательный коллбэк):**
+   - Если загружается CSV с незнакомыми научными аббревиатурами и передан активный клиент SI, `schema_mapper.py` отправляет в `gemini-3.5-flash-lite` **только строку заголовков и первые 2–3 строки данных** со строгой `Pydantic`-схемой `ColumnMappingPlan`.
+   - Далее Python-скрипт детерминированно парсит все строки таблицы, конвертирует единицы через `Pint` и сохраняет полный исходный словарь каждой строки в `experiments.raw_attributes_json`.
+
+### 5.2. Эталонные правила очистки реальных файлов NASA (`PSI-25` BASS-II)
+При разборе файлов `PSI-25` (и аналогичных таблиц МКС) строго применять следующие правила:
+1. **Дедупликация и выбор мастер-файла:** Вычислять SHA-256 перед обработкой. Для `PSI-25` загружать `PSI-25_Experimental table_BASS-II.csv` (129 строк) напрямую через `pandas`. НЕ парсить `BASS-II Test Matrix by PI Final.xlsx` отдельно, так как его 6 вкладок по научным руководителям структурно дублируют мастер-CSV.
+2. **Правило калиброванного кислорода (из `BASS-II data FAQ.docx`):** Всегда записывать `Calibrated initial O2 % by vol` и `Calibrated final O2 % by vol` в `o2_initial_pct` и `o2_final_pct`. Игнорировать некалиброванные колонки `O2`, так как датчик CSA-CP имел дрейф нуля и требовал ежедневной коррекции по масс-спектрометру ISS MCA.
+3. **Разбор многоступенчатых режимов вентиляции (`Air display`):** Ячейки содержат последовательности чисел и текстовые маркеры (например, `"10, 6, 5, 3"`, `"5 down to extinction"`, `"2, <1"`, `"0.355 pot"`). Извлекать числовые значения скорости в `$\text{cm/s}$`: первое число $\rightarrow$ `flow_velocity_initial_cm_s`, минимальное число $\rightarrow$ `flow_velocity_min_cm_s`, а если в тексте есть `'ext'`, `'extinction'`, `'quench'` или `'out'`, записывать скорость погасания в `flow_velocity_extinction_cm_s`. Исходную строку сохранять в `flow_sequence_raw`. В интерфейсе выводить предупреждение о том, что анемометр TSI 8475 имел инерционный лаг отклика ~1 минуту.
+4. **Обработка зашкалов датчиков `$CO$` и `$CO_2$`:** Колонки `Initial CO (ppm)` и `Final CO (ppm)` содержат строковые коды `'OR'`, `'+OR'`, `'over'` и `'>500'`. Преобразовывать `'OR'` / `'+OR'` / `'over'` в `value = 1000.0` (верхний предел сенсора согласно FAQ) с флагом `is_over_range = True`, а `'>500'` — в `value = 500.0` с `is_over_range = True`. Исключить ошибки приведения типов (`CAST`).
+5. **Обогащение CSV данными из Приложения A отчёта (`BASS-II Summary Report.pdf`):** С помощью `pypdf` извлекать таблицы A.1–A.6 (стр. 103–114 отчёта), сопоставляя по `test_id` направление потока (`Sample distance` $\rightarrow$ `Opposed`, `Concurrent`, `Stagnation`) и текстовые наблюдения (`Test observations and anomalies`). При парсинге PDF отфильтровывать метаданные фотокамер (`Exposure Mode`, `Shutter speed`, `F stop`, `ISO`, `SD card S/N`) и пропускать разделы `References` / `Publications`.
+6. **Нормализация материалов и геометрии (`Fuel Sample Material`):** Через `Pint` приводить `'100 micron'`, `'100-µm'`, `'0.1-mm'` к `thickness_mm = 0.1`. Если в строке указано `'100-µm film'` без названия полимера, проставлять `material_name = 'PMMA'` (согласно матрицам Bhattacharjee и Miller); для `'75/25 cotton-fiberglass'` проставлять `'SIBAL'`; для тканевых тестов Ferkul — `'Nomex III'`.
+
+### 5.3. Каталог 18 профильных лётных исследований NASA PSI (`database/seed_catalog.py`)
+Внедрение справочника ведётся в два шага: сначала в фундамент загружаются **5 базовых карточек** (`PSI-25`, `PSI-69`, `PSI-102` + `DAFT-1/2`, `PSI-98`, `PSI-159`), закрывающих все три направления безопасности (`Prevention`, `Detection`, `Suppression`), а перед финальным деплоем справочник дополняется остальными 13 карточками лётных исследований:
+
+- **Кластер 1: Твёрдые и газовые топлива в перчаточном боксе `MSG` (4 лётных исследования):**
+  1. **`PSI-25` (`BASS-II` — *Burning and Suppression of Solids - II*):** [MVP-база] `Prevention` / `Suppression` — горение и тушение твёрдых материалов (`PMMA`, `SIBAL`, `Nomex III`) в модульной аэродинамической трубе внутри `MSG`; устанавливает минимальный кислородный предел горения в $0g$ ($13.5\%\ O_2$ против $15.4\text{--}19\%\ O_2$ на Земле).
+  2. **`PSI-26` (`BASS` — *Burning and Suppression of Solids*):** `Prevention` — базовое исследование распространения пламени по смесовой ткани `SIBAL` (75% хлопок / 25% стекловолокно) в `MSG` для проверки применимости наземного стандарта `NASA-STD-6001 Test #1` к невесомости.
+  3. **`PSI-107` (`SPICE` — *Smoke Point In Co-flow Experiment*):** `Prevention` / `Detection` — определение порога сажеобразования (smoke point) ламинарных диффузионных факелов в `MSG`; именно для `SPICE` была создана модульная труба с вентилятором в `MSG`, впоследствии использованная в `BASS`, `BASS-II` и `SLICE`.
+  4. **`PSI-106` (`SLICE` — *Structure and Liftoff In Combustion Experiment*):** `Prevention` / `Suppression` — исследование структуры, отрыва (liftoff) и срыва потоком (blowoff) диффузионных газовых пламён в трубе `MSG`; определяет правую ветвь (границу срыва потоком) на U-образной диаграмме воспламеняемости.
+
+- **Кластер 2: Капельное горение жидких топлив в стойке `CIR` / установке `MDCA` (3 лётных исследования):**
+  5. **`PSI-69` (`FLEX` — *Flame Extinguishment Experiment*):** [MVP-база] `Suppression` — горение одиночных капель жидких топлив (гептан, метанол) в `CIR` / `MDCA`; определение предельного кислородного индекса (LOI) и эффективности тушения газовыми разбавителями ($CO_2$, $He$).
+  6. **`PSI-68` (`FLEX-2` — *Flame Extinguishment Experiment - 2*):** `Suppression` — расширение `FLEX` на многокомпонентные топлива и давления $0.5\text{--}3.0\text{ atm}$ ($7.35\text{--}44.1\text{ psi}$), открытие двухстадийного низкотемпературного («холодного») горения и радиационного погасания.
+  7. **`PSI-39` (`CFI` — *Cool Flames Investigation*):** `Suppression` / `Prevention` — исследование «холодных» пламён капель н-додекана в `CIR` / `MDCA` при пониженных и повышенных давлениях ($0.25\text{--}5\text{ atm}$, т.е. $3.7\text{--}73.5\text{ psi}$), критически важное для оценки пожарных рисков при пониженном давлении лунных баз ($\le 10.2\text{ psi}$).
+
+- **Кластер 3: Обнаружение дыма, аэрозолей и космической пыли в `MSG` (2 лётных исследования + DAFT):**
+  8. **`PSI-102` (`SAME` — *Smoke and Aerosol Measurement Experiment*):** [MVP-база] `Detection` — измерение распределения размеров частиц дыма в $0g$ в `MSG` для продуктов пиролиза полимеров (Teflon, Kapton, силикон) и углеводородной сажи.
+  9. **`PSI-101` (`SAME-R` — *Smoke Aerosol Measurement Experiment - Reflight*):** `Detection` — повторная серия в `MSG` с добавлением огнезащитного пенополиуретана `Pyrell®`, уточняющая пороги срабатывания космических дымовых извещателей.
+  10. **`DAFT-1/2` (`DAFT` и `DAFT-2` — *Dust and Aerosol Measurement Feasibility Test*, связка с `PSI-102`):** [MVP-база] `Detection` — отработка модифицированного счётчика частиц `P-Trak` в микрогравитации; критическая связка для лунных баз и роверов, позволяющая аппаратно отличать частицы дыма на ранней стадии тления от взвеси лунной пыли и предотвращать ложные тревоги.
+
+- **Кластер 4: Крупномасштабные пожары на грузовых кораблях `Cygnus` (3 лётных исследования):**
+  11. **`PSI-98` (`SAFFIRE-I` — *Spacecraft Fire Safety Experiment - I*):** [MVP-база] `Prevention` — первый крупномасштабный пожарный тест на беспилотном корабле `Cygnus` после отстыковки от МКС (крупноформатный образец `SIBAL` $0.4 \times 1.0\text{ м}$), связывающий лабораторные тесты `BASS` с реальным масштабом отсека.
+  12. **`PSI-99` (`SAFFIRE-II` — *Spacecraft Fire Experiment - II*):** `Prevention` — проверка пределов воспламеняемости 9 различных бортовых материалов (акрил/PMMA, ткани, силикон) в реальном масштабе корабля `Cygnus`.
+  13. **`PSI-100` (`SAFFIRE-III` — *Spacecraft Fire Experiment - III*):** `Prevention` — исследование роста крупномасштабного пожара при повышенной скорости вентиляционного потока на борту `Cygnus`.
+
+- **Кластер 5: Полная линейка 6 модульных газовых экспериментов `ACME` в стойке `CIR` (6 лётных исследований):**
+  14. **`PSI-159` (`ACME CFI-G` — *Cool Flames Investigation with Gases*):** [MVP-база] `Multi` — сферические «холодные» и горячие диффузионные пламёна газов (пропан, н-бутан) при экстремальных концентрациях кислорода **до $85\%\ O_2$**, перекрывающих с запасом любые режимы лунных баз и скафандров.
+  15. **`PSI-20` (`ACME BRE` — *Burning Rate Emulator*):** `Prevention` — пористая газовая горелка в `CIR`, имитирующая горючесть твёрдых конструкционных материалов в неподвижной атмосфере через теплоту сгорания и теплоту газификации.
+  16. **`PSI-22` (`ACME E-FIELD Flames` — *Electric-Field Effects on Laminar Diffusion Flames*):** `Multi` — управление ионным ветром в пламени с помощью электрического поля для имитации частичной гравитации ($1/6g$, $3/8g$) и активного подавления пламени в $0g$.
+  17. **`PSI-10` (`ACME / Flame Design`):** `Prevention` — определение пределов сажеобразования и радиационного погасания сферических диффузионных пламён при разбавлении азотом ($N_2$) в стойке `CIR`.
+  18. **`PSI-21` (`ACME CLD Flame` — *Coflow Laminar Diffusion Flame*):** `Prevention` — исследование структуры и пределов погасания сильно разбавленных и сильно коптящих ламинарных диффузионных факелов в `CIR`.
+  19. **`PSI-23` (`ACME s-Flame` — *Structure and Response of Spherical Diffusion Flames*):** `Prevention` — эталонные данные по структуре и погасанию сферических диффузионных пламён метана и этилена на пористой горелке в неподвижной среде (`CIR`).
+
+- **Правило отражения наземных CFD-проектов PSI:** 5 наземных расчётных проектов из каталога PSI (`PSI-62` моделирование BASS, `PSI-117` и `PSI-142` CFD-модели холодных пламён FLEX, `PSI-60` обработка изображений SPICE, `PSI-115` DNS-моделирование дыма SAME) НЕ добавляются как самостоятельные лётные эксперименты в выборку, а записываются в JSON-массив `related_psi_ids` соответствующих лётных исследований.
+
+---
+
+## 6. Детерминированное ранжирование и движок SI-интерпретации
+
+### 6.1. Детерминированный алгоритм ранжирования (`core/ranking.py`)
+Никогда не поручать LLM придумывать произвольные числовые оценки. Рассчитывать `research_relevance_score` ($0\text{--}100$) детерминированно на Python под выбранный пользователем **Профиль миссии**:
+- **4 профиля миссий:**
+  1. `Lunar Base / Pressurized Rover` (Целевая среда: $O_2 \ge 30\%$, давление $\le 10.2\text{ psi}$ для сокращения времени десатурации азота перед выходом в скафандры с $4.3\text{ psi}$ / $100\%\ O_2$, гравитация $1/6g$ в коридоре $0g\text{--}1g$, кабиннные полимеры/ткани и дискриминация дыма от лунной пыли).
+  2. `ISS / Deep Space Transit Spacecraft` (Целевая среда: $O_2 \approx 21\%$, давление $14.7\text{ psi}$, невесомость $0g$, низкие скорости вентиляции $1\text{--}20\text{ cm/s}$).
+  3. `Martian Habitat` (Целевая среда: повышенный $O_2$, гравитация $3/8g$ в коридоре $0g\text{--}1g$, подавление пожаров твёрдых и жидких материалов).
+  4. `Terrestrial Fire Safety (Earth Spin-off)` (Целевая среда: сравнение с $1g$, огнетушители тонкораспылённой воды с МКС, дымовые извещатели с защитой от пыли, огнестойкая экипировка пожарных по проекту FIRES и облегчённые композитные баллоны дыхательных аппаратов).
+- **Взвешенная формула оценки:**
+  $$\text{Score} = 0.40 \cdot S_{\text{scenario}} + 0.25 \cdot S_{\text{completeness}} + 0.20 \cdot S_{\text{evidence}} + 0.15 \cdot S_{\text{comparability}}$$
+  - $S_{\text{scenario}}$: Близость параметров эксперимента ($O_2\%$, давление $\text{psi}$, скорость потока, тип топлива и столп безопасности `Prevention` / `Detection` / `Suppression`) к выбранному профилю миссии.
+  - $S_{\text{completeness}}$: Доля заполненных калиброванных физических параметров (`o2_initial_pct`, `flow_velocity`, `measurements`).
+  - $S_{\text{evidence}}$: Наличие верифицированных многосенсорных данных, официального **DOI** и привязки к техническому отчёту NASA TM.
+  - $S_{\text{comparability}}$: Наличие парных контрольных точек $0g$ (МКС) и $1g$ (Земля) либо общей экспериментальной стойки (`CIR`, `MSG`, `MDCA`) для кросс-сравнения.
+
+### 6.2. Движок SI-интерпретации (`si/gemini_client.py` и `si/insights.py`)
+- **Отказоустойчивое кэширование:** Вычислять SHA-256 от `(model_name + system_prompt + user_prompt)`. Перед обращением к `gemini-3.5-flash-lite` проверять наличие записи в таблице `llm_cache` базы `research.db`; каждый новый ответ сохранять внутри блока `try ... except sqlite3.OperationalError`.
+- **Жёсткая защита от галлюцинаций и обязательное цитирование DOI:**
+  - Передавать в контекст Gemini только извлечённые строки из SQLite (включая `raw_attributes_json`), официальные DOI исследований и проверенные фрагменты PDF.
+  - Использовать строгий `Pydantic` `response_schema` в вызовах `google-genai`.
+  - Системная инструкция для Gemini: *«Если какой-либо параметр (например, давление или концентрация кислорода) явно не указан в переданном контексте, верни `null` или `'Unknown'`. Запрещено экстраполировать или переносить числа из других тестов. Каждое инженерное утверждение сопровождай точной ссылкой в формате `[PSI-ID | DOI | Документ, стр. X]`».*
+
+---
+
+## 7. Требования к веб-интерфейсу Streamlit и визуализации Plotly
+Реализовать тёмный, инженерно-ориентированный интерфейс в `app.py` и директории `pages/`:
+- **Глобальная боковая панель (Sidebar) и нижний колонтитул (Footer):**
+  - Выбор сценария миссии (`Lunar Base (≥30% O2, ≤10.2 psi)`, `ISS / Spacecraft (0g)`, `Mars Habitat (3/8g)`, `Earth Spin-offs`).
+  - Фильтр по направлению безопасности (`All`, `Prevention`, `Detection`, `Suppression`).
+  - Фильтр по экспериментальной установке (`All`, `MSG`, `CIR / MDCA`, `Saffire / Cygnus`).
+  - Переключатель: `"Подсветить земные применения (Earth Spin-offs)"` и скрытый спойлер для опционального пользовательского `GEMINI_API_KEY`.
+  - Постоянный футер на всех страницах: **SI Development Disclosure** + **NASA PSI DOI Attribution Notice**.
+- **Страница 1 (`1_Overview.py` — Обзор и исторический контекст):**
+  - Ключевые метрики: общее число исследований по 3 столпам (`Prevention`, `Detection`, `Suppression`), количество верифицированных прогонов, минимальный кислородный предел горения в $0g$ ($13.5\%\ O_2$ против $15.4\text{--}19\%\ O_2$ на Земле).
+  - Карточки исследований (сгруппированные по кластерам/столпам) с кликабельными **DOI** и готовой кнопкой копирования цитаты NASA.
+  - Исторические уроки пожарной безопасности пилотируемых полётов: **Apollo 1** (1967, $100\%\ O_2$, гибель от угарного газа $CO$), **Apollo 13** (1970, взрыв кислородного бака из-за перегрева тефлоновой изоляции), **станция «Мир»** (24 февраля 1997 г., возгорание кислородной шашки ТГК/SFOG в модуле «Квант-1») и **Artemis II** (срабатывание датчика дыма в 80 000 милях от Земли).
+  - Витрина земных технологий (**Earth Spin-offs**): тонкораспылённая вода (fine-water-mist) с МКС, датчики раннего обнаружения пожара с отстройкой от пыли, негорючие костюмы пожарных (`Project FIRES`) и облегчённые композитные воздушные баллоны (`4,500 psi`).
+- **Страница 2 (`2_Explorer.py` — Реестр прогонов и ручной загрузчик файлов):**
+  - Интерактивная таблица с поиском и фильтрами по всем нормализованным тестам (`test_id`, `psi_id`, `material_name`, `flow_direction`, `o2_initial_pct`, `pressure_psi`, `flow_velocity_min_cm_s`, `outcome`), а также просмотрщик всех нестандартных колонок из `raw_attributes_json`.
+  - Раскрывающаяся панель **«Загрузить файлы исследования NASA PSI (CSV / PDF / DOCX)»**: пользователь выбирает `psi_id`, перетаскивает файл; конвейер `schema_mapper.py` + `csv_parser.py` / `pdf_parser.py` автоматически распознаёт колонки и единицы измерения, показывает предпросмотр распарсенных строк и безопасно добавляет их в активную сессию (`st.session_state`) без риска сбоя read-only SQLite в Cloud Run.
+- **Страница 3 (`3_Compare.py` — Физическое сравнение и коридоры рисков):**
+  - **График коридора частичной гравитации (Partial-Gravity Risk Corridor, Plotly):** отображает скорости распространения пламени и минимальные пределы $O_2$ в $0g$ (МКС) и $1g$ (Земля) как нижнюю и верхнюю границы проектного конверта для Луны ($1/6g$) и Марса ($3/8g$), с отметкой будущих лунных экспериментов `LUCI` и `FM2` и данных имитации ионным ветром `ACME E-FIELD Flames`.
+  - **U-образная карта воспламеняемости (Flammability Boundary Plot):** зависимость минимального $O_2\%$ от скорости обдува ($\text{cm/s}$) с разделением зон *Quenching* (радиационное погасание при сверхмалых потоках), *Blowoff* (срыв пламени быстрым потоком) и *Sustained Flame* (устойчивое горение).
+  - **Диаграмма токсичности продуктов горения:** отношение $CO / CO_2$ от начальной концентрации $O_2\%$ с выделением случаев зашкала датчиков ($>1000\text{ ppm}$).
+- **Страница 4 (`4_Ranking.py` — Рейтинг под сценарий миссии):**
+  - Интерактивный настройщик параметров миссии (целевой $O_2\%$, давление $\text{psi}$, приоритетный столп) и отсортированный рейтинг исследований и конфигураций с прозрачной декомпозицией 4 компонентов формулы ($S_{\text{scenario}}$, $S_{\text{completeness}}$, $S_{\text{evidence}}$, $S_{\text{comparability}}$) и официальными DOI.
+- **Страница 5 (`5_SI_Insights.py` — Инженерный SI-помощник):**
+  - Интерактивный **SI Engineering Copilot**: пользователь выбирает 1–3 исследования, готовый прогретый вопрос или вводит собственный запрос (например: *«Как меняется горючесть PMMA при 34% O2 и 8.2 psi в лунном ровере?»*, *«Как эксперименты SAME и DAFT помогают защитить датчики дыма от ложных срабатываний на лунную пыль?»*) и получает структурированный ответ со ссылками `[PSI-ID | DOI | Документ, стр. X]` и картой аппаратных связей (`MSG` / `CIR` / `MDCA` / `Cygnus`).
+
+---
+
+## 8. Порядок реализации и подготовки к демонстрации / деплою (MVP-first)
+1. Создать `database/connection.py`, `database/seed_catalog.py` (сначала 5 базовых исследований: `PSI-25`, `PSI-69`, `PSI-102` + `DAFT-1/2`, `PSI-98`, `PSI-159`), `core/schemas.py` и `database/repository.py`.
+2. Реализовать `ingestion/schema_mapper.py`, `ingestion/csv_parser.py` и `ingestion/pdf_parser.py` (на базе `pypdf`), загрузить эталонные прогоны `PSI-25` (`BASS-II`) в `data/database/research.db`.
+3. Реализовать `core/ranking.py` и `si/gemini_client.py` (на базе `gemini-3.5-flash-lite`) с отказоустойчивым кэшем `llm_cache`.
+4. Собрать все 5 страниц Streamlit (`1_Overview.py` – `5_SI_Insights.py`) с графиками Plotly и ручным загрузчиком новых файлов в `st.session_state`.
+5. Расширить справочник `database/seed_catalog.py` до всех 18 лётных исследований из раздела 5.3, локально выполнить `python scripts/warm_cache.py` для прогрева `llm_cache` внутри `research.db`, проверить работу `streamlit run app.py` в офлайн-режиме, затем собрать лёгкий `Dockerfile` и развернуть его в Google Cloud Run.
