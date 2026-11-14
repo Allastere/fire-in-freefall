@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Any
 import pandas as pd
 from config.settings import DB_PATH
+from core.ranking import rank_experiments_df, rank_investigations_df
 from database.connection import get_connection
 
 
@@ -234,15 +235,53 @@ def get_findings(
         conn.close()
 
 
+def get_ranked_experiments_df(
+    mission_profile: str = "Lunar Base",
+    psi_id: str | None = None,
+    safety_pillar: str | None = None,
+    gravity_level: str | None = None,
+    db_path: Path | str = DB_PATH,
+) -> pd.DataFrame:
+    """Return experimental runs scored and sorted deterministically for a mission profile."""
+    exp_df = get_experiments_df(
+        psi_id=psi_id,
+        safety_pillar=safety_pillar,
+        gravity_level=gravity_level,
+        db_path=db_path,
+    )
+    meas_df = get_measurements_df(psi_id=psi_id, db_path=db_path)
+    return rank_experiments_df(exp_df, df_meas=meas_df, mission_profile=mission_profile)
+
+
+def get_ranked_investigations(
+    mission_profile: str = "Lunar Base",
+    safety_pillar: str | None = None,
+    hardware_facility: str | None = None,
+    db_path: Path | str = DB_PATH,
+) -> list[dict[str, Any]]:
+    """Return investigations ranked deterministically for a mission profile."""
+    invs = get_all_investigations(
+        safety_pillar=safety_pillar,
+        hardware_facility=hardware_facility,
+        db_path=db_path,
+    )
+    exp_df = get_experiments_df(safety_pillar=safety_pillar, db_path=db_path)
+    meas_df = get_measurements_df(db_path=db_path)
+    ranked_df = rank_investigations_df(invs, exp_df, df_meas=meas_df, mission_profile=mission_profile)
+    return ranked_df.to_dict(orient="records")
+
+
 if __name__ == "__main__":
     invs = get_all_investigations()
     exp_df = get_experiments_df()
     meas_df = get_measurements_df()
     finds = get_findings()
+    ranked_df = get_ranked_experiments_df(mission_profile="Lunar Base")
     assert len(invs) == 5, f"Expected 5 investigations, got {len(invs)}"
-    assert len(exp_df) == 8, f"Expected 8 experiments, got {len(exp_df)}"
-    assert len(meas_df) == 15, f"Expected 15 measurements, got {len(meas_df)}"
+    assert len(exp_df) >= 134, f"Expected >= 134 experiments, got {len(exp_df)}"
+    assert len(meas_df) >= 100, f"Expected >= 100 measurements, got {len(meas_df)}"
     assert len(finds) == 6, f"Expected 6 findings, got {len(finds)}"
+    assert len(ranked_df) == len(exp_df)
     assert len(get_experiments_df(psi_id="'; DROP TABLE investigations; --")) == 0
     print(
         f"Repository self-check PASSED: {len(invs)} investigations, "

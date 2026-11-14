@@ -18,12 +18,12 @@ MVP_INVESTIGATIONS: list[InvestigationModel] = [
         psi_id="PSI-25",
         acronym="BASS-II",
         title="Burning and Suppression of Solids - II",
-        doi="10.25966/65c6-3w90",
+        doi="10.60555/4qc4-de67",
         psi_url="https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
         citation_text=(
             "Olson, S. L., Bhattacharjee, S., Ferkul, P. V., Miller, F. J., Fernandez-Pello, C., & T'ien, J. S. "
             "(2018). Burning and Suppression of Solids - II (BASS-II) [Data set]. NASA Physical Sciences "
-            "Informatics. https://doi.org/10.25966/65c6-3w90"
+            "Informatics. https://doi.org/10.60555/4qc4-de67"
         ),
         safety_pillar="Prevention",
         fuel_category="Solid",
@@ -48,12 +48,12 @@ MVP_INVESTIGATIONS: list[InvestigationModel] = [
         psi_id="PSI-69",
         acronym="FLEX",
         title="Flame Extinguishment Experiment",
-        doi="10.25966/p8r2-7m41",
+        doi="10.60555/mbq8-0451",
         psi_url="https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
         citation_text=(
             "Dietrich, D. L., Nayagam, V., Hicks, M. C., Ferkul, P. V., Williams, F. A., & Dryer, F. L. "
             "(2016). Flame Extinguishment Experiment (FLEX) [Data set]. NASA Physical Sciences "
-            "Informatics. https://doi.org/10.25966/p8r2-7m41"
+            "Informatics. https://doi.org/10.60555/mbq8-0451"
         ),
         safety_pillar="Suppression",
         fuel_category="Liquid",
@@ -77,12 +77,13 @@ MVP_INVESTIGATIONS: list[InvestigationModel] = [
         psi_id="PSI-102",
         acronym="SAME + DAFT-1/2",
         title="Smoke Aerosol Measurement Experiment & Dust/Aerosol Feasibility Test",
-        doi="10.25966/k9x4-2n18",
+        doi="10.60555/gd4k-8h62",
         psi_url="https://psi.nasa.gov/physci/repo/data/investigations/PSI-102",
         citation_text=(
             "Urban, D. L., Cleary, T. G., Mulholland, G. W., Yuan, Z. G., & Ruff, G. A. (2017). "
-            "Smoke Aerosol Measurement Experiment (SAME) and Dust and Aerosol Measurement Feasibility Test "
-            "(DAFT-1/2) [Data set]. NASA Physical Sciences Informatics. https://doi.org/10.25966/k9x4-2n18"
+            "Smoke and Aerosol Measurement Experiment (SAME) [Data set, https://doi.org/10.60555/gd4k-8h62] "
+            "& Dust and Aerosol Measurement Feasibility Test (DAFT-1/2, PSI-47) "
+            "[Data set, https://doi.org/10.60555/ztgj-d202]. NASA Physical Sciences Informatics."
         ),
         safety_pillar="Detection",
         fuel_category="Aerosol/Smoke",
@@ -102,18 +103,18 @@ MVP_INVESTIGATIONS: list[InvestigationModel] = [
             "Multi-wavelength dust-immune optical smoke detectors for mines, semiconductor cleanrooms, "
             "and wildland-urban interface early warning stations."
         ),
-        related_psi_ids=["DAFT-1/2", "PSI-101", "PSI-115"],
+        related_psi_ids=["DAFT-1/2", "PSI-47", "PSI-101", "PSI-115"],
     ),
     InvestigationModel(
         psi_id="PSI-98",
         acronym="SAFFIRE-I",
         title="Spacecraft Fire Safety Experiment - I",
-        doi="10.25966/s4f1-9c82",
+        doi="10.60555/0t15-1z43",
         psi_url="https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
         citation_text=(
             "Urban, D. L., Ruff, G. A., Ferkul, P. V., Olson, S. L., & Meyer, M. E. (2019). "
             "Spacecraft Fire Safety Experiment - I (SAFFIRE-I) [Data set]. NASA Physical Sciences "
-            "Informatics. https://doi.org/10.25966/s4f1-9c82"
+            "Informatics. https://doi.org/10.60555/0t15-1z43"
         ),
         safety_pillar="Prevention",
         fuel_category="Solid",
@@ -138,11 +139,11 @@ MVP_INVESTIGATIONS: list[InvestigationModel] = [
         psi_id="PSI-159",
         acronym="ACME CFI-G",
         title="Advanced Combustion via Microgravity Experiments: Cool Flames Investigation with Gases",
-        doi="10.25966/a7c5-4g19",
+        doi="10.60555/cyt1-kh64",
         psi_url="https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
         citation_text=(
             "Sunderland, P. B., Axelbaum, R. L., & Stocker, D. P. (2022). ACME Cool Flames Investigation "
-            "with Gases (CFI-G) [Data set]. NASA Physical Sciences Informatics. https://doi.org/10.25966/a7c5-4g19"
+            "with Gases (CFI-G) [Data set]. NASA Physical Sciences Informatics. https://doi.org/10.60555/cyt1-kh64"
         ),
         safety_pillar="Multi",
         fuel_category="Gas",
@@ -166,129 +167,7 @@ MVP_INVESTIGATIONS: list[InvestigationModel] = [
 
 
 MVP_EXPERIMENTS: list[tuple[ExperimentModel, SampleModel, ConditionModel]] = [
-    # PSI-25 (BASS-II) — 0g low-O2 sustained & quenching limit + 1g baseline
-    (
-        ExperimentModel(
-            test_id="B1",
-            psi_id="PSI-25",
-            pi_name="Bhattacharjee",
-            sample_id="PMMA-100um-01",
-            is_reused_sample=False,
-            flow_direction="Opposed",
-            outcome="Sustained",
-            observations="Steady blue flame front in 0g at low opposed flow (4.5 cm/s) down to 15.2% O2.",
-            raw_attributes_json={
-                "Test ID": "B1",
-                "PI": "Bhattacharjee",
-                "Fuel Sample Material": "100-µm film",
-                "Calibrated initial O2 % by vol": 15.2,
-                "Calibrated final O2 % by vol": 14.8,
-                "Air display": "4.5",
-                "Initial CO (ppm)": 12,
-                "Final CO (ppm)": 480,
-            },
-        ),
-        SampleModel(
-            test_id="B1",
-            material_name="PMMA",
-            geometry="Thin Film",
-            thickness_mm=0.1,
-            width_cm=2.0,
-        ),
-        ConditionModel(
-            test_id="B1",
-            o2_initial_pct=15.2,
-            o2_final_pct=14.8,
-            pressure_psi=14.7,
-            diluent_gas="N2",
-            diluent_pct=84.8,
-            flow_velocity_initial_cm_s=4.5,
-            flow_velocity_min_cm_s=4.5,
-            flow_sequence_raw="4.5",
-            gravity_level="0g",
-        ),
-    ),
-    (
-        ExperimentModel(
-            test_id="M10",
-            psi_id="PSI-25",
-            pi_name="Miller",
-            sample_id="PMMA-100um-10m",
-            is_reused_sample=True,
-            flow_direction="Opposed",
-            outcome="Quenched",
-            observations="Flow stepped down 10 -> 5 -> 3 -> 1.2 cm/s; radiative quenching at 1.2 cm/s and 13.5% O2.",
-            raw_attributes_json={
-                "Test ID": "M10",
-                "PI": "Miller",
-                "Fuel Sample Material": "100 micron PMMA",
-                "Calibrated initial O2 % by vol": 13.8,
-                "Calibrated final O2 % by vol": 13.5,
-                "Air display": "10, 5, 3, 1.2 down to extinction",
-                "Final CO (ppm)": "OR",
-            },
-        ),
-        SampleModel(
-            test_id="M10",
-            material_name="PMMA",
-            geometry="Thin Film",
-            thickness_mm=0.1,
-            width_cm=2.2,
-        ),
-        ConditionModel(
-            test_id="M10",
-            o2_initial_pct=13.8,
-            o2_final_pct=13.5,
-            pressure_psi=14.7,
-            diluent_gas="N2",
-            diluent_pct=86.2,
-            flow_velocity_initial_cm_s=10.0,
-            flow_velocity_min_cm_s=1.2,
-            flow_velocity_extinction_cm_s=1.2,
-            flow_sequence_raw="10, 5, 3, 1.2 down to extinction",
-            gravity_level="0g",
-        ),
-    ),
-    (
-        ExperimentModel(
-            test_id="P13a",
-            psi_id="PSI-25",
-            pi_name="Ferkul",
-            sample_id="SIBAL-04",
-            is_reused_sample=False,
-            flow_direction="Concurrent",
-            outcome="Sustained",
-            observations="Concurrent flame spread on 75/25 cotton-fiberglass fabric at elevated O2 (28.5%).",
-            raw_attributes_json={
-                "Test ID": "P13a",
-                "PI": "Ferkul",
-                "Fuel Sample Material": "75/25 cotton-fiberglass",
-                "Calibrated initial O2 % by vol": 28.5,
-                "Calibrated final O2 % by vol": 27.9,
-                "Air display": "8, 5, 3",
-                "Final CO (ppm)": ">500",
-            },
-        ),
-        SampleModel(
-            test_id="P13a",
-            material_name="SIBAL Cotton-Fiberglass",
-            geometry="Fabric",
-            thickness_mm=0.3,
-            width_cm=2.2,
-        ),
-        ConditionModel(
-            test_id="P13a",
-            o2_initial_pct=28.5,
-            o2_final_pct=27.9,
-            pressure_psi=10.2,
-            diluent_gas="N2",
-            diluent_pct=71.5,
-            flow_velocity_initial_cm_s=8.0,
-            flow_velocity_min_cm_s=3.0,
-            flow_sequence_raw="8, 5, 3",
-            gravity_level="0g",
-        ),
-    ),
+    # PSI-25 (BASS-II) — 1g terrestrial baseline control run (all 129 flight 0g runs come from CSV ingestion)
     (
         ExperimentModel(
             test_id="B1-1G",
@@ -490,90 +369,6 @@ MVP_EXPERIMENTS: list[tuple[ExperimentModel, SampleModel, ConditionModel]] = [
 
 
 MVP_MEASUREMENTS: list[MeasurementModel] = [
-    MeasurementModel(
-        psi_id="PSI-25",
-        test_id="B1",
-        parameter="flame_spread_rate_mm_s",
-        value=2.45,
-        unit="mm/s",
-        is_over_range=False,
-        value_type="exact",
-        source_doc="BASS-II Summary Report.pdf",
-        source_page=104,
-        verification_status="verified",
-    ),
-    MeasurementModel(
-        psi_id="PSI-25",
-        test_id="B1",
-        parameter="co_final_ppm",
-        value=480.0,
-        unit="ppm",
-        is_over_range=False,
-        value_type="exact",
-        source_doc="PSI-25_Experimental table_BASS-II.csv",
-        source_page=1,
-        verification_status="verified",
-    ),
-    MeasurementModel(
-        psi_id="PSI-25",
-        test_id="M10",
-        parameter="limiting_oxygen_index_pct",
-        value=13.5,
-        unit="%",
-        is_over_range=False,
-        value_type="threshold",
-        source_doc="BASS-II Summary Report.pdf",
-        source_page=38,
-        verification_status="verified",
-    ),
-    MeasurementModel(
-        psi_id="PSI-25",
-        test_id="M10",
-        parameter="extinction_velocity_cm_s",
-        value=1.2,
-        unit="cm/s",
-        is_over_range=False,
-        value_type="threshold",
-        source_doc="BASS-II Summary Report.pdf",
-        source_page=109,
-        verification_status="verified",
-    ),
-    MeasurementModel(
-        psi_id="PSI-25",
-        test_id="M10",
-        parameter="co_final_ppm",
-        value=1000.0,
-        unit="ppm",
-        is_over_range=True,
-        value_type="threshold",
-        source_doc="BASS-II data FAQ.docx",
-        source_page=3,
-        verification_status="verified",
-    ),
-    MeasurementModel(
-        psi_id="PSI-25",
-        test_id="P13a",
-        parameter="flame_spread_rate_mm_s",
-        value=4.85,
-        unit="mm/s",
-        is_over_range=False,
-        value_type="exact",
-        source_doc="BASS-II Summary Report.pdf",
-        source_page=106,
-        verification_status="verified",
-    ),
-    MeasurementModel(
-        psi_id="PSI-25",
-        test_id="P13a",
-        parameter="co_final_ppm",
-        value=500.0,
-        unit="ppm",
-        is_over_range=True,
-        value_type="threshold",
-        source_doc="PSI-25_Experimental table_BASS-II.csv",
-        source_page=1,
-        verification_status="verified",
-    ),
     MeasurementModel(
         psi_id="PSI-25",
         test_id="B1-1G",
