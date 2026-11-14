@@ -4,26 +4,21 @@ import time
 import hashlib
 import logging
 import sqlite3
+from contextlib import closing
 
 from pathlib import Path
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types, errors
-from pydantic import BaseModel
+from pydantic import BaseModel, ValidationError
 
+from config.settings import DB_PATH, GEMINI_MODEL
 from si.prompts import SYSTEM_PROMPT
 
 
 load_dotenv()
 
 logger = logging.getLogger(__name__)
-
-ROOT_DIR = Path(__file__).resolve().parents[1]
-
-DB_PATH = ROOT_DIR / "data/database/research.db"
-
-DEFAULT_MODEL = "gemini-3.5-flash-lite"
-
 
 class GeminiClient:
 
@@ -38,7 +33,7 @@ class GeminiClient:
         self.model_name = (
             model_name
             or os.getenv("GEMINI_MODEL")
-            or DEFAULT_MODEL
+            or GEMINI_MODEL
         )
 
         self.db_path = Path(db_path)
@@ -83,10 +78,10 @@ class GeminiClient:
             return None
 
         try:
-            with sqlite3.connect(
+            with closing(sqlite3.connect(
                 self.db_path.resolve().as_uri() + "?mode=ro",
                 uri=True
-            ) as conn:
+            )) as conn:
 
                 result = conn.execute(
                     """
@@ -111,10 +106,10 @@ class GeminiClient:
             return
 
         try:
-            with sqlite3.connect(
+            with closing(sqlite3.connect(
                 self.db_path.resolve().as_uri() + "?mode=rw",
                 uri=True
-            ) as conn:
+            )) as conn, conn:
 
                 conn.execute(
                     """
@@ -153,14 +148,19 @@ class GeminiClient:
         cached = self._get_cached_response(prompt_hash)
 
         if cached is not None:
-            logger.info("Cache HIT")
-
             if response_schema:
-                return response_schema.model_validate(
-                    cached
-                )
-
-            return cached
+                try:
+                    parsed = response_schema.model_validate(cached)
+                except ValidationError:
+                    logger.warning("Invalid structured cache entry; treating as a miss")
+                else:
+                    logger.info("Cache HIT")
+                    return parsed
+            elif isinstance(cached, str):
+                logger.info("Cache HIT")
+                return cached
+            else:
+                logger.warning("Invalid text cache entry; treating as a miss")
 
         logger.info("Cache MISS")
 
