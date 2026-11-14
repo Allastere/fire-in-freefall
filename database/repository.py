@@ -9,9 +9,39 @@ from core.ranking import rank_experiments_df, rank_investigations_df
 from database.connection import get_connection
 
 
+_FACILITY_ALIASES: dict[str, tuple[str, ...]] = {
+    "CIR / MDCA": ("CIR", "MDCA"),
+    "CIR/MDCA": ("CIR", "MDCA"),
+    "Saffire / Cygnus": ("Saffire/Cygnus",),
+}
+
+
+def _resolve_facilities(
+    hardware_facility: str | list[str] | tuple[str, ...] | set[str] | None,
+) -> list[str] | None:
+    """Normalize UI facility labels (e.g. 'CIR / MDCA') into stored database values."""
+    if hardware_facility is None:
+        return None
+    if isinstance(hardware_facility, str):
+        cleaned = hardware_facility.strip()
+        if not cleaned or cleaned == "All":
+            return None
+        return list(_FACILITY_ALIASES.get(cleaned, (cleaned,)))
+
+    resolved: list[str] = []
+    for item in hardware_facility:
+        sub = _resolve_facilities(item)
+        if sub is None:
+            return None
+        for fac in sub:
+            if fac not in resolved:
+                resolved.append(fac)
+    return resolved or None
+
+
 def get_all_investigations(
     safety_pillar: str | None = None,
-    hardware_facility: str | None = None,
+    hardware_facility: str | list[str] | tuple[str, ...] | set[str] | None = None,
     db_path: Path | str = DB_PATH,
 ) -> list[dict[str, Any]]:
     """Return all NASA PSI investigations with parsed related_psi_ids and mandatory DOI fields."""
@@ -29,9 +59,11 @@ def get_all_investigations(
         query += " AND (safety_pillar = ? OR safety_pillar = 'Multi')"
         params.append(safety_pillar)
 
-    if hardware_facility and hardware_facility != "All":
-        query += " AND hardware_facility = ?"
-        params.append(hardware_facility)
+    facilities = _resolve_facilities(hardware_facility)
+    if facilities:
+        placeholders = ", ".join("?" for _ in facilities)
+        query += f" AND hardware_facility IN ({placeholders})"
+        params.extend(facilities)
 
     query += " ORDER BY psi_id ASC"
 
@@ -256,7 +288,7 @@ def get_ranked_experiments_df(
 def get_ranked_investigations(
     mission_profile: str = "Lunar Base",
     safety_pillar: str | None = None,
-    hardware_facility: str | None = None,
+    hardware_facility: str | list[str] | tuple[str, ...] | set[str] | None = None,
     db_path: Path | str = DB_PATH,
 ) -> list[dict[str, Any]]:
     """Return investigations ranked deterministically for a mission profile."""
@@ -283,6 +315,11 @@ if __name__ == "__main__":
     assert len(finds) == 6, f"Expected 6 findings, got {len(finds)}"
     assert len(ranked_df) == len(exp_df)
     assert len(get_experiments_df(psi_id="'; DROP TABLE investigations; --")) == 0
+    cir_mdca_invs = get_all_investigations(hardware_facility="CIR / MDCA")
+    assert {i["psi_id"] for i in cir_mdca_invs} == {"PSI-69", "PSI-159"}, cir_mdca_invs
+    saffire_invs = get_all_investigations(hardware_facility="Saffire / Cygnus")
+    assert {i["psi_id"] for i in saffire_invs} == {"PSI-98"}, saffire_invs
+    assert len(get_ranked_investigations(mission_profile="Lunar Base", hardware_facility="CIR / MDCA")) == 2
     print(
         f"Repository self-check PASSED: {len(invs)} investigations, "
         f"{len(exp_df)} experiments, {len(meas_df)} measurements, {len(finds)} findings."
