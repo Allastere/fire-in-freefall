@@ -26,7 +26,8 @@ class GeminiClient:
         self,
         api_key=None,
         model_name=None,
-        db_path=DB_PATH
+        db_path=DB_PATH,
+        cache_writes=True
     ):
         self.api_key = api_key or os.getenv("GEMINI_API_KEY")
 
@@ -37,6 +38,7 @@ class GeminiClient:
         )
 
         self.db_path = Path(db_path)
+        self.cache_writes = cache_writes
         self.client = None
 
     def _get_client(self):
@@ -102,7 +104,7 @@ class GeminiClient:
 
     def _save_to_cache(self, prompt_hash, response):
 
-        if not self.db_path.exists():
+        if not self.cache_writes or not self.db_path.exists():
             return
 
         try:
@@ -164,13 +166,11 @@ class GeminiClient:
 
         logger.info("Cache MISS")
 
-        config = {
-            "system_instruction": SYSTEM_PROMPT
-        }
-
-        if response_schema:
-            config["response_mime_type"] = "application/json"
-            config["response_schema"] = response_schema
+        config = types.GenerateContentConfig(
+            system_instruction=SYSTEM_PROMPT,
+            response_mime_type="application/json" if response_schema else None,
+            response_json_schema=response_schema.model_json_schema() if response_schema else None,
+        )
 
         client = self._get_client()
 
@@ -180,9 +180,7 @@ class GeminiClient:
                 result = client.models.generate_content(
                     model=self.model_name,
                     contents=prompt,
-                    config=types.GenerateContentConfig(
-                        **config
-                    )
+                    config=config
                 )
 
                 if not result.text:

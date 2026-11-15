@@ -1,0 +1,669 @@
+[
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "one",
+      "co2_initial_pct": 0.45,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 0.0,
+      "o2_initial_pct": 22.2,
+      "thickness_mm": 1.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "e85951df1c2c6af6eb68dd38062f58eaa9d1b77cdd682e42578ffdd65847c9e5",
+    "material": "PMMA",
+    "observation_sha256": "50c68fd2af27c7eddc90008c055d1c7ef228fb7a92e64933061b83d7747205d1",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "calibration",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 27,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 0.61,
+    "test_id": "M1",
+    "tokens": [
+      "sample:PSI-25:167",
+      "sample:PSI-25:222",
+      "sample:PSI-25:223",
+      "sample:PSI-25:224",
+      "session:bass2_master_csv_v1:2/20/2014"
+    ],
+    "uid": "PSI-25:M1"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.36,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 20.1,
+      "thickness_mm": 4.0,
+      "width_cm": 1.0
+    },
+    "geometry": "Thick Slab",
+    "group": "847dff0a0b9f3793362ba11081f1463becf1696884b8248538ec25788cae6484",
+    "material": "PMMA",
+    "observation_sha256": "10f4c10e8a8e29c641ec3e34e93969da8238f9b7cf875d02c475e230966724e1",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "benchmark",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 36,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 1.59,
+    "test_id": "M10",
+    "tokens": [
+      "sample:PSI-25:164",
+      "sample:PSI-25:170",
+      "sample:PSI-25:180",
+      "session:bass2_master_csv_v1:7/23/2014"
+    ],
+    "uid": "PSI-25:M10"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.58,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 20.0,
+      "thickness_mm": 5.0,
+      "width_cm": 1.0
+    },
+    "geometry": "Thick Slab",
+    "group": "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+    "material": "PMMA",
+    "observation_sha256": "9ec90b48e5b52aec5b591fc9344b5954e42cc766335eabca7013e9cb3ba7e1a4",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "development",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 37,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 1.68,
+    "test_id": "M11",
+    "tokens": [
+      "sample:PSI-25:177",
+      "sample:PSI-25:178",
+      "sample:PSI-25:179",
+      "sample:PSI-25:181",
+      "sample:PSI-25:226",
+      "session:bass2_master_csv_v1:7/11/2014"
+    ],
+    "uid": "PSI-25:M11"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.36,
+      "flow_velocity_initial_cm_s": 6.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 20.8,
+      "thickness_mm": 4.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "6c81641e17f8a982762e708f54092dc046992faaa15cd60ea3bd2ec52e41c4f1",
+    "material": "PMMA",
+    "observation_sha256": "c10d282a4c9ccb1ae1d1b561590673b84860fe952dff850c81c074f4035143a7",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "benchmark",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 39,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 1.75,
+    "test_id": "M13",
+    "tokens": [
+      "sample:PSI-25:163",
+      "sample:PSI-25:165",
+      "sample:PSI-25:169",
+      "sample:PSI-25:171",
+      "session:bass2_master_csv_v1:7/31/2014"
+    ],
+    "uid": "PSI-25:M13"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "one",
+      "co2_initial_pct": 0.45,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 0.0,
+      "o2_initial_pct": 22.2,
+      "thickness_mm": 2.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "e85951df1c2c6af6eb68dd38062f58eaa9d1b77cdd682e42578ffdd65847c9e5",
+    "material": "PMMA",
+    "observation_sha256": "2201cc76fce7ebc08f2a57a3172c10c480c5ed1feb6df8566accfe02db9c2cba",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "calibration",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 40,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 0.98,
+    "test_id": "M14",
+    "tokens": [
+      "sample:PSI-25:167",
+      "sample:PSI-25:222",
+      "sample:PSI-25:223",
+      "sample:PSI-25:224",
+      "session:bass2_master_csv_v1:2/20/2014"
+    ],
+    "uid": "PSI-25:M14"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "one",
+      "co2_initial_pct": 0.37,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 21.0,
+      "thickness_mm": 4.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "a32aa44fb11b5a227cc76bdcaf6de1c7115a681e5a45bf8f52adc388dc806c1c",
+    "material": "PMMA",
+    "observation_sha256": "fe32353efb329ecae1364172df283b062bdcadbf65aa87c120bc19d54050b926",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "development",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 41,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 1.1,
+    "test_id": "M15",
+    "tokens": [
+      "sample:PSI-25:149",
+      "sample:PSI-25:153",
+      "sample:PSI-25:154",
+      "sample:PSI-25:157",
+      "sample:PSI-25:158",
+      "sample:PSI-25:162",
+      "sample:PSI-25:173",
+      "sample:PSI-25:225",
+      "session:bass2_master_csv_v1:7/7/2014"
+    ],
+    "uid": "PSI-25:M15"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.95,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 19.2,
+      "thickness_mm": 1.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "847dff0a0b9f3793362ba11081f1463becf1696884b8248538ec25788cae6484",
+    "material": "PMMA",
+    "observation_sha256": "b5c56ece173ab117bfabf530ebc8e3f9ccf98678e597bdc71e868759e086b994",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "benchmark",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 42,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 1.75,
+    "test_id": "M16",
+    "tokens": [
+      "sample:PSI-25:164",
+      "sample:PSI-25:170",
+      "sample:PSI-25:180",
+      "session:bass2_master_csv_v1:7/23/2014"
+    ],
+    "uid": "PSI-25:M16"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.35,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 18.8,
+      "thickness_mm": 2.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "95bf4cac57a8abfcd3430c1ca443ba050d94fe5e3798c7cca980728fe1fdd6cd",
+    "material": "PMMA",
+    "observation_sha256": "bbeafdbadaa15f9925ceed2830c2ddbf5509d742f7f79cc17aaf7a724f33217d",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "development",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 43,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 1.7,
+    "test_id": "M17",
+    "tokens": [
+      "sample:PSI-25:166",
+      "sample:PSI-25:168",
+      "session:bass2_master_csv_v1:7/15/2014"
+    ],
+    "uid": "PSI-25:M17"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.32,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 17.9,
+      "thickness_mm": 3.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "95bf4cac57a8abfcd3430c1ca443ba050d94fe5e3798c7cca980728fe1fdd6cd",
+    "material": "PMMA",
+    "observation_sha256": "5cbfbb539ebb9421ce9d21faba38e4cde7aca3f75a93e26fb2e20a954e4cfcfc",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "development",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 44,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 1.31,
+    "test_id": "M18",
+    "tokens": [
+      "sample:PSI-25:166",
+      "sample:PSI-25:168",
+      "session:bass2_master_csv_v1:7/15/2014"
+    ],
+    "uid": "PSI-25:M18"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "two",
+      "co2_initial_pct": 0.35,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 19.0,
+      "thickness_mm": 4.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "847dff0a0b9f3793362ba11081f1463becf1696884b8248538ec25788cae6484",
+    "material": "PMMA",
+    "observation_sha256": "bb09022c6fb6fbaf008fbf25ec195abe0ddef43bf8cb519970f13110770f905b",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "benchmark",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 45,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 1.6,
+    "test_id": "M19",
+    "tokens": [
+      "sample:PSI-25:164",
+      "sample:PSI-25:170",
+      "sample:PSI-25:180",
+      "session:bass2_master_csv_v1:7/23/2014"
+    ],
+    "uid": "PSI-25:M19"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "one",
+      "co2_initial_pct": 0.46,
+      "flow_velocity_initial_cm_s": 20.0,
+      "is_reused_sample": 0.0,
+      "o2_initial_pct": 22.2,
+      "thickness_mm": 3.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "e85951df1c2c6af6eb68dd38062f58eaa9d1b77cdd682e42578ffdd65847c9e5",
+    "material": "PMMA",
+    "observation_sha256": "68cf105e7a4c01ceb0a938665aacaa1edddd440fbea7e913accc51df153631e4",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "calibration",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 28,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 1.33,
+    "test_id": "M2",
+    "tokens": [
+      "sample:PSI-25:167",
+      "sample:PSI-25:222",
+      "sample:PSI-25:223",
+      "sample:PSI-25:224",
+      "session:bass2_master_csv_v1:2/20/2014"
+    ],
+    "uid": "PSI-25:M2"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.3,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 18.0,
+      "thickness_mm": 5.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "6b25a8052e688de4d7633c528bc561d1c4554c698894588ca5241a20523ed4de",
+    "material": "PMMA",
+    "observation_sha256": "42361ebf6c8da9db81059888f832f2f490e20f242474d7185d87512cb7b4a9e5",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "development",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 46,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 0.75,
+    "test_id": "M20",
+    "tokens": [
+      "sample:PSI-25:172",
+      "sample:PSI-25:183",
+      "sample:PSI-25:213",
+      "sample:PSI-25:229",
+      "session:bass2_master_csv_v1:8/1/2014"
+    ],
+    "uid": "PSI-25:M20"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "one",
+      "co2_initial_pct": 0.33,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 20.8,
+      "thickness_mm": 5.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+    "material": "PMMA",
+    "observation_sha256": "565ff100e978550b23d791e7b1e72e05f6ae8447b828d65b72a8619cf804fd1e",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "development",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 29,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 1.18,
+    "test_id": "M3",
+    "tokens": [
+      "sample:PSI-25:177",
+      "sample:PSI-25:178",
+      "sample:PSI-25:179",
+      "sample:PSI-25:181",
+      "sample:PSI-25:226",
+      "session:bass2_master_csv_v1:7/11/2014"
+    ],
+    "uid": "PSI-25:M3"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.42,
+      "flow_velocity_initial_cm_s": 5.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 21.8,
+      "thickness_mm": 5.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "6c81641e17f8a982762e708f54092dc046992faaa15cd60ea3bd2ec52e41c4f1",
+    "material": "PMMA",
+    "observation_sha256": "2d5672e5e6e33cee5cf9172bf5278d3e896658ed53cff67d4856f98e199d13b0",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "benchmark",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 30,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 2.15,
+    "test_id": "M4",
+    "tokens": [
+      "sample:PSI-25:163",
+      "sample:PSI-25:165",
+      "sample:PSI-25:169",
+      "sample:PSI-25:171",
+      "session:bass2_master_csv_v1:7/31/2014"
+    ],
+    "uid": "PSI-25:M4"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "two",
+      "co2_initial_pct": 0.44,
+      "flow_velocity_initial_cm_s": 20.0,
+      "is_reused_sample": 0.0,
+      "o2_initial_pct": 22.2,
+      "thickness_mm": 3.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "e85951df1c2c6af6eb68dd38062f58eaa9d1b77cdd682e42578ffdd65847c9e5",
+    "material": "PMMA",
+    "observation_sha256": "a99ca21641721c0ee3c5cd0f14fd4405d4933dac34a6262e10065e87df95b84d",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "calibration",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 31,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 3.22,
+    "test_id": "M5",
+    "tokens": [
+      "sample:PSI-25:167",
+      "sample:PSI-25:222",
+      "sample:PSI-25:223",
+      "sample:PSI-25:224",
+      "session:bass2_master_csv_v1:2/20/2014"
+    ],
+    "uid": "PSI-25:M5"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.38,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 21.8,
+      "thickness_mm": 1.0,
+      "width_cm": 2.0
+    },
+    "geometry": "Thick Slab",
+    "group": "6c81641e17f8a982762e708f54092dc046992faaa15cd60ea3bd2ec52e41c4f1",
+    "material": "PMMA",
+    "observation_sha256": "7356421f7201ee35f78af63064818ce28732063f9ccd9f1098e0f560d9d6a51c",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "benchmark",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 32,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 1.27,
+    "test_id": "M6",
+    "tokens": [
+      "sample:PSI-25:163",
+      "sample:PSI-25:165",
+      "sample:PSI-25:169",
+      "sample:PSI-25:171",
+      "session:bass2_master_csv_v1:7/31/2014"
+    ],
+    "uid": "PSI-25:M6"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 1.42,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 18.9,
+      "thickness_mm": 1.0,
+      "width_cm": 1.0
+    },
+    "geometry": "Thick Slab",
+    "group": "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+    "material": "PMMA",
+    "observation_sha256": "faad0a9e5f0916e4143636a1240eac85ece220a7dac6792149487fdb3589509e",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "development",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 33,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 1.84,
+    "test_id": "M7",
+    "tokens": [
+      "sample:PSI-25:177",
+      "sample:PSI-25:178",
+      "sample:PSI-25:179",
+      "sample:PSI-25:181",
+      "sample:PSI-25:226",
+      "session:bass2_master_csv_v1:7/11/2014"
+    ],
+    "uid": "PSI-25:M7"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.44,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 19.1,
+      "thickness_mm": 2.0,
+      "width_cm": 1.0
+    },
+    "geometry": "Thick Slab",
+    "group": "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+    "material": "PMMA",
+    "observation_sha256": "9cdf8f91c8358506e5343a1715017744a607d050f8b9a29e12632c945dd86f29",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "development",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 34,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 1.28,
+    "test_id": "M8",
+    "tokens": [
+      "sample:PSI-25:177",
+      "sample:PSI-25:178",
+      "sample:PSI-25:179",
+      "sample:PSI-25:181",
+      "sample:PSI-25:226",
+      "session:bass2_master_csv_v1:7/11/2014"
+    ],
+    "uid": "PSI-25:M8"
+  },
+  {
+    "doi": "10.60555/4qc4-de67",
+    "features": {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.26,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 18.0,
+      "thickness_mm": 3.0,
+      "width_cm": 1.0
+    },
+    "geometry": "Thick Slab",
+    "group": "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+    "material": "PMMA",
+    "observation_sha256": "46a35e5788b9f018c7da5bca6c6557b18452a9ac592a11b1ac0a9213ec0af36d",
+    "protocol_id": "bass2_master_csv_v1",
+    "psi_id": "PSI-25",
+    "role": "development",
+    "scientific_status": "research_only",
+    "source": {
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 35,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "target": 0.54,
+    "test_id": "M9",
+    "tokens": [
+      "sample:PSI-25:177",
+      "sample:PSI-25:178",
+      "sample:PSI-25:179",
+      "sample:PSI-25:181",
+      "sample:PSI-25:226",
+      "session:bass2_master_csv_v1:7/11/2014"
+    ],
+    "uid": "PSI-25:M9"
+  }
+]

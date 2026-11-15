@@ -1,0 +1,85 @@
+{
+  "contract_sha256": "dbcec05c1d295c97414d691101915651803fa27ccb9439176e740cbebf64bf30",
+  "frozen": {
+    "PSI-25:M1": {
+      "observation_sha256": "50c68fd2af27c7eddc90008c055d1c7ef228fb7a92e64933061b83d7747205d1",
+      "role": "calibration"
+    },
+    "PSI-25:M10": {
+      "observation_sha256": "10f4c10e8a8e29c641ec3e34e93969da8238f9b7cf875d02c475e230966724e1",
+      "role": "benchmark"
+    },
+    "PSI-25:M13": {
+      "observation_sha256": "c10d282a4c9ccb1ae1d1b561590673b84860fe952dff850c81c074f4035143a7",
+      "role": "benchmark"
+    },
+    "PSI-25:M14": {
+      "observation_sha256": "2201cc76fce7ebc08f2a57a3172c10c480c5ed1feb6df8566accfe02db9c2cba",
+      "role": "calibration"
+    },
+    "PSI-25:M16": {
+      "observation_sha256": "b5c56ece173ab117bfabf530ebc8e3f9ccf98678e597bdc71e868759e086b994",
+      "role": "benchmark"
+    },
+    "PSI-25:M19": {
+      "observation_sha256": "bb09022c6fb6fbaf008fbf25ec195abe0ddef43bf8cb519970f13110770f905b",
+      "role": "benchmark"
+    },
+    "PSI-25:M2": {
+      "observation_sha256": "68cf105e7a4c01ceb0a938665aacaa1edddd440fbea7e913accc51df153631e4",
+      "role": "calibration"
+    },
+    "PSI-25:M4": {
+      "observation_sha256": "2d5672e5e6e33cee5cf9172bf5278d3e896658ed53cff67d4856f98e199d13b0",
+      "role": "benchmark"
+    },
+    "PSI-25:M5": {
+      "observation_sha256": "a99ca21641721c0ee3c5cd0f14fd4405d4933dac34a6262e10065e87df95b84d",
+      "role": "calibration"
+    },
+    "PSI-25:M6": {
+      "observation_sha256": "7356421f7201ee35f78af63064818ce28732063f9ccd9f1098e0f560d9d6a51c",
+      "role": "benchmark"
+    }
+  },
+  "seed": 42,
+  "tokens": {
+    "sample:PSI-25:149": "development",
+    "sample:PSI-25:153": "development",
+    "sample:PSI-25:154": "development",
+    "sample:PSI-25:157": "development",
+    "sample:PSI-25:158": "development",
+    "sample:PSI-25:162": "development",
+    "sample:PSI-25:163": "benchmark",
+    "sample:PSI-25:164": "benchmark",
+    "sample:PSI-25:165": "benchmark",
+    "sample:PSI-25:166": "development",
+    "sample:PSI-25:167": "calibration",
+    "sample:PSI-25:168": "development",
+    "sample:PSI-25:169": "benchmark",
+    "sample:PSI-25:170": "benchmark",
+    "sample:PSI-25:171": "benchmark",
+    "sample:PSI-25:172": "development",
+    "sample:PSI-25:173": "development",
+    "sample:PSI-25:177": "development",
+    "sample:PSI-25:178": "development",
+    "sample:PSI-25:179": "development",
+    "sample:PSI-25:180": "benchmark",
+    "sample:PSI-25:181": "development",
+    "sample:PSI-25:183": "development",
+    "sample:PSI-25:213": "development",
+    "sample:PSI-25:222": "calibration",
+    "sample:PSI-25:223": "calibration",
+    "sample:PSI-25:224": "calibration",
+    "sample:PSI-25:225": "development",
+    "sample:PSI-25:226": "development",
+    "sample:PSI-25:229": "development",
+    "session:bass2_master_csv_v1:2/20/2014": "calibration",
+    "session:bass2_master_csv_v1:7/11/2014": "development",
+    "session:bass2_master_csv_v1:7/15/2014": "development",
+    "session:bass2_master_csv_v1:7/23/2014": "benchmark",
+    "session:bass2_master_csv_v1:7/31/2014": "benchmark",
+    "session:bass2_master_csv_v1:7/7/2014": "development",
+    "session:bass2_master_csv_v1:8/1/2014": "development"
+  }
+}

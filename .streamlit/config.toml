@@ -1,0 +1,14 @@
+[theme]
+base = "light"
+primaryColor = "#3457A4"
+backgroundColor = "#EDECE6"
+secondaryBackgroundColor = "#F7F6F0"
+textColor = "#242424"
+borderColor = "#D4D2C9"
+linkColor = "#284783"
+font = "Geist:https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap, sans-serif"
+headingFont = "Geist:https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap, sans-serif"
+codeFont = "JetBrains Mono:https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap, monospace"
+baseRadius = "0rem"
+buttonRadius = "0rem"
+showWidgetBorder = true

@@ -1,0 +1,162 @@
+{
+  "benchmark_domain_coverage": 0.0,
+  "categories": {
+    "burn_sides": [
+      "one",
+      "unspecified"
+    ]
+  },
+  "conditions": {
+    "gravity_g": 0.0,
+    "pressure_psi": 14.7
+  },
+  "materials": [
+    "PMMA"
+  ],
+  "min_local_groups": 3,
+  "neighbor_radius": 2.6718700427113964,
+  "numeric_feature_order": [
+    "o2_initial_pct",
+    "flow_velocity_initial_cm_s",
+    "thickness_mm",
+    "width_cm",
+    "co2_initial_pct",
+    "is_reused_sample"
+  ],
+  "numeric_ranges": {
+    "co2_initial_pct": {
+      "max": 1.42,
+      "min": 0.26
+    },
+    "flow_velocity_initial_cm_s": {
+      "max": 10.0,
+      "min": 10.0
+    },
+    "is_reused_sample": {
+      "max": 1.0,
+      "min": 1.0
+    },
+    "o2_initial_pct": {
+      "max": 21.0,
+      "min": 17.9
+    },
+    "thickness_mm": {
+      "max": 5.0,
+      "min": 1.0
+    },
+    "width_cm": {
+      "max": 2.0,
+      "min": 1.0
+    }
+  },
+  "physical_series": {
+    "flow_direction": "Opposed",
+    "geometry": "Thick Slab",
+    "gravity_level": "0g",
+    "material_name": "PMMA"
+  },
+  "radius_method": "training_90th_percentile_nearest_other_group_distance",
+  "radius_validated": false,
+  "scale": [
+    1.1185307823708346,
+    1.0,
+    1.4142135623730951,
+    0.4969039949999533,
+    0.3420237519728421,
+    1.0
+  ],
+  "training_groups": [
+    "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+    "a32aa44fb11b5a227cc76bdcaf6de1c7115a681e5a45bf8f52adc388dc806c1c",
+    "95bf4cac57a8abfcd3430c1ca443ba050d94fe5e3798c7cca980728fe1fdd6cd",
+    "95bf4cac57a8abfcd3430c1ca443ba050d94fe5e3798c7cca980728fe1fdd6cd",
+    "6b25a8052e688de4d7633c528bc561d1c4554c698894588ca5241a20523ed4de",
+    "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+    "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+    "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+    "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987"
+  ],
+  "training_points": [
+    {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.58,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 20.0,
+      "thickness_mm": 5.0,
+      "width_cm": 1.0
+    },
+    {
+      "burn_sides": "one",
+      "co2_initial_pct": 0.37,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 21.0,
+      "thickness_mm": 4.0,
+      "width_cm": 2.0
+    },
+    {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.35,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 18.8,
+      "thickness_mm": 2.0,
+      "width_cm": 2.0
+    },
+    {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.32,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 17.9,
+      "thickness_mm": 3.0,
+      "width_cm": 2.0
+    },
+    {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.3,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 18.0,
+      "thickness_mm": 5.0,
+      "width_cm": 2.0
+    },
+    {
+      "burn_sides": "one",
+      "co2_initial_pct": 0.33,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 20.8,
+      "thickness_mm": 5.0,
+      "width_cm": 2.0
+    },
+    {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 1.42,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 18.9,
+      "thickness_mm": 1.0,
+      "width_cm": 1.0
+    },
+    {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.44,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 19.1,
+      "thickness_mm": 2.0,
+      "width_cm": 1.0
+    },
+    {
+      "burn_sides": "unspecified",
+      "co2_initial_pct": 0.26,
+      "flow_velocity_initial_cm_s": 10.0,
+      "is_reused_sample": 1.0,
+      "o2_initial_pct": 18.0,
+      "thickness_mm": 3.0,
+      "width_cm": 1.0
+    }
+  ]
+}

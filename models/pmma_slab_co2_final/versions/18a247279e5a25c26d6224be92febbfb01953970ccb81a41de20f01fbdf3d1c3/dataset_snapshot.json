@@ -1,0 +1,4544 @@
+{
+  "dataset_sha256": "3185fa3e20ca7aa42cbaf7e4aa07bf143c34e1ef51c2efc3e77a5a3c217056c9",
+  "exclusions": [
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B1-1G"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-69:FLEX-01"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-102:SAME-TF04"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-98:SAFF-1A"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-159:CFIG-34O2"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B1"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B2"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B3"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B4"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B5"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B6"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B7"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B8"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B9"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B10"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B11"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B12"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B13"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B14"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B15"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B16"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B17"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B18"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B19"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B20"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B21"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:B22"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:F1"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:F2"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:F3"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:F4"
+    },
+    {
+      "reason": "initial_airflow_not_exact",
+      "uid": "PSI-25:M12"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O1"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O2"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O3a"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O3b"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O4"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O5a"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O5b"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O6"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O7"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O8a"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O8b"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O9"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O10"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O11"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O12"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O13a"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O13b"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O14"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O15a"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O15b"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O16"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O17"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O18"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O19"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O20"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O21"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:O22"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P1"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P2"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P3a"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P3b"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P4"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P5"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P6"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P8"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P9"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P10"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P12"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P13a"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P13b"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P14"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P15"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P16"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P17"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P18"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P19"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P20"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P21a"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P21b"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P22a"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P22b"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P23"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P24"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:P25"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T1"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T2"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T3"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T4"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T5"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T6"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T7"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T9"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T10"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T11"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T12"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T13"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T14"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T15"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T16"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T17"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T18"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T19"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T20"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T21"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T22"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T23"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T24"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T25"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T26"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T27"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T28a"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T28b"
+    },
+    {
+      "reason": "incompatible_physical_series",
+      "uid": "PSI-25:T29"
+    }
+  ],
+  "protocols": [
+    {
+      "compatible_phenomena": [
+        "solid_combustion_chamber_co2"
+      ],
+      "file_name": "PSI-25_Experimental table_BASS-II.csv",
+      "id": "bass2_master_csv_v1",
+      "notes": "Raw CSV identity and unit mapping checked. Scientific equivalence across campaigns is not approved; unknown sources remain excluded.",
+      "psi_id": "PSI-25",
+      "raw_columns": {
+        "airflow": "Air display",
+        "co2_final_pct": "Final CO2 % by vol",
+        "co2_initial_pct": "Initial CO2 % by vol",
+        "final_oxygen": "Calibrated final O2 % by vol",
+        "material": "Fuel Sample Material",
+        "oxygen": "Calibrated  initial O2 % by vol",
+        "sample_id": "Sample #",
+        "session": "Date",
+        "test_id": "Test #"
+      },
+      "scientific_status": "research_only",
+      "source_target_units": {
+        "co2_final_pct": "%"
+      }
+    }
+  ],
+  "samples": [
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "one",
+        "co2_initial_pct": 0.45,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 0.0,
+        "o2_initial_pct": 22.2,
+        "thickness_mm": 1.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "e85951df1c2c6af6eb68dd38062f58eaa9d1b77cdd682e42578ffdd65847c9e5",
+      "material": "PMMA",
+      "observation_sha256": "50c68fd2af27c7eddc90008c055d1c7ef228fb7a92e64933061b83d7747205d1",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 27,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 0.61,
+      "test_id": "M1",
+      "tokens": [
+        "sample:PSI-25:167",
+        "sample:PSI-25:222",
+        "sample:PSI-25:223",
+        "sample:PSI-25:224",
+        "session:bass2_master_csv_v1:2/20/2014"
+      ],
+      "uid": "PSI-25:M1"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "unspecified",
+        "co2_initial_pct": 0.36,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 20.1,
+        "thickness_mm": 4.0,
+        "width_cm": 1.0
+      },
+      "geometry": "Thick Slab",
+      "group": "847dff0a0b9f3793362ba11081f1463becf1696884b8248538ec25788cae6484",
+      "material": "PMMA",
+      "observation_sha256": "10f4c10e8a8e29c641ec3e34e93969da8238f9b7cf875d02c475e230966724e1",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 36,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 1.59,
+      "test_id": "M10",
+      "tokens": [
+        "sample:PSI-25:164",
+        "sample:PSI-25:170",
+        "sample:PSI-25:180",
+        "session:bass2_master_csv_v1:7/23/2014"
+      ],
+      "uid": "PSI-25:M10"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "unspecified",
+        "co2_initial_pct": 0.58,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 20.0,
+        "thickness_mm": 5.0,
+        "width_cm": 1.0
+      },
+      "geometry": "Thick Slab",
+      "group": "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+      "material": "PMMA",
+      "observation_sha256": "9ec90b48e5b52aec5b591fc9344b5954e42cc766335eabca7013e9cb3ba7e1a4",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 37,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 1.68,
+      "test_id": "M11",
+      "tokens": [
+        "sample:PSI-25:177",
+        "sample:PSI-25:178",
+        "sample:PSI-25:179",
+        "sample:PSI-25:181",
+        "sample:PSI-25:226",
+        "session:bass2_master_csv_v1:7/11/2014"
+      ],
+      "uid": "PSI-25:M11"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "unspecified",
+        "co2_initial_pct": 0.36,
+        "flow_velocity_initial_cm_s": 6.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 20.8,
+        "thickness_mm": 4.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "6c81641e17f8a982762e708f54092dc046992faaa15cd60ea3bd2ec52e41c4f1",
+      "material": "PMMA",
+      "observation_sha256": "c10d282a4c9ccb1ae1d1b561590673b84860fe952dff850c81c074f4035143a7",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 39,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 1.75,
+      "test_id": "M13",
+      "tokens": [
+        "sample:PSI-25:163",
+        "sample:PSI-25:165",
+        "sample:PSI-25:169",
+        "sample:PSI-25:171",
+        "session:bass2_master_csv_v1:7/31/2014"
+      ],
+      "uid": "PSI-25:M13"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "one",
+        "co2_initial_pct": 0.45,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 0.0,
+        "o2_initial_pct": 22.2,
+        "thickness_mm": 2.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "e85951df1c2c6af6eb68dd38062f58eaa9d1b77cdd682e42578ffdd65847c9e5",
+      "material": "PMMA",
+      "observation_sha256": "2201cc76fce7ebc08f2a57a3172c10c480c5ed1feb6df8566accfe02db9c2cba",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 40,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 0.98,
+      "test_id": "M14",
+      "tokens": [
+        "sample:PSI-25:167",
+        "sample:PSI-25:222",
+        "sample:PSI-25:223",
+        "sample:PSI-25:224",
+        "session:bass2_master_csv_v1:2/20/2014"
+      ],
+      "uid": "PSI-25:M14"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "one",
+        "co2_initial_pct": 0.37,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 21.0,
+        "thickness_mm": 4.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "a32aa44fb11b5a227cc76bdcaf6de1c7115a681e5a45bf8f52adc388dc806c1c",
+      "material": "PMMA",
+      "observation_sha256": "fe32353efb329ecae1364172df283b062bdcadbf65aa87c120bc19d54050b926",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 41,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 1.1,
+      "test_id": "M15",
+      "tokens": [
+        "sample:PSI-25:149",
+        "sample:PSI-25:153",
+        "sample:PSI-25:154",
+        "sample:PSI-25:157",
+        "sample:PSI-25:158",
+        "sample:PSI-25:162",
+        "sample:PSI-25:173",
+        "sample:PSI-25:225",
+        "session:bass2_master_csv_v1:7/7/2014"
+      ],
+      "uid": "PSI-25:M15"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "unspecified",
+        "co2_initial_pct": 0.95,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 19.2,
+        "thickness_mm": 1.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "847dff0a0b9f3793362ba11081f1463becf1696884b8248538ec25788cae6484",
+      "material": "PMMA",
+      "observation_sha256": "b5c56ece173ab117bfabf530ebc8e3f9ccf98678e597bdc71e868759e086b994",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 42,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 1.75,
+      "test_id": "M16",
+      "tokens": [
+        "sample:PSI-25:164",
+        "sample:PSI-25:170",
+        "sample:PSI-25:180",
+        "session:bass2_master_csv_v1:7/23/2014"
+      ],
+      "uid": "PSI-25:M16"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "unspecified",
+        "co2_initial_pct": 0.35,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 18.8,
+        "thickness_mm": 2.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "95bf4cac57a8abfcd3430c1ca443ba050d94fe5e3798c7cca980728fe1fdd6cd",
+      "material": "PMMA",
+      "observation_sha256": "bbeafdbadaa15f9925ceed2830c2ddbf5509d742f7f79cc17aaf7a724f33217d",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 43,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 1.7,
+      "test_id": "M17",
+      "tokens": [
+        "sample:PSI-25:166",
+        "sample:PSI-25:168",
+        "session:bass2_master_csv_v1:7/15/2014"
+      ],
+      "uid": "PSI-25:M17"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "unspecified",
+        "co2_initial_pct": 0.32,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 17.9,
+        "thickness_mm": 3.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "95bf4cac57a8abfcd3430c1ca443ba050d94fe5e3798c7cca980728fe1fdd6cd",
+      "material": "PMMA",
+      "observation_sha256": "5cbfbb539ebb9421ce9d21faba38e4cde7aca3f75a93e26fb2e20a954e4cfcfc",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 44,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 1.31,
+      "test_id": "M18",
+      "tokens": [
+        "sample:PSI-25:166",
+        "sample:PSI-25:168",
+        "session:bass2_master_csv_v1:7/15/2014"
+      ],
+      "uid": "PSI-25:M18"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "two",
+        "co2_initial_pct": 0.35,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 19.0,
+        "thickness_mm": 4.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "847dff0a0b9f3793362ba11081f1463becf1696884b8248538ec25788cae6484",
+      "material": "PMMA",
+      "observation_sha256": "bb09022c6fb6fbaf008fbf25ec195abe0ddef43bf8cb519970f13110770f905b",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 45,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 1.6,
+      "test_id": "M19",
+      "tokens": [
+        "sample:PSI-25:164",
+        "sample:PSI-25:170",
+        "sample:PSI-25:180",
+        "session:bass2_master_csv_v1:7/23/2014"
+      ],
+      "uid": "PSI-25:M19"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "one",
+        "co2_initial_pct": 0.46,
+        "flow_velocity_initial_cm_s": 20.0,
+        "is_reused_sample": 0.0,
+        "o2_initial_pct": 22.2,
+        "thickness_mm": 3.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "e85951df1c2c6af6eb68dd38062f58eaa9d1b77cdd682e42578ffdd65847c9e5",
+      "material": "PMMA",
+      "observation_sha256": "68cf105e7a4c01ceb0a938665aacaa1edddd440fbea7e913accc51df153631e4",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 28,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 1.33,
+      "test_id": "M2",
+      "tokens": [
+        "sample:PSI-25:167",
+        "sample:PSI-25:222",
+        "sample:PSI-25:223",
+        "sample:PSI-25:224",
+        "session:bass2_master_csv_v1:2/20/2014"
+      ],
+      "uid": "PSI-25:M2"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "unspecified",
+        "co2_initial_pct": 0.3,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 18.0,
+        "thickness_mm": 5.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "6b25a8052e688de4d7633c528bc561d1c4554c698894588ca5241a20523ed4de",
+      "material": "PMMA",
+      "observation_sha256": "42361ebf6c8da9db81059888f832f2f490e20f242474d7185d87512cb7b4a9e5",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 46,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 0.75,
+      "test_id": "M20",
+      "tokens": [
+        "sample:PSI-25:172",
+        "sample:PSI-25:183",
+        "sample:PSI-25:213",
+        "sample:PSI-25:229",
+        "session:bass2_master_csv_v1:8/1/2014"
+      ],
+      "uid": "PSI-25:M20"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "one",
+        "co2_initial_pct": 0.33,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 20.8,
+        "thickness_mm": 5.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+      "material": "PMMA",
+      "observation_sha256": "565ff100e978550b23d791e7b1e72e05f6ae8447b828d65b72a8619cf804fd1e",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 29,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 1.18,
+      "test_id": "M3",
+      "tokens": [
+        "sample:PSI-25:177",
+        "sample:PSI-25:178",
+        "sample:PSI-25:179",
+        "sample:PSI-25:181",
+        "sample:PSI-25:226",
+        "session:bass2_master_csv_v1:7/11/2014"
+      ],
+      "uid": "PSI-25:M3"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "unspecified",
+        "co2_initial_pct": 0.42,
+        "flow_velocity_initial_cm_s": 5.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 21.8,
+        "thickness_mm": 5.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "6c81641e17f8a982762e708f54092dc046992faaa15cd60ea3bd2ec52e41c4f1",
+      "material": "PMMA",
+      "observation_sha256": "2d5672e5e6e33cee5cf9172bf5278d3e896658ed53cff67d4856f98e199d13b0",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 30,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 2.15,
+      "test_id": "M4",
+      "tokens": [
+        "sample:PSI-25:163",
+        "sample:PSI-25:165",
+        "sample:PSI-25:169",
+        "sample:PSI-25:171",
+        "session:bass2_master_csv_v1:7/31/2014"
+      ],
+      "uid": "PSI-25:M4"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "two",
+        "co2_initial_pct": 0.44,
+        "flow_velocity_initial_cm_s": 20.0,
+        "is_reused_sample": 0.0,
+        "o2_initial_pct": 22.2,
+        "thickness_mm": 3.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "e85951df1c2c6af6eb68dd38062f58eaa9d1b77cdd682e42578ffdd65847c9e5",
+      "material": "PMMA",
+      "observation_sha256": "a99ca21641721c0ee3c5cd0f14fd4405d4933dac34a6262e10065e87df95b84d",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 31,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 3.22,
+      "test_id": "M5",
+      "tokens": [
+        "sample:PSI-25:167",
+        "sample:PSI-25:222",
+        "sample:PSI-25:223",
+        "sample:PSI-25:224",
+        "session:bass2_master_csv_v1:2/20/2014"
+      ],
+      "uid": "PSI-25:M5"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "unspecified",
+        "co2_initial_pct": 0.38,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 21.8,
+        "thickness_mm": 1.0,
+        "width_cm": 2.0
+      },
+      "geometry": "Thick Slab",
+      "group": "6c81641e17f8a982762e708f54092dc046992faaa15cd60ea3bd2ec52e41c4f1",
+      "material": "PMMA",
+      "observation_sha256": "7356421f7201ee35f78af63064818ce28732063f9ccd9f1098e0f560d9d6a51c",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 32,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 1.27,
+      "test_id": "M6",
+      "tokens": [
+        "sample:PSI-25:163",
+        "sample:PSI-25:165",
+        "sample:PSI-25:169",
+        "sample:PSI-25:171",
+        "session:bass2_master_csv_v1:7/31/2014"
+      ],
+      "uid": "PSI-25:M6"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "unspecified",
+        "co2_initial_pct": 1.42,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 18.9,
+        "thickness_mm": 1.0,
+        "width_cm": 1.0
+      },
+      "geometry": "Thick Slab",
+      "group": "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+      "material": "PMMA",
+      "observation_sha256": "faad0a9e5f0916e4143636a1240eac85ece220a7dac6792149487fdb3589509e",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 33,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 1.84,
+      "test_id": "M7",
+      "tokens": [
+        "sample:PSI-25:177",
+        "sample:PSI-25:178",
+        "sample:PSI-25:179",
+        "sample:PSI-25:181",
+        "sample:PSI-25:226",
+        "session:bass2_master_csv_v1:7/11/2014"
+      ],
+      "uid": "PSI-25:M7"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "unspecified",
+        "co2_initial_pct": 0.44,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 19.1,
+        "thickness_mm": 2.0,
+        "width_cm": 1.0
+      },
+      "geometry": "Thick Slab",
+      "group": "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+      "material": "PMMA",
+      "observation_sha256": "9cdf8f91c8358506e5343a1715017744a607d050f8b9a29e12632c945dd86f29",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 34,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 1.28,
+      "test_id": "M8",
+      "tokens": [
+        "sample:PSI-25:177",
+        "sample:PSI-25:178",
+        "sample:PSI-25:179",
+        "sample:PSI-25:181",
+        "sample:PSI-25:226",
+        "session:bass2_master_csv_v1:7/11/2014"
+      ],
+      "uid": "PSI-25:M8"
+    },
+    {
+      "doi": "10.60555/4qc4-de67",
+      "features": {
+        "burn_sides": "unspecified",
+        "co2_initial_pct": 0.26,
+        "flow_velocity_initial_cm_s": 10.0,
+        "is_reused_sample": 1.0,
+        "o2_initial_pct": 18.0,
+        "thickness_mm": 3.0,
+        "width_cm": 1.0
+      },
+      "geometry": "Thick Slab",
+      "group": "3f2d8e7ea167eb07d44a8503491fe769075bee3d910c09924861eead84c70987",
+      "material": "PMMA",
+      "observation_sha256": "46a35e5788b9f018c7da5bca6c6557b18452a9ac592a11b1ac0a9213ec0af36d",
+      "protocol_id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+        "source_record": 35,
+        "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+      },
+      "target": 0.54,
+      "test_id": "M9",
+      "tokens": [
+        "sample:PSI-25:177",
+        "sample:PSI-25:178",
+        "sample:PSI-25:179",
+        "sample:PSI-25:181",
+        "sample:PSI-25:226",
+        "session:bass2_master_csv_v1:7/11/2014"
+      ],
+      "uid": "PSI-25:M9"
+    }
+  ],
+  "source_hashes": {
+    "PSI-25/PSI-25_Experimental table_BASS-II.csv": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+  },
+  "source_observations": [
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "22.2",
+        "Date": "2/19/2014",
+        "Fan display": "62",
+        "Final CO (ppm)": "6",
+        "Final CO2 % by vol": "0.44",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "100 micron PMMA film   2 cm wide",
+        "GMT": "50",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.44",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "147",
+        "Test #": "B1",
+        "Total Frames Shot": "57"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 1,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B1"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  4  3  2  1",
+        "Calibrated  initial O2 % by vol": "21",
+        "Calibrated final O2 % by vol": "20.8",
+        "Date": "7/7/2014",
+        "Fan display": "1.7 (52)   1.25   0.9   0.6   0.4   0.35",
+        "Final CO (ppm)": "23",
+        "Final CO2 % by vol": "0.44",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1 cm   0.2 mm PMMA film",
+        "GMT": "188",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.33",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "10",
+        "Sample #": "173m",
+        "Test #": "B10",
+        "Total Frames Shot": "123"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 10,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B10"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   3   1   <1",
+        "Calibrated  initial O2 % by vol": "21",
+        "Calibrated final O2 % by vol": "20.7",
+        "Date": "7/7/2014",
+        "Fan display": "2.5 (59)   1.3   0.7   0.5   0.35",
+        "Final CO (ppm)": "46",
+        "Final CO2 % by vol": "0.47",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm   0.2 mm PMMA film",
+        "GMT": "188",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.33",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "10",
+        "Sample #": "158m",
+        "Test #": "B11",
+        "Total Frames Shot": "131"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 11,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B11"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "2",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "22.1",
+        "Date": "2/19/2014",
+        "Fan display": "46.5",
+        "Final CO (ppm)": "33",
+        "Final CO2 % by vol": "0.56",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "300 micron film   2 cm wide",
+        "GMT": "50",
+        "Initial CO (ppm)": "17",
+        "Initial CO2 % by vol": "0.51",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "160",
+        "Test #": "B12",
+        "Total Frames Shot": "160"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 12,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B12"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   5  4  3  2  1",
+        "Calibrated  initial O2 % by vol": "21",
+        "Calibrated final O2 % by vol": "20.5",
+        "Date": "7/7/2014",
+        "Fan display": "3.5 (68)    1.7   1.25   0.9   0.6   0.4   0.35",
+        "Final CO (ppm)": "61",
+        "Final CO2 % by vol": "0.65",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm   0.4 mm thick film",
+        "GMT": "188",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.33",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "10",
+        "Sample #": "162m",
+        "Test #": "B13",
+        "Total Frames Shot": "311"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 13,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B13"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  3  2   ext",
+        "Calibrated  initial O2 % by vol": "15",
+        "Calibrated final O2 % by vol": "none",
+        "Date": "7/2/2014",
+        "Fan display": "pot 0.9   0.5 and down",
+        "Final CO (ppm)": "none",
+        "Final CO2 % by vol": "none",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1 cm wide 200 micron thick PMMA",
+        "GMT": "183",
+        "Initial CO (ppm)": "0.2",
+        "Initial CO2 % by vol": "0",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "174m",
+        "Test #": "B14",
+        "Total Frames Shot": "44"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 14,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B14"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   max",
+        "Calibrated  initial O2 % by vol": "21",
+        "Calibrated final O2 % by vol": "20.8",
+        "Date": "7/7/2014",
+        "Fan display": "1.4 (50) incr to 10.0 pot",
+        "Final CO (ppm)": "22",
+        "Final CO2 % by vol": "0.43",
+        "Flow restrictor": "0",
+        "Fuel Sample Material": "2 cm   0.1 mm PMMA film",
+        "GMT": "188",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.33",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "10",
+        "Sample #": "149m",
+        "Test #": "B15",
+        "Total Frames Shot": "122"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 15,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B15"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "3  0.5 pot   0.4 pot",
+        "Calibrated  initial O2 % by vol": "17.3",
+        "Calibrated final O2 % by vol": "17.2",
+        "Date": "7/2/2014",
+        "Fan display": "44 (pot 0.68)",
+        "Final CO (ppm)": "119",
+        "Final CO2 % by vol": "0.51",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm 100 micron thick PMMA",
+        "GMT": "183",
+        "Initial CO (ppm)": "103",
+        "Initial CO2 % by vol": "0.47",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "150m",
+        "Test #": "B16",
+        "Total Frames Shot": "94"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 16,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B16"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   3    pot 0.4",
+        "Calibrated  initial O2 % by vol": "17.5",
+        "Calibrated final O2 % by vol": "17.4",
+        "Date": "7/2/2014",
+        "Fan display": "pot 1.2 (48)    0.9   0.4 ",
+        "Final CO (ppm)": "47",
+        "Final CO2 % by vol": "0.34",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1 cm wide 200 micron thick PMMA",
+        "GMT": "183",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.2",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "175m",
+        "Test #": "B17",
+        "Total Frames Shot": "190"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 17,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B17"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   blowoff",
+        "Calibrated  initial O2 % by vol": "17.4",
+        "Calibrated final O2 % by vol": "17.4",
+        "Date": "7/2/2014",
+        "Fan display": "pot 1.02 (47)   incr to 7.0",
+        "Final CO (ppm)": "78",
+        "Final CO2 % by vol": "0.42",
+        "Flow restrictor": "0",
+        "Fuel Sample Material": "1 cm wide 200 micron thick PMMA",
+        "GMT": "183",
+        "Initial CO (ppm)": "47",
+        "Initial CO2 % by vol": "0.34",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "176m",
+        "Test #": "B18",
+        "Total Frames Shot": "152"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 18,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B18"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   blowoff",
+        "Calibrated  initial O2 % by vol": "17.3",
+        "Calibrated final O2 % by vol": "17.2",
+        "Date": "7/2/2014",
+        "Fan display": "47 (pot 1.05)   incr to pot 6.0",
+        "Final CO (ppm)": "131",
+        "Final CO2 % by vol": "0.57",
+        "Flow restrictor": "0",
+        "Fuel Sample Material": "2 cm 100 micron thick PMMA",
+        "GMT": "183",
+        "Initial CO (ppm)": "119",
+        "Initial CO2 % by vol": "0.51",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "151m",
+        "Test #": "B19",
+        "Total Frames Shot": "95"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 19,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B19"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "1.6",
+        "Date": "2/19/2014",
+        "Fan display": "62",
+        "Final CO (ppm)": "",
+        "Final CO2 % by vol": "",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "200 micron PMMA film   2 cm wide",
+        "GMT": "50",
+        "Initial CO (ppm)": "6",
+        "Initial CO2 % by vol": "0.44",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "155",
+        "Test #": "B2",
+        "Total Frames Shot": "none"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 2,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B2"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   3      pot 0.5",
+        "Calibrated  initial O2 % by vol": "17.4",
+        "Calibrated final O2 % by vol": "17.4",
+        "Date": "7/2/2014",
+        "Fan display": "48   pot 0.9   0.5",
+        "Final CO (ppm)": "103",
+        "Final CO2 % by vol": "0.47",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm 100 micron thick PMMA",
+        "GMT": "183",
+        "Initial CO (ppm)": "78",
+        "Initial CO2 % by vol": "0.42",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "152m",
+        "Test #": "B20",
+        "Total Frames Shot": "111"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 20,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B20"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5 down to ext",
+        "Calibrated  initial O2 % by vol": "20.8",
+        "Calibrated final O2 % by vol": "20.6",
+        "Date": "8/4/2014",
+        "Fan display": "53   and down",
+        "Final CO (ppm)": "18",
+        "Final CO2 % by vol": "0.44",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "1 cm wide 200 micron thick PMMA",
+        "GMT": "216",
+        "Initial CO (ppm)": "-1",
+        "Initial CO2 % by vol": "0.36",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "174m",
+        "Test #": "B21",
+        "Total Frames Shot": "88"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 21,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B21"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   2   0",
+        "Calibrated  initial O2 % by vol": "20.7",
+        "Calibrated final O2 % by vol": "20.5",
+        "Date": "8/4/2014",
+        "Fan display": "53   42   41   40.5",
+        "Final CO (ppm)": "10",
+        "Final CO2 % by vol": "0.47",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "1 cm wide 200 micron thick PMMA",
+        "GMT": "216",
+        "Initial CO (ppm)": "-1",
+        "Initial CO2 % by vol": "0.41",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "176m",
+        "Test #": "B22",
+        "Total Frames Shot": "77"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 22,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B22"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "2",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "21.8",
+        "Date": "2/19/2014",
+        "Fan display": "47",
+        "Final CO (ppm)": "19",
+        "Final CO2 % by vol": "0.49",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "100 micron film   2 cm wide",
+        "GMT": "50",
+        "Initial CO (ppm)": "12",
+        "Initial CO2 % by vol": "0.43",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "148",
+        "Test #": "B3",
+        "Total Frames Shot": "253"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 3,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B3"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "22.2",
+        "Date": "2/19/2014",
+        "Fan display": "61",
+        "Final CO (ppm)": "10",
+        "Final CO2 % by vol": "0.51",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "300 micron PMMA film   2 cm wide ",
+        "GMT": "50",
+        "Initial CO (ppm)": "-1",
+        "Initial CO2 % by vol": "0.44",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "159",
+        "Test #": "B4",
+        "Total Frames Shot": "137"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 4,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B4"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "21.9",
+        "Date": "2/19/2014",
+        "Fan display": "59",
+        "Final CO (ppm)": "12",
+        "Final CO2 % by vol": "0.43",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "200 micron  2 cm wide ",
+        "GMT": "50",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.43",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "156",
+        "Test #": "B5",
+        "Total Frames Shot": "206"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 5,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B5"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "3   5   approaching 10",
+        "Calibrated  initial O2 % by vol": "21",
+        "Calibrated final O2 % by vol": "20.9",
+        "Date": "7/7/2014",
+        "Fan display": "0.9   1.3   2.75",
+        "Final CO (ppm)": "0.3",
+        "Final CO2 % by vol": "0.41",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm 0.1 mm PMMA film",
+        "GMT": "188",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.33",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "10",
+        "Sample #": "153m",
+        "Test #": "B6",
+        "Total Frames Shot": "80"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 6,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B6"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "2",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "22.1",
+        "Date": "2/19/2014",
+        "Fan display": "47",
+        "Final CO (ppm)": "17",
+        "Final CO2 % by vol": "0.51",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "400 micron film   2 cm wide",
+        "GMT": "50",
+        "Initial CO (ppm)": "1",
+        "Initial CO2 % by vol": "0.45",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "161",
+        "Test #": "B7",
+        "Total Frames Shot": "84"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 7,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B7"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   max",
+        "Calibrated  initial O2 % by vol": "21",
+        "Calibrated final O2 % by vol": "20.5",
+        "Date": "7/7/2014",
+        "Fan display": "1.4    incr to 10.0",
+        "Final CO (ppm)": "131",
+        "Final CO2 % by vol": "0.58",
+        "Flow restrictor": "0",
+        "Fuel Sample Material": "2 cm   0.2 mm PMMA film",
+        "GMT": "188",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.33",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "10",
+        "Sample #": "157m",
+        "Test #": "B8",
+        "Total Frames Shot": "226"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 8,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B8"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "2   <1",
+        "Calibrated  initial O2 % by vol": "21",
+        "Calibrated final O2 % by vol": "20.9",
+        "Date": "7/7/2014",
+        "Fan display": "0.6   0.35",
+        "Final CO (ppm)": "10",
+        "Final CO2 % by vol": "0.35",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm   0.1 mm PMMA film",
+        "GMT": "188",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.33",
+        "PI": "Bhattacharjee",
+        "Radiometer gain   (1000   250   50   10)": "10",
+        "Sample #": "154m",
+        "Test #": "B9",
+        "Total Frames Shot": "45"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 9,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:B9"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "9.5",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "22.2",
+        "Date": "2/19/2014",
+        "Fan display": "82",
+        "Final CO (ppm)": "2",
+        "Final CO2 % by vol": "0.45",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "Nomex natural (nomex III)",
+        "GMT": "50",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.46",
+        "PI": "Ferkul",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "227",
+        "Test #": "F1",
+        "Total Frames Shot": "208"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 23,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:F1"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "15",
+        "Calibrated  initial O2 % by vol": "21",
+        "Calibrated final O2 % by vol": "21",
+        "Date": "7/28/2014",
+        "Fan display": "92",
+        "Final CO (ppm)": "82",
+        "Final CO2 % by vol": "0.39",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "Nomex natural (nomex III)",
+        "GMT": "209",
+        "Initial CO (ppm)": "105",
+        "Initial CO2 % by vol": "0.37",
+        "PI": "Ferkul",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "228m",
+        "Test #": "F2",
+        "Total Frames Shot": "72"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 24,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:F2"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "8",
+        "Calibrated  initial O2 % by vol": "21.7",
+        "Calibrated final O2 % by vol": "none",
+        "Date": "8/1/2014",
+        "Fan display": "61",
+        "Final CO (ppm)": "none",
+        "Final CO2 % by vol": "none",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "Nomex natural (nomex III)",
+        "GMT": "213",
+        "Initial CO (ppm)": "2",
+        "Initial CO2 % by vol": "0.36",
+        "PI": "Ferkul",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "229m",
+        "Test #": "F3",
+        "Total Frames Shot": "46"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 25,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:F3"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "3 ign",
+        "Calibrated  initial O2 % by vol": "17.4",
+        "Calibrated final O2 % by vol": "17.4",
+        "Date": "6/24/2014",
+        "Fan display": "see notes",
+        "Final CO (ppm)": "56",
+        "Final CO2 % by vol": "0.48",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "Japan Wax candle",
+        "GMT": "175",
+        "Initial CO (ppm)": "22",
+        "Initial CO2 % by vol": "0.38",
+        "PI": "Ferkul",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "39M",
+        "Test #": "F4",
+        "Total Frames Shot": "270"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 26,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:F4"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10  8",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "21.9",
+        "Date": "2/20/2014",
+        "Fan display": "58   54",
+        "Final CO (ppm)": "60",
+        "Final CO2 % by vol": "0.61",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1 mm thick PMMA   1 sided   2 cm",
+        "GMT": "51",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.45",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "222",
+        "Test #": "M1",
+        "Total Frames Shot": "304"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 27,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M1"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10  17  14  10  8",
+        "Calibrated  initial O2 % by vol": "20.1",
+        "Calibrated final O2 % by vol": "18.6",
+        "Date": "7/23/2014",
+        "Fan display": "75   105   94/91   72/69   63/61  (4.4   8.0   6.6/6.3   4.0/3.7   3/0/2.7)",
+        "Final CO (ppm)": "536",
+        "Final CO2 % by vol": "1.59",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "4 mm thick   1 cm wide PMMA slab",
+        "GMT": "204",
+        "Initial CO (ppm)": "-1",
+        "Initial CO2 % by vol": "0.36",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "250  50  250",
+        "Sample #": "180m",
+        "Test #": "M10",
+        "Total Frames Shot": "209"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 36,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M10"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   20   15  12",
+        "Calibrated  initial O2 % by vol": "20",
+        "Calibrated final O2 % by vol": "18.5",
+        "Date": "7/11/2014",
+        "Fan display": "3.9  6.5  4.6  3.3  2.9  2.8; 62.5  93  77  66  63  62",
+        "Final CO (ppm)": "577",
+        "Final CO2 % by vol": "1.68",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1 cm wide PMMA 5 mm thick",
+        "GMT": "192",
+        "Initial CO (ppm)": "46",
+        "Initial CO2 % by vol": "0.58",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "181m",
+        "Test #": "M11",
+        "Total Frames Shot": "247"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 37,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M11"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "<1",
+        "Calibrated  initial O2 % by vol": "21.7",
+        "Calibrated final O2 % by vol": "20.4",
+        "Date": "7/31/2014",
+        "Fan display": "41   42   41",
+        "Final CO (ppm)": "443",
+        "Final CO2 % by vol": "1.42",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "2 mm thick PMMA   2 cm wide",
+        "GMT": "212",
+        "Initial CO (ppm)": "15",
+        "Initial CO2 % by vol": "0.42",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "250>50",
+        "Sample #": "165m",
+        "Test #": "M12",
+        "Total Frames Shot": "271"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 38,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M12"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "6   5   4",
+        "Calibrated  initial O2 % by vol": "20.8",
+        "Calibrated final O2 % by vol": "19",
+        "Date": "7/31/2014",
+        "Fan display": "52   47   43",
+        "Final CO (ppm)": "487",
+        "Final CO2 % by vol": "1.75",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "4 mm thick PMMA   2 cm wide",
+        "GMT": "212",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.36",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "250>50",
+        "Sample #": "169m",
+        "Test #": "M13",
+        "Total Frames Shot": "258"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 39,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M13"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   ~8",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "21.6",
+        "Date": "2/20/2014",
+        "Fan display": "pot 2.4   1.87  (54)",
+        "Final CO (ppm)": "198",
+        "Final CO2 % by vol": "0.98",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2mm thick PMMA   1 sided   2 cm wide",
+        "GMT": "51",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.45",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "223",
+        "Test #": "M14",
+        "Total Frames Shot": "259"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 40,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M14"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   8  7  8  10  20  18  16  15",
+        "Calibrated  initial O2 % by vol": "21",
+        "Calibrated final O2 % by vol": "20",
+        "Date": "7/7/2014",
+        "Fan display": "ignited 10   adjusted down then up to 20   down in incrments to 15",
+        "Final CO (ppm)": "220",
+        "Final CO2 % by vol": "1.1",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm   4 mm 1 sided PMMA slab",
+        "GMT": "188",
+        "Initial CO (ppm)": "1",
+        "Initial CO2 % by vol": "0.37",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "10   250",
+        "Sample #": "225m",
+        "Test #": "M15",
+        "Total Frames Shot": "153"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 41,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M15"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10  6  3  2  1  10",
+        "Calibrated  initial O2 % by vol": "19.2",
+        "Calibrated final O2 % by vol": "18.7",
+        "Date": "7/23/2014",
+        "Fan display": "73  57  59  48  45  43  75 (4.2  2.2  2.4  1.2  0.8  0.5  4.4)",
+        "Final CO (ppm)": "421",
+        "Final CO2 % by vol": "1.75",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1 mm thick PMMA   2 cm wide",
+        "GMT": "204",
+        "Initial CO (ppm)": "118",
+        "Initial CO2 % by vol": "0.95",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "250  50  250",
+        "Sample #": "164m",
+        "Test #": "M16",
+        "Total Frames Shot": "299"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 42,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M16"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   5   3   0ext",
+        "Calibrated  initial O2 % by vol": "18.8",
+        "Calibrated final O2 % by vol": "17.1",
+        "Date": "7/15/2014",
+        "Fan display": "Fan pot 3.7   1.7   1.5   1.3   0.8   0.6   0.5   0.3ext",
+        "Final CO (ppm)": "485",
+        "Final CO2 % by vol": "1.7",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm wide PMMA 2 mm thick",
+        "GMT": "196",
+        "Initial CO (ppm)": "4",
+        "Initial CO2 % by vol": "0.35",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "250>50>250",
+        "Sample #": "166m",
+        "Test #": "M17",
+        "Total Frames Shot": "309"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 43,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M17"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   15 (brief)   10   8",
+        "Calibrated  initial O2 % by vol": "17.9",
+        "Calibrated final O2 % by vol": "16.8",
+        "Date": "7/15/2014",
+        "Fan display": "Fan pot 3.5   5 (brief)   3  5   2.2",
+        "Final CO (ppm)": "335",
+        "Final CO2 % by vol": "1.31",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm wide PMMA 3 mm thick",
+        "GMT": "196",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.32",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "50>250",
+        "Sample #": "168m",
+        "Test #": "M18",
+        "Total Frames Shot": "178"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 44,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M18"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10  17  14  10  7  5",
+        "Calibrated  initial O2 % by vol": "19",
+        "Calibrated final O2 % by vol": "17.4",
+        "Date": "7/23/2014",
+        "Fan display": "75  105  94  75  77  79  59  61  57  55  53 (4.4  8.0  6.6  4.4  4.6  4.8  2.5  2.7  2.2  2.0  1.8)",
+        "Final CO (ppm)": "357",
+        "Final CO2 % by vol": "1.6",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "4 mm thick   2 cm 2ide PMMA slab",
+        "GMT": "204",
+        "Initial CO (ppm)": "3",
+        "Initial CO2 % by vol": "0.35",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "250   50   250",
+        "Sample #": "170m",
+        "Test #": "M19",
+        "Total Frames Shot": "201"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 45,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M19"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "20  15  13   14",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "21.2",
+        "Date": "2/20/2014",
+        "Fan display": "116 (pot 9.3)    89   80   84",
+        "Final CO (ppm)": "325",
+        "Final CO2 % by vol": "1.33",
+        "Flow restrictor": "0",
+        "Fuel Sample Material": "3 mm thick PMMA 1 sided    2 cm wide",
+        "GMT": "51",
+        "Initial CO (ppm)": "12",
+        "Initial CO2 % by vol": "0.46",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "224",
+        "Test #": "M2",
+        "Total Frames Shot": "262"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 28,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M2"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10  8",
+        "Calibrated  initial O2 % by vol": "18",
+        "Calibrated final O2 % by vol": "17.4",
+        "Date": "8/1/2014",
+        "Fan display": "67   58",
+        "Final CO (ppm)": "157",
+        "Final CO2 % by vol": "0.75",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "5 mm thick PMMA   2 cm wide",
+        "GMT": "213",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.3",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "172m",
+        "Test #": "M20",
+        "Total Frames Shot": "168"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 46,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M20"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   20  18",
+        "Calibrated  initial O2 % by vol": "20.8",
+        "Calibrated final O2 % by vol": "19.7",
+        "Date": "7/11/2014",
+        "Fan display": "3.0  3.1  3.2  6.4  5.5  5.4",
+        "Final CO (ppm)": "300",
+        "Final CO2 % by vol": "1.18",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm wide   5 mm thick 1 sided PMMA",
+        "GMT": "192",
+        "Initial CO (ppm)": "11",
+        "Initial CO2 % by vol": "0.33",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "250>50>250",
+        "Sample #": "226m",
+        "Test #": "M3",
+        "Total Frames Shot": "223"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 29,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M3"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   4   3",
+        "Calibrated  initial O2 % by vol": "21.8",
+        "Calibrated final O2 % by vol": "19.8",
+        "Date": "7/31/2014",
+        "Fan display": "52   47   43",
+        "Final CO (ppm)": "561",
+        "Final CO2 % by vol": "2.15",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "5 mm thick PMMA   2 cm wide",
+        "GMT": "212",
+        "Initial CO (ppm)": "2",
+        "Initial CO2 % by vol": "0.42",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "250>50",
+        "Sample #": "171m",
+        "Test #": "M4",
+        "Total Frames Shot": "262"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 30,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M4"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "20  13  10  8  5",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "19",
+        "Date": "2/20/2014",
+        "Fan display": "",
+        "Final CO (ppm)": ">500",
+        "Final CO2 % by vol": "3.22",
+        "Flow restrictor": "0",
+        "Fuel Sample Material": "3 mm thick PMMA   2 sided   2 cm thick",
+        "GMT": "51",
+        "Initial CO (ppm)": "9",
+        "Initial CO2 % by vol": "0.44",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "167",
+        "Test #": "M5",
+        "Total Frames Shot": "300+   +102"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 31,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M5"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   5   3   0",
+        "Calibrated  initial O2 % by vol": "21.8",
+        "Calibrated final O2 % by vol": "20.7",
+        "Date": "7/31/2014",
+        "Fan display": "68   52   47   43   42   41",
+        "Final CO (ppm)": "345",
+        "Final CO2 % by vol": "1.27",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "1 mm thick PMMA   2 cm wide",
+        "GMT": "212",
+        "Initial CO (ppm)": "1",
+        "Initial CO2 % by vol": "0.38",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "163m",
+        "Test #": "M6",
+        "Total Frames Shot": "269"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 32,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M6"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   6  5  4.5  4  3",
+        "Calibrated  initial O2 % by vol": "18.9",
+        "Calibrated final O2 % by vol": "18.4",
+        "Date": "7/11/2014",
+        "Fan display": "2.6   1.3   0.8  0.7  0.6  0.5; 60   49  45  44  43  42",
+        "Final CO (ppm)": "612",
+        "Final CO2 % by vol": "1.84",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1 cm wide PMMA 1 mm thick",
+        "GMT": "192",
+        "Initial CO (ppm)": "398",
+        "Initial CO2 % by vol": "1.42",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "177m",
+        "Test #": "M7",
+        "Total Frames Shot": "217"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 33,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M7"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   5>7  5 decr",
+        "Calibrated  initial O2 % by vol": "19.1",
+        "Calibrated final O2 % by vol": "18.2",
+        "Date": "7/11/2014",
+        "Fan display": "3.3   1.6  1.0   decr",
+        "Final CO (ppm)": "467",
+        "Final CO2 % by vol": "1.28",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1 cm wide PMMA 2 mm thick",
+        "GMT": "192",
+        "Initial CO (ppm)": "52",
+        "Initial CO2 % by vol": "0.44",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "50>250",
+        "Sample #": "178m",
+        "Test #": "M8",
+        "Total Frames Shot": "292"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 34,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M8"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   14",
+        "Calibrated  initial O2 % by vol": "18",
+        "Calibrated final O2 % by vol": "17.6",
+        "Date": "7/11/2014",
+        "Fan display": "3.3   4.8;66  79",
+        "Final CO (ppm)": "191",
+        "Final CO2 % by vol": "0.54",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1 cm wide PMMA 3 mm thick",
+        "GMT": "192",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.26",
+        "PI": "Miller",
+        "Radiometer gain   (1000   250   50   10)": "50   250",
+        "Sample #": "179m",
+        "Test #": "M9",
+        "Total Frames Shot": "156"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 35,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:M9"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "20  10  5  2  1",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "21.7",
+        "Date": "2/18/2014",
+        "Fan display": "89  62  50  41",
+        "Final CO (ppm)": "51",
+        "Final CO2 % by vol": "0.85",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "49",
+        "Initial CO (ppm)": "-1",
+        "Initial CO2 % by vol": "0.44",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "207",
+        "Test #": "O1",
+        "Total Frames Shot": "62"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 47,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O1"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  2   0   max",
+        "Calibrated  initial O2 % by vol": "16.7",
+        "Calibrated final O2 % by vol": "16.1",
+        "Date": "7/22/2014",
+        "Fan display": "49  44  41   122 (1.3   0.7   0.4   0.36   0.32   10)",
+        "Final CO (ppm)": "287",
+        "Final CO2 % by vol": "2.1",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "213",
+        "Initial CO (ppm)": "94",
+        "Initial CO2 % by vol": "1.61",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "210m",
+        "Test #": "O10",
+        "Total Frames Shot": "172"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 59,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O10"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   down then blowoff",
+        "Calibrated  initial O2 % by vol": "15.4",
+        "Calibrated final O2 % by vol": "14.8",
+        "Date": "7/8/2014",
+        "Fan display": "ign 5   0.36   0.32   0.31   0.305   blowoff 6.0",
+        "Final CO (ppm)": "290",
+        "Final CO2 % by vol": "0.72",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" black rod",
+        "GMT": "189",
+        "Initial CO (ppm)": "2",
+        "Initial CO2 % by vol": "0.27",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "184m",
+        "Test #": "O11",
+        "Total Frames Shot": "271"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 60,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O11"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "no ign at any flow",
+        "Calibrated  initial O2 % by vol": "13.6",
+        "Calibrated final O2 % by vol": "13.5",
+        "Date": "7/8/2014",
+        "Fan display": "pots 1.4   3   0.9   0.7",
+        "Final CO (ppm)": "OR",
+        "Final CO2 % by vol": "1.71",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "3/8\" clear rod",
+        "GMT": "189",
+        "Initial CO (ppm)": "OR",
+        "Initial CO2 % by vol": "1.72",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "217m",
+        "Test #": "O12",
+        "Total Frames Shot": "52"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 61,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O12"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "49  44  42  41  41  40.5 (5   2   0)",
+        "Calibrated  initial O2 % by vol": "15.9",
+        "Calibrated final O2 % by vol": "14.6",
+        "Date": "7/21/2014",
+        "Fan display": "1.3   0.7   0.45   0.36   0.32   0.31",
+        "Final CO (ppm)": "950",
+        "Final CO2 % by vol": "1.85",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/2\" clear PMMA rod",
+        "GMT": "202",
+        "Initial CO (ppm)": "389",
+        "Initial CO2 % by vol": "0.91",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "221m",
+        "Test #": "O13a",
+        "Total Frames Shot": "199"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 62,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O13a"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "7   4? (49   ?)",
+        "Calibrated  initial O2 % by vol": "14.6",
+        "Calibrated final O2 % by vol": "14.4",
+        "Date": "7/21/2014",
+        "Fan display": "1.3   0.9",
+        "Final CO (ppm)": "over",
+        "Final CO2 % by vol": "2.09",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/2\" clear PMMA rod",
+        "GMT": "202",
+        "Initial CO (ppm)": "950",
+        "Initial CO2 % by vol": "1.85",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "221m",
+        "Test #": "O13b",
+        "Total Frames Shot": "6"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 63,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O13b"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5 down to ext",
+        "Calibrated  initial O2 % by vol": "16.3",
+        "Calibrated final O2 % by vol": "15.3",
+        "Date": "8/1/2014",
+        "Fan display": "52   and down",
+        "Final CO (ppm)": "352",
+        "Final CO2 % by vol": "0.86",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "1/4\" black rod",
+        "GMT": "213",
+        "Initial CO (ppm)": "4",
+        "Initial CO2 % by vol": "0.29",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "183m",
+        "Test #": "O14",
+        "Total Frames Shot": "279"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 64,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O14"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  0",
+        "Calibrated  initial O2 % by vol": "17.1",
+        "Calibrated final O2 % by vol": "16.7",
+        "Date": "7/28/2014",
+        "Fan display": "57.5   47   42   41 (2.3   1.0   0.5   0.35   0.32)",
+        "Final CO (ppm)": "176",
+        "Final CO2 % by vol": "0.62",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "3/8\" clear rod",
+        "GMT": "209",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.27",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "218m",
+        "Test #": "O15a",
+        "Total Frames Shot": "124"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 65,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O15a"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   0",
+        "Calibrated  initial O2 % by vol": "16.7",
+        "Calibrated final O2 % by vol": "15.6",
+        "Date": "7/28/2014",
+        "Fan display": "57.5   42   41   40 (2.3   0.5   0.35   0.34   0.33   0.32   0.31   0.30   0.29   0.28   0.27)",
+        "Final CO (ppm)": "751",
+        "Final CO2 % by vol": "1.63",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "3/8\" clear rod",
+        "GMT": "209",
+        "Initial CO (ppm)": "176",
+        "Initial CO2 % by vol": "0.62",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "218m",
+        "Test #": "O15b",
+        "Total Frames Shot": "316"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 66,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O15b"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5",
+        "Calibrated  initial O2 % by vol": "14.5",
+        "Calibrated final O2 % by vol": "14.5",
+        "Date": "7/29/2014",
+        "Fan display": "60 (2.6)",
+        "Final CO (ppm)": "33",
+        "Final CO2 % by vol": "0.32",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "3/8\"clear rod",
+        "GMT": "210",
+        "Initial CO (ppm)": "2",
+        "Initial CO2 % by vol": "0.27",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "219m",
+        "Test #": "O16",
+        "Total Frames Shot": "10 postburn only"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 67,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O16"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "3   0   11",
+        "Calibrated  initial O2 % by vol": "15.1",
+        "Calibrated final O2 % by vol": "14.3",
+        "Date": "7/22/2014",
+        "Fan display": "49   46.5   44   42  41  72   decr (1.3   1.0   0.7   0.5   0.4   4.0   decr )",
+        "Final CO (ppm)": "377",
+        "Final CO2 % by vol": "0.9",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "203",
+        "Initial CO (ppm)": "2",
+        "Initial CO2 % by vol": "0.31",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "211m",
+        "Test #": "O17",
+        "Total Frames Shot": "174"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 68,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O17"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  2  0  11  2  11  2  0",
+        "Calibrated  initial O2 % by vol": "15.2",
+        "Calibrated final O2 % by vol": "14.5",
+        "Date": "7/28/2014",
+        "Fan display": "57  51  47  72  51  72  51  47 (2.3   1.5   1.0   4.0   1.5   4.0   1.5   1.0)",
+        "Final CO (ppm)": "816",
+        "Final CO2 % by vol": "1.94",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "209",
+        "Initial CO (ppm)": "523",
+        "Initial CO2 % by vol": "1.45",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "212m",
+        "Test #": "O18",
+        "Total Frames Shot": "176"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 69,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O18"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5 down to ext",
+        "Calibrated  initial O2 % by vol": "15.3",
+        "Calibrated final O2 % by vol": "14.6",
+        "Date": "8/1/2014",
+        "Fan display": "52   and down",
+        "Final CO (ppm)": "686",
+        "Final CO2 % by vol": "1.51",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "213",
+        "Initial CO (ppm)": "352",
+        "Initial CO2 % by vol": "0.86",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "213m",
+        "Test #": "O19",
+        "Total Frames Shot": "266"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 70,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O19"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "0",
+        "Calibrated  initial O2 % by vol": "22.2",
+        "Calibrated final O2 % by vol": "21.9",
+        "Date": "2/18/2014",
+        "Fan display": ".54 pot   0.45 pot",
+        "Final CO (ppm)": "23",
+        "Final CO2 % by vol": "0.59",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "49",
+        "Initial CO (ppm)": "-1",
+        "Initial CO2 % by vol": "0.44",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "204",
+        "Test #": "O2",
+        "Total Frames Shot": "287"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 48,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O2"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   8    incr to max 38.5",
+        "Calibrated  initial O2 % by vol": "16.5",
+        "Calibrated final O2 % by vol": "15.9",
+        "Date": "2/26/2016",
+        "Fan display": "49 (1.3 pot)   pots 7   8  9   10",
+        "Final CO (ppm)": "57",
+        "Final CO2 % by vol": "0.57",
+        "Flow restrictor": "0",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "57",
+        "Initial CO (ppm)": "-3",
+        "Initial CO2 % by vol": "0.2",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "204m",
+        "Test #": "O20",
+        "Total Frames Shot": "video"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 71,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O20"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "incr to 28",
+        "Calibrated  initial O2 % by vol": "15.9",
+        "Calibrated final O2 % by vol": "15.4",
+        "Date": "2/26/2016",
+        "Fan display": "46 (pot 0.8)    pot 7   10",
+        "Final CO (ppm)": "187",
+        "Final CO2 % by vol": "0.95",
+        "Flow restrictor": "0",
+        "Fuel Sample Material": "3/8\" clear rod",
+        "GMT": "57",
+        "Initial CO (ppm)": "52",
+        "Initial CO2 % by vol": "0.53",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "219m",
+        "Test #": "O21",
+        "Total Frames Shot": "video"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 72,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O21"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "4 incr to 26.5",
+        "Calibrated  initial O2 % by vol": "15.4",
+        "Calibrated final O2 % by vol": "14.9",
+        "Date": "2/26/2016",
+        "Fan display": "49 (pot 1.1)   blowoff pot 5   out at fan 87",
+        "Final CO (ppm)": "322",
+        "Final CO2 % by vol": "1.33",
+        "Flow restrictor": "0",
+        "Fuel Sample Material": "1/2\" clear rod ",
+        "GMT": "57",
+        "Initial CO (ppm)": "185",
+        "Initial CO2 % by vol": "0.92",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "220m",
+        "Test #": "O22",
+        "Total Frames Shot": "video"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 73,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O22"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  3",
+        "Calibrated  initial O2 % by vol": "18",
+        "Calibrated final O2 % by vol": "18",
+        "Date": "6/13/2014",
+        "Fan display": "",
+        "Final CO (ppm)": "22",
+        "Final CO2 % by vol": "0.28",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "164",
+        "Initial CO (ppm)": "16",
+        "Initial CO2 % by vol": "0.25",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "1000",
+        "Sample #": "205M",
+        "Test #": "O3a",
+        "Total Frames Shot": "85"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 49,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O3a"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  3  2  1  low",
+        "Calibrated  initial O2 % by vol": "18",
+        "Calibrated final O2 % by vol": "17.7",
+        "Date": "6/13/2014",
+        "Fan display": "",
+        "Final CO (ppm)": "116",
+        "Final CO2 % by vol": "0.53",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "164",
+        "Initial CO (ppm)": "22",
+        "Initial CO2 % by vol": "0.28",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "1000   250",
+        "Sample #": "205M",
+        "Test #": "O3b",
+        "Total Frames Shot": "306"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 50,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O3b"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   down to ext",
+        "Calibrated  initial O2 % by vol": "14.8",
+        "Calibrated final O2 % by vol": "13.6",
+        "Date": "7/8/2014",
+        "Fan display": "5   0.7   0.5   0.4   0.36 ext",
+        "Final CO (ppm)": "OR",
+        "Final CO2 % by vol": "1.72",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "3/8\"clear rod",
+        "GMT": "189",
+        "Initial CO (ppm)": "290",
+        "Initial CO2 % by vol": "0.72",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "216m",
+        "Test #": "O4",
+        "Total Frames Shot": "249"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 51,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O4"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  10  5   2   0 (49   62   49   44   42)",
+        "Calibrated  initial O2 % by vol": "15.1",
+        "Calibrated final O2 % by vol": "14.2",
+        "Date": "7/21/2014",
+        "Fan display": "1.3   2.7   1.3   0.7   0.45. 4.0",
+        "Final CO (ppm)": "496",
+        "Final CO2 % by vol": "1.05",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/2\" clear PMMA rod",
+        "GMT": "202",
+        "Initial CO (ppm)": "-2",
+        "Initial CO2 % by vol": "0.25",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "220m",
+        "Test #": "O5a",
+        "Total Frames Shot": "164"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 52,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O5a"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "49   5 cm/s",
+        "Calibrated  initial O2 % by vol": "14.2",
+        "Calibrated final O2 % by vol": "14.1",
+        "Date": "7/21/2014",
+        "Fan display": "1.3",
+        "Final CO (ppm)": "590",
+        "Final CO2 % by vol": "1.14",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/2\" clear PMMA rod",
+        "GMT": "202",
+        "Initial CO (ppm)": "496",
+        "Initial CO2 % by vol": "1.05",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "220m",
+        "Test #": "O5b",
+        "Total Frames Shot": "2"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 53,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O5b"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "see fan",
+        "Calibrated  initial O2 % by vol": "16.7",
+        "Calibrated final O2 % by vol": "16",
+        "Date": "6/26/2014",
+        "Fan display": "5   .36  .32  .31  .305   out .275",
+        "Final CO (ppm)": "232",
+        "Final CO2 % by vol": "0.74",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "177",
+        "Initial CO (ppm)": "1",
+        "Initial CO2 % by vol": "0.32",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "206M",
+        "Test #": "O6",
+        "Total Frames Shot": "241"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 54,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O6"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "",
+        "Calibrated  initial O2 % by vol": "16",
+        "Calibrated final O2 % by vol": "15.5",
+        "Date": "6/26/2014",
+        "Fan display": "5   .36  .32  ..305   blowoff fan max 10",
+        "Final CO (ppm)": "512",
+        "Final CO2 % by vol": "1.27",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "177",
+        "Initial CO (ppm)": "232",
+        "Initial CO2 % by vol": "0.74",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "214m",
+        "Test #": "O7",
+        "Total Frames Shot": "254"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 55,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O7"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "",
+        "Calibrated  initial O2 % by vol": "15.7",
+        "Calibrated final O2 % by vol": "15.3",
+        "Date": "6/26/2014",
+        "Fan display": "5   .36  .32  .31   extinguished",
+        "Final CO (ppm)": "536",
+        "Final CO2 % by vol": "1.44",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "177",
+        "Initial CO (ppm)": "436",
+        "Initial CO2 % by vol": "1.23",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "208m",
+        "Test #": "O8a",
+        "Total Frames Shot": "133"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 56,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O8a"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "",
+        "Calibrated  initial O2 % by vol": "15.5",
+        "Calibrated final O2 % by vol": "15.2",
+        "Date": "6/26/2014",
+        "Fan display": "5  .36  .32  .31 blowoff fan pot 6.0",
+        "Final CO (ppm)": "660",
+        "Final CO2 % by vol": "1.74",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "177",
+        "Initial CO (ppm)": "536",
+        "Initial CO2 % by vol": "1.44",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "208m",
+        "Test #": "O8b",
+        "Total Frames Shot": "152"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 57,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O8b"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "",
+        "Calibrated  initial O2 % by vol": "15",
+        "Calibrated final O2 % by vol": "14.8",
+        "Date": "6/26/2014",
+        "Fan display": "5   .36  .32 blowoff pt 4.0",
+        "Final CO (ppm)": "794",
+        "Final CO2 % by vol": "1.96",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "177",
+        "Initial CO (ppm)": "660",
+        "Initial CO2 % by vol": "1.74",
+        "PI": "Olson",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "209m",
+        "Test #": "O9",
+        "Total Frames Shot": "154"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 58,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:O9"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  2   slow decr to ext",
+        "Calibrated  initial O2 % by vol": "17.7",
+        "Calibrated final O2 % by vol": "17.5",
+        "Date": "6/16/2014",
+        "Fan display": "",
+        "Final CO (ppm)": "14",
+        "Final CO2 % by vol": "0.44",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" black rod",
+        "GMT": "167",
+        "Initial CO (ppm)": "1",
+        "Initial CO2 % by vol": "0.27",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "185M",
+        "Test #": "P1",
+        "Total Frames Shot": "307"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 74,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P1"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   pots 0.4   0.36   0.32   0.31   0.30 extinguished",
+        "Calibrated  initial O2 % by vol": "17",
+        "Calibrated final O2 % by vol": "16.4",
+        "Date": "7/3/2014",
+        "Fan display": "48   41",
+        "Final CO (ppm)": "44",
+        "Final CO2 % by vol": "0.72",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" black rod",
+        "GMT": "184",
+        "Initial CO (ppm)": "2",
+        "Initial CO2 % by vol": "0.29",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "187m",
+        "Test #": "P10",
+        "Total Frames Shot": "221"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 83,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P10"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   3  2  1   0.5   lower",
+        "Calibrated  initial O2 % by vol": "17.5",
+        "Calibrated final O2 % by vol": "16.8",
+        "Date": "7/29/2014",
+        "Fan display": "60  52  48  44.5  42  41.5  41 (2.6  1.6  1.2  .75  .5  .4  .36  0.34)",
+        "Final CO (ppm)": "57",
+        "Final CO2 % by vol": "0.95",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "3/8\" black rod",
+        "GMT": "210",
+        "Initial CO (ppm)": "2",
+        "Initial CO2 % by vol": "0.29",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "199m",
+        "Test #": "P12",
+        "Total Frames Shot": "273"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 84,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P12"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5 down to ext",
+        "Calibrated  initial O2 % by vol": "20.7",
+        "Calibrated final O2 % by vol": "19.1",
+        "Date": "7/14/2014",
+        "Fan display": "Fan pot 1.1 (5cm/s)   0.4   0.36   0.32   0.3   0.28   0.26   0 ext",
+        "Final CO (ppm)": "450",
+        "Final CO2 % by vol": "1.63",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "0.5\" black rod",
+        "GMT": "195",
+        "Initial CO (ppm)": "38",
+        "Initial CO2 % by vol": "0.36",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "203m",
+        "Test #": "P13a",
+        "Total Frames Shot": "255"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 85,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P13a"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5 down to ext",
+        "Calibrated  initial O2 % by vol": "20.6",
+        "Calibrated final O2 % by vol": "20.2",
+        "Date": "7/14/2014",
+        "Fan display": "Fan pot 1.3 (5cm/s)   0.4   0.36   0.32 ext",
+        "Final CO (ppm)": "72",
+        "Final CO2 % by vol": "0.62",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "0.5\" black rod",
+        "GMT": "195",
+        "Initial CO (ppm)": "5",
+        "Initial CO2 % by vol": "0.41",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "203m",
+        "Test #": "P13b",
+        "Total Frames Shot": "94"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 86,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P13b"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   low (.85   .4   .32)",
+        "Calibrated  initial O2 % by vol": "18.4",
+        "Calibrated final O2 % by vol": "18",
+        "Date": "6/23/2014",
+        "Fan display": "46   41",
+        "Final CO (ppm)": "90",
+        "Final CO2 % by vol": "0.62",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4 blac rod",
+        "GMT": "174",
+        "Initial CO (ppm)": "3",
+        "Initial CO2 % by vol": "0.34",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "189M",
+        "Test #": "P14",
+        "Total Frames Shot": "162"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 87,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P14"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   (0.36)",
+        "Calibrated  initial O2 % by vol": "18",
+        "Calibrated final O2 % by vol": "17.5",
+        "Date": "6/23/2014",
+        "Fan display": "46   41",
+        "Final CO (ppm)": "108",
+        "Final CO2 % by vol": "1.11",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4 black rod",
+        "GMT": "174",
+        "Initial CO (ppm)": "90",
+        "Initial CO2 % by vol": "0.62",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250   50",
+        "Sample #": "190M",
+        "Test #": "P15",
+        "Total Frames Shot": "170"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 88,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P15"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  8  2  low",
+        "Calibrated  initial O2 % by vol": "18.2",
+        "Calibrated final O2 % by vol": "17.4",
+        "Date": "7/22/2014",
+        "Fan display": "49  62  44  41.5  41 (pots 1.3   2.8   0.7   0.4   0.36   0.32)",
+        "Final CO (ppm)": "56",
+        "Final CO2 % by vol": "0.92",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" black rod",
+        "GMT": "203",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.3",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250  50",
+        "Sample #": "191m",
+        "Test #": "P16",
+        "Total Frames Shot": "129"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 89,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P16"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   3   2   22   2   low",
+        "Calibrated  initial O2 % by vol": "16.8",
+        "Calibrated final O2 % by vol": "16.5",
+        "Date": "7/29/2014",
+        "Fan display": "60  52  48  233  48  41 (2.6   1.6   1.2   10   1.2   0.36   0.34)",
+        "Final CO (ppm)": "68",
+        "Final CO2 % by vol": "1.34",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\"  black rod",
+        "GMT": "210",
+        "Initial CO (ppm)": "57",
+        "Initial CO2 % by vol": "0.95",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "192m",
+        "Test #": "P17",
+        "Total Frames Shot": "186"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 90,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P17"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "2  0  2  0  etc",
+        "Calibrated  initial O2 % by vol": "20",
+        "Calibrated final O2 % by vol": "19",
+        "Date": "7/30/2014",
+        "Fan display": "55  47  etc (pot 1  2  1  2   etc)",
+        "Final CO (ppm)": "26",
+        "Final CO2 % by vol": "1.2",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" black rod",
+        "GMT": "211",
+        "Initial CO (ppm)": "1",
+        "Initial CO2 % by vol": "0.34",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "193m",
+        "Test #": "P18",
+        "Total Frames Shot": "280"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 91,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P18"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  8  2  max   0",
+        "Calibrated  initial O2 % by vol": "17.5",
+        "Calibrated final O2 % by vol": "16.7",
+        "Date": "7/22/2014",
+        "Fan display": "49  62  44  41.5  122   41 (pots 1.3   2.8   0.7   0.4   0.36   10.   0.32)",
+        "Final CO (ppm)": "94",
+        "Final CO2 % by vol": "1.61",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" black rod",
+        "GMT": "203",
+        "Initial CO (ppm)": "54",
+        "Initial CO2 % by vol": "0.9",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250   50",
+        "Sample #": "194m",
+        "Test #": "P19",
+        "Total Frames Shot": "279"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 92,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P19"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   2.5   2 (pot .9   .5   .35.  .33)",
+        "Calibrated  initial O2 % by vol": "17.4",
+        "Calibrated final O2 % by vol": "17.2",
+        "Date": "6/16/2014",
+        "Fan display": "",
+        "Final CO (ppm)": "26",
+        "Final CO2 % by vol": "0.66",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" black rod",
+        "GMT": "167",
+        "Initial CO (ppm)": "14",
+        "Initial CO2 % by vol": "0.44",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "188M",
+        "Test #": "P2",
+        "Total Frames Shot": "303"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 75,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P2"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "2  0  2  0  etc",
+        "Calibrated  initial O2 % by vol": "19",
+        "Calibrated final O2 % by vol": "18.2",
+        "Date": "7/30/2014",
+        "Fan display": "55  47  etc (pot 1  2  1  2   etc)",
+        "Final CO (ppm)": "78",
+        "Final CO2 % by vol": "1.05",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" black rod",
+        "GMT": "211",
+        "Initial CO (ppm)": "2",
+        "Initial CO2 % by vol": "0.34",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "195m",
+        "Test #": "P20",
+        "Total Frames Shot": "311"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 93,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P20"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5",
+        "Calibrated  initial O2 % by vol": "16.3",
+        "Calibrated final O2 % by vol": "16.3",
+        "Date": "6/23/2014",
+        "Fan display": "46",
+        "Final CO (ppm)": "94",
+        "Final CO2 % by vol": "1",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4 black rod",
+        "GMT": "174",
+        "Initial CO (ppm)": "86",
+        "Initial CO2 % by vol": "0.96",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "196M",
+        "Test #": "P21a",
+        "Total Frames Shot": "57"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 94,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P21a"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5",
+        "Calibrated  initial O2 % by vol": "16.3",
+        "Calibrated final O2 % by vol": "16.3",
+        "Date": "6/23/2014",
+        "Fan display": "46",
+        "Final CO (ppm)": "98",
+        "Final CO2 % by vol": "1.03",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" black rod",
+        "GMT": "174",
+        "Initial CO (ppm)": "94",
+        "Initial CO2 % by vol": "1",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "196M",
+        "Test #": "P21b",
+        "Total Frames Shot": "14"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 95,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P21b"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   down to ext",
+        "Calibrated  initial O2 % by vol": "20.8",
+        "Calibrated final O2 % by vol": "0.6",
+        "Date": "7/8/2014",
+        "Fan display": "5   0.36   0.32 ext after some time",
+        "Final CO (ppm)": "none",
+        "Final CO2 % by vol": "none",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "3/8\" black rod",
+        "GMT": "189",
+        "Initial CO (ppm)": "4",
+        "Initial CO2 % by vol": "0.32",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250>50",
+        "Sample #": "200m",
+        "Test #": "P22a",
+        "Total Frames Shot": "83"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 96,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P22a"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5 down to ext",
+        "Calibrated  initial O2 % by vol": "20",
+        "Calibrated final O2 % by vol": "39.1",
+        "Date": "7/8/2014",
+        "Fan display": "5   p.36   0.34   0.33   0.32   0.31 ext",
+        "Final CO (ppm)": "239",
+        "Final CO2 % by vol": "1.09",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "3/8\" black rod",
+        "GMT": "189",
+        "Initial CO (ppm)": "none",
+        "Initial CO2 % by vol": "none",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "200m",
+        "Test #": "P22b",
+        "Total Frames Shot": "155"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 97,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P22b"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "2  0  2  0  etc",
+        "Calibrated  initial O2 % by vol": "18.2",
+        "Calibrated final O2 % by vol": "17",
+        "Date": "7/30/2014",
+        "Fan display": "55  47  etc (pot 1  2  1  2   etc)",
+        "Final CO (ppm)": "159",
+        "Final CO2 % by vol": "2.08",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "3/8\" black rod",
+        "GMT": "211",
+        "Initial CO (ppm)": "78",
+        "Initial CO2 % by vol": "1.05",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "201m",
+        "Test #": "P23",
+        "Total Frames Shot": "242"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 98,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P23"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "2  0  2  0  etc",
+        "Calibrated  initial O2 % by vol": "19",
+        "Calibrated final O2 % by vol": "17.5",
+        "Date": "7/30/2014",
+        "Fan display": "55  47  etc (pot 1  2  1  2   etc)",
+        "Final CO (ppm)": "260",
+        "Final CO2 % by vol": "2.24",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "3/8\" black rod",
+        "GMT": "211",
+        "Initial CO (ppm)": "26",
+        "Initial CO2 % by vol": "1.2",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250>50",
+        "Sample #": "819L",
+        "Test #": "P24",
+        "Total Frames Shot": "308"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 99,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P24"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5 down to ext",
+        "Calibrated  initial O2 % by vol": "20.9",
+        "Calibrated final O2 % by vol": "20.2",
+        "Date": "7/8/2014",
+        "Fan display": "5   p.36   0.34   0.33   0.32   0.31 ext",
+        "Final CO (ppm)": "205",
+        "Final CO2 % by vol": "1",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "3/8\" clear rod",
+        "GMT": "189",
+        "Initial CO (ppm)": "43",
+        "Initial CO2 % by vol": "0.38",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "217m",
+        "Test #": "P25",
+        "Total Frames Shot": "246"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 100,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P25"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   2.5 (1.15   .5   .35   .33. .32   .315   .31   .3)",
+        "Calibrated  initial O2 % by vol": "17.7",
+        "Calibrated final O2 % by vol": "17.4",
+        "Date": "6/16/2014",
+        "Fan display": "",
+        "Final CO (ppm)": "33",
+        "Final CO2 % by vol": "0.51",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" clear rod",
+        "GMT": "167",
+        "Initial CO (ppm)": "2",
+        "Initial CO2 % by vol": "0.27",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "215M",
+        "Test #": "P3a",
+        "Total Frames Shot": "304"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 76,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P3a"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   very low (0.85   0.32   0.31   0.305   0.30   0.295)",
+        "Calibrated  initial O2 % by vol": "17.4",
+        "Calibrated final O2 % by vol": "16.8",
+        "Date": "6/16/2014",
+        "Fan display": "",
+        "Final CO (ppm)": "79",
+        "Final CO2 % by vol": "none",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4 clear rod",
+        "GMT": "167",
+        "Initial CO (ppm)": "33",
+        "Initial CO2 % by vol": "0.51",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "215M",
+        "Test #": "P3b",
+        "Total Frames Shot": "303"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 77,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P3b"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   pots 0.4   0.36   0.32   0.308   .3   off",
+        "Calibrated  initial O2 % by vol": "18.5",
+        "Calibrated final O2 % by vol": "17.1",
+        "Date": "7/3/2014",
+        "Fan display": "48   41",
+        "Final CO (ppm)": "493",
+        "Final CO2 % by vol": "1.8",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "3/8\" black rod",
+        "GMT": "184",
+        "Initial CO (ppm)": "64",
+        "Initial CO2 % by vol": "0.62",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "197m",
+        "Test #": "P4",
+        "Total Frames Shot": "297"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 78,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P4"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5 down to ext",
+        "Calibrated  initial O2 % by vol": "19.3",
+        "Calibrated final O2 % by vol": "17.6",
+        "Date": "7/14/2014",
+        "Fan display": "Fan pot 1.5 (5cm/s)   0.9   0.4   0.36   0.32   0.308   0.3   0.29   0.28   0 ext",
+        "Final CO (ppm)": "525",
+        "Final CO2 % by vol": "1.67",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "0.5\" black rod",
+        "GMT": "195",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.32",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "250>50",
+        "Sample #": "202m",
+        "Test #": "P5",
+        "Total Frames Shot": "313"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 79,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P5"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   pots 0.4   0.36   0.32   0.31   off",
+        "Calibrated  initial O2 % by vol": "18.9",
+        "Calibrated final O2 % by vol": "18.5",
+        "Date": "7/3/2014",
+        "Fan display": "48   41",
+        "Final CO (ppm)": "64",
+        "Final CO2 % by vol": "0.62",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1/4\" black rod",
+        "GMT": "184",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.3",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "186m",
+        "Test #": "P6",
+        "Total Frames Shot": "162"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 80,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P6"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   would not stay lit   10   15 ibid",
+        "Calibrated  initial O2 % by vol": "16.4",
+        "Calibrated final O2 % by vol": "16.3",
+        "Date": "7/3/2014",
+        "Fan display": "48   62   75",
+        "Final CO (ppm)": "69",
+        "Final CO2 % by vol": "0.81",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "3/8\" black rod",
+        "GMT": "184",
+        "Initial CO (ppm)": "44",
+        "Initial CO2 % by vol": "0.72",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "197m",
+        "Test #": "P8",
+        "Total Frames Shot": "66"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 81,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P8"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5 down to ext",
+        "Calibrated  initial O2 % by vol": "17.6",
+        "Calibrated final O2 % by vol": "17.1",
+        "Date": "7/14/2014",
+        "Fan display": "Fan pot 1.5 (5cm/s)   0.9   0.4   0.36   0.32   0.3   0.28 ext",
+        "Final CO (ppm)": "535",
+        "Final CO2 % by vol": "2.1",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "0.5\" black rod",
+        "GMT": "195",
+        "Initial CO (ppm)": "525",
+        "Initial CO2 % by vol": "1.67",
+        "PI": "Fernandez-Pello",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "202m",
+        "Test #": "P9",
+        "Total Frames Shot": "148"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 82,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:P9"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10",
+        "Calibrated  initial O2 % by vol": "18.5",
+        "Calibrated final O2 % by vol": "18.5",
+        "Date": "2/14/2014",
+        "Fan display": "80",
+        "Final CO (ppm)": "40",
+        "Final CO2 % by vol": "0.41",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "45",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.35",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "128",
+        "Test #": "T1",
+        "Total Frames Shot": "85"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 101,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T1"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5",
+        "Calibrated  initial O2 % by vol": "16.4",
+        "Calibrated final O2 % by vol": "16.5",
+        "Date": "6/24/2014",
+        "Fan display": "pot 1.1",
+        "Final CO (ppm)": "14",
+        "Final CO2 % by vol": "0.33",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "175",
+        "Initial CO (ppm)": "9",
+        "Initial CO2 % by vol": "0.31",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "134M",
+        "Test #": "T10",
+        "Total Frames Shot": "43"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 109,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T10"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5",
+        "Calibrated  initial O2 % by vol": "17.1",
+        "Calibrated final O2 % by vol": "17",
+        "Date": "6/27/2014",
+        "Fan display": "48",
+        "Final CO (ppm)": "45",
+        "Final CO2 % by vol": "0.39",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "178",
+        "Initial CO (ppm)": "1",
+        "Initial CO2 % by vol": "0.35",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "135m",
+        "Test #": "T11",
+        "Total Frames Shot": "109"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 110,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T11"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5",
+        "Calibrated  initial O2 % by vol": "16.8",
+        "Calibrated final O2 % by vol": "16.9",
+        "Date": "6/27/2014",
+        "Fan display": "pot 1.1",
+        "Final CO (ppm)": "117",
+        "Final CO2 % by vol": "0.7",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "178",
+        "Initial CO (ppm)": "113",
+        "Initial CO2 % by vol": "0.7",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "136m",
+        "Test #": "T12",
+        "Total Frames Shot": "39"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 111,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T12"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  1",
+        "Calibrated  initial O2 % by vol": "17.5",
+        "Calibrated final O2 % by vol": "17.6",
+        "Date": "4/10/2014",
+        "Fan display": "",
+        "Final CO (ppm)": "12",
+        "Final CO2 % by vol": "0.2",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "100",
+        "Initial CO (ppm)": "2",
+        "Initial CO2 % by vol": "0.19",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "137",
+        "Test #": "T13",
+        "Total Frames Shot": "55"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 112,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T13"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  3",
+        "Calibrated  initial O2 % by vol": "16.9",
+        "Calibrated final O2 % by vol": "16.9",
+        "Date": "6/27/2014",
+        "Fan display": "",
+        "Final CO (ppm)": "152",
+        "Final CO2 % by vol": "0.72",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "178",
+        "Initial CO (ppm)": "117",
+        "Initial CO2 % by vol": "0.7",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "140m",
+        "Test #": "T14",
+        "Total Frames Shot": "119"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 113,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T14"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "9   29",
+        "Calibrated  initial O2 % by vol": "18.7",
+        "Calibrated final O2 % by vol": "18.7",
+        "Date": "2/14/2014",
+        "Fan display": "80122",
+        "Final CO (ppm)": "102",
+        "Final CO2 % by vol": "0.51",
+        "Flow restrictor": "0",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "45",
+        "Initial CO (ppm)": "72",
+        "Initial CO2 % by vol": "0.45",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "138",
+        "Test #": "T15",
+        "Total Frames Shot": "46"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 114,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T15"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  3",
+        "Calibrated  initial O2 % by vol": "17.6",
+        "Calibrated final O2 % by vol": "17.5",
+        "Date": "4/10/2014",
+        "Fan display": "",
+        "Final CO (ppm)": "41",
+        "Final CO2 % by vol": "0.21",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "100",
+        "Initial CO (ppm)": "17",
+        "Initial CO2 % by vol": "0.21",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "139",
+        "Test #": "T16",
+        "Total Frames Shot": "100"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 115,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T16"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "6   53",
+        "Calibrated  initial O2 % by vol": "16.9",
+        "Calibrated final O2 % by vol": "16.9",
+        "Date": "6/27/2014",
+        "Fan display": "",
+        "Final CO (ppm)": "190",
+        "Final CO2 % by vol": "0.75",
+        "Flow restrictor": "0",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "178",
+        "Initial CO (ppm)": "152",
+        "Initial CO2 % by vol": "0.72",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "142m",
+        "Test #": "T17",
+        "Total Frames Shot": "83"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 116,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T17"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  2",
+        "Calibrated  initial O2 % by vol": "17.4",
+        "Calibrated final O2 % by vol": "17.4",
+        "Date": "6/24/2018",
+        "Fan display": "",
+        "Final CO (ppm)": "22",
+        "Final CO2 % by vol": "0.38",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "175",
+        "Initial CO (ppm)": "2",
+        "Initial CO2 % by vol": "0.36",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "141M",
+        "Test #": "T18",
+        "Total Frames Shot": "49"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 117,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T18"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "11",
+        "Calibrated  initial O2 % by vol": "17.2",
+        "Calibrated final O2 % by vol": "17.2",
+        "Date": "7/9/2014",
+        "Fan display": "68.5   pot 3.6",
+        "Final CO (ppm)": "20",
+        "Final CO2 % by vol": "0.31",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1 cm SIBAL",
+        "GMT": "190",
+        "Initial CO (ppm)": "1",
+        "Initial CO2 % by vol": "0.29",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "143m",
+        "Test #": "T19",
+        "Total Frames Shot": "73"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 118,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T19"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "9   5   4",
+        "Calibrated  initial O2 % by vol": "18.5",
+        "Calibrated final O2 % by vol": "18.5",
+        "Date": "2/14/2014",
+        "Fan display": "80   59   55",
+        "Final CO (ppm)": "78",
+        "Final CO2 % by vol": "0.45",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "45",
+        "Initial CO (ppm)": "40",
+        "Initial CO2 % by vol": "0.41",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "129",
+        "Test #": "T2",
+        "Total Frames Shot": "100"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 102,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T2"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "11   3",
+        "Calibrated  initial O2 % by vol": "17.2",
+        "Calibrated final O2 % by vol": "17.2",
+        "Date": "7/9/2014",
+        "Fan display": "3.6   0.9",
+        "Final CO (ppm)": "34",
+        "Final CO2 % by vol": "0.31",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1 cm SIBAL",
+        "GMT": "190",
+        "Initial CO (ppm)": "20",
+        "Initial CO2 % by vol": "0.31",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "144m",
+        "Test #": "T20",
+        "Total Frames Shot": "117"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 119,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T20"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "11   max(47)",
+        "Calibrated  initial O2 % by vol": "17.2",
+        "Calibrated final O2 % by vol": "17.2",
+        "Date": "7/9/2014",
+        "Fan display": "1.6 pot   52",
+        "Final CO (ppm)": "45",
+        "Final CO2 % by vol": "0.32",
+        "Flow restrictor": "0",
+        "Fuel Sample Material": "1 cm SIBAL",
+        "GMT": "190",
+        "Initial CO (ppm)": "34",
+        "Initial CO2 % by vol": "0.31",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "145m",
+        "Test #": "T21",
+        "Total Frames Shot": "151"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 120,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T21"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   5",
+        "Calibrated  initial O2 % by vol": "17.1",
+        "Calibrated final O2 % by vol": "17",
+        "Date": "7/9/2014",
+        "Fan display": "3.4   1.7",
+        "Final CO (ppm)": "162",
+        "Final CO2 % by vol": "0.62",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1 cm SIBAL",
+        "GMT": "190",
+        "Initial CO (ppm)": "140",
+        "Initial CO2 % by vol": "0.59",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "146m",
+        "Test #": "T22",
+        "Total Frames Shot": "38"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 121,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T22"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10",
+        "Calibrated  initial O2 % by vol": "17.2",
+        "Calibrated final O2 % by vol": "17.3",
+        "Date": "7/9/2014",
+        "Fan display": "3.3   66",
+        "Final CO (ppm)": "49",
+        "Final CO2 % by vol": "0.32",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm Sibal   moved igniter",
+        "GMT": "190",
+        "Initial CO (ppm)": "45",
+        "Initial CO2 % by vol": "0.32",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "133m",
+        "Test #": "T23",
+        "Total Frames Shot": "203"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 122,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T23"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10",
+        "Calibrated  initial O2 % by vol": "18.2",
+        "Calibrated final O2 % by vol": "18.2",
+        "Date": "7/9/2014",
+        "Fan display": "3.3 66",
+        "Final CO (ppm)": "107",
+        "Final CO2 % by vol": "0.53",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "1 cm SIBAL   top side ign",
+        "GMT": "190",
+        "Initial CO (ppm)": "85",
+        "Initial CO2 % by vol": "0.51",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "133m",
+        "Test #": "T24",
+        "Total Frames Shot": "130"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 123,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T24"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   2.5",
+        "Calibrated  initial O2 % by vol": "20.8",
+        "Calibrated final O2 % by vol": "20.7",
+        "Date": "8/4/2014",
+        "Fan display": "53   45",
+        "Final CO (ppm)": "17",
+        "Final CO2 % by vol": "0.39",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "216",
+        "Initial CO (ppm)": "-1",
+        "Initial CO2 % by vol": "0.36",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "138m",
+        "Test #": "T25",
+        "Total Frames Shot": "75"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 124,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T25"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   2.5",
+        "Calibrated  initial O2 % by vol": "20.8",
+        "Calibrated final O2 % by vol": "20.7",
+        "Date": "8/4/2014",
+        "Fan display": "53   45",
+        "Final CO (ppm)": "24",
+        "Final CO2 % by vol": "0.43",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "216",
+        "Initial CO (ppm)": "-1",
+        "Initial CO2 % by vol": "0.36",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "137m",
+        "Test #": "T26",
+        "Total Frames Shot": "87"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 125,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T26"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   2",
+        "Calibrated  initial O2 % by vol": "20.7",
+        "Calibrated final O2 % by vol": "20.6",
+        "Date": "8/4/2014",
+        "Fan display": "53   45",
+        "Final CO (ppm)": "9",
+        "Final CO2 % by vol": "0.42",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "1 cm SIBAL",
+        "GMT": "216",
+        "Initial CO (ppm)": "-1",
+        "Initial CO2 % by vol": "0.41",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "146m",
+        "Test #": "T27",
+        "Total Frames Shot": "58"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 126,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T27"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5",
+        "Calibrated  initial O2 % by vol": "20.7",
+        "Calibrated final O2 % by vol": "0.9",
+        "Date": "8/4/2014",
+        "Fan display": "53",
+        "Final CO (ppm)": "none",
+        "Final CO2 % by vol": "none",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "1 cm SIBAL",
+        "GMT": "216",
+        "Initial CO (ppm)": "-1",
+        "Initial CO2 % by vol": "0.41",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "144m",
+        "Test #": "T28a",
+        "Total Frames Shot": "19"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 127,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T28a"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5",
+        "Calibrated  initial O2 % by vol": "20.7",
+        "Calibrated final O2 % by vol": "40.4",
+        "Date": "8/4/2014",
+        "Fan display": "53",
+        "Final CO (ppm)": "2",
+        "Final CO2 % by vol": "0.42",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "1 cm SIBAL",
+        "GMT": "216",
+        "Initial CO (ppm)": "none",
+        "Initial CO2 % by vol": "none",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "144m",
+        "Test #": "T28b",
+        "Total Frames Shot": "27"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 128,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T28b"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5   2(?)",
+        "Calibrated  initial O2 % by vol": "20.7",
+        "Calibrated final O2 % by vol": "20.5",
+        "Date": "8/4/2014",
+        "Fan display": "53   43",
+        "Final CO (ppm)": "10",
+        "Final CO2 % by vol": "0.44",
+        "Flow restrictor": "1",
+        "Fuel Sample Material": "1 cm SIBAL",
+        "GMT": "216",
+        "Initial CO (ppm)": "-1",
+        "Initial CO2 % by vol": "0.41",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "145m",
+        "Test #": "T29",
+        "Total Frames Shot": "60"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 129,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T29"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10",
+        "Calibrated  initial O2 % by vol": "17.2",
+        "Calibrated final O2 % by vol": "16.8",
+        "Date": "6/27/2014",
+        "Fan display": "63",
+        "Final CO (ppm)": "113",
+        "Final CO2 % by vol": "0.7",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "4 cm spherical section",
+        "GMT": "178",
+        "Initial CO (ppm)": "45",
+        "Initial CO2 % by vol": "0.42",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "182m",
+        "Test #": "T3",
+        "Total Frames Shot": "166"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 103,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T3"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "9  1",
+        "Calibrated  initial O2 % by vol": "18.7",
+        "Calibrated final O2 % by vol": "18.7",
+        "Date": "2/14/2014",
+        "Fan display": "80   46",
+        "Final CO (ppm)": "72",
+        "Final CO2 % by vol": "0.45",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "45",
+        "Initial CO (ppm)": "59",
+        "Initial CO2 % by vol": "0.44",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "130",
+        "Test #": "T4",
+        "Total Frames Shot": "97"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 104,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T4"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   2   1",
+        "Calibrated  initial O2 % by vol": "18.8",
+        "Calibrated final O2 % by vol": "18.9",
+        "Date": "4/10/2014",
+        "Fan display": "2.72   0.50   0.42",
+        "Final CO (ppm)": "41",
+        "Final CO2 % by vol": "0.25",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "100",
+        "Initial CO (ppm)": "2",
+        "Initial CO2 % by vol": "0.2",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "131",
+        "Test #": "T5",
+        "Total Frames Shot": "100"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 105,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T5"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "5  2  1   <1",
+        "Calibrated  initial O2 % by vol": "18.8",
+        "Calibrated final O2 % by vol": "18.8",
+        "Date": "4/10/2014",
+        "Fan display": "",
+        "Final CO (ppm)": "77",
+        "Final CO2 % by vol": "0.28",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "100",
+        "Initial CO (ppm)": "39",
+        "Initial CO2 % by vol": "0.24",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "50",
+        "Sample #": "132",
+        "Test #": "T6",
+        "Total Frames Shot": "117"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 106,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T6"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10   5  3  1   decr",
+        "Calibrated  initial O2 % by vol": "17.3",
+        "Calibrated final O2 % by vol": "17.1",
+        "Date": "7/9/2014",
+        "Fan display": "3.4   67",
+        "Final CO (ppm)": "140",
+        "Final CO2 % by vol": "0.59",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "4 cm spherical section",
+        "GMT": "190",
+        "Initial CO (ppm)": "49",
+        "Initial CO2 % by vol": "0.32",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "182m",
+        "Test #": "T7",
+        "Total Frames Shot": "299"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 107,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T7"
+    },
+    {
+      "protocol_id": "bass2_master_csv_v1",
+      "raw": {
+        "Air display": "10",
+        "Calibrated  initial O2 % by vol": "16.4",
+        "Calibrated final O2 % by vol": "16.4",
+        "Date": "6/24/2018",
+        "Fan display": "pot 2.5",
+        "Final CO (ppm)": "9",
+        "Final CO2 % by vol": "0.31",
+        "Flow restrictor": "2",
+        "Fuel Sample Material": "2 cm SIBAL",
+        "GMT": "175",
+        "Initial CO (ppm)": "0",
+        "Initial CO2 % by vol": "0.3",
+        "PI": "T'ien",
+        "Radiometer gain   (1000   250   50   10)": "250",
+        "Sample #": "133M",
+        "Test #": "T9",
+        "Total Frames Shot": "48"
+      },
+      "source_doc": "PSI-25_Experimental table_BASS-II.csv",
+      "source_record": 108,
+      "source_sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+      "uid": "PSI-25:T9"
+    }
+  ],
+  "task": {
+    "categorical_features": [
+      "burn_sides"
+    ],
+    "constant_conditions": {
+      "gravity_g": 0.0,
+      "pressure_psi": 14.7
+    },
+    "filters": {
+      "flow_direction": "Opposed",
+      "geometry": "Thick Slab",
+      "gravity_level": "0g",
+      "material_name": "PMMA"
+    },
+    "interval_alpha": 0.1,
+    "limitations": [
+      "Research candidate only: measurement duration, complete airflow history and independent campaign validation are unavailable.",
+      "14.7 psi is an importer assumption, not a measured pressure feature.",
+      "Only the source-backed PMMA slab/opposed-flow series is used; no partial-gravity or high-oxygen predictions are supported.",
+      "Material reuse and burn-side descriptions require scientific review before deployment.",
+      "No production quality tolerances have been approved. Training does not imply promotion."
+    ],
+    "numeric_features": [
+      "o2_initial_pct",
+      "flow_velocity_initial_cm_s",
+      "thickness_mm",
+      "width_cm",
+      "co2_initial_pct",
+      "is_reused_sample"
+    ],
+    "phenomenon": "solid_combustion_chamber_co2",
+    "promotion": {
+      "max_interval_width": null,
+      "max_mae": null,
+      "max_rmse": null,
+      "min_local_groups": 3,
+      "min_test_coverage": 0.9
+    },
+    "scientific_review": "research_only",
+    "seed": 42,
+    "target": "co2_final_pct",
+    "unit": "%",
+    "version": 1
+  }
+}
