@@ -1,0 +1,1672 @@
+{
+  "dataset_sha256": "313c4c98e4483c35df1c829da746311283c0768643b1bb39410f399ea28bd724",
+  "exclusions": [
+    {
+      "reason": "invalid_initial_composition",
+      "uid": "PSI-69:FLEX-079"
+    },
+    {
+      "reason": "unverified_censored_or_ineligible_target",
+      "uid": "PSI-69:FLEX-080"
+    },
+    {
+      "reason": "could not convert string to float: '–'",
+      "uid": "PSI-69:FLEX-081"
+    },
+    {
+      "reason": "unverified_censored_or_ineligible_target",
+      "uid": "PSI-69:FLEX-095"
+    },
+    {
+      "reason": "unverified_censored_or_ineligible_target",
+      "uid": "PSI-69:FLEX-150"
+    },
+    {
+      "reason": "unverified_censored_or_ineligible_target",
+      "uid": "PSI-69:FLEX-181"
+    },
+    {
+      "reason": "unverified_censored_or_ineligible_target",
+      "uid": "PSI-69:FLEX-259"
+    }
+  ],
+  "protocols": [
+    {
+      "id": "flex_initial_droplet_v1",
+      "scientific_status": "research_only"
+    }
+  ],
+  "samples": [
+    {
+      "features": {
+        "co2_diluent_pct": 70.0,
+        "diameter_mm": 2.74,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 9.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 30.04548053691874
+      },
+      "geometry": "Droplet",
+      "group": "319751e0939b346f40d4e71f7f77f86054064bd73ec94d49dea8359f7d6a1700",
+      "material": "n-Heptane",
+      "observation_sha256": "301f80d5799bdf39a90ee1ad90bd07fea42bc48cd9067a1ce94b1c405ab538cb",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 18",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 8.1,
+      "test_id": "FLEX-018",
+      "tokens": [
+        "sample:PSI-69:248F001",
+        "session:PSI-69:7/1/2009"
+      ],
+      "uid": "PSI-69:FLEX-018"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.85,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.85257665105373
+      },
+      "geometry": "Droplet",
+      "group": "873831adedbc09e5f3d8f63876b73f57004f2b779c98a302023bec0f851f1fe7",
+      "material": "n-Heptane",
+      "observation_sha256": "700c974dabdd1d95e1eb1aab04dd209ccb51db26b5a96d6d0c3087ea32133dcd",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 35",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 8.9,
+      "test_id": "FLEX-035",
+      "tokens": [
+        "sample:PSI-69:181F001",
+        "session:PSI-69:11/27/09"
+      ],
+      "uid": "PSI-69:FLEX-035"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.46,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.79069897199713
+      },
+      "geometry": "Droplet",
+      "group": "290f517c42e8f652da5ca66f70adb08659943e379814ce881aa97e3005662552",
+      "material": "n-Heptane",
+      "observation_sha256": "c32db509b80aafa5bceef93c94d67e62a0a53ae5a501880dbbf81ce7f4f58332",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 49",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 8.6,
+      "test_id": "FLEX-049",
+      "tokens": [
+        "sample:PSI-69:209F003",
+        "sample:PSI-69:209F004",
+        "session:PSI-69:1/19/2010"
+      ],
+      "uid": "PSI-69:FLEX-049"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.57,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.891250200464102
+      },
+      "geometry": "Droplet",
+      "group": "290f517c42e8f652da5ca66f70adb08659943e379814ce881aa97e3005662552",
+      "material": "n-Heptane",
+      "observation_sha256": "9c8a23b3e8a6c416021f16c2abd8548378c48be7bc0d8be876158c409e5a5aab",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 50",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 8.4,
+      "test_id": "FLEX-050",
+      "tokens": [
+        "sample:PSI-69:209F003",
+        "sample:PSI-69:209F004",
+        "session:PSI-69:1/19/2010"
+      ],
+      "uid": "PSI-69:FLEX-050"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.1,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 10.526940149503515
+      },
+      "geometry": "Droplet",
+      "group": "18e16af9f1110433e5305126adc788a40e0fe2ee0ff045e2fc7f26a8bffe9f8d",
+      "material": "n-Heptane",
+      "observation_sha256": "8c0a69b4ce130603c41ef2d87b7290b17cb65aa093f6498342f5c5801da848ca",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 57",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 6.8,
+      "test_id": "FLEX-057",
+      "tokens": [
+        "sample:PSI-69:303F001",
+        "session:PSI-69:1/29/2010"
+      ],
+      "uid": "PSI-69:FLEX-057"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.43,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 82.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.730754970411052
+      },
+      "geometry": "Droplet",
+      "group": "9b49376121ac12ec918737a7ba5be38ff78c7284e12fc75a47f0f9fe719bf3c2",
+      "material": "n-Heptane",
+      "observation_sha256": "afd1d920f9610d6171909ac72d78aa62f68d2c78e965dd5295bbaa5d2cf4d97b",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 62",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 4.8,
+      "test_id": "FLEX-062",
+      "tokens": [
+        "sample:PSI-69:301F001",
+        "sample:PSI-69:302F001",
+        "session:PSI-69:3/11/2010"
+      ],
+      "uid": "PSI-69:FLEX-062"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.69,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 81.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.784897939585576
+      },
+      "geometry": "Droplet",
+      "group": "9b49376121ac12ec918737a7ba5be38ff78c7284e12fc75a47f0f9fe719bf3c2",
+      "material": "n-Heptane",
+      "observation_sha256": "e3f4ef475a905b22d251c43305bf285b56e67daff9343c783cc914fdd8eb0092",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 64",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 5.5,
+      "test_id": "FLEX-064",
+      "tokens": [
+        "sample:PSI-69:301F001",
+        "sample:PSI-69:302F001",
+        "session:PSI-69:3/11/2010"
+      ],
+      "uid": "PSI-69:FLEX-064"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 4.67,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 84.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.715285550646904
+      },
+      "geometry": "Droplet",
+      "group": "c2cf9549a45d7f1158f05a885be05b2e1b51ca3830c0d0770bf04b11ea46eab7",
+      "material": "n-Heptane",
+      "observation_sha256": "1fe223fc988c2be3b28b6cda8b4214601cf70c2308ea7652754db65dc016b535",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 70",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 1.6,
+      "test_id": "FLEX-070",
+      "tokens": [
+        "sample:PSI-69:193F001",
+        "session:PSI-69:3/23/2010"
+      ],
+      "uid": "PSI-69:FLEX-070"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 4.64,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 84.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.715285550646904
+      },
+      "geometry": "Droplet",
+      "group": "c2cf9549a45d7f1158f05a885be05b2e1b51ca3830c0d0770bf04b11ea46eab7",
+      "material": "n-Heptane",
+      "observation_sha256": "696845378f243e3b4f40211742ef67eff475fb7363e84a0ca2f9d63a0da60838",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 73",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 1.5,
+      "test_id": "FLEX-073",
+      "tokens": [
+        "sample:PSI-69:193F001",
+        "session:PSI-69:3/23/2010"
+      ],
+      "uid": "PSI-69:FLEX-073"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 20.0,
+        "diameter_mm": 3.53,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 56.00000000000001,
+        "o2_initial_pct": 24.0,
+        "pressure_psi": 10.3181029826875
+      },
+      "geometry": "Droplet",
+      "group": "295a933c166d0b34f99091b05e984a83ab993403ddff48fd61a0ac9dd757567f",
+      "material": "n-Heptane",
+      "observation_sha256": "9f2e4348a6da8ba0f6deda63a7a32522b112fba2b827ee79fd1f5433cf815961",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 94",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 10.1,
+      "test_id": "FLEX-094",
+      "tokens": [
+        "sample:PSI-69:C08H101",
+        "session:PSI-69:6/15/2010"
+      ],
+      "uid": "PSI-69:FLEX-094"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 4.14,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 52.0,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.37804698427358
+      },
+      "geometry": "Droplet",
+      "group": "b7200ea6905b98ddba83ab23882d535745e275c796e11143aa8ce2aa175530c7",
+      "material": "n-Heptane",
+      "observation_sha256": "a62b5162cc350d24d5abae4db09a6394c1897ba5e4a1517976a196ae07a6fdcd",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 100",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 6.1,
+      "test_id": "FLEX-100",
+      "tokens": [
+        "sample:PSI-69:C09H101",
+        "sample:PSI-69:C09H201",
+        "sample:PSI-69:C10H101",
+        "sample:PSI-69:C10H201",
+        "session:PSI-69:6/29/2010"
+      ],
+      "uid": "PSI-69:FLEX-100"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 3.88,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 52.0,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.416720533683952
+      },
+      "geometry": "Droplet",
+      "group": "b7200ea6905b98ddba83ab23882d535745e275c796e11143aa8ce2aa175530c7",
+      "material": "n-Heptane",
+      "observation_sha256": "3c2ffac76ac439bc19e8f33c4cc2c48b9eedba1813792e304fb792af6bfbaea0",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 101",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 6.5,
+      "test_id": "FLEX-101",
+      "tokens": [
+        "sample:PSI-69:C09H101",
+        "sample:PSI-69:C09H201",
+        "sample:PSI-69:C10H101",
+        "sample:PSI-69:C10H201",
+        "session:PSI-69:6/29/2010"
+      ],
+      "uid": "PSI-69:FLEX-101"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 30.0,
+        "diameter_mm": 3.57,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 49.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 10.329705047510613
+      },
+      "geometry": "Droplet",
+      "group": "b7200ea6905b98ddba83ab23882d535745e275c796e11143aa8ce2aa175530c7",
+      "material": "n-Heptane",
+      "observation_sha256": "1b7380c0ea1c51024bdc628198b57cc0e0b3f8a18850d2e9e620f3ead085e00e",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 102",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 4.2,
+      "test_id": "FLEX-102",
+      "tokens": [
+        "sample:PSI-69:C09H101",
+        "sample:PSI-69:C09H201",
+        "sample:PSI-69:C10H101",
+        "sample:PSI-69:C10H201",
+        "session:PSI-69:6/29/2010"
+      ],
+      "uid": "PSI-69:FLEX-102"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 30.0,
+        "diameter_mm": 4.0,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 49.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 10.331638724981131
+      },
+      "geometry": "Droplet",
+      "group": "b7200ea6905b98ddba83ab23882d535745e275c796e11143aa8ce2aa175530c7",
+      "material": "n-Heptane",
+      "observation_sha256": "6a1c63e2b67628ee03b4ba97ff165c9b5ffcaabfe137619fb62c4e604a3cc0d6",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 103",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 3.2,
+      "test_id": "FLEX-103",
+      "tokens": [
+        "sample:PSI-69:C09H101",
+        "sample:PSI-69:C09H201",
+        "sample:PSI-69:C10H101",
+        "sample:PSI-69:C10H201",
+        "session:PSI-69:6/29/2010"
+      ],
+      "uid": "PSI-69:FLEX-103"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 35.0,
+        "diameter_mm": 3.84,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 45.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 10.269761045924534
+      },
+      "geometry": "Droplet",
+      "group": "413842156d1d1d325b28b7639ce3e68edf37f46e9972e41bde412b3686bb25c9",
+      "material": "n-Heptane",
+      "observation_sha256": "fa15e7959775728f1345eac7f3d80ab1f8b3bcca678d35138d110e4f2e899531",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 117",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 2.4,
+      "test_id": "FLEX-117",
+      "tokens": [
+        "sample:PSI-69:C11H101",
+        "sample:PSI-69:C11H201",
+        "session:PSI-69:9/6/2010"
+      ],
+      "uid": "PSI-69:FLEX-117"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 35.0,
+        "diameter_mm": 3.03,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 44.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 10.30263356292335
+      },
+      "geometry": "Droplet",
+      "group": "413842156d1d1d325b28b7639ce3e68edf37f46e9972e41bde412b3686bb25c9",
+      "material": "n-Heptane",
+      "observation_sha256": "bf4d01e7b518c401e3e51dcfe7553810b43b03ac03feb5354a395dd4a290260f",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 118",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 2.5,
+      "test_id": "FLEX-118",
+      "tokens": [
+        "sample:PSI-69:C11H101",
+        "sample:PSI-69:C11H201",
+        "session:PSI-69:9/6/2010"
+      ],
+      "uid": "PSI-69:FLEX-118"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 40.0,
+        "diameter_mm": 2.6,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 42.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 10.298766207982315
+      },
+      "geometry": "Droplet",
+      "group": "eedd34e3decf00d793114a073984912bbbef1203a015a6781b300cfcb8e541a2",
+      "material": "n-Heptane",
+      "observation_sha256": "cb5b3bc9035f6e1bc851df40203f02c27972294a5a76cdc0c049da174add35a6",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 119",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 1.3,
+      "test_id": "FLEX-119",
+      "tokens": [
+        "sample:PSI-69:C12H103",
+        "sample:PSI-69:C12H201",
+        "session:PSI-69:9/7/2010"
+      ],
+      "uid": "PSI-69:FLEX-119"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 40.0,
+        "diameter_mm": 2.45,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 42.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 10.296832530511796
+      },
+      "geometry": "Droplet",
+      "group": "eedd34e3decf00d793114a073984912bbbef1203a015a6781b300cfcb8e541a2",
+      "material": "n-Heptane",
+      "observation_sha256": "28d2829da108e10150add2a208e2ba333197f91b25993791e6bccc86b83c539b",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 120",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 1.43,
+      "test_id": "FLEX-120",
+      "tokens": [
+        "sample:PSI-69:C12H103",
+        "sample:PSI-69:C12H201",
+        "session:PSI-69:9/7/2010"
+      ],
+      "uid": "PSI-69:FLEX-120"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 45.0,
+        "diameter_mm": 3.33,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 38.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 10.368378596920987
+      },
+      "geometry": "Droplet",
+      "group": "ac3037a31a8d362c702aa90050d20e35064c692f9786babd4f056219dc4145a4",
+      "material": "n-Heptane",
+      "observation_sha256": "16917d588d43be512f07731122b7ffe0dc2afb9e99443b1f68383cee5daa72e3",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 129",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.55,
+      "test_id": "FLEX-129",
+      "tokens": [
+        "sample:PSI-69:C13H102",
+        "sample:PSI-69:C13H201",
+        "session:PSI-69:9/17/2010"
+      ],
+      "uid": "PSI-69:FLEX-129"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 45.0,
+        "diameter_mm": 2.91,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 38.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 10.387715371626173
+      },
+      "geometry": "Droplet",
+      "group": "ac3037a31a8d362c702aa90050d20e35064c692f9786babd4f056219dc4145a4",
+      "material": "n-Heptane",
+      "observation_sha256": "733674375f4793de31841d46a30847cfcab90340a75f6162bc279a16542f1839",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 130",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.6,
+      "test_id": "FLEX-130",
+      "tokens": [
+        "sample:PSI-69:C13H102",
+        "sample:PSI-69:C13H201",
+        "session:PSI-69:9/17/2010"
+      ],
+      "uid": "PSI-69:FLEX-130"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 20.0,
+        "diameter_mm": 3.66,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 56.00000000000001,
+        "o2_initial_pct": 24.0,
+        "pressure_psi": 14.835173553819061
+      },
+      "geometry": "Droplet",
+      "group": "ea83c09c6234d35109ce12652bf342ccc8cc54069905ef5dfad46dedc877d246",
+      "material": "n-Heptane",
+      "observation_sha256": "dd572b22fbf653dfca112af97994759f4b94fce25380004d4ff6d1ae0b4fe3f5",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 134",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 9.2,
+      "test_id": "FLEX-134",
+      "tokens": [
+        "sample:PSI-69:C21H401",
+        "session:PSI-69:10/6/2010"
+      ],
+      "uid": "PSI-69:FLEX-134"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 3.7,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.740423357763646
+      },
+      "geometry": "Droplet",
+      "group": "30554151446fa9d145eb5f8c552968c1b4191194883597a11e88163fb613f600",
+      "material": "n-Heptane",
+      "observation_sha256": "b37f5701df02477cbaa151b4cc330047a299e3778ec012c3b2564ff412898b3d",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 154",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 2.2,
+      "test_id": "FLEX-154",
+      "tokens": [
+        "sample:PSI-69:C03H101",
+        "sample:PSI-69:C03H201",
+        "sample:PSI-69:C03H302",
+        "session:PSI-69:12/9/2010"
+      ],
+      "uid": "PSI-69:FLEX-154"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 2.73,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.79069897199713
+      },
+      "geometry": "Droplet",
+      "group": "30554151446fa9d145eb5f8c552968c1b4191194883597a11e88163fb613f600",
+      "material": "n-Heptane",
+      "observation_sha256": "05c9418ad64dbd6931cb87d5ed81775865f023a1cac0241195562ac3c4ecf30f",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 155",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 2.7,
+      "test_id": "FLEX-155",
+      "tokens": [
+        "sample:PSI-69:C03H101",
+        "sample:PSI-69:C03H201",
+        "sample:PSI-69:C03H302",
+        "session:PSI-69:12/9/2010"
+      ],
+      "uid": "PSI-69:FLEX-155"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 1.96,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.800367359349725
+      },
+      "geometry": "Droplet",
+      "group": "30554151446fa9d145eb5f8c552968c1b4191194883597a11e88163fb613f600",
+      "material": "n-Heptane",
+      "observation_sha256": "a5f50a0935a1acf8d41f7b48bbad83d3b6c6a6275e02e225ed3b8a23dbeb4667",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 165",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 3.9,
+      "test_id": "FLEX-165",
+      "tokens": [
+        "sample:PSI-69:C03H101",
+        "sample:PSI-69:C03H201",
+        "sample:PSI-69:C03H302",
+        "session:PSI-69:12/9/2010"
+      ],
+      "uid": "PSI-69:FLEX-165"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 3.74,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.6940150984712
+      },
+      "geometry": "Droplet",
+      "group": "aeead7338590fe16aa6a371df045cf549ac0294f079d3502314cb460a9a71412",
+      "material": "n-Heptane",
+      "observation_sha256": "28e1be37e4e171079bba5285c93cc0a45636cc9002b7f77baac91090ab6c8bfe",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 171",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 2.8,
+      "test_id": "FLEX-171",
+      "tokens": [
+        "sample:PSI-69:C03H501",
+        "sample:PSI-69:C03H601",
+        "session:PSI-69:2/21/2011"
+      ],
+      "uid": "PSI-69:FLEX-171"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 2.4,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.73462232535209
+      },
+      "geometry": "Droplet",
+      "group": "aeead7338590fe16aa6a371df045cf549ac0294f079d3502314cb460a9a71412",
+      "material": "n-Heptane",
+      "observation_sha256": "1b90f8ad138928d6fd59c8eb3356528f466b7d7e6fb0de55c0f4f1721fb506af",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 172",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 4.4,
+      "test_id": "FLEX-172",
+      "tokens": [
+        "sample:PSI-69:C03H501",
+        "sample:PSI-69:C03H601",
+        "session:PSI-69:2/21/2011"
+      ],
+      "uid": "PSI-69:FLEX-172"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 3.32,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 52.0,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.3181029826875
+      },
+      "geometry": "Droplet",
+      "group": "45df3b01c16f151a72920ad20ee9a85542f4cc322dcd5e81d85cd52ae05e7676",
+      "material": "n-Heptane",
+      "observation_sha256": "267b6722ec35dd6625543da1aff9c676456e058a5417757d3c5cd816ef5a1cb6",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 178",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 8.9,
+      "test_id": "FLEX-178",
+      "tokens": [
+        "sample:PSI-69:C02H101",
+        "sample:PSI-69:C09H501",
+        "session:PSI-69:4/20/2011"
+      ],
+      "uid": "PSI-69:FLEX-178"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 10.0,
+        "diameter_mm": 3.4,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 71.0,
+        "o2_initial_pct": 19.0,
+        "pressure_psi": 14.66500993641342
+      },
+      "geometry": "Droplet",
+      "group": "45df3b01c16f151a72920ad20ee9a85542f4cc322dcd5e81d85cd52ae05e7676",
+      "material": "n-Heptane",
+      "observation_sha256": "aff07f4eec9a7a818f4c43c6b69c94ce1bd6790e5a7fa772eb9f2e5fa8d94f61",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 180",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 4.5,
+      "test_id": "FLEX-180",
+      "tokens": [
+        "sample:PSI-69:C02H101",
+        "sample:PSI-69:C09H501",
+        "session:PSI-69:4/20/2011"
+      ],
+      "uid": "PSI-69:FLEX-180"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 20.0,
+        "diameter_mm": 3.76,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 63.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 14.541254578300226
+      },
+      "geometry": "Droplet",
+      "group": "c685effbcf83032c8621d5b96bb3e1ded29e80deaf981a8449c5217ef74a50c6",
+      "material": "n-Heptane",
+      "observation_sha256": "79f7e2849e8b0762c5521b1f427a53a1fb9e1e133c5e0cd88b9ffbed30c12395",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 194",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 1.6,
+      "test_id": "FLEX-194",
+      "tokens": [
+        "sample:PSI-69:C04H101",
+        "sample:PSI-69:C04H201",
+        "session:PSI-69:8/17/2011"
+      ],
+      "uid": "PSI-69:FLEX-194"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 20.0,
+        "diameter_mm": 2.9,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 63.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 14.55092296565282
+      },
+      "geometry": "Droplet",
+      "group": "c685effbcf83032c8621d5b96bb3e1ded29e80deaf981a8449c5217ef74a50c6",
+      "material": "n-Heptane",
+      "observation_sha256": "ecb9321b8d1067d0b9b647d68b9f723368b6457d09aec3a493b209d44634d511",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 195",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 1.9,
+      "test_id": "FLEX-195",
+      "tokens": [
+        "sample:PSI-69:C04H101",
+        "sample:PSI-69:C04H201",
+        "session:PSI-69:8/17/2011"
+      ],
+      "uid": "PSI-69:FLEX-195"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 5.0,
+        "diameter_mm": 3.06,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 75.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 14.66500993641342
+      },
+      "geometry": "Droplet",
+      "group": "d99dfc3897d58d54ab9f94e6edd71948c9565e88671133fb9c7548f214ac0881",
+      "material": "n-Heptane",
+      "observation_sha256": "a5736de4353e5708540cd482b1b9bf7274bd69d9bcbb5f3fc6ec3abc32b0ed2b",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 196",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 8.9,
+      "test_id": "FLEX-196",
+      "tokens": [
+        "sample:PSI-69:C01H501",
+        "sample:PSI-69:C01H601",
+        "session:PSI-69:8/18/2011"
+      ],
+      "uid": "PSI-69:FLEX-196"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 5.0,
+        "diameter_mm": 3.04,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 75.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 14.69208142100068
+      },
+      "geometry": "Droplet",
+      "group": "d99dfc3897d58d54ab9f94e6edd71948c9565e88671133fb9c7548f214ac0881",
+      "material": "n-Heptane",
+      "observation_sha256": "f23f0fba36bc3bf71a094ecf7afaf6883c403c0cab4647650ffcc951501eb13d",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 197",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 8.1,
+      "test_id": "FLEX-197",
+      "tokens": [
+        "sample:PSI-69:C01H501",
+        "sample:PSI-69:C01H601",
+        "session:PSI-69:8/18/2011"
+      ],
+      "uid": "PSI-69:FLEX-197"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.34,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 84.0,
+        "o2_initial_pct": 16.0,
+        "pressure_psi": 14.69208142100068
+      },
+      "geometry": "Droplet",
+      "group": "b1961d54b9367f6bf93783498b73d83c5f61329afddbd5870ae4f86d46763d0c",
+      "material": "n-Heptane",
+      "observation_sha256": "6ce2267ca55ac307fa7721e3b14fa882a25b118a78e26d103b05912e2b22e1cd",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 209",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 3.4,
+      "test_id": "FLEX-209",
+      "tokens": [
+        "sample:PSI-69:N02H101",
+        "session:PSI-69:8/29/2011"
+      ],
+      "uid": "PSI-69:FLEX-209"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.52,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 84.0,
+        "o2_initial_pct": 16.0,
+        "pressure_psi": 14.6940150984712
+      },
+      "geometry": "Droplet",
+      "group": "0bf3a1dfd24402b1b2154abd565c28e8093e2ae6c61136719181065c6608e2a5",
+      "material": "n-Heptane",
+      "observation_sha256": "5dbae21cc522f4f174a4aba913ae5c8f3bed0a38538d66e1ca6d230d9b5edb79",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 211",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 4.5,
+      "test_id": "FLEX-211",
+      "tokens": [
+        "sample:PSI-69:N02H203",
+        "session:PSI-69:8/30/2011"
+      ],
+      "uid": "PSI-69:FLEX-211"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.55,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 85.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.773295874762464
+      },
+      "geometry": "Droplet",
+      "group": "3d14b0e87d08ef73da4d16fe17efa565d3c904b12ebd6b1dad3492d931f1287d",
+      "material": "n-Heptane",
+      "observation_sha256": "8bb78a5e718f72151241449049d1608c5041752abe8047ba2aa0c0fd23ac8f48",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 212",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 3.4,
+      "test_id": "FLEX-212",
+      "tokens": [
+        "sample:PSI-69:N03H101",
+        "sample:PSI-69:N04H101",
+        "sample:PSI-69:N04H201",
+        "session:PSI-69:9/1/2011"
+      ],
+      "uid": "PSI-69:FLEX-212"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 4.16,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 86.0,
+        "o2_initial_pct": 14.000000000000002,
+        "pressure_psi": 14.69208142100068
+      },
+      "geometry": "Droplet",
+      "group": "3d14b0e87d08ef73da4d16fe17efa565d3c904b12ebd6b1dad3492d931f1287d",
+      "material": "n-Heptane",
+      "observation_sha256": "b6ce23ba6de8dbdeac9fd980b24380b17d1d8f0e7adb01d8a19b914de425fb9b",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 213",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 1.6,
+      "test_id": "FLEX-213",
+      "tokens": [
+        "sample:PSI-69:N03H101",
+        "sample:PSI-69:N04H101",
+        "sample:PSI-69:N04H201",
+        "session:PSI-69:9/1/2011"
+      ],
+      "uid": "PSI-69:FLEX-213"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 1.83,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 86.0,
+        "o2_initial_pct": 14.000000000000002,
+        "pressure_psi": 14.6940150984712
+      },
+      "geometry": "Droplet",
+      "group": "3d14b0e87d08ef73da4d16fe17efa565d3c904b12ebd6b1dad3492d931f1287d",
+      "material": "n-Heptane",
+      "observation_sha256": "005cf04ab8a31bcbfb28c1f414827c3a47bfc862807cda4759d8ed1adcb205b6",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 214",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 3.8,
+      "test_id": "FLEX-214",
+      "tokens": [
+        "sample:PSI-69:N03H101",
+        "sample:PSI-69:N04H101",
+        "sample:PSI-69:N04H201",
+        "session:PSI-69:9/1/2011"
+      ],
+      "uid": "PSI-69:FLEX-214"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.32,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.839040908760097
+      },
+      "geometry": "Droplet",
+      "group": "e21ee0c0c909fb0bfbc0eca71645e5e2632fdea3359dc26c011b36c4a38f8a56",
+      "material": "n-Heptane",
+      "observation_sha256": "f670aa87186fbe2f5a7d42ecdc030def6e1b8dd1f6ff6815d2a1ac0b3ba0c2c8",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 228",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 17.5,
+      "test_id": "FLEX-228",
+      "tokens": [
+        "sample:PSI-69:N01H401",
+        "session:PSI-69:9/23/2011"
+      ],
+      "uid": "PSI-69:FLEX-228"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.65,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.873847103229433
+      },
+      "geometry": "Droplet",
+      "group": "3d03798c1b173718299ece10b281cdbecc4e416a5d8e3be8b1698df13317b7b8",
+      "material": "n-Heptane",
+      "observation_sha256": "f10d01f737cb200b2f9901451bbc2634919fba85d1220a08c9a54444f47d5c39",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 230",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 9.6,
+      "test_id": "FLEX-230",
+      "tokens": [
+        "sample:PSI-69:N01H601",
+        "session:PSI-69:9/24/2011"
+      ],
+      "uid": "PSI-69:FLEX-230"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.52,
+        "he_diluent_pct": 15.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.767494842350908
+      },
+      "geometry": "Droplet",
+      "group": "1e0ad0ec2a96b14bd5a0e0b9e8c8d1871c5e74cc85015fbd023791ccf6593adc",
+      "material": "n-Heptane",
+      "observation_sha256": "a0ded5fe7e39c9a1ba5a87b24ca6a9a9ee59b03da08d4c05a64c34e80e2654bf",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 232",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 4.1,
+      "test_id": "FLEX-232",
+      "tokens": [
+        "sample:PSI-69:H03H101",
+        "sample:PSI-69:H04H101",
+        "sample:PSI-69:H04H201",
+        "session:PSI-69:9/27/2011"
+      ],
+      "uid": "PSI-69:FLEX-232"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.85,
+        "he_diluent_pct": 20.0,
+        "n2_diluent_pct": 63.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 14.682413033648086
+      },
+      "geometry": "Droplet",
+      "group": "1e0ad0ec2a96b14bd5a0e0b9e8c8d1871c5e74cc85015fbd023791ccf6593adc",
+      "material": "n-Heptane",
+      "observation_sha256": "e024fc34e2588afb6b713df7802fcb9449cae98db4b2276b0cef4d54e146421d",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 235",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 3.2,
+      "test_id": "FLEX-235",
+      "tokens": [
+        "sample:PSI-69:H03H101",
+        "sample:PSI-69:H04H101",
+        "sample:PSI-69:H04H201",
+        "session:PSI-69:9/27/2011"
+      ],
+      "uid": "PSI-69:FLEX-235"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.12,
+        "he_diluent_pct": 20.0,
+        "n2_diluent_pct": 63.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 14.682413033648086
+      },
+      "geometry": "Droplet",
+      "group": "1e0ad0ec2a96b14bd5a0e0b9e8c8d1871c5e74cc85015fbd023791ccf6593adc",
+      "material": "n-Heptane",
+      "observation_sha256": "0e3145829bc14f8d7b12bca1a97731d0bd235d63ac2bcc5623b200bbe89cb600",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 236",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 4.5,
+      "test_id": "FLEX-236",
+      "tokens": [
+        "sample:PSI-69:H03H101",
+        "sample:PSI-69:H04H101",
+        "sample:PSI-69:H04H201",
+        "session:PSI-69:9/27/2011"
+      ],
+      "uid": "PSI-69:FLEX-236"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 1.49,
+        "he_diluent_pct": 25.0,
+        "n2_diluent_pct": 59.0,
+        "o2_initial_pct": 16.0,
+        "pressure_psi": 14.655341549060825
+      },
+      "geometry": "Droplet",
+      "group": "e8a311afae0133d01acaddece7d447dca7f859fc45995f6ee698446fab3d3956",
+      "material": "n-Heptane",
+      "observation_sha256": "84de18df6e5f5353f965b3d5b6a558a32d8d595c5b62d4cefb8e0e5859417558",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 243",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 2.9,
+      "test_id": "FLEX-243",
+      "tokens": [
+        "sample:PSI-69:H05H103",
+        "session:PSI-69:10/5/2011"
+      ],
+      "uid": "PSI-69:FLEX-243"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.78,
+        "he_diluent_pct": 20.0,
+        "n2_diluent_pct": 56.00000000000001,
+        "o2_initial_pct": 24.0,
+        "pressure_psi": 10.325837692569575
+      },
+      "geometry": "Droplet",
+      "group": "3ffdd21dd27504874e3436265136afca700f7efe18c53e0585d0159db155d5ba",
+      "material": "n-Heptane",
+      "observation_sha256": "44112b53a7633847b620ac67b699f9591c5c0c2cf6f8be498cb2cb7441c31300",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 249",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 12.2,
+      "test_id": "FLEX-249",
+      "tokens": [
+        "sample:PSI-69:H10H101",
+        "session:PSI-69:10/12/11"
+      ],
+      "uid": "PSI-69:FLEX-249"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.23,
+        "he_diluent_pct": 30.0,
+        "n2_diluent_pct": 49.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 10.240755883866756
+      },
+      "geometry": "Droplet",
+      "group": "8dda7e8e7f27e5664117f72d3ed7fff2e3695b6e930df8733729c5990059ef97",
+      "material": "n-Heptane",
+      "observation_sha256": "7073eb81074b0551a8306dd853196a25059f118f606af1b5fc19b943eb7a8043",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 258",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 7.5,
+      "test_id": "FLEX-258",
+      "tokens": [
+        "sample:PSI-69:H12H101",
+        "sample:PSI-69:H13H101",
+        "sample:PSI-69:H13H201",
+        "session:PSI-69:11/22/11"
+      ],
+      "uid": "PSI-69:FLEX-258"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.69,
+        "he_diluent_pct": 35.0,
+        "n2_diluent_pct": 45.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 10.296832530511796
+      },
+      "geometry": "Droplet",
+      "group": "8dda7e8e7f27e5664117f72d3ed7fff2e3695b6e930df8733729c5990059ef97",
+      "material": "n-Heptane",
+      "observation_sha256": "7f4ed156c8e3375b0e6cf8b355ceddc9cb47e12d62c2a29b0db629d63c4c9557",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 260",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 4.3,
+      "test_id": "FLEX-260",
+      "tokens": [
+        "sample:PSI-69:H12H101",
+        "sample:PSI-69:H13H101",
+        "sample:PSI-69:H13H201",
+        "session:PSI-69:11/22/11"
+      ],
+      "uid": "PSI-69:FLEX-260"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.08,
+        "he_diluent_pct": 35.0,
+        "n2_diluent_pct": 45.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 10.287164143159202
+      },
+      "geometry": "Droplet",
+      "group": "8dda7e8e7f27e5664117f72d3ed7fff2e3695b6e930df8733729c5990059ef97",
+      "material": "n-Heptane",
+      "observation_sha256": "5cb10ffffd0a978a1d3ee5f5bb90e046a4c93199eb9ecc3f9f79684437c81381",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 261",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 5.4,
+      "test_id": "FLEX-261",
+      "tokens": [
+        "sample:PSI-69:H12H101",
+        "sample:PSI-69:H13H101",
+        "sample:PSI-69:H13H201",
+        "session:PSI-69:11/22/11"
+      ],
+      "uid": "PSI-69:FLEX-261"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.27,
+        "he_diluent_pct": 40.0,
+        "n2_diluent_pct": 42.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 10.209817044338456
+      },
+      "geometry": "Droplet",
+      "group": "2db22d47422a57f030f8d35b77afb044fcc75094e7ebff783fbf246ad4363ef2",
+      "material": "n-Heptane",
+      "observation_sha256": "db3950733cac2a87c5bf3d604e68cea82b04988f1af3d50e30fcedec0f555c91",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 267",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 3.5,
+      "test_id": "FLEX-267",
+      "tokens": [
+        "sample:PSI-69:H14H101",
+        "sample:PSI-69:H14H201",
+        "sample:PSI-69:H15H101",
+        "session:PSI-69:11/30/11"
+      ],
+      "uid": "PSI-69:FLEX-267"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 1.86,
+        "he_diluent_pct": 40.0,
+        "n2_diluent_pct": 42.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 10.254291626160384
+      },
+      "geometry": "Droplet",
+      "group": "2db22d47422a57f030f8d35b77afb044fcc75094e7ebff783fbf246ad4363ef2",
+      "material": "n-Heptane",
+      "observation_sha256": "984f5b7d4b941a1058935c4f6773888535fd48eb201e0eddcfee5178509d70f7",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 268",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 3.5,
+      "test_id": "FLEX-268",
+      "tokens": [
+        "sample:PSI-69:H14H101",
+        "sample:PSI-69:H14H201",
+        "sample:PSI-69:H15H101",
+        "session:PSI-69:11/30/11"
+      ],
+      "uid": "PSI-69:FLEX-268"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.22,
+        "he_diluent_pct": 45.0,
+        "n2_diluent_pct": 38.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 10.29103149810024
+      },
+      "geometry": "Droplet",
+      "group": "2db22d47422a57f030f8d35b77afb044fcc75094e7ebff783fbf246ad4363ef2",
+      "material": "n-Heptane",
+      "observation_sha256": "82353509dabb0202911ca2f1ab7b0ba1079c29d0b8fe262260e9b82419a906d1",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 269",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 1.9,
+      "test_id": "FLEX-269",
+      "tokens": [
+        "sample:PSI-69:H14H101",
+        "sample:PSI-69:H14H201",
+        "sample:PSI-69:H15H101",
+        "session:PSI-69:11/30/11"
+      ],
+      "uid": "PSI-69:FLEX-269"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.54,
+        "he_diluent_pct": 15.0,
+        "n2_diluent_pct": 64.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.786831617056095
+      },
+      "geometry": "Droplet",
+      "group": "44c9f87b598af355fca549ae526fc6ad2c0828e6402428c93f75d24151c2c51d",
+      "material": "n-Heptane",
+      "observation_sha256": "25d2353501aa79ebc415859c5fccb2da517b29252288f25236255090eb315e4a",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 273",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 7.6,
+      "test_id": "FLEX-273",
+      "tokens": [
+        "sample:PSI-69:H19H101",
+        "sample:PSI-69:H19H201",
+        "session:PSI-69:12/8/2011"
+      ],
+      "uid": "PSI-69:FLEX-273"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.82,
+        "he_diluent_pct": 15.0,
+        "n2_diluent_pct": 64.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.815836779113875
+      },
+      "geometry": "Droplet",
+      "group": "44c9f87b598af355fca549ae526fc6ad2c0828e6402428c93f75d24151c2c51d",
+      "material": "n-Heptane",
+      "observation_sha256": "5fc9a33678f862ec52175c6179320cec710bb173d7f41513d3c6dc40db692615",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 274",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 11.7,
+      "test_id": "FLEX-274",
+      "tokens": [
+        "sample:PSI-69:H19H101",
+        "sample:PSI-69:H19H201",
+        "session:PSI-69:12/8/2011"
+      ],
+      "uid": "PSI-69:FLEX-274"
+    }
+  ],
+  "source_hashes": {
+    "PSI-69_Experimental table_FLEX.csv": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+  },
+  "task": {
+    "categorical_features": [],
+    "constant_conditions": {
+      "flow_velocity_initial_cm_s": 0.0,
+      "gravity_g": 0.0
+    },
+    "data_quality_version": 2,
+    "extractor": "flex_initial_droplet_v1",
+    "filters": {
+      "geometry": "Droplet",
+      "gravity_level": "0g",
+      "material_name": "n-Heptane"
+    },
+    "inference_categories": {
+      "fuel_phase": "Liquid",
+      "geometry": "Droplet"
+    },
+    "interval_alpha": 0.1,
+    "limitations": [
+      "FLEX liquid droplets only; not applicable to solid fires or operational suppression.",
+      "Grouped by test date and specimen identifiers; no independent investigation replication.",
+      "Only initial atmospheric composition, droplet diameter and pressure are predictors.",
+      "Scientific deployment tolerances require review; import eligibility does not authorize deployment."
+    ],
+    "numeric_features": [
+      "o2_initial_pct",
+      "pressure_psi",
+      "diameter_mm",
+      "co2_diluent_pct",
+      "he_diluent_pct",
+      "n2_diluent_pct"
+    ],
+    "phenomenon": "quiescent_microgravity_liquid_droplet",
+    "promotion": {
+      "max_interval_width": null,
+      "max_mae": null,
+      "max_rmse": null,
+      "min_local_groups": 3,
+      "min_test_coverage": 0.9
+    },
+    "research_inference": {
+      "enabled": true,
+      "policy": "point_only_inside_numeric_and_joint_local_domain",
+      "uncertainty": "unavailable_until_independent_calibration_and_scientific_gates_pass",
+      "version": 1
+    },
+    "scientific_review": "research_only",
+    "seed": 42,
+    "subtype": "RADIATIVE_DIFFUSIVE_DROPLET_EXTINCTION_TIME",
+    "target": "extinguishing_time_s",
+    "target_bounds": [
+      0,
+      null
+    ],
+    "unit": "s",
+    "validation_plan_version": 2,
+    "version": 1
+  }
+}

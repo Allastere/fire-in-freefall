@@ -1,0 +1,115 @@
+{
+  "baseline_benchmark": {
+    "group_mae": 0.10716648351648353,
+    "mae": 0.1253563579277865,
+    "n": 35,
+    "n_predicted": 35,
+    "prediction_coverage": 1.0,
+    "r2": -0.014147443787664749,
+    "rmse": 0.141793112671635
+  },
+  "benchmark": {
+    "group_mae": 0.03267757995880942,
+    "mae": 0.034215339708669794,
+    "n": 35,
+    "n_predicted": 35,
+    "prediction_coverage": 1.0,
+    "r2": 0.9006393371092906,
+    "rmse": 0.0443825065976522
+  },
+  "cross_validation": {
+    "catboost": {
+      "folds": 4,
+      "group_mae": 0.054936884253629005,
+      "mae": 0.04914103307073219,
+      "n": 91,
+      "n_predicted": 91,
+      "prediction_coverage": 1.0,
+      "r2": 0.5958854026733011,
+      "rmse": 0.06706504904877118,
+      "warnings": []
+    },
+    "gaussian_process": {
+      "folds": 4,
+      "group_mae": 0.033470507064848075,
+      "mae": 0.030463764655084376,
+      "n": 91,
+      "n_predicted": 91,
+      "prediction_coverage": 1.0,
+      "r2": 0.8196539339779709,
+      "rmse": 0.04480199096059109,
+      "warnings": [
+        "The optimal value found for dimension 0 of parameter k1__k1__constant_value is close to the specified upper bound 100.0. Increasing the bound and calling fit again may find a better value."
+      ]
+    },
+    "linear_interpolation": {
+      "folds": 4,
+      "group_mae": 0.03715375011218611,
+      "mae": 0.034695467483731,
+      "n": 91,
+      "n_predicted": 20,
+      "prediction_coverage": 0.21978021978021978,
+      "r2": 0.10291825990373693,
+      "rmse": 0.043863607490395265,
+      "warnings": []
+    },
+    "linear_regression": {
+      "folds": 4,
+      "group_mae": 0.03039982563083671,
+      "mae": 0.028741910285410358,
+      "n": 91,
+      "n_predicted": 91,
+      "prediction_coverage": 1.0,
+      "r2": 0.8370355944693076,
+      "rmse": 0.0425883050168121,
+      "warnings": []
+    },
+    "mean_baseline": {
+      "folds": 4,
+      "group_mae": 0.09218346946071557,
+      "mae": 0.08598821468386685,
+      "n": 91,
+      "n_predicted": 91,
+      "prediction_coverage": 1.0,
+      "r2": -0.03361990025639927,
+      "rmse": 0.10725669451337944,
+      "warnings": []
+    },
+    "random_forest": {
+      "folds": 4,
+      "group_mae": 0.06140676760112648,
+      "mae": 0.055087875675911405,
+      "n": 91,
+      "n_predicted": 91,
+      "prediction_coverage": 1.0,
+      "r2": 0.47032120386302545,
+      "rmse": 0.07678038250356717,
+      "warnings": []
+    },
+    "ridge": {
+      "folds": 4,
+      "group_mae": 0.030979979279506055,
+      "mae": 0.029375832272995433,
+      "n": 91,
+      "n_predicted": 91,
+      "prediction_coverage": 1.0,
+      "r2": 0.835237295961381,
+      "rmse": 0.04282263950697206,
+      "warnings": []
+    }
+  },
+  "domain_coverage": 0.4,
+  "previous_approved_benchmark": null,
+  "previous_research_benchmark": {
+    "metrics": {
+      "group_mae": 0.03267757995880942,
+      "mae": 0.034215339708669794,
+      "n": 35,
+      "n_predicted": 35,
+      "prediction_coverage": 1.0,
+      "r2": 0.9006393371092906,
+      "rmse": 0.0443825065976522
+    },
+    "version_id": "0533ebd0470e64d4803c1ef1ed7621dd9a831d381deea95784ece107eb74b5ce"
+  }
+}

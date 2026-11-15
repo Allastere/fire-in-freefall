@@ -1,0 +1,10 @@
+{
+  "alpha": 0.1,
+  "benchmark_sha256": "20bf0b75ac4aefcd052ce72eb0f15a0064cf348741c31ac71d1d93867a67c6a7",
+  "existing_role_policy": "preserve_all_existing_roles_and_frozen_observations",
+  "method": "prospective_frozen_group_conformal",
+  "new_group_policy": "reserve_previously_unseen_groups_for_calibration_until_required_count",
+  "required_calibration_groups": 9,
+  "selection_policy": "development_GroupKFold_only; no benchmark-driven plan or model selection",
+  "version": 2
+}

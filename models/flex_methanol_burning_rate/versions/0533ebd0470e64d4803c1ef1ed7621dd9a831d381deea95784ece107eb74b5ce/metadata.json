@@ -1,0 +1,329 @@
+{
+  "artifact_sha256": "0f15e73577cb9b3046cb3bb101ed174eb089e51cf32128b235aa1ed28281a853",
+  "benchmark_sha256": "20bf0b75ac4aefcd052ce72eb0f15a0064cf348741c31ac71d1d93867a67c6a7",
+  "calibration_plan": {
+    "additional_independent_groups_needed": 2,
+    "alpha": 0.1,
+    "available_calibration_groups": 7,
+    "benchmark_sha256": "20bf0b75ac4aefcd052ce72eb0f15a0064cf348741c31ac71d1d93867a67c6a7",
+    "existing_role_policy": "preserve_all_existing_roles_and_frozen_observations",
+    "method": "prospective_frozen_group_conformal",
+    "new_group_policy": "reserve_previously_unseen_groups_for_calibration_until_required_count",
+    "required_calibration_groups": 9,
+    "selection_policy": "development_GroupKFold_only; no benchmark-driven plan or model selection",
+    "status": "INSUFFICIENT_INDEPENDENT_CALIBRATION",
+    "version": 2
+  },
+  "code_files": {
+    "core\\normalization.py": "fe85309f350a0ac14d26414b3fa20ebbd13250c9425d76e7004f104c069589e9",
+    "ml\\__init__.py": "03ee08df9e6da77c6a8a24c52f5e020b8e8910f8b4819b6a9906e0def02bfd88",
+    "ml\\audit.py": "28c4eeb2f484405f47cd658444bbd5457b6258caeac13204737dea3bdcc05d0b",
+    "ml\\dataset.py": "445eeec3116ebaac7a4c30a5d9b0e97716470b62bd3bfbe2e5238817cdfaa051",
+    "ml\\evaluate.py": "acd6a675d64b15be21f8ddaf43e86199c701aa1d8160140eb7e2e32c1f1b5338",
+    "ml\\flex.py": "fa2152c7e66a3bb2aa9eac663019a8a62fde3c16d15d786a19f2159f3443ecde",
+    "ml\\predict.py": "99e976d5791a15e891d882099a14eed37ce0fd89ea172ff13893572c7b69b33c",
+    "ml\\preprocessing.py": "70d59ac387978c4ad5bb0bafc6717f6e7c939e48919d0905c098f116f37f1e87",
+    "ml\\registry.py": "d5afcc7893fa6ac8b279e7b6c5ecc8f9eea241fea9545faf783d8edb64c96878",
+    "ml\\train.py": "57efe82555b80a881045f34778b8c8e0f7ca46bbc76cf284237baf0e967553ff",
+    "ml\\uncertainty.py": "d6d957ebae849bf156095c1339a1441d9d58742b54dc7037d0b66d1a302ce251",
+    "requirements-ml.txt": "ff6562453beec77291e80375ff42bd6f8a46216632387c6c47e323c3e2f247e1",
+    "scientific\\archive.py": "a960b3ea6bfdfff00ff72b1ecc3a9b9ab8652914d3583d089c158ee097135bcd"
+  },
+  "code_sha256": "d6795fd6dc0d61d174c55ef6ed88cef95eaad01533d7415aaeb4ec3fb0e85a8b",
+  "counts": {
+    "benchmark": {
+      "groups": 10,
+      "samples": 35
+    },
+    "calibration": {
+      "groups": 7,
+      "samples": 22
+    },
+    "development": {
+      "groups": 31,
+      "samples": 91
+    }
+  },
+  "dataset_sha256": "fd1fff5ee6909aee5afa5a1f7586af80d2d155124580c747418914c568a14c5d",
+  "environment": {
+    "packages": {
+      "catboost": "1.2.10",
+      "cloudpickle": "3.1.2",
+      "joblib": "1.6.0",
+      "numpy": "2.5.4",
+      "pandas": "3.1.1",
+      "pint": "0.26.2",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "threadpoolctl": "3.8.0"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.0"
+  },
+  "evaluation": {
+    "baseline_benchmark": {
+      "group_mae": 0.10716648351648353,
+      "mae": 0.1253563579277865,
+      "n": 35,
+      "n_predicted": 35,
+      "prediction_coverage": 1.0,
+      "r2": -0.014147443787664749,
+      "rmse": 0.141793112671635
+    },
+    "benchmark": {
+      "group_mae": 0.03267757995880942,
+      "mae": 0.034215339708669794,
+      "n": 35,
+      "n_predicted": 35,
+      "prediction_coverage": 1.0,
+      "r2": 0.9006393371092906,
+      "rmse": 0.0443825065976522
+    },
+    "cross_validation": {
+      "catboost": {
+        "folds": 4,
+        "group_mae": 0.054936884253629005,
+        "mae": 0.04914103307073219,
+        "n": 91,
+        "n_predicted": 91,
+        "prediction_coverage": 1.0,
+        "r2": 0.5958854026733011,
+        "rmse": 0.06706504904877118,
+        "warnings": []
+      },
+      "gaussian_process": {
+        "folds": 4,
+        "group_mae": 0.033470507064848075,
+        "mae": 0.030463764655084376,
+        "n": 91,
+        "n_predicted": 91,
+        "prediction_coverage": 1.0,
+        "r2": 0.8196539339779709,
+        "rmse": 0.04480199096059109,
+        "warnings": [
+          "The optimal value found for dimension 0 of parameter k1__k1__constant_value is close to the specified upper bound 100.0. Increasing the bound and calling fit again may find a better value."
+        ]
+      },
+      "linear_interpolation": {
+        "folds": 4,
+        "group_mae": 0.03715375011218611,
+        "mae": 0.034695467483731,
+        "n": 91,
+        "n_predicted": 20,
+        "prediction_coverage": 0.21978021978021978,
+        "r2": 0.10291825990373693,
+        "rmse": 0.043863607490395265,
+        "warnings": []
+      },
+      "linear_regression": {
+        "folds": 4,
+        "group_mae": 0.03039982563083671,
+        "mae": 0.028741910285410358,
+        "n": 91,
+        "n_predicted": 91,
+        "prediction_coverage": 1.0,
+        "r2": 0.8370355944693076,
+        "rmse": 0.0425883050168121,
+        "warnings": []
+      },
+      "mean_baseline": {
+        "folds": 4,
+        "group_mae": 0.09218346946071557,
+        "mae": 0.08598821468386685,
+        "n": 91,
+        "n_predicted": 91,
+        "prediction_coverage": 1.0,
+        "r2": -0.03361990025639927,
+        "rmse": 0.10725669451337944,
+        "warnings": []
+      },
+      "random_forest": {
+        "folds": 4,
+        "group_mae": 0.06140676760112648,
+        "mae": 0.055087875675911405,
+        "n": 91,
+        "n_predicted": 91,
+        "prediction_coverage": 1.0,
+        "r2": 0.47032120386302545,
+        "rmse": 0.07678038250356717,
+        "warnings": []
+      },
+      "ridge": {
+        "folds": 4,
+        "group_mae": 0.030979979279506055,
+        "mae": 0.029375832272995433,
+        "n": 91,
+        "n_predicted": 91,
+        "prediction_coverage": 1.0,
+        "r2": 0.835237295961381,
+        "rmse": 0.04282263950697206,
+        "warnings": []
+      }
+    },
+    "domain_coverage": 0.4,
+    "previous_approved_benchmark": null,
+    "previous_research_benchmark": {
+      "metrics": {
+        "group_mae": 0.032456045229514424,
+        "mae": 0.03393616075547975,
+        "n": 35,
+        "n_predicted": 35,
+        "prediction_coverage": 1.0,
+        "r2": 0.902446917785112,
+        "rmse": 0.04397694779082667
+      },
+      "version_id": "26095c53fa139b565dccd31edc806cc66cda19f684224a1c8e3281d1040f9d71"
+    }
+  },
+  "features": [
+    "o2_initial_pct",
+    "pressure_psi",
+    "diameter_mm",
+    "co2_diluent_pct",
+    "he_diluent_pct",
+    "n2_diluent_pct"
+  ],
+  "git": {
+    "head": "ab37bfb159f308727cde62de9f5945eb3771d276",
+    "tracked_diff_sha256": "21dc353d22a1fde304be003a9e998ca76bbce26412b39199d4316777cc36beca"
+  },
+  "hyperparameters": {
+    "features": "ColumnTransformer(transformers=[('numeric', StandardScaler(),\n                                 ['o2_initial_pct', 'pressure_psi',\n                                  'diameter_mm', 'co2_diluent_pct',\n                                  'he_diluent_pct', 'n2_diluent_pct']),\n                                ('categorical',\n                                 OneHotEncoder(handle_unknown='ignore',\n                                               sparse_output=False),\n                                 [])])",
+    "features__categorical": "OneHotEncoder(handle_unknown='ignore', sparse_output=False)",
+    "features__categorical__categories": "auto",
+    "features__categorical__drop": null,
+    "features__categorical__dtype": "<class 'numpy.float64'>",
+    "features__categorical__feature_name_combiner": "concat",
+    "features__categorical__handle_unknown": "ignore",
+    "features__categorical__max_categories": null,
+    "features__categorical__min_frequency": null,
+    "features__categorical__sparse_output": false,
+    "features__n_jobs": null,
+    "features__numeric": "StandardScaler()",
+    "features__numeric__copy": true,
+    "features__numeric__with_mean": true,
+    "features__numeric__with_std": true,
+    "features__remainder": "drop",
+    "features__sparse_threshold": 0.3,
+    "features__transformer_weights": null,
+    "features__transformers": "[('numeric', StandardScaler(), ['o2_initial_pct', 'pressure_psi', 'diameter_mm', 'co2_diluent_pct', 'he_diluent_pct', 'n2_diluent_pct']), ('categorical', OneHotEncoder(handle_unknown='ignore', sparse_output=False), [])]",
+    "features__verbose": false,
+    "features__verbose_feature_names_out": true,
+    "memory": null,
+    "model": "LinearRegression()",
+    "model__copy_X": true,
+    "model__fit_intercept": true,
+    "model__n_jobs": null,
+    "model__positive": false,
+    "model__tol": 1e-06,
+    "steps": "[('features', ColumnTransformer(transformers=[('numeric', StandardScaler(),\n                                 ['o2_initial_pct', 'pressure_psi',\n                                  'diameter_mm', 'co2_diluent_pct',\n                                  'he_diluent_pct', 'n2_diluent_pct']),\n                                ('categorical',\n                                 OneHotEncoder(handle_unknown='ignore',\n                                               sparse_output=False),\n                                 [])])), ('model', LinearRegression())]",
+    "transform_input": null,
+    "verbose": false
+  },
+  "investigations": [
+    "PSI-69"
+  ],
+  "limitations": [
+    "FLEX liquid droplets only; not applicable to solid fires or operational suppression.",
+    "Grouped by test date and specimen identifiers; no independent investigation replication.",
+    "Only initial atmospheric composition, droplet diameter and pressure are predictors.",
+    "Scientific deployment tolerances require review; import eligibility does not authorize deployment."
+  ],
+  "model": "linear_regression",
+  "phenomenon": "quiescent_microgravity_liquid_droplet",
+  "previous_approved": null,
+  "promotion": {
+    "approved": false,
+    "reasons": [
+      "Scientific protocol review is incomplete.",
+      "No approved physical tolerance configured: max_mae.",
+      "No approved physical tolerance configured: max_rmse.",
+      "No approved physical tolerance configured: max_interval_width.",
+      "Too few independent calibration groups for a finite requested coverage interval.",
+      "Supported-domain gate failed on the independent benchmark."
+    ]
+  },
+  "resource_usage": {
+    "elapsed_seconds": 5.152479600015795,
+    "max_estimator_threads": 2,
+    "parallel_training": false
+  },
+  "split_sha256": "9a97eab1e73d50b5d9192b09f672df02ef4174c57a30d6c0b4586d812ec4d84c",
+  "status": "RESEARCH_ONLY",
+  "supported_materials": [
+    "Methanol"
+  ],
+  "target": "burning_rate_constant_mm2_s",
+  "task": {
+    "categorical_features": [],
+    "constant_conditions": {
+      "flow_velocity_initial_cm_s": 0.0,
+      "gravity_g": 0.0
+    },
+    "data_quality_version": 2,
+    "extractor": "flex_initial_droplet_v1",
+    "filters": {
+      "geometry": "Droplet",
+      "gravity_level": "0g",
+      "material_name": "Methanol"
+    },
+    "inference_categories": {
+      "fuel_phase": "Liquid",
+      "geometry": "Droplet"
+    },
+    "interval_alpha": 0.1,
+    "limitations": [
+      "FLEX liquid droplets only; not applicable to solid fires or operational suppression.",
+      "Grouped by test date and specimen identifiers; no independent investigation replication.",
+      "Only initial atmospheric composition, droplet diameter and pressure are predictors.",
+      "Scientific deployment tolerances require review; import eligibility does not authorize deployment."
+    ],
+    "numeric_features": [
+      "o2_initial_pct",
+      "pressure_psi",
+      "diameter_mm",
+      "co2_diluent_pct",
+      "he_diluent_pct",
+      "n2_diluent_pct"
+    ],
+    "phenomenon": "quiescent_microgravity_liquid_droplet",
+    "promotion": {
+      "max_interval_width": null,
+      "max_mae": null,
+      "max_rmse": null,
+      "min_local_groups": 3,
+      "min_test_coverage": 0.9
+    },
+    "research_inference": {
+      "enabled": true,
+      "policy": "point_only_inside_numeric_and_joint_local_domain",
+      "uncertainty": "unavailable_until_independent_calibration_and_scientific_gates_pass",
+      "version": 1
+    },
+    "scientific_review": "research_only",
+    "seed": 42,
+    "subtype": "OVERALL_DROPLET",
+    "target": "burning_rate_constant_mm2_s",
+    "target_bounds": [
+      0,
+      null
+    ],
+    "unit": "mm2/s",
+    "validation_plan_version": 2,
+    "version": 1
+  },
+  "task_id": "flex_methanol_burning_rate",
+  "trained_at_utc": "2026-11-15T13:19:38.989491+00:00",
+  "training_mode": "full_retraining",
+  "uncertainty": {
+    "alpha": 0.1,
+    "benchmark_coverage": null,
+    "calibration_groups": 7,
+    "half_width": null,
+    "limitation": "Requires exchangeable experimental groups; domain transfer is not established.",
+    "method": "group_max_absolute_residual_split_conformal",
+    "quantile_rank": 8
+  },
+  "unit": "mm2/s",
+  "version_id": "0533ebd0470e64d4803c1ef1ed7621dd9a831d381deea95784ece107eb74b5ce"
+}

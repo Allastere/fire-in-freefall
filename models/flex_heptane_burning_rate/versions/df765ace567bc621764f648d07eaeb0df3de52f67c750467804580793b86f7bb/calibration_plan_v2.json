@@ -1,0 +1,13 @@
+{
+  "additional_independent_groups_needed": 3,
+  "alpha": 0.1,
+  "available_calibration_groups": 6,
+  "benchmark_sha256": "88263a631faec4bcce734988ff01696f4632dd875e6f856368269a661aea39a2",
+  "existing_role_policy": "preserve_all_existing_roles_and_frozen_observations",
+  "method": "prospective_frozen_group_conformal",
+  "new_group_policy": "reserve_previously_unseen_groups_for_calibration_until_required_count",
+  "required_calibration_groups": 9,
+  "selection_policy": "development_GroupKFold_only; no benchmark-driven plan or model selection",
+  "status": "INSUFFICIENT_INDEPENDENT_CALIBRATION",
+  "version": 2
+}

@@ -1,0 +1,57 @@
+{
+  "supported_250mm": {
+    "status": [
+      {
+        "body": "Observations: NO_EXACT_MATCH / Gemini: SUCCEEDED / ML: RESEARCH_ONLY"
+      }
+    ],
+    "answer": [
+      {
+        "body": "<div class=\"ff-conclusion\">Research-only ML estimate: 10.3 s; no validated prediction interval. For the requested case, the exploratory model estimate for the natural extinguishing time of a 2.5 mm methanol droplet is 10.3 s. In related FLEX experiments with comparable droplet diameters and initial conditions, radiative-diffusive droplet extinction times were measured as 9.6 s and 11.4 s.</div>",
+        "unsafe_allow_javascript": false
+      }
+    ],
+    "metrics": [
+      {
+        "label": "Extinguishing time s \u00b7 research-only ML estimate",
+        "value": "10.3 s",
+        "label_visibility": "visible"
+      }
+    ]
+  },
+  "limited_165mm": {
+    "status": [
+      {
+        "body": "Observations: NO_EXACT_MATCH / Gemini: SUCCEEDED / ML: BLOCKED"
+      }
+    ],
+    "answer": [
+      {
+        "body": "<div class=\"ff-conclusion\">No requested-case numerical prediction: Too few nearby independent groups in this physical regime. Related experimental evidence: For comparable methanol droplet experiments under similar ambient conditions, radiative-diffusive droplet extinction times were recorded in other experiments as reported in PSI-69.</div>",
+        "unsafe_allow_javascript": false
+      }
+    ],
+    "metrics": []
+  },
+  "cached_response": {
+    "status": [
+      {
+        "body": "Observations: NO_EXACT_MATCH / Gemini: SUCCEEDED / ML: RESEARCH_ONLY"
+      }
+    ],
+    "answer": [
+      {
+        "body": "<div class=\"ff-conclusion\">Research-only ML estimate: 10.3 s; no validated prediction interval. For the requested case, the exploratory model estimate for the natural extinguishing time of a 2.5 mm methanol droplet is 10.3 s. In related FLEX experiments with comparable droplet diameters and initial conditions, radiative-diffusive droplet extinction times were measured as 9.6 s and 11.4 s.</div>",
+        "unsafe_allow_javascript": false
+      }
+    ],
+    "metrics": [
+      {
+        "label": "Extinguishing time s \u00b7 research-only ML estimate",
+        "value": "10.3 s",
+        "label_visibility": "visible"
+      }
+    ]
+  },
+  "input_conflict_warning": true
+}

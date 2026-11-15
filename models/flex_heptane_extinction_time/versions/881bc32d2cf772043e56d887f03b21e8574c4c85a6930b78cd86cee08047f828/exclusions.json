@@ -1,0 +1,30 @@
+[
+  {
+    "reason": "invalid_initial_composition",
+    "uid": "PSI-69:FLEX-079"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-080"
+  },
+  {
+    "reason": "could not convert string to float: '–'",
+    "uid": "PSI-69:FLEX-081"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-095"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-150"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-181"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-259"
+  }
+]

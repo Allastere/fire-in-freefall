@@ -1,0 +1,372 @@
+{
+  "benchmark_domain_coverage": 0.3333333333333333,
+  "categories": {},
+  "conditions": {
+    "flow_velocity_initial_cm_s": 0.0,
+    "gravity_g": 0.0
+  },
+  "materials": [
+    "n-Heptane"
+  ],
+  "min_local_groups": 3,
+  "neighbor_radius": 2.133112107846457,
+  "numeric_feature_order": [
+    "o2_initial_pct",
+    "pressure_psi",
+    "diameter_mm",
+    "co2_diluent_pct",
+    "he_diluent_pct",
+    "n2_diluent_pct"
+  ],
+  "numeric_ranges": {
+    "co2_diluent_pct": {
+      "max": 35.0,
+      "min": 0.0
+    },
+    "diameter_mm": {
+      "max": 4.67,
+      "min": 1.49
+    },
+    "he_diluent_pct": {
+      "max": 35.0,
+      "min": 0.0
+    },
+    "n2_diluent_pct": {
+      "max": 86.0,
+      "min": 44.0
+    },
+    "o2_initial_pct": {
+      "max": 24.0,
+      "min": 14.000000000000002
+    },
+    "pressure_psi": {
+      "max": 14.891250200464102,
+      "min": 10.240755883866756
+    }
+  },
+  "physical_series": {
+    "geometry": "Droplet",
+    "gravity_level": "0g",
+    "material_name": "n-Heptane"
+  },
+  "radius_method": "training_90th_percentile_nearest_other_group_distance",
+  "radius_validated": false,
+  "scale": [
+    2.843678109475723,
+    2.113496556333546,
+    0.7308919989894891,
+    12.190812809448657,
+    11.051937781209373,
+    14.209626835694475
+  ],
+  "training_groups": [
+    "873831adedbc09e5f3d8f63876b73f57004f2b779c98a302023bec0f851f1fe7",
+    "290f517c42e8f652da5ca66f70adb08659943e379814ce881aa97e3005662552",
+    "290f517c42e8f652da5ca66f70adb08659943e379814ce881aa97e3005662552",
+    "18e16af9f1110433e5305126adc788a40e0fe2ee0ff045e2fc7f26a8bffe9f8d",
+    "c2cf9549a45d7f1158f05a885be05b2e1b51ca3830c0d0770bf04b11ea46eab7",
+    "c2cf9549a45d7f1158f05a885be05b2e1b51ca3830c0d0770bf04b11ea46eab7",
+    "295a933c166d0b34f99091b05e984a83ab993403ddff48fd61a0ac9dd757567f",
+    "b7200ea6905b98ddba83ab23882d535745e275c796e11143aa8ce2aa175530c7",
+    "b7200ea6905b98ddba83ab23882d535745e275c796e11143aa8ce2aa175530c7",
+    "b7200ea6905b98ddba83ab23882d535745e275c796e11143aa8ce2aa175530c7",
+    "b7200ea6905b98ddba83ab23882d535745e275c796e11143aa8ce2aa175530c7",
+    "413842156d1d1d325b28b7639ce3e68edf37f46e9972e41bde412b3686bb25c9",
+    "413842156d1d1d325b28b7639ce3e68edf37f46e9972e41bde412b3686bb25c9",
+    "ea83c09c6234d35109ce12652bf342ccc8cc54069905ef5dfad46dedc877d246",
+    "30554151446fa9d145eb5f8c552968c1b4191194883597a11e88163fb613f600",
+    "30554151446fa9d145eb5f8c552968c1b4191194883597a11e88163fb613f600",
+    "30554151446fa9d145eb5f8c552968c1b4191194883597a11e88163fb613f600",
+    "45df3b01c16f151a72920ad20ee9a85542f4cc322dcd5e81d85cd52ae05e7676",
+    "45df3b01c16f151a72920ad20ee9a85542f4cc322dcd5e81d85cd52ae05e7676",
+    "b1961d54b9367f6bf93783498b73d83c5f61329afddbd5870ae4f86d46763d0c",
+    "0bf3a1dfd24402b1b2154abd565c28e8093e2ae6c61136719181065c6608e2a5",
+    "3d14b0e87d08ef73da4d16fe17efa565d3c904b12ebd6b1dad3492d931f1287d",
+    "3d14b0e87d08ef73da4d16fe17efa565d3c904b12ebd6b1dad3492d931f1287d",
+    "3d14b0e87d08ef73da4d16fe17efa565d3c904b12ebd6b1dad3492d931f1287d",
+    "3d03798c1b173718299ece10b281cdbecc4e416a5d8e3be8b1698df13317b7b8",
+    "1e0ad0ec2a96b14bd5a0e0b9e8c8d1871c5e74cc85015fbd023791ccf6593adc",
+    "1e0ad0ec2a96b14bd5a0e0b9e8c8d1871c5e74cc85015fbd023791ccf6593adc",
+    "1e0ad0ec2a96b14bd5a0e0b9e8c8d1871c5e74cc85015fbd023791ccf6593adc",
+    "e8a311afae0133d01acaddece7d447dca7f859fc45995f6ee698446fab3d3956",
+    "8dda7e8e7f27e5664117f72d3ed7fff2e3695b6e930df8733729c5990059ef97",
+    "8dda7e8e7f27e5664117f72d3ed7fff2e3695b6e930df8733729c5990059ef97",
+    "8dda7e8e7f27e5664117f72d3ed7fff2e3695b6e930df8733729c5990059ef97",
+    "44c9f87b598af355fca549ae526fc6ad2c0828e6402428c93f75d24151c2c51d",
+    "44c9f87b598af355fca549ae526fc6ad2c0828e6402428c93f75d24151c2c51d"
+  ],
+  "training_points": [
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 3.85,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 79.0,
+      "o2_initial_pct": 21.0,
+      "pressure_psi": 14.85257665105373
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 3.46,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 79.0,
+      "o2_initial_pct": 21.0,
+      "pressure_psi": 14.79069897199713
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 3.57,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 79.0,
+      "o2_initial_pct": 21.0,
+      "pressure_psi": 14.891250200464102
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 3.1,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 79.0,
+      "o2_initial_pct": 20.0,
+      "pressure_psi": 10.526940149503515
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 4.67,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 84.0,
+      "o2_initial_pct": 15.0,
+      "pressure_psi": 14.715285550646904
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 4.64,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 84.0,
+      "o2_initial_pct": 15.0,
+      "pressure_psi": 14.715285550646904
+    },
+    {
+      "co2_diluent_pct": 20.0,
+      "diameter_mm": 3.53,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 56.00000000000001,
+      "o2_initial_pct": 24.0,
+      "pressure_psi": 10.3181029826875
+    },
+    {
+      "co2_diluent_pct": 25.0,
+      "diameter_mm": 4.14,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 52.0,
+      "o2_initial_pct": 23.0,
+      "pressure_psi": 10.37804698427358
+    },
+    {
+      "co2_diluent_pct": 25.0,
+      "diameter_mm": 3.88,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 52.0,
+      "o2_initial_pct": 23.0,
+      "pressure_psi": 10.416720533683952
+    },
+    {
+      "co2_diluent_pct": 30.0,
+      "diameter_mm": 3.57,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 49.0,
+      "o2_initial_pct": 21.0,
+      "pressure_psi": 10.329705047510613
+    },
+    {
+      "co2_diluent_pct": 30.0,
+      "diameter_mm": 4.0,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 49.0,
+      "o2_initial_pct": 21.0,
+      "pressure_psi": 10.331638724981131
+    },
+    {
+      "co2_diluent_pct": 35.0,
+      "diameter_mm": 3.84,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 45.0,
+      "o2_initial_pct": 20.0,
+      "pressure_psi": 10.269761045924534
+    },
+    {
+      "co2_diluent_pct": 35.0,
+      "diameter_mm": 3.03,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 44.0,
+      "o2_initial_pct": 20.0,
+      "pressure_psi": 10.30263356292335
+    },
+    {
+      "co2_diluent_pct": 20.0,
+      "diameter_mm": 3.66,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 56.00000000000001,
+      "o2_initial_pct": 24.0,
+      "pressure_psi": 14.835173553819061
+    },
+    {
+      "co2_diluent_pct": 15.0,
+      "diameter_mm": 3.7,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 67.0,
+      "o2_initial_pct": 18.0,
+      "pressure_psi": 14.740423357763646
+    },
+    {
+      "co2_diluent_pct": 15.0,
+      "diameter_mm": 2.73,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 67.0,
+      "o2_initial_pct": 18.0,
+      "pressure_psi": 14.79069897199713
+    },
+    {
+      "co2_diluent_pct": 15.0,
+      "diameter_mm": 1.96,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 67.0,
+      "o2_initial_pct": 18.0,
+      "pressure_psi": 14.800367359349725
+    },
+    {
+      "co2_diluent_pct": 25.0,
+      "diameter_mm": 3.32,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 52.0,
+      "o2_initial_pct": 23.0,
+      "pressure_psi": 10.3181029826875
+    },
+    {
+      "co2_diluent_pct": 10.0,
+      "diameter_mm": 3.4,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 71.0,
+      "o2_initial_pct": 19.0,
+      "pressure_psi": 14.66500993641342
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 3.34,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 84.0,
+      "o2_initial_pct": 16.0,
+      "pressure_psi": 14.69208142100068
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 2.52,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 84.0,
+      "o2_initial_pct": 16.0,
+      "pressure_psi": 14.6940150984712
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 2.55,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 85.0,
+      "o2_initial_pct": 15.0,
+      "pressure_psi": 14.773295874762464
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 4.16,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 86.0,
+      "o2_initial_pct": 14.000000000000002,
+      "pressure_psi": 14.69208142100068
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 1.83,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 86.0,
+      "o2_initial_pct": 14.000000000000002,
+      "pressure_psi": 14.6940150984712
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 3.65,
+      "he_diluent_pct": 0.0,
+      "n2_diluent_pct": 79.0,
+      "o2_initial_pct": 21.0,
+      "pressure_psi": 14.873847103229433
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 3.52,
+      "he_diluent_pct": 15.0,
+      "n2_diluent_pct": 67.0,
+      "o2_initial_pct": 18.0,
+      "pressure_psi": 14.767494842350908
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 2.85,
+      "he_diluent_pct": 20.0,
+      "n2_diluent_pct": 63.0,
+      "o2_initial_pct": 17.0,
+      "pressure_psi": 14.682413033648086
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 2.12,
+      "he_diluent_pct": 20.0,
+      "n2_diluent_pct": 63.0,
+      "o2_initial_pct": 17.0,
+      "pressure_psi": 14.682413033648086
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 1.49,
+      "he_diluent_pct": 25.0,
+      "n2_diluent_pct": 59.0,
+      "o2_initial_pct": 16.0,
+      "pressure_psi": 14.655341549060825
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 3.23,
+      "he_diluent_pct": 30.0,
+      "n2_diluent_pct": 49.0,
+      "o2_initial_pct": 21.0,
+      "pressure_psi": 10.240755883866756
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 3.69,
+      "he_diluent_pct": 35.0,
+      "n2_diluent_pct": 45.0,
+      "o2_initial_pct": 20.0,
+      "pressure_psi": 10.296832530511796
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 3.08,
+      "he_diluent_pct": 35.0,
+      "n2_diluent_pct": 45.0,
+      "o2_initial_pct": 20.0,
+      "pressure_psi": 10.287164143159202
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 3.54,
+      "he_diluent_pct": 15.0,
+      "n2_diluent_pct": 64.0,
+      "o2_initial_pct": 21.0,
+      "pressure_psi": 14.786831617056095
+    },
+    {
+      "co2_diluent_pct": 0.0,
+      "diameter_mm": 2.82,
+      "he_diluent_pct": 15.0,
+      "n2_diluent_pct": 64.0,
+      "o2_initial_pct": 21.0,
+      "pressure_psi": 14.815836779113875
+    }
+  ]
+}
