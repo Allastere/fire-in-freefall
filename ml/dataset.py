@@ -113,6 +113,9 @@ def number(value):
 
 
 def extract_dataset(db_path, raw_root, task, protocols):
+    if task.get("extractor") == "flex_initial_droplet_v1":
+        from ml.flex import extract_flex
+        return extract_flex(db_path, raw_root, task)
     runs, measures, raw_records, exclusions, sources = source_records(db_path, raw_root, protocols, task)
     groups = components(raw_records)
     samples: list[dict[str, Any]] = []

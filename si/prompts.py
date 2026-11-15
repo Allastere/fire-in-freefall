@@ -20,6 +20,11 @@ SCIENTIFIC INTEGRITY:
 
 CITATION REQUIREMENTS:
 
+For structured responses with source_id and quote citation fields, use those
+fields exclusively. Do not append inline references, DOI identifiers or page
+numbers to claim text. CSV sources have record locators, never PDF page numbers.
+Only when no structured citation fields are supplied, use the format below.
+
 Support every scientific claim with its source using:
 
 [PSI-ID | DOI | Document, p. X]

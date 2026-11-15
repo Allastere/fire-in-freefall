@@ -38,7 +38,10 @@ LABELS = {
 
 
 def read_csv(content):
-    return pd.read_csv(BytesIO(content), dtype=str, keep_default_na=False, encoding="utf-8-sig")
+    try:
+        return pd.read_csv(BytesIO(content), dtype=str, keep_default_na=False, encoding="utf-8-sig")
+    except UnicodeDecodeError:
+        return pd.read_csv(BytesIO(content), dtype=str, keep_default_na=False, encoding="cp1252")
 
 
 def csv_sources(content, name, psi_id, doi=None):

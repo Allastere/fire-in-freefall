@@ -1,14 +1,20 @@
 [theme]
-base = "light"
-primaryColor = "#3457A4"
-backgroundColor = "#EDECE6"
-secondaryBackgroundColor = "#F7F6F0"
-textColor = "#242424"
-borderColor = "#D4D2C9"
-linkColor = "#284783"
+base = "dark"
+primaryColor = "#C88A60"
+backgroundColor = "#101214"
+secondaryBackgroundColor = "#191C20"
+textColor = "#E8E7E3"
+borderColor = "#33383E"
+linkColor = "#ECC09C"
 font = "Geist:https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap, sans-serif"
 headingFont = "Geist:https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap, sans-serif"
 codeFont = "JetBrains Mono:https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap, monospace"
 baseRadius = "0rem"
 buttonRadius = "0rem"
 showWidgetBorder = true
+
+dataframeBorderColor = "#33383E"
+dataframeHeaderBackgroundColor = "#24282D"
+dataframeHeaderTextColor = "#E8E7E3"
+codeBackgroundColor = "#191C20"
+chartCategoricalColors = ["#7B9DB8", "#C88A60", "#91979F", "#ECC09C", "#E8E7E3"]

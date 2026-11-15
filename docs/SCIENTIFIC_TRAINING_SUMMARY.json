@@ -1,0 +1,754 @@
+[
+  {
+    "task_id": "flex_heptane_burning_rate",
+    "version_id": "cf06f7815757a6e402e78a337037452693f9a6cb09c902ca2530bb3e01c45270",
+    "status": "RESEARCH_ONLY",
+    "model": "linear_regression",
+    "counts": {
+      "benchmark": {
+        "groups": 8,
+        "samples": 14
+      },
+      "calibration": {
+        "groups": 6,
+        "samples": 17
+      },
+      "development": {
+        "groups": 26,
+        "samples": 74
+      }
+    },
+    "evaluation": {
+      "baseline_benchmark": {
+        "group_mae": 0.12884290540540538,
+        "mae": 0.11998069498069494,
+        "n": 14,
+        "n_predicted": 14,
+        "prediction_coverage": 1.0,
+        "r2": -0.05148818307288061,
+        "rmse": 0.1396722042404239
+      },
+      "benchmark": {
+        "group_mae": 0.046574179073394104,
+        "mae": 0.04590008979656017,
+        "n": 14,
+        "n_predicted": 14,
+        "prediction_coverage": 1.0,
+        "r2": 0.8419943778653446,
+        "rmse": 0.05414321731554066
+      },
+      "cross_validation": {
+        "catboost": {
+          "folds": 4,
+          "group_mae": 0.09230513254005514,
+          "mae": 0.09512496315637914,
+          "n": 74,
+          "n_predicted": 74,
+          "prediction_coverage": 1.0,
+          "r2": 0.22034145772068447,
+          "rmse": 0.12779385521277065,
+          "warnings": []
+        },
+        "gaussian_process": {
+          "folds": 4,
+          "group_mae": 0.07547804702013125,
+          "mae": 0.08054191496849679,
+          "n": 74,
+          "n_predicted": 74,
+          "prediction_coverage": 1.0,
+          "r2": 0.3910726682267458,
+          "rmse": 0.11293810204459542,
+          "warnings": []
+        },
+        "linear_interpolation": {
+          "folds": 4,
+          "group_mae": 0.039339325314794824,
+          "mae": 0.04370734037184034,
+          "n": 74,
+          "n_predicted": 20,
+          "prediction_coverage": 0.2702702702702703,
+          "r2": 0.5384893057769295,
+          "rmse": 0.054401771151121485,
+          "warnings": []
+        },
+        "linear_regression": {
+          "folds": 4,
+          "group_mae": 0.07334847110833227,
+          "mae": 0.07359120710594863,
+          "n": 74,
+          "n_predicted": 74,
+          "prediction_coverage": 1.0,
+          "r2": 0.4423533711147155,
+          "rmse": 0.10807799807407219,
+          "warnings": []
+        },
+        "mean_baseline": {
+          "folds": 4,
+          "group_mae": 0.1100711788211788,
+          "mae": 0.11758827658827657,
+          "n": 74,
+          "n_predicted": 74,
+          "prediction_coverage": 1.0,
+          "r2": -0.21993924141129817,
+          "rmse": 0.15985523076495048,
+          "warnings": []
+        },
+        "random_forest": {
+          "folds": 4,
+          "group_mae": 0.08439806155881156,
+          "mae": 0.09009204016516513,
+          "n": 74,
+          "n_predicted": 74,
+          "prediction_coverage": 1.0,
+          "r2": 0.24696169754603248,
+          "rmse": 0.1255932458157749,
+          "warnings": []
+        },
+        "ridge": {
+          "folds": 4,
+          "group_mae": 0.08538377868975325,
+          "mae": 0.082881473626349,
+          "n": 74,
+          "n_predicted": 74,
+          "prediction_coverage": 1.0,
+          "r2": 0.3285619409963195,
+          "rmse": 0.1185934568607533,
+          "warnings": []
+        }
+      },
+      "domain_coverage": 0.5,
+      "previous_approved_benchmark": null,
+      "previous_research_benchmark": {
+        "metrics": {
+          "group_mae": 0.046574179073394104,
+          "mae": 0.04590008979656017,
+          "n": 14,
+          "n_predicted": 14,
+          "prediction_coverage": 1.0,
+          "r2": 0.8419943778653446,
+          "rmse": 0.05414321731554066
+        },
+        "version_id": "23116be43146d18fd47180f1e07bd240219bcea187fd9e3fd420a3ebed95eb21"
+      }
+    },
+    "promotion": {
+      "approved": false,
+      "reasons": [
+        "Scientific protocol review is incomplete.",
+        "No approved physical tolerance configured: max_mae.",
+        "No approved physical tolerance configured: max_rmse.",
+        "No approved physical tolerance configured: max_interval_width.",
+        "Too few independent calibration groups for a finite requested coverage interval.",
+        "Supported-domain gate failed on the independent benchmark."
+      ]
+    },
+    "resource_usage": {
+      "elapsed_seconds": 5.436432000016794,
+      "max_estimator_threads": 2,
+      "parallel_training": false
+    }
+  },
+  {
+    "task_id": "flex_heptane_extinction_time",
+    "version_id": "e8e23fa56725443b3c808bb80a46d28029a809111b7e40094c1f7be8148a2f59",
+    "status": "RESEARCH_ONLY",
+    "model": "catboost",
+    "counts": {
+      "benchmark": {
+        "groups": 6,
+        "samples": 12
+      },
+      "calibration": {
+        "groups": 4,
+        "samples": 6
+      },
+      "development": {
+        "groups": 18,
+        "samples": 34
+      }
+    },
+    "evaluation": {
+      "baseline_benchmark": {
+        "group_mae": 2.8239379084967324,
+        "mae": 2.7825980392156864,
+        "n": 12,
+        "n_predicted": 12,
+        "prediction_coverage": 1.0,
+        "r2": -0.17635517491363029,
+        "rmse": 3.115073739132139
+      },
+      "benchmark": {
+        "group_mae": 1.9502964064668014,
+        "mae": 1.948302732162242,
+        "n": 12,
+        "n_predicted": 12,
+        "prediction_coverage": 1.0,
+        "r2": 0.4622372934312914,
+        "rmse": 2.1061749271007235
+      },
+      "cross_validation": {
+        "catboost": {
+          "folds": 4,
+          "group_mae": 1.451368827432587,
+          "mae": 1.530631886071443,
+          "n": 34,
+          "n_predicted": 34,
+          "prediction_coverage": 1.0,
+          "r2": 0.5049993992564171,
+          "rmse": 1.9627297111905135,
+          "warnings": []
+        },
+        "gaussian_process": {
+          "folds": 4,
+          "group_mae": 1.8139497609866118,
+          "mae": 1.7854255722196528,
+          "n": 34,
+          "n_predicted": 34,
+          "prediction_coverage": 1.0,
+          "r2": 0.205575723775539,
+          "rmse": 2.4864737988280323,
+          "warnings": [
+            "The optimal value found for dimension 0 of parameter k1__k1__constant_value is close to the specified upper bound 100.0. Increasing the bound and calling fit again may find a better value."
+          ]
+        },
+        "linear_interpolation": {
+          "folds": 4,
+          "group_mae": 1.0929240993709328,
+          "mae": 1.0929240993709328,
+          "n": 34,
+          "n_predicted": 2,
+          "prediction_coverage": 0.058823529411764705,
+          "r2": 0.8157948179751929,
+          "rmse": 1.0944378447935306,
+          "warnings": []
+        },
+        "linear_regression": {
+          "folds": 4,
+          "group_mae": 1.8492748923373326,
+          "mae": 1.96985601739997,
+          "n": 34,
+          "n_predicted": 34,
+          "prediction_coverage": 1.0,
+          "r2": 0.24360536422839663,
+          "rmse": 2.426229359982887,
+          "warnings": []
+        },
+        "mean_baseline": {
+          "folds": 4,
+          "group_mae": 2.809643874643874,
+          "mae": 2.5848506787330314,
+          "n": 34,
+          "n_predicted": 34,
+          "prediction_coverage": 1.0,
+          "r2": -0.1471806701944458,
+          "rmse": 2.9879515016349445,
+          "warnings": []
+        },
+        "random_forest": {
+          "folds": 4,
+          "group_mae": 1.60981521255879,
+          "mae": 1.7792851598972927,
+          "n": 34,
+          "n_predicted": 34,
+          "prediction_coverage": 1.0,
+          "r2": 0.32512505375373146,
+          "rmse": 2.2917608001301217,
+          "warnings": []
+        },
+        "ridge": {
+          "folds": 4,
+          "group_mae": 1.618482861058041,
+          "mae": 1.707601336593487,
+          "n": 34,
+          "n_predicted": 34,
+          "prediction_coverage": 1.0,
+          "r2": 0.42184049167134885,
+          "rmse": 2.1211992745918735,
+          "warnings": []
+        }
+      },
+      "domain_coverage": 0.3333333333333333,
+      "previous_approved_benchmark": null,
+      "previous_research_benchmark": {
+        "metrics": {
+          "group_mae": 1.9502964064668014,
+          "mae": 1.948302732162242,
+          "n": 12,
+          "n_predicted": 12,
+          "prediction_coverage": 1.0,
+          "r2": 0.4622372934312914,
+          "rmse": 2.1061749271007235
+        },
+        "version_id": "d83d85e9f46a4ef7ccbfe6b1886b69e1f23762da6a1800adcc4a9bda8c5fdfdf"
+      }
+    },
+    "promotion": {
+      "approved": false,
+      "reasons": [
+        "Scientific protocol review is incomplete.",
+        "No approved physical tolerance configured: max_mae.",
+        "No approved physical tolerance configured: max_rmse.",
+        "No approved physical tolerance configured: max_interval_width.",
+        "Too few independent calibration groups for a finite requested coverage interval.",
+        "Supported-domain gate failed on the independent benchmark."
+      ]
+    },
+    "resource_usage": {
+      "elapsed_seconds": 4.297667100006947,
+      "max_estimator_threads": 2,
+      "parallel_training": false
+    }
+  },
+  {
+    "task_id": "flex_methanol_burning_rate",
+    "version_id": "26095c53fa139b565dccd31edc806cc66cda19f684224a1c8e3281d1040f9d71",
+    "status": "RESEARCH_ONLY",
+    "model": "linear_regression",
+    "counts": {
+      "benchmark": {
+        "groups": 10,
+        "samples": 35
+      },
+      "calibration": {
+        "groups": 7,
+        "samples": 22
+      },
+      "development": {
+        "groups": 32,
+        "samples": 92
+      }
+    },
+    "evaluation": {
+      "baseline_benchmark": {
+        "group_mae": 0.1070917701863354,
+        "mae": 0.1253136645962733,
+        "n": 35,
+        "n_predicted": 35,
+        "prediction_coverage": 1.0,
+        "r2": -0.01500149118742855,
+        "rmse": 0.1418528044627439
+      },
+      "benchmark": {
+        "group_mae": 0.032456045229514424,
+        "mae": 0.03393616075547975,
+        "n": 35,
+        "n_predicted": 35,
+        "prediction_coverage": 1.0,
+        "r2": 0.902446917785112,
+        "rmse": 0.04397694779082667
+      },
+      "cross_validation": {
+        "catboost": {
+          "folds": 4,
+          "group_mae": 0.055650547966668545,
+          "mae": 0.04875487863713134,
+          "n": 92,
+          "n_predicted": 92,
+          "prediction_coverage": 1.0,
+          "r2": 0.5858941579793886,
+          "rmse": 0.06758826499887159,
+          "warnings": []
+        },
+        "gaussian_process": {
+          "folds": 4,
+          "group_mae": 0.032180398672682034,
+          "mae": 0.029465625284266116,
+          "n": 92,
+          "n_predicted": 92,
+          "prediction_coverage": 1.0,
+          "r2": 0.8239945222600096,
+          "rmse": 0.044063471705671514,
+          "warnings": [
+            "The optimal value found for dimension 0 of parameter k1__k1__constant_value is close to the specified upper bound 100.0. Increasing the bound and calling fit again may find a better value."
+          ]
+        },
+        "linear_interpolation": {
+          "folds": 4,
+          "group_mae": 0.033967028449652284,
+          "mae": 0.0339984955922244,
+          "n": 92,
+          "n_predicted": 27,
+          "prediction_coverage": 0.29347826086956524,
+          "r2": 0.30661955082832426,
+          "rmse": 0.04231340637125595,
+          "warnings": []
+        },
+        "linear_regression": {
+          "folds": 4,
+          "group_mae": 0.029977251042066586,
+          "mae": 0.028292576711799227,
+          "n": 92,
+          "n_predicted": 92,
+          "prediction_coverage": 1.0,
+          "r2": 0.8384070067693301,
+          "rmse": 0.04222084124097365,
+          "warnings": []
+        },
+        "mean_baseline": {
+          "folds": 4,
+          "group_mae": 0.09156506642512076,
+          "mae": 0.08583490863264019,
+          "n": 92,
+          "n_predicted": 92,
+          "prediction_coverage": 1.0,
+          "r2": -0.03653485283325253,
+          "rmse": 0.10693197157465822,
+          "warnings": []
+        },
+        "random_forest": {
+          "folds": 4,
+          "group_mae": 0.057042654978918694,
+          "mae": 0.05155175875603869,
+          "n": 92,
+          "n_predicted": 92,
+          "prediction_coverage": 1.0,
+          "r2": 0.5341408288798247,
+          "rmse": 0.07168741896260819,
+          "warnings": []
+        },
+        "ridge": {
+          "folds": 4,
+          "group_mae": 0.03054948224917929,
+          "mae": 0.028813720085331177,
+          "n": 92,
+          "n_predicted": 92,
+          "prediction_coverage": 1.0,
+          "r2": 0.8368351190796667,
+          "rmse": 0.04242569482250618,
+          "warnings": []
+        }
+      },
+      "domain_coverage": 0.4,
+      "previous_approved_benchmark": null,
+      "previous_research_benchmark": {
+        "metrics": {
+          "group_mae": 0.032456045229514424,
+          "mae": 0.03393616075547975,
+          "n": 35,
+          "n_predicted": 35,
+          "prediction_coverage": 1.0,
+          "r2": 0.902446917785112,
+          "rmse": 0.04397694779082667
+        },
+        "version_id": "891b9f834d034bfaca1faa664c77cbc975e59017e7646d7ad5ee4b11eceec68d"
+      }
+    },
+    "promotion": {
+      "approved": false,
+      "reasons": [
+        "Scientific protocol review is incomplete.",
+        "No approved physical tolerance configured: max_mae.",
+        "No approved physical tolerance configured: max_rmse.",
+        "No approved physical tolerance configured: max_interval_width.",
+        "Too few independent calibration groups for a finite requested coverage interval.",
+        "Supported-domain gate failed on the independent benchmark."
+      ]
+    },
+    "resource_usage": {
+      "elapsed_seconds": 4.2804698000254575,
+      "max_estimator_threads": 2,
+      "parallel_training": false
+    }
+  },
+  {
+    "task_id": "flex_methanol_extinction_time",
+    "version_id": "e218ca5edf5ee2687f65fcac7756496bf24645b8e124166553a487ce964a7785",
+    "status": "RESEARCH_ONLY",
+    "model": "gaussian_process",
+    "counts": {
+      "benchmark": {
+        "groups": 8,
+        "samples": 19
+      },
+      "calibration": {
+        "groups": 6,
+        "samples": 15
+      },
+      "development": {
+        "groups": 26,
+        "samples": 69
+      }
+    },
+    "evaluation": {
+      "baseline_benchmark": {
+        "group_mae": 6.029235507246376,
+        "mae": 5.11717772692601,
+        "n": 19,
+        "n_predicted": 19,
+        "prediction_coverage": 1.0,
+        "r2": -0.0018553675987449392,
+        "rmse": 6.238825318136818
+      },
+      "benchmark": {
+        "group_mae": 2.2697952131015824,
+        "mae": 2.3709541559080236,
+        "n": 19,
+        "n_predicted": 19,
+        "prediction_coverage": 1.0,
+        "r2": 0.7384856572410425,
+        "rmse": 3.1874843976541585
+      },
+      "cross_validation": {
+        "catboost": {
+          "folds": 4,
+          "group_mae": 4.258162588821236,
+          "mae": 4.121454026082785,
+          "n": 69,
+          "n_predicted": 69,
+          "prediction_coverage": 1.0,
+          "r2": 0.5122597293932865,
+          "rmse": 5.505844575375603,
+          "warnings": []
+        },
+        "gaussian_process": {
+          "folds": 4,
+          "group_mae": 3.017263514653234,
+          "mae": 2.9327209898156186,
+          "n": 69,
+          "n_predicted": 69,
+          "prediction_coverage": 1.0,
+          "r2": 0.7535416349032953,
+          "rmse": 3.9138251682249354,
+          "warnings": []
+        },
+        "linear_interpolation": {
+          "folds": 4,
+          "group_mae": 1.9363977058801058,
+          "mae": 2.303430679292826,
+          "n": 69,
+          "n_predicted": 18,
+          "prediction_coverage": 0.2608695652173913,
+          "r2": 0.6969010501681638,
+          "rmse": 2.9320735973817658,
+          "warnings": []
+        },
+        "linear_regression": {
+          "folds": 4,
+          "group_mae": 4.8955827863452885,
+          "mae": 4.522710406518164,
+          "n": 69,
+          "n_predicted": 69,
+          "prediction_coverage": 1.0,
+          "r2": 0.46202304829881924,
+          "rmse": 5.7824445249177,
+          "warnings": []
+        },
+        "mean_baseline": {
+          "folds": 4,
+          "group_mae": 6.348742874270024,
+          "mae": 5.882093142719742,
+          "n": 69,
+          "n_predicted": 69,
+          "prediction_coverage": 1.0,
+          "r2": -0.004607553247443441,
+          "rmse": 7.901833231450664,
+          "warnings": []
+        },
+        "random_forest": {
+          "folds": 4,
+          "group_mae": 4.533464841066341,
+          "mae": 4.459986678743962,
+          "n": 69,
+          "n_predicted": 69,
+          "prediction_coverage": 1.0,
+          "r2": 0.4786545533575022,
+          "rmse": 5.692360973448975,
+          "warnings": []
+        },
+        "ridge": {
+          "folds": 4,
+          "group_mae": 4.8522433187194665,
+          "mae": 4.481477784724381,
+          "n": 69,
+          "n_predicted": 69,
+          "prediction_coverage": 1.0,
+          "r2": 0.4715357374535576,
+          "rmse": 5.731092945343333,
+          "warnings": []
+        }
+      },
+      "domain_coverage": 0.6842105263157895,
+      "previous_approved_benchmark": null,
+      "previous_research_benchmark": {
+        "metrics": {
+          "group_mae": 2.2697952131015824,
+          "mae": 2.3709541559080236,
+          "n": 19,
+          "n_predicted": 19,
+          "prediction_coverage": 1.0,
+          "r2": 0.7384856572410425,
+          "rmse": 3.1874843976541585
+        },
+        "version_id": "8049ea869c2f881870b4ff528e4899df79397871cffaa0558aa37af9c576ab1c"
+      }
+    },
+    "promotion": {
+      "approved": false,
+      "reasons": [
+        "Scientific protocol review is incomplete.",
+        "No approved physical tolerance configured: max_mae.",
+        "No approved physical tolerance configured: max_rmse.",
+        "No approved physical tolerance configured: max_interval_width.",
+        "Too few independent calibration groups for a finite requested coverage interval.",
+        "Supported-domain gate failed on the independent benchmark."
+      ]
+    },
+    "resource_usage": {
+      "elapsed_seconds": 4.132298999989871,
+      "max_estimator_threads": 2,
+      "parallel_training": false
+    }
+  },
+  {
+    "task_id": "pmma_slab_co2_final",
+    "version_id": "3d39791b129e0d34bc5fc0a581b5da6d05fdd6a0fe94882501d1ee9c95078e2e",
+    "status": "RESEARCH_ONLY",
+    "model": "random_forest",
+    "counts": {
+      "benchmark": {
+        "groups": 2,
+        "samples": 6
+      },
+      "calibration": {
+        "groups": 1,
+        "samples": 4
+      },
+      "development": {
+        "groups": 4,
+        "samples": 9
+      }
+    },
+    "evaluation": {
+      "baseline_benchmark": {
+        "group_mae": 0.4205555555555558,
+        "mae": 0.42055555555555574,
+        "n": 6,
+        "n_predicted": 6,
+        "prediction_coverage": 1.0,
+        "r2": -2.5685631171532206,
+        "rmse": 0.4957068777432642
+      },
+      "benchmark": {
+        "group_mae": 0.37217123015873077,
+        "mae": 0.37217123015873077,
+        "n": 6,
+        "n_predicted": 6,
+        "prediction_coverage": 1.0,
+        "r2": -1.8361147292835973,
+        "rmse": 0.44191643259850194
+      },
+      "cross_validation": {
+        "catboost": {
+          "folds": 4,
+          "group_mae": 0.40589674447445395,
+          "mae": 0.40675836285653716,
+          "n": 9,
+          "n_predicted": 9,
+          "prediction_coverage": 1.0,
+          "r2": -0.15545094601447462,
+          "rmse": 0.44169483359885536,
+          "warnings": []
+        },
+        "gaussian_process": {
+          "folds": 4,
+          "group_mae": 0.39625666860031367,
+          "mae": 0.3926393770532456,
+          "n": 9,
+          "n_predicted": 9,
+          "prediction_coverage": 1.0,
+          "r2": -0.24672154082997144,
+          "rmse": 0.4588083306383511,
+          "warnings": [
+            "The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-05. Decreasing the bound and calling fit again may find a better value."
+          ]
+        },
+        "linear_interpolation": {
+          "folds": 4,
+          "group_mae": null,
+          "mae": null,
+          "n": 9,
+          "n_predicted": 0,
+          "prediction_coverage": 0.0,
+          "r2": null,
+          "rmse": null,
+          "warnings": []
+        },
+        "linear_regression": {
+          "folds": 4,
+          "group_mae": 0.7707817768135498,
+          "mae": 1.1299258878992102,
+          "n": 9,
+          "n_predicted": 9,
+          "prediction_coverage": 1.0,
+          "r2": -22.466648087806732,
+          "rmse": 1.9905454281929789,
+          "warnings": []
+        },
+        "mean_baseline": {
+          "folds": 4,
+          "group_mae": 0.3615089285714284,
+          "mae": 0.360813492063492,
+          "n": 9,
+          "n_predicted": 9,
+          "prediction_coverage": 1.0,
+          "r2": -0.12163855180395977,
+          "rmse": 0.4351841077345501,
+          "warnings": []
+        },
+        "random_forest": {
+          "folds": 4,
+          "group_mae": 0.38730940476190506,
+          "mae": 0.3882332208994711,
+          "n": 9,
+          "n_predicted": 9,
+          "prediction_coverage": 1.0,
+          "r2": -0.2041041351081181,
+          "rmse": 0.4508982887993903,
+          "warnings": []
+        },
+        "ridge": {
+          "folds": 4,
+          "group_mae": 0.6876776320472264,
+          "mae": 0.8542994630774087,
+          "n": 9,
+          "n_predicted": 9,
+          "prediction_coverage": 1.0,
+          "r2": -9.140198623308416,
+          "rmse": 1.3084881507435575,
+          "warnings": []
+        }
+      },
+      "domain_coverage": 0.0,
+      "previous_approved_benchmark": null,
+      "previous_research_benchmark": {
+        "metrics": {
+          "group_mae": 0.37217123015873077,
+          "mae": 0.37217123015873077,
+          "n": 6,
+          "n_predicted": 6,
+          "prediction_coverage": 1.0,
+          "r2": -1.8361147292835973,
+          "rmse": 0.44191643259850194
+        },
+        "version_id": "35e9d2f27ea0c3c562d208cdda628940e210a008968c906ea072c5a1b9908540"
+      }
+    },
+    "promotion": {
+      "approved": false,
+      "reasons": [
+        "Scientific protocol review is incomplete.",
+        "No approved physical tolerance configured: max_mae.",
+        "No approved physical tolerance configured: max_rmse.",
+        "No approved physical tolerance configured: max_interval_width.",
+        "Too few independent calibration groups for a finite requested coverage interval.",
+        "Supported-domain gate failed on the independent benchmark.",
+        "Learned model did not beat the mean baseline in grouped development CV."
+      ]
+    },
+    "resource_usage": {
+      "elapsed_seconds": 5.552706599992234,
+      "max_estimator_threads": 2,
+      "parallel_training": false
+    }
+  }
+]

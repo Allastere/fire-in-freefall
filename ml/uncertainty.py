@@ -59,7 +59,7 @@ def domain_reasons(domain, features, material, conditions):
     for key, allowed in domain["categories"].items():
         if features.get(key) not in allowed:
             reasons.append(f"Unknown categorical regime: {key}.")
-    if features.get("is_reused_sample") not in (0, 1):
+    if "is_reused_sample" in domain["numeric_ranges"] and features.get("is_reused_sample") not in (0, 1):
         reasons.append("Material reuse must be known (0 or 1).")
     if reasons:
         return reasons

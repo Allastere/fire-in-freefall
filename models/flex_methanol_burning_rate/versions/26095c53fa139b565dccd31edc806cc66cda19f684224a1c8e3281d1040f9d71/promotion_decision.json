@@ -1,0 +1,11 @@
+{
+  "approved": false,
+  "reasons": [
+    "Scientific protocol review is incomplete.",
+    "No approved physical tolerance configured: max_mae.",
+    "No approved physical tolerance configured: max_rmse.",
+    "No approved physical tolerance configured: max_interval_width.",
+    "Too few independent calibration groups for a finite requested coverage interval.",
+    "Supported-domain gate failed on the independent benchmark."
+  ]
+}

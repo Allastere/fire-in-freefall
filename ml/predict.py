@@ -61,7 +61,8 @@ def assess(task_id, features, material, conditions, models_dir=BASE_DIR / "model
             result["reasons"] = reasons
             return result
         value = float(model.predict(pd.DataFrame([features]))[0])
-        if not math.isfinite(value) or value < 0 or value > 25:
+        bounds = metadata["task"].get("target_bounds", [0, 25])
+        if not math.isfinite(value) or value < bounds[0] or (bounds[1] is not None and value > bounds[1]):
             raise ValueError("Model returned a value outside the physical target limits.")
         result.update(status="PREDICTED", value=value, interval=[value-half_width, value+half_width],
                       reasons=[], limitations=metadata["limitations"])

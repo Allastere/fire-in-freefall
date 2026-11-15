@@ -1,0 +1,3511 @@
+{
+  "dataset_sha256": "a623a3af816b560f8e4d7eee1c5ad37f7224b6b6a2210b52e581f6b3f53bc79b",
+  "counts": {
+    "investigations": 19,
+    "experiments": 1810,
+    "samples": 1810,
+    "conditions": 1810,
+    "measurements": 6199,
+    "findings": 15,
+    "sources": 78
+  },
+  "source_problems": [],
+  "targets": [
+    {
+      "target": "adiabatic_flame_temperature_k",
+      "subtype": "CALCULATED_ADIABATIC_FLAME_TEMP",
+      "unit": "K",
+      "observations": 587,
+      "unique_experiments": 587,
+      "reported_sample_identifiers": 587,
+      "source_verified": 578,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 587
+      },
+      "value_types": {
+        "exact": 587
+      },
+      "materials": {
+        "Ethylene (C2H4)": 236,
+        "Propane (C3H8)": 119,
+        "Ethane (C2H6)": 94,
+        "n-Butane (C4H10)": 138
+      },
+      "fuel_phases": {
+        "Gas": 587
+      },
+      "regimes": {
+        "0.0": 587
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 331,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "aerosol_aging_time_s",
+      "subtype": "AGING_DURATION",
+      "unit": "s",
+      "observations": 4,
+      "unique_experiments": 4,
+      "reported_sample_identifiers": 4,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 4
+      },
+      "value_types": {
+        "exact": 4
+      },
+      "materials": {
+        "Teflon": 4
+      },
+      "fuel_phases": {
+        "Solid": 4
+      },
+      "regimes": {
+        "0.0": 4
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 4,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 4
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "aerosol_aging_time_s",
+      "subtype": "NET_AGING_TIME",
+      "unit": "s",
+      "observations": 104,
+      "unique_experiments": 104,
+      "reported_sample_identifiers": 104,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 104
+      },
+      "value_types": {
+        "exact": 104
+      },
+      "materials": {
+        "Kapton": 29,
+        "Silicone": 22,
+        "Cellulose (Lamp Wick)": 18,
+        "Teflon": 17,
+        "Pyrell Foam": 18
+      },
+      "fuel_phases": {
+        "Solid": 104
+      },
+      "regimes": {
+        "0.0": 104
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 104,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 104
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "aerosol_aging_time_s",
+      "subtype": "PRIMARY_AGING_TIME",
+      "unit": "s",
+      "observations": 66,
+      "unique_experiments": 66,
+      "reported_sample_identifiers": 66,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 66
+      },
+      "value_types": {
+        "exact": 66
+      },
+      "materials": {
+        "Kapton": 16,
+        "Silicone": 14,
+        "Cellulose (Lamp Wick)": 12,
+        "Teflon": 12,
+        "Pyrell Foam": 12
+      },
+      "fuel_phases": {
+        "Solid": 66
+      },
+      "regimes": {
+        "0.0": 66
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 66,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 66
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "aerosol_aging_time_s",
+      "subtype": "PRIMARY_MIXING_TIME",
+      "unit": "s",
+      "observations": 66,
+      "unique_experiments": 66,
+      "reported_sample_identifiers": 66,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 66
+      },
+      "value_types": {
+        "exact": 66
+      },
+      "materials": {
+        "Kapton": 16,
+        "Silicone": 14,
+        "Cellulose (Lamp Wick)": 12,
+        "Teflon": 12,
+        "Pyrell Foam": 12
+      },
+      "fuel_phases": {
+        "Solid": 66
+      },
+      "regimes": {
+        "0.0": 66
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 66,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 66
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "burner_temperature_k",
+      "subtype": "PEAK_SPHERICAL_BURNER_TEMP",
+      "unit": "K",
+      "observations": 285,
+      "unique_experiments": 285,
+      "reported_sample_identifiers": 285,
+      "source_verified": 152,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 285
+      },
+      "value_types": {
+        "exact": 285
+      },
+      "materials": {
+        "Ethane (C2H6)": 93,
+        "n-Butane (C4H10)": 111,
+        "Propane (C3H8)": 81
+      },
+      "fuel_phases": {
+        "Gas": 285
+      },
+      "regimes": {
+        "0.0": 285
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 285,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "burning_duration_s",
+      "subtype": "DEDUPLICATED_GMT_BURN_DURATION",
+      "unit": "s",
+      "observations": 115,
+      "unique_experiments": 115,
+      "reported_sample_identifiers": 115,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 115
+      },
+      "value_types": {
+        "exact": 115
+      },
+      "materials": {
+        "Ethylene (C2H4)": 21,
+        "Propane (C3H8)": 11,
+        "75% Propylene": 7,
+        "50 % Propylene": 22,
+        "Propylene": 32,
+        "75 % Propylene": 18,
+        "Methane (CH4)": 4
+      },
+      "fuel_phases": {
+        "Gas": 115
+      },
+      "regimes": {
+        "0.0": 115
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 115,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "burning_duration_s",
+      "subtype": "DROPLET_BURN_TIME_COMPLETION",
+      "unit": "s",
+      "observations": 27,
+      "unique_experiments": 27,
+      "reported_sample_identifiers": 27,
+      "source_verified": 24,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 27
+      },
+      "value_types": {
+        "exact": 27
+      },
+      "materials": {
+        "Methanol": 8,
+        "n-Heptane": 19
+      },
+      "fuel_phases": {
+        "Liquid": 27
+      },
+      "regimes": {
+        "0.0": 27
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "burning_duration_s",
+      "subtype": "DROPLET_BURN_TIME_DISRUPTION",
+      "unit": "s",
+      "observations": 57,
+      "unique_experiments": 57,
+      "reported_sample_identifiers": 57,
+      "source_verified": 52,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 57
+      },
+      "value_types": {
+        "exact": 57
+      },
+      "materials": {
+        "Methanol": 23,
+        "n-Heptane": 34
+      },
+      "fuel_phases": {
+        "Liquid": 57
+      },
+      "regimes": {
+        "0.0": 57
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 3
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "burning_duration_s",
+      "subtype": "DROPLET_BURN_TIME_EXTINCTION",
+      "unit": "s",
+      "observations": 184,
+      "unique_experiments": 184,
+      "reported_sample_identifiers": 183,
+      "source_verified": 160,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 184
+      },
+      "value_types": {
+        "exact": 184
+      },
+      "materials": {
+        "Methanol": 125,
+        "n-Heptane": 59
+      },
+      "fuel_phases": {
+        "Liquid": 184
+      },
+      "regimes": {
+        "0.0": 184
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 5
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "burning_duration_s",
+      "subtype": "FLOW_TERMINATED_CENSORED",
+      "unit": "s",
+      "observations": 88,
+      "unique_experiments": 88,
+      "reported_sample_identifiers": 88,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 88
+      },
+      "value_types": {
+        "censored_ft": 88
+      },
+      "materials": {
+        "Ethane (C2H6)": 32,
+        "n-Butane (C4H10)": 37,
+        "Propane (C3H8)": 19
+      },
+      "fuel_phases": {
+        "Gas": 88
+      },
+      "regimes": {
+        "0.0": 88
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 88,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "burning_duration_s",
+      "subtype": "HOT_FLAME_DURATION",
+      "unit": "s",
+      "observations": 147,
+      "unique_experiments": 147,
+      "reported_sample_identifiers": 147,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 147
+      },
+      "value_types": {
+        "exact": 147
+      },
+      "materials": {
+        "n-Dodecane": 147
+      },
+      "fuel_phases": {
+        "Liquid": 147
+      },
+      "regimes": {
+        "0.0": 147
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "burning_duration_s",
+      "subtype": "LARGE_SCALE_PANEL_BURN_DURATION",
+      "unit": "s",
+      "observations": 2,
+      "unique_experiments": 2,
+      "reported_sample_identifiers": 2,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 2
+      },
+      "value_types": {
+        "exact": 2
+      },
+      "materials": {
+        "SIBAL": 2
+      },
+      "fuel_phases": {
+        "Solid": 2
+      },
+      "regimes": {
+        "0.0": 2
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 2,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 2
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "burning_duration_s",
+      "subtype": "SELF_EXTINGUISHED_BURN_DURATION",
+      "unit": "s",
+      "observations": 183,
+      "unique_experiments": 183,
+      "reported_sample_identifiers": 183,
+      "source_verified": 2,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 183
+      },
+      "value_types": {
+        "exact": 183
+      },
+      "materials": {
+        "Ethane (C2H6)": 57,
+        "n-Butane (C4H10)": 68,
+        "Propane (C3H8)": 58
+      },
+      "fuel_phases": {
+        "Gas": 183
+      },
+      "regimes": {
+        "0.0": 183
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 183,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "burning_duration_s",
+      "subtype": "SOLID_SAMPLE_BURN_DURATION",
+      "unit": "s",
+      "observations": 5,
+      "unique_experiments": 5,
+      "reported_sample_identifiers": 5,
+      "source_verified": 5,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 5
+      },
+      "value_types": {
+        "exact": 5
+      },
+      "materials": {
+        "SIBAL": 2,
+        "PMMA & Nomex": 1,
+        "PMMA": 2
+      },
+      "fuel_phases": {
+        "Solid": 5
+      },
+      "regimes": {
+        "0.0": 5
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 5,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 5
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "burning_rate_constant_mm2_s",
+      "subtype": "COOL_FLAME",
+      "unit": "mm2/s",
+      "observations": 127,
+      "unique_experiments": 127,
+      "reported_sample_identifiers": 127,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 127
+      },
+      "value_types": {
+        "exact": 127
+      },
+      "materials": {
+        "n-Dodecane": 127
+      },
+      "fuel_phases": {
+        "Liquid": 127
+      },
+      "regimes": {
+        "0.0": 127
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "burning_rate_constant_mm2_s",
+      "subtype": "HOT_FLAME",
+      "unit": "mm2/s",
+      "observations": 148,
+      "unique_experiments": 148,
+      "reported_sample_identifiers": 148,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 148
+      },
+      "value_types": {
+        "exact": 148
+      },
+      "materials": {
+        "n-Dodecane": 148
+      },
+      "fuel_phases": {
+        "Liquid": 148
+      },
+      "regimes": {
+        "0.0": 148
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "burning_rate_constant_mm2_s",
+      "subtype": "OVERALL_DROPLET",
+      "unit": "mm2/s",
+      "observations": 258,
+      "unique_experiments": 258,
+      "reported_sample_identifiers": 257,
+      "source_verified": 258,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 258
+      },
+      "value_types": {
+        "exact": 258
+      },
+      "materials": {
+        "Methanol": 151,
+        "n-Heptane": 107
+      },
+      "fuel_phases": {
+        "Liquid": 258
+      },
+      "regimes": {
+        "0.0": 258
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "co2_final_pct",
+      "subtype": "POST_BURN_CO2",
+      "unit": "%",
+      "observations": 123,
+      "unique_experiments": 123,
+      "reported_sample_identifiers": 105,
+      "source_verified": 113,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 121,
+        "NEEDS_REVIEW": 2
+      },
+      "value_types": {
+        "exact": 123
+      },
+      "materials": {
+        "PMMA": 86,
+        "100 micron film   2 cm wide": 1,
+        "200 micron  2 cm wide": 1,
+        "400 micron film   2 cm wide": 1,
+        "300 micron film   2 cm wide": 1,
+        "2 cm   0.4 mm thick film": 1,
+        "Nomex III": 2,
+        "Japan Wax": 1,
+        "1/4 blac rod": 1,
+        "SIBAL": 26,
+        "4 cm spherical section": 2
+      },
+      "fuel_phases": {
+        "Solid": 123
+      },
+      "regimes": {
+        "0.0": 123
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 123,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 69
+      },
+      "reused_runs": 101,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "co2_initial_pct",
+      "subtype": "CHAMBER_AMBIENT_CO2",
+      "unit": "%",
+      "observations": 127,
+      "unique_experiments": 127,
+      "reported_sample_identifiers": 107,
+      "source_verified": 116,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 124,
+        "NEEDS_REVIEW": 3
+      },
+      "value_types": {
+        "exact": 127
+      },
+      "materials": {
+        "PMMA": 89,
+        "100 micron film   2 cm wide": 1,
+        "200 micron  2 cm wide": 1,
+        "400 micron film   2 cm wide": 1,
+        "300 micron film   2 cm wide": 1,
+        "2 cm   0.4 mm thick film": 1,
+        "Nomex III": 3,
+        "Japan Wax": 1,
+        "1/4 blac rod": 1,
+        "SIBAL": 26,
+        "4 cm spherical section": 2
+      },
+      "fuel_phases": {
+        "Solid": 127
+      },
+      "regimes": {
+        "0.0": 127
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 127,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 72
+      },
+      "reused_runs": 104,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "co_final_ppm",
+      "subtype": "CALIBRATED_CSA_CP",
+      "unit": "ppm",
+      "observations": 120,
+      "unique_experiments": 120,
+      "reported_sample_identifiers": 103,
+      "source_verified": 112,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 120
+      },
+      "value_types": {
+        "exact": 120
+      },
+      "materials": {
+        "PMMA": 83,
+        "100 micron film   2 cm wide": 1,
+        "200 micron  2 cm wide": 1,
+        "400 micron film   2 cm wide": 1,
+        "300 micron film   2 cm wide": 1,
+        "2 cm   0.4 mm thick film": 1,
+        "Nomex III": 2,
+        "Japan Wax": 1,
+        "1/4 blac rod": 1,
+        "SIBAL": 26,
+        "4 cm spherical section": 2
+      },
+      "fuel_phases": {
+        "Solid": 120
+      },
+      "regimes": {
+        "0.0": 120
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 120,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 68
+      },
+      "reused_runs": 99,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "co_final_ppm",
+      "subtype": "OVER_RANGE_SATURATED",
+      "unit": "ppm",
+      "observations": 4,
+      "unique_experiments": 4,
+      "reported_sample_identifiers": 4,
+      "source_verified": 4,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 4
+      },
+      "value_types": {
+        "threshold": 4
+      },
+      "materials": {
+        "PMMA": 4
+      },
+      "fuel_phases": {
+        "Solid": 4
+      },
+      "regimes": {
+        "0.0": 4
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 4,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 3,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "co_initial_ppm",
+      "subtype": "CALIBRATED_CSA_CP",
+      "unit": "ppm",
+      "observations": 126,
+      "unique_experiments": 126,
+      "reported_sample_identifiers": 107,
+      "source_verified": 118,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 126
+      },
+      "value_types": {
+        "exact": 126
+      },
+      "materials": {
+        "PMMA": 88,
+        "100 micron film   2 cm wide": 1,
+        "200 micron  2 cm wide": 1,
+        "400 micron film   2 cm wide": 1,
+        "300 micron film   2 cm wide": 1,
+        "2 cm   0.4 mm thick film": 1,
+        "Nomex III": 3,
+        "Japan Wax": 1,
+        "1/4 blac rod": 1,
+        "SIBAL": 26,
+        "4 cm spherical section": 2
+      },
+      "fuel_phases": {
+        "Solid": 126
+      },
+      "regimes": {
+        "0.0": 126
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 126,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 72
+      },
+      "reused_runs": 103,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "co_initial_ppm",
+      "subtype": "OVER_RANGE_SATURATED",
+      "unit": "ppm",
+      "observations": 1,
+      "unique_experiments": 1,
+      "reported_sample_identifiers": 1,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "threshold": 1
+      },
+      "materials": {
+        "PMMA": 1
+      },
+      "fuel_phases": {
+        "Solid": 1
+      },
+      "regimes": {
+        "0.0": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 1,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 0
+      },
+      "reused_runs": 1,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "critical_ignition_heat_flux_kw_m2",
+      "subtype": "LITERATURE_AND_BLOWOFF_MINIMUM_PMMA",
+      "unit": "kW/m²",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "threshold": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "detection_threshold",
+      "subtype": "COAGULATION_THRESHOLD_CONCENTRATION",
+      "unit": "particles/cm³",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "threshold": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "detection_threshold",
+      "subtype": "ISS_LASER_SCATTERING_MASS_ALARM_THRESHOLD",
+      "unit": "mg/m³",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "threshold": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "detection_threshold",
+      "subtype": "STS_IONIZATION_MASS_ALARM_THRESHOLD",
+      "unit": "mg/m³",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "threshold": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "extinction_droplet_diameter_mm",
+      "subtype": "COOL_FLAME_EXTINCTION",
+      "unit": "mm",
+      "observations": 71,
+      "unique_experiments": 71,
+      "reported_sample_identifiers": 71,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 71
+      },
+      "value_types": {
+        "exact": 71
+      },
+      "materials": {
+        "n-Dodecane": 71
+      },
+      "fuel_phases": {
+        "Liquid": 71
+      },
+      "regimes": {
+        "0.0": 71
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "extinction_droplet_diameter_mm",
+      "subtype": "HOT_FLAME_EXTINCTION",
+      "unit": "mm",
+      "observations": 144,
+      "unique_experiments": 144,
+      "reported_sample_identifiers": 144,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 144
+      },
+      "value_types": {
+        "exact": 144
+      },
+      "materials": {
+        "n-Dodecane": 144
+      },
+      "fuel_phases": {
+        "Liquid": 144
+      },
+      "regimes": {
+        "0.0": 144
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "extinction_droplet_diameter_mm",
+      "subtype": "VISIBLE_FLAME_EXTINCTION_DIAMETER",
+      "unit": "mm",
+      "observations": 189,
+      "unique_experiments": 189,
+      "reported_sample_identifiers": 188,
+      "source_verified": 185,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 189
+      },
+      "value_types": {
+        "exact": 189
+      },
+      "materials": {
+        "Methanol": 117,
+        "n-Heptane": 72
+      },
+      "fuel_phases": {
+        "Liquid": 189
+      },
+      "regimes": {
+        "0.0": 189
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "extinction_velocity_cm_s",
+      "subtype": "HIGH_FLOW_BLOWOFF",
+      "unit": "cm/s",
+      "observations": 1,
+      "unique_experiments": 1,
+      "reported_sample_identifiers": 1,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 1
+      },
+      "value_types": {
+        "threshold": 1
+      },
+      "materials": {
+        "PMMA": 1
+      },
+      "fuel_phases": {
+        "Solid": 1
+      },
+      "regimes": {
+        "0.0": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 1,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 1,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "extinction_velocity_cm_s",
+      "subtype": "LOW_FLOW_EXTINCTION",
+      "unit": "cm/s",
+      "observations": 17,
+      "unique_experiments": 17,
+      "reported_sample_identifiers": 13,
+      "source_verified": 17,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 17
+      },
+      "value_types": {
+        "threshold": 17
+      },
+      "materials": {
+        "PMMA": 17
+      },
+      "fuel_phases": {
+        "Solid": 17
+      },
+      "regimes": {
+        "0.0": 17
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 17,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 3
+      },
+      "reused_runs": 17,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "extinguishing_time_s",
+      "subtype": "RADIATIVE_DIFFUSIVE_DROPLET_EXTINCTION_TIME",
+      "unit": "s",
+      "observations": 184,
+      "unique_experiments": 184,
+      "reported_sample_identifiers": 183,
+      "source_verified": 160,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 184
+      },
+      "value_types": {
+        "exact": 184
+      },
+      "materials": {
+        "Methanol": 125,
+        "n-Heptane": 59
+      },
+      "fuel_phases": {
+        "Liquid": 184
+      },
+      "regimes": {
+        "0.0": 184
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 5
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "extinguishing_time_s",
+      "subtype": "SELF_EXTINGUISHMENT_TIME",
+      "unit": "s",
+      "observations": 183,
+      "unique_experiments": 183,
+      "reported_sample_identifiers": 183,
+      "source_verified": 2,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 183
+      },
+      "value_types": {
+        "exact": 183
+      },
+      "materials": {
+        "Ethane (C2H6)": 57,
+        "n-Butane (C4H10)": 68,
+        "Propane (C3H8)": 58
+      },
+      "fuel_phases": {
+        "Gas": 183
+      },
+      "regimes": {
+        "0.0": 183
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 183,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "flame_spread_rate_mm_s",
+      "subtype": "0G_ANCHORED_BASE_REGRESSION_RATE",
+      "unit": "mm/s",
+      "observations": 2,
+      "unique_experiments": 2,
+      "reported_sample_identifiers": 2,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 2
+      },
+      "value_types": {
+        "interval": 2
+      },
+      "materials": {
+        "PMMA": 2
+      },
+      "fuel_phases": {
+        "Solid": 2
+      },
+      "regimes": {
+        "0.0": 2
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 2,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 2
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "flame_spread_rate_mm_s",
+      "subtype": "0G_CONCURRENT_SPREAD_RATE",
+      "unit": "mm/s",
+      "observations": 2,
+      "unique_experiments": 2,
+      "reported_sample_identifiers": 2,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 2
+      },
+      "value_types": {
+        "exact": 2
+      },
+      "materials": {
+        "SIBAL": 2
+      },
+      "fuel_phases": {
+        "Solid": 2
+      },
+      "regimes": {
+        "0.0": 2
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 2,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 2
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "flame_spread_rate_mm_s",
+      "subtype": "1G_REFERENCE_SPREAD_RATE",
+      "unit": "mm/s",
+      "observations": 2,
+      "unique_experiments": 2,
+      "reported_sample_identifiers": 2,
+      "source_verified": 2,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 2
+      },
+      "value_types": {
+        "exact": 2
+      },
+      "materials": {
+        "Silicone": 2
+      },
+      "fuel_phases": {
+        "Solid": 2
+      },
+      "regimes": {
+        "0.0": 2
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 2,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 2
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "flame_spread_rate_mm_s",
+      "subtype": "LOW_O2_NEAR_QUENCH_PMMA_ROD",
+      "unit": "mm/s",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "exact": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "flame_spread_rate_mm_s",
+      "subtype": "OPPOSED_0G_THIN_PMMA",
+      "unit": "mm/s",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "exact": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "fuel_mass_flow_rate_g_s",
+      "subtype": "CONTROLLED_BURNER_MFC_FLOW",
+      "unit": "g/s",
+      "observations": 471,
+      "unique_experiments": 471,
+      "reported_sample_identifiers": 469,
+      "source_verified": 273,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 471
+      },
+      "value_types": {
+        "exact": 471
+      },
+      "materials": {
+        "Ethylene (C2H4)": 151,
+        "Propane (C3H8)": 102,
+        "75% Propylene": 8,
+        "75 % Propylene": 27,
+        "50 % Propylene": 23,
+        "Propylene": 35,
+        "Methane (CH4)": 4,
+        "Ethane (C2H6)": 41,
+        "n-Butane (C4H10)": 80
+      },
+      "fuel_phases": {
+        "Gas": 471
+      },
+      "regimes": {
+        "0.0": 471
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 324,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "hrr_watts",
+      "subtype": "TOTAL_FLAME_POWER_PMMA_SPHERE",
+      "unit": "W",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "exact": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "igniter_operation_duration_s",
+      "subtype": "IGNITER_ENERGIZATION_DURATION",
+      "unit": "s",
+      "observations": 235,
+      "unique_experiments": 235,
+      "reported_sample_identifiers": 234,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 235
+      },
+      "value_types": {
+        "exact": 235
+      },
+      "materials": {
+        "n-Dodecane": 181,
+        "Farnesane": 43,
+        "SIBAL": 4,
+        "Silicone": 4,
+        "PMMA & Nomex": 1,
+        "PMMA": 2
+      },
+      "fuel_phases": {
+        "Liquid": 224,
+        "Solid": 11
+      },
+      "regimes": {
+        "0.0": 235
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 11,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 88
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "ignition_power_watts",
+      "subtype": "HOT_WIRE_IGNITER_POWER",
+      "unit": "W",
+      "observations": 235,
+      "unique_experiments": 235,
+      "reported_sample_identifiers": 234,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 235
+      },
+      "value_types": {
+        "exact": 235
+      },
+      "materials": {
+        "n-Dodecane": 181,
+        "Farnesane": 43,
+        "SIBAL": 4,
+        "Silicone": 4,
+        "PMMA & Nomex": 1,
+        "PMMA": 2
+      },
+      "fuel_phases": {
+        "Liquid": 224,
+        "Solid": 11
+      },
+      "regimes": {
+        "0.0": 235
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 11,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 88
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "ignition_temperature_k",
+      "subtype": "COOL_DIFFUSION_FLAME_AUTOIGNITION_ONSET",
+      "unit": "K",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "exact": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "ignition_time_s",
+      "subtype": "MAX_SUSTAINED_IGNITION_DELAY_PMMA_ROD",
+      "unit": "s",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "upper_bound": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "ignition_time_s",
+      "subtype": "PLANNED_MATRIX_IGNITION_INTERVAL",
+      "unit": "s",
+      "observations": 38,
+      "unique_experiments": 38,
+      "reported_sample_identifiers": 12,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 38
+      },
+      "value_types": {
+        "interval": 38
+      },
+      "materials": {
+        "PMMA": 14,
+        "Japan Wax": 11,
+        "2 cm sphere": 10,
+        "1 cm sphere   wake": 1,
+        "1 cm wake sphere": 2
+      },
+      "fuel_phases": {
+        "Solid": 38
+      },
+      "regimes": {
+        "0.0": 38
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 38,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 38,
+        "diameter_mm": 21
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "incident_heat_flux_kw_m2",
+      "subtype": "PEAK_FLAME_TO_SURFACE_HEAT_FLUX",
+      "unit": "kW/m²",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "exact": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "incident_heat_flux_kw_m2",
+      "subtype": "SIMULATION_BURNER_HEAT_FLUX",
+      "unit": "kW/m²",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "exact": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "incident_heat_flux_kw_m2",
+      "subtype": "SIMULATION_MAX_SURFACE_HEAT_FLUX",
+      "unit": "kW/m²",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "exact": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "mass_burning_rate_g_s",
+      "subtype": "GASEOUS_HYDROCARBON_BURNING_RATE",
+      "unit": "g/s",
+      "observations": 154,
+      "unique_experiments": 154,
+      "reported_sample_identifiers": 154,
+      "source_verified": 129,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 154
+      },
+      "value_types": {
+        "exact": 154
+      },
+      "materials": {
+        "Ethane (C2H6)": 53,
+        "Propane (C3H8)": 43,
+        "n-Butane (C4H10)": 58
+      },
+      "fuel_phases": {
+        "Gas": 154
+      },
+      "regimes": {
+        "0.0": 154
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 154,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "mass_burning_rate_g_s",
+      "subtype": "PMMA_SPHERE_MASS_BURNING_RATE",
+      "unit": "g/s",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "exact": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "mass_loss_rate_g_s",
+      "subtype": "SOLID_PYROLYSIS_MASS_LOSS_RATE",
+      "unit": "g/s",
+      "observations": 4,
+      "unique_experiments": 4,
+      "reported_sample_identifiers": 4,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 4
+      },
+      "value_types": {
+        "exact": 4
+      },
+      "materials": {
+        "Teflon": 4
+      },
+      "fuel_phases": {
+        "Solid": 4
+      },
+      "regimes": {
+        "0.0": 4
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 4,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 4
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "o2_final_calibrated_pct",
+      "subtype": "CALIBRATED_FINAL_O2",
+      "unit": "%",
+      "observations": 127,
+      "unique_experiments": 127,
+      "reported_sample_identifiers": 106,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 122,
+        "NEEDS_REVIEW": 5
+      },
+      "value_types": {
+        "exact": 127
+      },
+      "materials": {
+        "PMMA": 89,
+        "100 micron film   2 cm wide": 1,
+        "200 micron  2 cm wide": 1,
+        "400 micron film   2 cm wide": 1,
+        "300 micron film   2 cm wide": 1,
+        "2 cm   0.4 mm thick film": 1,
+        "Nomex III": 2,
+        "Japan Wax": 1,
+        "1/4 blac rod": 1,
+        "SIBAL": 27,
+        "4 cm spherical section": 2
+      },
+      "fuel_phases": {
+        "Solid": 127
+      },
+      "regimes": {
+        "0.0": 127
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 127,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 71
+      },
+      "reused_runs": 104,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "o2_initial_calibrated_pct",
+      "subtype": "CALIBRATED_INITIAL_O2",
+      "unit": "%",
+      "observations": 129,
+      "unique_experiments": 129,
+      "reported_sample_identifiers": 107,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 124,
+        "NEEDS_REVIEW": 5
+      },
+      "value_types": {
+        "exact": 129
+      },
+      "materials": {
+        "PMMA": 90,
+        "100 micron film   2 cm wide": 1,
+        "200 micron  2 cm wide": 1,
+        "400 micron film   2 cm wide": 1,
+        "300 micron film   2 cm wide": 1,
+        "2 cm   0.4 mm thick film": 1,
+        "Nomex III": 3,
+        "Japan Wax": 1,
+        "1/4 blac rod": 1,
+        "SIBAL": 27,
+        "4 cm spherical section": 2
+      },
+      "fuel_phases": {
+        "Solid": 129
+      },
+      "regimes": {
+        "0.0": 129
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 129,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 73
+      },
+      "reused_runs": 106,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "oxygen_limit_pct",
+      "subtype": "LOC_0G_PMMA_ROD",
+      "unit": "%",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "threshold": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "oxygen_limit_pct",
+      "subtype": "LOI_0G_THIN_PMMA_2CM_S",
+      "unit": "%",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "threshold": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "oxygen_limit_pct",
+      "subtype": "NO_IGNITION_O2_BOUND",
+      "unit": "%",
+      "observations": 5,
+      "unique_experiments": 5,
+      "reported_sample_identifiers": 5,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 5
+      },
+      "value_types": {
+        "upper_bound": 5
+      },
+      "materials": {
+        "Nomex III": 2,
+        "PMMA": 2,
+        "SIBAL": 1
+      },
+      "fuel_phases": {
+        "Solid": 5
+      },
+      "regimes": {
+        "0.0": 5
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 5,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 3
+      },
+      "reused_runs": 4,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "particle_number_concentration_cm3",
+      "subtype": "ARD_CALIBRATION_DUST_Bag1",
+      "unit": "particles/cm³",
+      "observations": 1,
+      "unique_experiments": 1,
+      "reported_sample_identifiers": 1,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "interval": 1
+      },
+      "materials": {
+        "Arizona Road Dust (ARD)": 1
+      },
+      "fuel_phases": {
+        "Aerosol/Dust": 1
+      },
+      "regimes": {
+        "0.0": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 1,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "particle_number_concentration_cm3",
+      "subtype": "ARD_CALIBRATION_DUST_Bag2",
+      "unit": "particles/cm³",
+      "observations": 1,
+      "unique_experiments": 1,
+      "reported_sample_identifiers": 1,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "interval": 1
+      },
+      "materials": {
+        "Arizona Road Dust (ARD)": 1
+      },
+      "fuel_phases": {
+        "Aerosol/Dust": 1
+      },
+      "regimes": {
+        "0.0": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 1,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "particle_number_concentration_cm3",
+      "subtype": "ARD_CALIBRATION_DUST_Bag3",
+      "unit": "particles/cm³",
+      "observations": 1,
+      "unique_experiments": 1,
+      "reported_sample_identifiers": 1,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "interval": 1
+      },
+      "materials": {
+        "Arizona Road Dust (ARD)": 1
+      },
+      "fuel_phases": {
+        "Aerosol/Dust": 1
+      },
+      "regimes": {
+        "0.0": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 1,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "particle_number_concentration_cm3",
+      "subtype": "ISS_CABIN_BACKGROUND_UPPER_BOUND",
+      "unit": "particles/cm³",
+      "observations": 2,
+      "unique_experiments": 1,
+      "reported_sample_identifiers": 1,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 2
+      },
+      "value_types": {
+        "upper_bound": 2
+      },
+      "materials": {
+        "None": 1,
+        "Arizona Road Dust (ARD)": 1
+      },
+      "fuel_phases": {
+        "None": 1,
+        "Aerosol/Dust": 1
+      },
+      "regimes": {
+        "None": 1,
+        "0.0": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 2,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 2,
+        "diameter_mm": 2
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "particle_number_concentration_cm3",
+      "subtype": "SAME_SMOKE_CONCENTRATION_RANGE",
+      "unit": "particles/cm³",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "interval": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "pyrolysis_heating_duration_s",
+      "subtype": "NON_FLAMING_PYROLYSIS_HEATER_DURATION",
+      "unit": "s",
+      "observations": 67,
+      "unique_experiments": 67,
+      "reported_sample_identifiers": 67,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 67
+      },
+      "value_types": {
+        "exact": 67
+      },
+      "materials": {
+        "Kapton": 17,
+        "Silicone": 14,
+        "Cellulose (Lamp Wick)": 12,
+        "Teflon": 12,
+        "Pyrell Foam": 12
+      },
+      "fuel_phases": {
+        "Solid": 67
+      },
+      "regimes": {
+        "0.0": 67
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 67,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 67
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "radiative_output",
+      "subtype": "PEAK_HOT_FLAME_RADIOMETER",
+      "unit": "raw",
+      "observations": 145,
+      "unique_experiments": 145,
+      "reported_sample_identifiers": 145,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 145
+      },
+      "value_types": {
+        "exact": 145
+      },
+      "materials": {
+        "n-Dodecane": 145
+      },
+      "fuel_phases": {
+        "Liquid": 145
+      },
+      "regimes": {
+        "0.0": 145
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 0
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "sample_pyrolysis_temperature_k",
+      "subtype": "SOLID_SURFACE_PYROLYSIS_MODEL_BOUNDARY",
+      "unit": "K",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "threshold": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_mass_concentration_mg_m3",
+      "subtype": "ARD_CALIBRATION_DUST_Bag1",
+      "unit": "mg/m³",
+      "observations": 1,
+      "unique_experiments": 1,
+      "reported_sample_identifiers": 1,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "interval": 1
+      },
+      "materials": {
+        "Arizona Road Dust (ARD)": 1
+      },
+      "fuel_phases": {
+        "Aerosol/Dust": 1
+      },
+      "regimes": {
+        "0.0": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 1,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_mass_concentration_mg_m3",
+      "subtype": "ARD_CALIBRATION_DUST_Bag2",
+      "unit": "mg/m³",
+      "observations": 1,
+      "unique_experiments": 1,
+      "reported_sample_identifiers": 1,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "interval": 1
+      },
+      "materials": {
+        "Arizona Road Dust (ARD)": 1
+      },
+      "fuel_phases": {
+        "Aerosol/Dust": 1
+      },
+      "regimes": {
+        "0.0": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 1,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_mass_concentration_mg_m3",
+      "subtype": "ARD_CALIBRATION_DUST_Bag3",
+      "unit": "mg/m³",
+      "observations": 1,
+      "unique_experiments": 1,
+      "reported_sample_identifiers": 1,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "interval": 1
+      },
+      "materials": {
+        "Arizona Road Dust (ARD)": 1
+      },
+      "fuel_phases": {
+        "Aerosol/Dust": 1
+      },
+      "regimes": {
+        "0.0": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 1,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_mass_concentration_mg_m3",
+      "subtype": "ISS_CABIN_BACKGROUND_UPPER_BOUND",
+      "unit": "mg/m³",
+      "observations": 1,
+      "unique_experiments": 1,
+      "reported_sample_identifiers": 1,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "upper_bound": 1
+      },
+      "materials": {
+        "Arizona Road Dust (ARD)": 1
+      },
+      "fuel_phases": {
+        "Aerosol/Dust": 1
+      },
+      "regimes": {
+        "0.0": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 1,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_mass_concentration_mg_m3",
+      "subtype": "SAMER_SMOKE_MASS_CONC_RANGE",
+      "unit": "mg/m³",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "interval": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_optical_property",
+      "subtype": "OBSCURATION_PER_FOOT_ALARM_THRESHOLD",
+      "unit": "%/ft",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "threshold": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "AMD_AGED",
+      "unit": "nm",
+      "observations": 4,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 4,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 4
+      },
+      "value_types": {
+        "exact": 4
+      },
+      "materials": {
+        "Kapton": 1,
+        "Cellulose (Lamp Wick)": 1,
+        "Silicone": 1,
+        "Teflon": 1
+      },
+      "fuel_phases": {
+        "None": 4
+      },
+      "regimes": {
+        "None": 4
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 4,
+        "pressure_psi": 4,
+        "gravity_g": 4,
+        "flow_velocity_initial_cm_s": 4,
+        "diameter_mm": 4
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "AMD_UNAGED",
+      "unit": "nm",
+      "observations": 4,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 4,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 4
+      },
+      "value_types": {
+        "exact": 4
+      },
+      "materials": {
+        "Kapton": 1,
+        "Cellulose (Lamp Wick)": 1,
+        "Silicone": 1,
+        "Teflon": 1
+      },
+      "fuel_phases": {
+        "None": 4
+      },
+      "regimes": {
+        "None": 4
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 4,
+        "pressure_psi": 4,
+        "gravity_g": 4,
+        "flow_velocity_initial_cm_s": 4,
+        "diameter_mm": 4
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "ARD_CALIBRATION_DUST_Bag1",
+      "unit": "nm",
+      "observations": 1,
+      "unique_experiments": 1,
+      "reported_sample_identifiers": 1,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "exact": 1
+      },
+      "materials": {
+        "Arizona Road Dust (ARD)": 1
+      },
+      "fuel_phases": {
+        "Aerosol/Dust": 1
+      },
+      "regimes": {
+        "0.0": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 1,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "ARD_CALIBRATION_DUST_Bag2",
+      "unit": "nm",
+      "observations": 1,
+      "unique_experiments": 1,
+      "reported_sample_identifiers": 1,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "exact": 1
+      },
+      "materials": {
+        "Arizona Road Dust (ARD)": 1
+      },
+      "fuel_phases": {
+        "Aerosol/Dust": 1
+      },
+      "regimes": {
+        "0.0": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 1,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "ARD_CALIBRATION_DUST_Bag3",
+      "unit": "nm",
+      "observations": 1,
+      "unique_experiments": 1,
+      "reported_sample_identifiers": 1,
+      "source_verified": 1,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "exact": 1
+      },
+      "materials": {
+        "Arizona Road Dust (ARD)": 1
+      },
+      "fuel_phases": {
+        "Aerosol/Dust": 1
+      },
+      "regimes": {
+        "0.0": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 1,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "CMD_AGED_720S",
+      "unit": "nm",
+      "observations": 5,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 5,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 5
+      },
+      "value_types": {
+        "exact": 5
+      },
+      "materials": {
+        "Kapton": 1,
+        "Cellulose (Lamp Wick)": 1,
+        "Silicone": 1,
+        "Teflon": 1,
+        "Pyrell Foam": 1
+      },
+      "fuel_phases": {
+        "None": 5
+      },
+      "regimes": {
+        "None": 5
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 5,
+        "pressure_psi": 5,
+        "gravity_g": 5,
+        "flow_velocity_initial_cm_s": 5,
+        "diameter_mm": 5
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "CMD_AGED_MOMENT",
+      "unit": "nm",
+      "observations": 2,
+      "unique_experiments": 2,
+      "reported_sample_identifiers": 2,
+      "source_verified": 2,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 2
+      },
+      "value_types": {
+        "exact": 2
+      },
+      "materials": {
+        "Cellulose (Lamp Wick)": 1,
+        "Kapton": 1
+      },
+      "fuel_phases": {
+        "Solid": 2
+      },
+      "regimes": {
+        "0.0": 2
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 2,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 2
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "CMD_UNAGED",
+      "unit": "nm",
+      "observations": 5,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 5,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 5
+      },
+      "value_types": {
+        "exact": 5
+      },
+      "materials": {
+        "Kapton": 1,
+        "Cellulose (Lamp Wick)": 1,
+        "Silicone": 1,
+        "Teflon": 1,
+        "Pyrell Foam": 1
+      },
+      "fuel_phases": {
+        "None": 5
+      },
+      "regimes": {
+        "None": 5
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 5,
+        "pressure_psi": 5,
+        "gravity_g": 5,
+        "flow_velocity_initial_cm_s": 5,
+        "diameter_mm": 5
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "CMD_UNAGED_MOMENT",
+      "unit": "nm",
+      "observations": 5,
+      "unique_experiments": 5,
+      "reported_sample_identifiers": 5,
+      "source_verified": 5,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 5
+      },
+      "value_types": {
+        "exact": 5
+      },
+      "materials": {
+        "Cellulose (Lamp Wick)": 1,
+        "Kapton": 1,
+        "Pyrell Foam": 2,
+        "Silicone": 1
+      },
+      "fuel_phases": {
+        "Solid": 5
+      },
+      "regimes": {
+        "0.0": 5
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 5,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 5
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "GMD_AGED",
+      "unit": "nm",
+      "observations": 4,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 4,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 4
+      },
+      "value_types": {
+        "exact": 4
+      },
+      "materials": {
+        "Kapton": 1,
+        "Cellulose (Lamp Wick)": 1,
+        "Silicone": 1,
+        "Teflon": 1
+      },
+      "fuel_phases": {
+        "None": 4
+      },
+      "regimes": {
+        "None": 4
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 4,
+        "pressure_psi": 4,
+        "gravity_g": 4,
+        "flow_velocity_initial_cm_s": 4,
+        "diameter_mm": 4
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "GMD_AGED_720S",
+      "unit": "nm",
+      "observations": 5,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 5,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 5
+      },
+      "value_types": {
+        "exact": 5
+      },
+      "materials": {
+        "Kapton": 1,
+        "Cellulose (Lamp Wick)": 1,
+        "Silicone": 1,
+        "Teflon": 1,
+        "Pyrell Foam": 1
+      },
+      "fuel_phases": {
+        "None": 5
+      },
+      "regimes": {
+        "None": 5
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 5,
+        "pressure_psi": 5,
+        "gravity_g": 5,
+        "flow_velocity_initial_cm_s": 5,
+        "diameter_mm": 5
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "GMD_AGED_MOMENT",
+      "unit": "nm",
+      "observations": 2,
+      "unique_experiments": 2,
+      "reported_sample_identifiers": 2,
+      "source_verified": 2,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 2
+      },
+      "value_types": {
+        "exact": 2
+      },
+      "materials": {
+        "Cellulose (Lamp Wick)": 1,
+        "Kapton": 1
+      },
+      "fuel_phases": {
+        "Solid": 2
+      },
+      "regimes": {
+        "0.0": 2
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 2,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 2
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "GMD_AGED_SMPS",
+      "unit": "nm",
+      "observations": 1,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 1
+      },
+      "value_types": {
+        "exact": 1
+      },
+      "materials": {
+        "None": 1
+      },
+      "fuel_phases": {
+        "None": 1
+      },
+      "regimes": {
+        "None": 1
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 1,
+        "pressure_psi": 1,
+        "gravity_g": 1,
+        "flow_velocity_initial_cm_s": 1,
+        "diameter_mm": 1
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "GMD_AGED_TEM",
+      "unit": "nm",
+      "observations": 2,
+      "unique_experiments": 2,
+      "reported_sample_identifiers": 2,
+      "source_verified": 2,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 2
+      },
+      "value_types": {
+        "exact": 2
+      },
+      "materials": {
+        "Cellulose (Lamp Wick)": 1,
+        "Kapton": 1
+      },
+      "fuel_phases": {
+        "Solid": 2
+      },
+      "regimes": {
+        "0.0": 2
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 2,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 2
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "GMD_UNAGED",
+      "unit": "nm",
+      "observations": 9,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 9,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 9
+      },
+      "value_types": {
+        "exact": 9
+      },
+      "materials": {
+        "Kapton": 2,
+        "Cellulose (Lamp Wick)": 2,
+        "Silicone": 2,
+        "Teflon": 2,
+        "Pyrell Foam": 1
+      },
+      "fuel_phases": {
+        "None": 9
+      },
+      "regimes": {
+        "None": 9
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 9,
+        "pressure_psi": 9,
+        "gravity_g": 9,
+        "flow_velocity_initial_cm_s": 9,
+        "diameter_mm": 9
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "GMD_UNAGED_MOMENT",
+      "unit": "nm",
+      "observations": 5,
+      "unique_experiments": 5,
+      "reported_sample_identifiers": 5,
+      "source_verified": 5,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 5
+      },
+      "value_types": {
+        "exact": 5
+      },
+      "materials": {
+        "Cellulose (Lamp Wick)": 1,
+        "Kapton": 1,
+        "Pyrell Foam": 2,
+        "Silicone": 1
+      },
+      "fuel_phases": {
+        "Solid": 5
+      },
+      "regimes": {
+        "0.0": 5
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 5,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 5
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "GMD_UNAGED_TEM",
+      "unit": "nm",
+      "observations": 5,
+      "unique_experiments": 5,
+      "reported_sample_identifiers": 5,
+      "source_verified": 5,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 5
+      },
+      "value_types": {
+        "exact": 5
+      },
+      "materials": {
+        "Cellulose (Lamp Wick)": 1,
+        "Kapton": 1,
+        "Pyrell Foam": 2,
+        "Silicone": 1
+      },
+      "fuel_phases": {
+        "Solid": 5
+      },
+      "regimes": {
+        "0.0": 5
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 5,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 5
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "MMD_AGED",
+      "unit": "nm",
+      "observations": 4,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 4,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 4
+      },
+      "value_types": {
+        "exact": 4
+      },
+      "materials": {
+        "Kapton": 1,
+        "Cellulose (Lamp Wick)": 1,
+        "Silicone": 1,
+        "Teflon": 1
+      },
+      "fuel_phases": {
+        "None": 4
+      },
+      "regimes": {
+        "None": 4
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 4,
+        "pressure_psi": 4,
+        "gravity_g": 4,
+        "flow_velocity_initial_cm_s": 4,
+        "diameter_mm": 4
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "MMD_AGED_720S",
+      "unit": "nm",
+      "observations": 5,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 5,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 5
+      },
+      "value_types": {
+        "exact": 5
+      },
+      "materials": {
+        "Kapton": 1,
+        "Cellulose (Lamp Wick)": 1,
+        "Silicone": 1,
+        "Teflon": 1,
+        "Pyrell Foam": 1
+      },
+      "fuel_phases": {
+        "None": 5
+      },
+      "regimes": {
+        "None": 5
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 5,
+        "pressure_psi": 5,
+        "gravity_g": 5,
+        "flow_velocity_initial_cm_s": 5,
+        "diameter_mm": 5
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "MMD_AGED_MOMENT",
+      "unit": "nm",
+      "observations": 2,
+      "unique_experiments": 2,
+      "reported_sample_identifiers": 2,
+      "source_verified": 2,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 2
+      },
+      "value_types": {
+        "exact": 2
+      },
+      "materials": {
+        "Cellulose (Lamp Wick)": 1,
+        "Kapton": 1
+      },
+      "fuel_phases": {
+        "Solid": 2
+      },
+      "regimes": {
+        "0.0": 2
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 2,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 2
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "MMD_UNAGED",
+      "unit": "nm",
+      "observations": 9,
+      "unique_experiments": 0,
+      "reported_sample_identifiers": 0,
+      "source_verified": 9,
+      "eligibility_labels": {
+        "EVIDENCE_ONLY": 9
+      },
+      "value_types": {
+        "exact": 9
+      },
+      "materials": {
+        "Kapton": 2,
+        "Cellulose (Lamp Wick)": 2,
+        "Silicone": 2,
+        "Teflon": 2,
+        "Pyrell Foam": 1
+      },
+      "fuel_phases": {
+        "None": 9
+      },
+      "regimes": {
+        "None": 9
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 9,
+        "pressure_psi": 9,
+        "gravity_g": 9,
+        "flow_velocity_initial_cm_s": 9,
+        "diameter_mm": 9
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "smoke_particle_diameter_nm",
+      "subtype": "MMD_UNAGED_MOMENT",
+      "unit": "nm",
+      "observations": 5,
+      "unique_experiments": 5,
+      "reported_sample_identifiers": 5,
+      "source_verified": 5,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 5
+      },
+      "value_types": {
+        "exact": 5
+      },
+      "materials": {
+        "Cellulose (Lamp Wick)": 1,
+        "Kapton": 1,
+        "Pyrell Foam": 2,
+        "Silicone": 1
+      },
+      "fuel_phases": {
+        "Solid": 5
+      },
+      "regimes": {
+        "0.0": 5
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 5,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 5
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "suppressant_concentration_pct",
+      "subtype": "CO2_DILUENT_MOLE_PCT",
+      "unit": "%",
+      "observations": 123,
+      "unique_experiments": 123,
+      "reported_sample_identifiers": 123,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 123
+      },
+      "value_types": {
+        "exact": 123
+      },
+      "materials": {
+        "Methanol": 75,
+        "n-Heptane": 48
+      },
+      "fuel_phases": {
+        "Liquid": 123
+      },
+      "regimes": {
+        "0.0": 123
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 2
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "suppressant_concentration_pct",
+      "subtype": "HE_DILUENT_MOLE_PCT",
+      "unit": "%",
+      "observations": 102,
+      "unique_experiments": 102,
+      "reported_sample_identifiers": 102,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 102
+      },
+      "value_types": {
+        "exact": 102
+      },
+      "materials": {
+        "n-Dodecane": 52,
+        "Methanol": 28,
+        "n-Heptane": 22
+      },
+      "fuel_phases": {
+        "Liquid": 102
+      },
+      "regimes": {
+        "0.0": 102
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 26
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    },
+    {
+      "target": "suppressant_concentration_pct",
+      "subtype": "N2_DILUENT_MOLE_PCT",
+      "unit": "%",
+      "observations": 501,
+      "unique_experiments": 501,
+      "reported_sample_identifiers": 499,
+      "source_verified": 0,
+      "eligibility_labels": {
+        "ML_ELIGIBLE": 501
+      },
+      "value_types": {
+        "exact": 501
+      },
+      "materials": {
+        "n-Dodecane": 183,
+        "Farnesane": 44,
+        "Methanol": 157,
+        "n-Heptane": 117
+      },
+      "fuel_phases": {
+        "Liquid": 501
+      },
+      "regimes": {
+        "0.0": 501
+      },
+      "missing_conditions": {
+        "o2_initial_pct": 0,
+        "pressure_psi": 0,
+        "gravity_g": 0,
+        "flow_velocity_initial_cm_s": 0,
+        "diameter_mm": 91
+      },
+      "reused_runs": 0,
+      "duplicate_observations": 0,
+      "training_policy": "Import eligibility is necessary but not sufficient; require explicit compatible task, source checks and independent groups."
+    }
+  ],
+  "limitations": [
+    "Sample identifiers are not proof of independent specimens; sessions and reused samples are grouped.",
+    "Aggregate document tables, calibration dust and censored/terminated tests are not ordinary training samples."
+  ]
+}

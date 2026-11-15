@@ -1,0 +1,4797 @@
+{
+  "dataset_sha256": "8fb4e6ed9f59b2a6d838b6e6b3e1b1dbb4e659e5ae93c4841da577398ef59532",
+  "exclusions": [
+    {
+      "reason": "invalid_initial_composition",
+      "uid": "PSI-69:FLEX-075"
+    },
+    {
+      "reason": "invalid_initial_composition",
+      "uid": "PSI-69:FLEX-076"
+    }
+  ],
+  "protocols": [
+    {
+      "id": "flex_initial_droplet_v1",
+      "scientific_status": "research_only"
+    }
+  ],
+  "samples": [
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 1.69,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.651474194119789
+      },
+      "geometry": "Droplet",
+      "group": "13a0610dd9dab3f72e87650ee9319e1b1bc01c468997d7da960c7e1ed97e45d3",
+      "material": "Methanol",
+      "observation_sha256": "b5f3f5a54146c61dbfd85f673cec510a8fac7ea19aaa7181ff21552707a3a127",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 1",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.52,
+      "test_id": "FLEX-001",
+      "tokens": [
+        "sample:PSI-69:20CAL08",
+        "sample:PSI-69:20CAL10",
+        "sample:PSI-69:20CAL12",
+        "session:PSI-69:3/5/2009"
+      ],
+      "uid": "PSI-69:FLEX-001"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 1.86,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.73462232535209
+      },
+      "geometry": "Droplet",
+      "group": "13a0610dd9dab3f72e87650ee9319e1b1bc01c468997d7da960c7e1ed97e45d3",
+      "material": "Methanol",
+      "observation_sha256": "e5461822fc99d027f7c6d0a63d7c69502e040db21d1800e8c9054bd2bc86be53",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 2",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.6,
+      "test_id": "FLEX-002",
+      "tokens": [
+        "sample:PSI-69:20CAL08",
+        "sample:PSI-69:20CAL10",
+        "sample:PSI-69:20CAL12",
+        "session:PSI-69:3/5/2009"
+      ],
+      "uid": "PSI-69:FLEX-002"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 1.61,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.777163229703502
+      },
+      "geometry": "Droplet",
+      "group": "13a0610dd9dab3f72e87650ee9319e1b1bc01c468997d7da960c7e1ed97e45d3",
+      "material": "Methanol",
+      "observation_sha256": "537868b793678b6ac9689ba93f26bb4481f032ded7502eaae0d2f4ae1b687f7a",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 3",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.58,
+      "test_id": "FLEX-003",
+      "tokens": [
+        "sample:PSI-69:20CAL08",
+        "sample:PSI-69:20CAL10",
+        "sample:PSI-69:20CAL12",
+        "session:PSI-69:3/5/2009"
+      ],
+      "uid": "PSI-69:FLEX-003"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.06,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.695948775941718
+      },
+      "geometry": "Droplet",
+      "group": "51882cf41b627081062295017018d50882a1a7f45bc565b1b1d5dd462b9e76ef",
+      "material": "Methanol",
+      "observation_sha256": "45aebf506fe695d01816b637874048769eb43484213ac640a66d67dd5754e19e",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 4",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.6,
+      "test_id": "FLEX-004",
+      "tokens": [
+        "sample:PSI-69:30CAL02",
+        "sample:PSI-69:30CAL03",
+        "sample:PSI-69:40CAL01",
+        "session:PSI-69:3/31/2009"
+      ],
+      "uid": "PSI-69:FLEX-004"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 1.92,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.695948775941718
+      },
+      "geometry": "Droplet",
+      "group": "51882cf41b627081062295017018d50882a1a7f45bc565b1b1d5dd462b9e76ef",
+      "material": "Methanol",
+      "observation_sha256": "70a402a5b4ef027bd47b2f87f2901e0da68b8785dc0d9e5e91bc2dc0c766f424",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 5",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.48,
+      "test_id": "FLEX-005",
+      "tokens": [
+        "sample:PSI-69:30CAL02",
+        "sample:PSI-69:30CAL03",
+        "sample:PSI-69:40CAL01",
+        "session:PSI-69:3/31/2009"
+      ],
+      "uid": "PSI-69:FLEX-005"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.54,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.695948775941718
+      },
+      "geometry": "Droplet",
+      "group": "51882cf41b627081062295017018d50882a1a7f45bc565b1b1d5dd462b9e76ef",
+      "material": "Methanol",
+      "observation_sha256": "daa8d7b9305e914561148c5d3144cd53f0f120861dcec94c66acfa726147719d",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 6",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.51,
+      "test_id": "FLEX-006",
+      "tokens": [
+        "sample:PSI-69:30CAL02",
+        "sample:PSI-69:30CAL03",
+        "sample:PSI-69:40CAL01",
+        "session:PSI-69:3/31/2009"
+      ],
+      "uid": "PSI-69:FLEX-006"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 70.0,
+        "diameter_mm": 3.86,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 9.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 44.85551628362105
+      },
+      "geometry": "Droplet",
+      "group": "cf6608c73217abd89670e02db17c751a2f2ca941eff50ad1785c5a8ab5514a06",
+      "material": "Methanol",
+      "observation_sha256": "9c0b39bbc2ed7e462966b197e56516166a281f34bb72be433d5825b5fb54d50a",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 10",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.37,
+      "test_id": "FLEX-010",
+      "tokens": [
+        "sample:PSI-69:256F002",
+        "sample:PSI-69:256R001",
+        "session:PSI-69:5/22/2009"
+      ],
+      "uid": "PSI-69:FLEX-010"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 70.0,
+        "diameter_mm": 3.03,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 9.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 44.838113186386394
+      },
+      "geometry": "Droplet",
+      "group": "cf6608c73217abd89670e02db17c751a2f2ca941eff50ad1785c5a8ab5514a06",
+      "material": "Methanol",
+      "observation_sha256": "db07ba09c0adb41d4f8e9e209ba658a34424eb3c8cd4a3882507c9ba4ef98335",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 11",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.4,
+      "test_id": "FLEX-011",
+      "tokens": [
+        "sample:PSI-69:256F002",
+        "sample:PSI-69:256R001",
+        "session:PSI-69:5/22/2009"
+      ],
+      "uid": "PSI-69:FLEX-011"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 70.0,
+        "diameter_mm": 2.59,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 9.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 40.10833809349777
+      },
+      "geometry": "Droplet",
+      "group": "060594267d126510b790d32ebc3a2c6044af9403ca8fd8677e1eeece1db13d31",
+      "material": "Methanol",
+      "observation_sha256": "b9f2afcc6d00e9e49a8fb158c88d9a624d1dfba72133ff1917dbbd344c1f06a6",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 13",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.49,
+      "test_id": "FLEX-013",
+      "tokens": [
+        "sample:PSI-69:256R002",
+        "session:PSI-69:6/25/2009"
+      ],
+      "uid": "PSI-69:FLEX-013"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 70.0,
+        "diameter_mm": 1.66,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 9.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 40.067730866616884
+      },
+      "geometry": "Droplet",
+      "group": "9a9e38e72ab587678b51888883af79cf312c644764fc9b81e054bc280c36810b",
+      "material": "Methanol",
+      "observation_sha256": "3700e393e5dc5083624f652731dc2f910c489469800e50212ff9ba6db799840e",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 16",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.53,
+      "test_id": "FLEX-016",
+      "tokens": [
+        "sample:PSI-69:256F009",
+        "session:PSI-69:6/29/2009"
+      ],
+      "uid": "PSI-69:FLEX-016"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.4,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 66.0,
+        "o2_initial_pct": 34.0,
+        "pressure_psi": 10.4321899534481
+      },
+      "geometry": "Droplet",
+      "group": "21081068aa137f9635b57fa582f273dbbafa1c1df884088ca8c4cda93cb0b7ee",
+      "material": "Methanol",
+      "observation_sha256": "96e288318075c31555df5db125926ba35dd3009b835468b186da4d910651d7a7",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 20",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.53,
+      "test_id": "FLEX-020",
+      "tokens": [
+        "sample:PSI-69:192F001",
+        "sample:PSI-69:192F002",
+        "sample:PSI-69:192F003",
+        "session:PSI-69:10/24/09"
+      ],
+      "uid": "PSI-69:FLEX-020"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.49,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 66.0,
+        "o2_initial_pct": 34.0,
+        "pressure_psi": 10.453460405623806
+      },
+      "geometry": "Droplet",
+      "group": "21081068aa137f9635b57fa582f273dbbafa1c1df884088ca8c4cda93cb0b7ee",
+      "material": "Methanol",
+      "observation_sha256": "0f021388e3ee1ef59e1836e6021bc80bf0270dcca849897bb39a41574ee7dc80",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 21",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.66,
+      "test_id": "FLEX-021",
+      "tokens": [
+        "sample:PSI-69:192F001",
+        "sample:PSI-69:192F002",
+        "sample:PSI-69:192F003",
+        "session:PSI-69:10/24/09"
+      ],
+      "uid": "PSI-69:FLEX-021"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.5,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 66.0,
+        "o2_initial_pct": 34.0,
+        "pressure_psi": 10.451526728153288
+      },
+      "geometry": "Droplet",
+      "group": "21081068aa137f9635b57fa582f273dbbafa1c1df884088ca8c4cda93cb0b7ee",
+      "material": "Methanol",
+      "observation_sha256": "da8b5d51670e006d4a5125c05f04f870361b51ada1f87b40e2ca52a46d6b00ae",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 22",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.65,
+      "test_id": "FLEX-022",
+      "tokens": [
+        "sample:PSI-69:192F001",
+        "sample:PSI-69:192F002",
+        "sample:PSI-69:192F003",
+        "session:PSI-69:10/24/09"
+      ],
+      "uid": "PSI-69:FLEX-022"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.6,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 70.0,
+        "o2_initial_pct": 30.0,
+        "pressure_psi": 10.38964904909669
+      },
+      "geometry": "Droplet",
+      "group": "90267748edca3228d6c5ac89784a3132b77f6b6d814dd3b6cf3159126bd25ccb",
+      "material": "Methanol",
+      "observation_sha256": "dd476aff33751fe8ea8880b53eb65745ccd4880437121c473fd2623a34944270",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 25",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.65,
+      "test_id": "FLEX-025",
+      "tokens": [
+        "sample:PSI-69:191F001",
+        "sample:PSI-69:191R001",
+        "session:PSI-69:11/9/2009"
+      ],
+      "uid": "PSI-69:FLEX-025"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.63,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 70.0,
+        "o2_initial_pct": 30.0,
+        "pressure_psi": 10.410919501272396
+      },
+      "geometry": "Droplet",
+      "group": "90267748edca3228d6c5ac89784a3132b77f6b6d814dd3b6cf3159126bd25ccb",
+      "material": "Methanol",
+      "observation_sha256": "ec97fb9db3e230024b3f125e889c978727e0de9b4cf550c7461dd03ab9e35069",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 26",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.62,
+      "test_id": "FLEX-026",
+      "tokens": [
+        "sample:PSI-69:191F001",
+        "sample:PSI-69:191R001",
+        "session:PSI-69:11/9/2009"
+      ],
+      "uid": "PSI-69:FLEX-026"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.57,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 70.0,
+        "o2_initial_pct": 30.0,
+        "pressure_psi": 14.829372521407503
+      },
+      "geometry": "Droplet",
+      "group": "355d2e34bfda6917b467c3fc2b23ba60b34a73678ed4bb480817c393c4511aa6",
+      "material": "Methanol",
+      "observation_sha256": "a11964e6afd891491fc5d6e4fa731c69dc758d8a93d6bba5aaddcafe4ca2d0c3",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 29",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.74,
+      "test_id": "FLEX-029",
+      "tokens": [
+        "sample:PSI-69:178F001",
+        "sample:PSI-69:178R001",
+        "session:PSI-69:11/13/09"
+      ],
+      "uid": "PSI-69:FLEX-029"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.26,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 70.0,
+        "o2_initial_pct": 30.0,
+        "pressure_psi": 14.873847103229433
+      },
+      "geometry": "Droplet",
+      "group": "355d2e34bfda6917b467c3fc2b23ba60b34a73678ed4bb480817c393c4511aa6",
+      "material": "Methanol",
+      "observation_sha256": "fdd867bcaf3886d925e152b083c1a87f40b5b2ce8b4e587be6ad695ec7eb69a5",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 30",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.59,
+      "test_id": "FLEX-030",
+      "tokens": [
+        "sample:PSI-69:178F001",
+        "sample:PSI-69:178R001",
+        "session:PSI-69:11/13/09"
+      ],
+      "uid": "PSI-69:FLEX-030"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.62,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.782964262115057
+      },
+      "geometry": "Droplet",
+      "group": "da43568fd7fc1e467b4e38a6add94356fa0e87ee0abac6cf6e943418ef664c7e",
+      "material": "Methanol",
+      "observation_sha256": "505bc04715891a87a30bcf7d89e7db28b743bfd8d7a5a5750c08b8cf8b2fd466",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 33",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.48,
+      "test_id": "FLEX-033",
+      "tokens": [
+        "sample:PSI-69:177F001",
+        "sample:PSI-69:177R002",
+        "session:PSI-69:11/27/09"
+      ],
+      "uid": "PSI-69:FLEX-033"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.89,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.844841941171655
+      },
+      "geometry": "Droplet",
+      "group": "da43568fd7fc1e467b4e38a6add94356fa0e87ee0abac6cf6e943418ef664c7e",
+      "material": "Methanol",
+      "observation_sha256": "4f22416e15800e0410f82f3e173b1c6309ea6af9fcebd96549f01f4aeb5d06ea",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 34",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.44,
+      "test_id": "FLEX-034",
+      "tokens": [
+        "sample:PSI-69:177F001",
+        "sample:PSI-69:177R002",
+        "session:PSI-69:11/27/09"
+      ],
+      "uid": "PSI-69:FLEX-034"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.4,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 80.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 10.422521566095508
+      },
+      "geometry": "Droplet",
+      "group": "f99cb36a5cce275e08f23fcce22425812494e1ad5ea711f885de266b2c9d8cd2",
+      "material": "Methanol",
+      "observation_sha256": "4e2e01b86513867ceee2f74fbd5e6113e3efbaf217ef8b8a93a92c9716afcee7",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 36",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.45,
+      "test_id": "FLEX-036",
+      "tokens": [
+        "sample:PSI-69:190R002",
+        "session:PSI-69:12/15/09"
+      ],
+      "uid": "PSI-69:FLEX-036"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.31,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 66.0,
+        "o2_initial_pct": 34.0,
+        "pressure_psi": 10.331638724981131
+      },
+      "geometry": "Droplet",
+      "group": "aa055e479eebea9f18e28cf0670f69552af0378c5be680ac05390009d800f173",
+      "material": "Methanol",
+      "observation_sha256": "76b5c4e91cbf6db1d9d37dd40130cb11abf85b0941a49bf9c5a2d8ec3281d1e5",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 37",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.72,
+      "test_id": "FLEX-037",
+      "tokens": [
+        "sample:PSI-69:220R001",
+        "sample:PSI-69:220R002",
+        "session:PSI-69:1/7/2010"
+      ],
+      "uid": "PSI-69:FLEX-037"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.59,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 66.0,
+        "o2_initial_pct": 34.0,
+        "pressure_psi": 10.333572402451649
+      },
+      "geometry": "Droplet",
+      "group": "aa055e479eebea9f18e28cf0670f69552af0378c5be680ac05390009d800f173",
+      "material": "Methanol",
+      "observation_sha256": "c906810184ea1e02d9c37b9bc0009fccfaa6d690c18cfecf6029a5a7d17f64e2",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 38",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.71,
+      "test_id": "FLEX-038",
+      "tokens": [
+        "sample:PSI-69:220R001",
+        "sample:PSI-69:220R002",
+        "session:PSI-69:1/7/2010"
+      ],
+      "uid": "PSI-69:FLEX-038"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.77,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 70.0,
+        "o2_initial_pct": 30.0,
+        "pressure_psi": 10.347108144745281
+      },
+      "geometry": "Droplet",
+      "group": "70d48f39a5a3f8ed01d6a638391cbb5e2413ea846e539309ca6cf15422556eba",
+      "material": "Methanol",
+      "observation_sha256": "93874662b82b3607d2dae4ad5edf8b018609ecba85360d147156e733faad2fc3",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 40",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.62,
+      "test_id": "FLEX-040",
+      "tokens": [
+        "sample:PSI-69:219F001",
+        "sample:PSI-69:219R001",
+        "session:PSI-69:1/8/2010"
+      ],
+      "uid": "PSI-69:FLEX-040"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.35,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 70.0,
+        "o2_initial_pct": 30.0,
+        "pressure_psi": 10.331638724981131
+      },
+      "geometry": "Droplet",
+      "group": "70d48f39a5a3f8ed01d6a638391cbb5e2413ea846e539309ca6cf15422556eba",
+      "material": "Methanol",
+      "observation_sha256": "ad83712455f54134d6b0e0c310b3140fdd23f2809d55d9060867aaf2e19c95e2",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 41",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.65,
+      "test_id": "FLEX-041",
+      "tokens": [
+        "sample:PSI-69:219F001",
+        "sample:PSI-69:219R001",
+        "session:PSI-69:1/8/2010"
+      ],
+      "uid": "PSI-69:FLEX-041"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.49,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 70.0,
+        "o2_initial_pct": 30.0,
+        "pressure_psi": 14.827438843936985
+      },
+      "geometry": "Droplet",
+      "group": "78c78b369b01160db88860c25430b32f614558a955834d8606d72a29fb06b636",
+      "material": "Methanol",
+      "observation_sha256": "a251f916df2b44c48247db0765470b418cc6d41f1f1db87bd1d77d500cb33766",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 44",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.63,
+      "test_id": "FLEX-044",
+      "tokens": [
+        "sample:PSI-69:206F001",
+        "sample:PSI-69:206R001",
+        "session:PSI-69:1/11/2010"
+      ],
+      "uid": "PSI-69:FLEX-044"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.42,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 70.0,
+        "o2_initial_pct": 30.0,
+        "pressure_psi": 14.856444005994765
+      },
+      "geometry": "Droplet",
+      "group": "78c78b369b01160db88860c25430b32f614558a955834d8606d72a29fb06b636",
+      "material": "Methanol",
+      "observation_sha256": "2c77db16b2de0d77bcb6e655eedb22043e9757badeb0a283c51ed8df3c39930d",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 45",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.73,
+      "test_id": "FLEX-045",
+      "tokens": [
+        "sample:PSI-69:206F001",
+        "sample:PSI-69:206R001",
+        "session:PSI-69:1/11/2010"
+      ],
+      "uid": "PSI-69:FLEX-045"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.78,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.87964813564099
+      },
+      "geometry": "Droplet",
+      "group": "7da0d1c8e993396a4d44a56b1883f48405e43805827acefc012085548038413f",
+      "material": "Methanol",
+      "observation_sha256": "3506015cd63792e3c699c208a6df34e973a26ac4f89d3cf5f9931a24c6ada1b6",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 46",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.54,
+      "test_id": "FLEX-046",
+      "tokens": [
+        "sample:PSI-69:205F001",
+        "sample:PSI-69:205R001",
+        "session:PSI-69:1/12/2010"
+      ],
+      "uid": "PSI-69:FLEX-046"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.66,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.864178715876841
+      },
+      "geometry": "Droplet",
+      "group": "7da0d1c8e993396a4d44a56b1883f48405e43805827acefc012085548038413f",
+      "material": "Methanol",
+      "observation_sha256": "4a5685160240b8b6116df6a8c69ff8048b50d82b6e48e1400d9a2e564a1599dc",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 48",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.27,
+      "test_id": "FLEX-048",
+      "tokens": [
+        "sample:PSI-69:205F001",
+        "sample:PSI-69:205R001",
+        "session:PSI-69:1/12/2010"
+      ],
+      "uid": "PSI-69:FLEX-048"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.56,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 80.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 10.468929825387955
+      },
+      "geometry": "Droplet",
+      "group": "66fc14f91ec570a52f6678eeabd1ba54e681aef3a3e7bedd22f00582e8792bec",
+      "material": "Methanol",
+      "observation_sha256": "0bfd79aecf511ad0f49f6a79a475f65a064b6414f846cb021cfd64c5203b4213",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 54",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.41,
+      "test_id": "FLEX-054",
+      "tokens": [
+        "sample:PSI-69:190F003",
+        "sample:PSI-69:218F001",
+        "session:PSI-69:1/29/2010"
+      ],
+      "uid": "PSI-69:FLEX-054"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.37,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 80.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 10.492133955034179
+      },
+      "geometry": "Droplet",
+      "group": "66fc14f91ec570a52f6678eeabd1ba54e681aef3a3e7bedd22f00582e8792bec",
+      "material": "Methanol",
+      "observation_sha256": "78c07ca6b98116210374ac182bc740e5f57ac48f983398f64eed7a41b48e3371",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 55",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.46,
+      "test_id": "FLEX-055",
+      "tokens": [
+        "sample:PSI-69:190F003",
+        "sample:PSI-69:218F001",
+        "session:PSI-69:1/29/2010"
+      ],
+      "uid": "PSI-69:FLEX-055"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.69,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 82.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.953127879520697
+      },
+      "geometry": "Droplet",
+      "group": "d32d857e7114aa3796c18f1c174059da25d3774d12b2af7fda75c60396a88c5c",
+      "material": "Methanol",
+      "observation_sha256": "c8621714fdd303a66557a4300f42d97d98518a05afe13917b0f100591e503e45",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 58",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.42,
+      "test_id": "FLEX-058",
+      "tokens": [
+        "sample:PSI-69:176F001",
+        "sample:PSI-69:176R001",
+        "sample:PSI-69:204F001",
+        "sample:PSI-69:204R001",
+        "session:PSI-69:2/4/2010"
+      ],
+      "uid": "PSI-69:FLEX-058"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.93,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 82.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.873847103229433
+      },
+      "geometry": "Droplet",
+      "group": "d32d857e7114aa3796c18f1c174059da25d3774d12b2af7fda75c60396a88c5c",
+      "material": "Methanol",
+      "observation_sha256": "8e5dbc31f8312e6dd31a25084fe178869fde297418174745a28dbad2572ae300",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 59",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.43,
+      "test_id": "FLEX-059",
+      "tokens": [
+        "sample:PSI-69:176F001",
+        "sample:PSI-69:176R001",
+        "sample:PSI-69:204F001",
+        "sample:PSI-69:204R001",
+        "session:PSI-69:2/4/2010"
+      ],
+      "uid": "PSI-69:FLEX-059"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.43,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 82.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.960862589402772
+      },
+      "geometry": "Droplet",
+      "group": "d32d857e7114aa3796c18f1c174059da25d3774d12b2af7fda75c60396a88c5c",
+      "material": "Methanol",
+      "observation_sha256": "42f92d20c4397d1d2bdade0756aebf77fc9cff4c921ebe650247bec3422e0f12",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 60",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.45,
+      "test_id": "FLEX-060",
+      "tokens": [
+        "sample:PSI-69:176F001",
+        "sample:PSI-69:176R001",
+        "sample:PSI-69:204F001",
+        "sample:PSI-69:204R001",
+        "session:PSI-69:2/4/2010"
+      ],
+      "uid": "PSI-69:FLEX-060"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.68,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 82.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.968597299284847
+      },
+      "geometry": "Droplet",
+      "group": "d32d857e7114aa3796c18f1c174059da25d3774d12b2af7fda75c60396a88c5c",
+      "material": "Methanol",
+      "observation_sha256": "00a22ff7a83ceb7d1b76f87dbc64714c0b366c289047f1210efc69389a7b5790",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 61",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.41,
+      "test_id": "FLEX-061",
+      "tokens": [
+        "sample:PSI-69:176F001",
+        "sample:PSI-69:176R001",
+        "sample:PSI-69:204F001",
+        "sample:PSI-69:204R001",
+        "session:PSI-69:2/4/2010"
+      ],
+      "uid": "PSI-69:FLEX-061"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.37,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 85.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.810035746702317
+      },
+      "geometry": "Droplet",
+      "group": "cd4387aab712d0099445b21d1f4fe94ca526d61e55d68b2aca8b37bf88a1a169",
+      "material": "Methanol",
+      "observation_sha256": "6d6dc825bdc5a03b2fc62441fa4599444911732666f5524214d9c0ea2d3d2980",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 65",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.4,
+      "test_id": "FLEX-065",
+      "tokens": [
+        "sample:PSI-69:189F001",
+        "sample:PSI-69:189F002",
+        "sample:PSI-69:189R001",
+        "sample:PSI-69:189R002",
+        "sample:PSI-69:189R003",
+        "session:PSI-69:3/19/2010"
+      ],
+      "uid": "PSI-69:FLEX-065"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.52,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 85.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.827438843936985
+      },
+      "geometry": "Droplet",
+      "group": "cd4387aab712d0099445b21d1f4fe94ca526d61e55d68b2aca8b37bf88a1a169",
+      "material": "Methanol",
+      "observation_sha256": "43f2d1a4ae6ef1833b842443f5f20a584670eb8c5ba1f31eda2163a38523dd63",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 66",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.38,
+      "test_id": "FLEX-066",
+      "tokens": [
+        "sample:PSI-69:189F001",
+        "sample:PSI-69:189F002",
+        "sample:PSI-69:189R001",
+        "sample:PSI-69:189R002",
+        "sample:PSI-69:189R003",
+        "session:PSI-69:3/19/2010"
+      ],
+      "uid": "PSI-69:FLEX-066"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.97,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 85.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.844841941171655
+      },
+      "geometry": "Droplet",
+      "group": "cd4387aab712d0099445b21d1f4fe94ca526d61e55d68b2aca8b37bf88a1a169",
+      "material": "Methanol",
+      "observation_sha256": "aba49e31c0dc6c83f3fa10e2da25c0857b9a055879719c6e74319c92cca07fd5",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 67",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.36,
+      "test_id": "FLEX-067",
+      "tokens": [
+        "sample:PSI-69:189F001",
+        "sample:PSI-69:189F002",
+        "sample:PSI-69:189R001",
+        "sample:PSI-69:189R002",
+        "sample:PSI-69:189R003",
+        "session:PSI-69:3/19/2010"
+      ],
+      "uid": "PSI-69:FLEX-067"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.38,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 84.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.866112393347358
+      },
+      "geometry": "Droplet",
+      "group": "cd4387aab712d0099445b21d1f4fe94ca526d61e55d68b2aca8b37bf88a1a169",
+      "material": "Methanol",
+      "observation_sha256": "1c76ad92c25dbb04c96b29e4abe4b0be0057073a193b7cbdf1a0cf9e4c424616",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 68",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.39,
+      "test_id": "FLEX-068",
+      "tokens": [
+        "sample:PSI-69:189F001",
+        "sample:PSI-69:189F002",
+        "sample:PSI-69:189R001",
+        "sample:PSI-69:189R002",
+        "sample:PSI-69:189R003",
+        "session:PSI-69:3/19/2010"
+      ],
+      "uid": "PSI-69:FLEX-068"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.25,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 84.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.856444005994765
+      },
+      "geometry": "Droplet",
+      "group": "cd4387aab712d0099445b21d1f4fe94ca526d61e55d68b2aca8b37bf88a1a169",
+      "material": "Methanol",
+      "observation_sha256": "c63eaf726ad6fbc6659b3fc71a4ac63c0fcfb40d6db9aa58f16dc81340c3ff9b",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 71",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.4,
+      "test_id": "FLEX-071",
+      "tokens": [
+        "sample:PSI-69:189F001",
+        "sample:PSI-69:189F002",
+        "sample:PSI-69:189R001",
+        "sample:PSI-69:189R002",
+        "sample:PSI-69:189R003",
+        "session:PSI-69:3/19/2010"
+      ],
+      "uid": "PSI-69:FLEX-071"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.33,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 85.0,
+        "o2_initial_pct": 14.000000000000002,
+        "pressure_psi": 14.858377683465283
+      },
+      "geometry": "Droplet",
+      "group": "4dd84d0c5aa20e8b04ebb1917753fe57f602bee03fb0b69a00a867b9d4aff9d3",
+      "material": "Methanol",
+      "observation_sha256": "8f4a4a5cb223716699621820bee2ea324402161863c62a3792e752915b130d2d",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 77",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.34,
+      "test_id": "FLEX-077",
+      "tokens": [
+        "sample:PSI-69:175F001",
+        "sample:PSI-69:175R001",
+        "session:PSI-69:3/29/2010"
+      ],
+      "uid": "PSI-69:FLEX-077"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.66,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 85.0,
+        "o2_initial_pct": 14.000000000000002,
+        "pressure_psi": 14.811969424172837
+      },
+      "geometry": "Droplet",
+      "group": "4dd84d0c5aa20e8b04ebb1917753fe57f602bee03fb0b69a00a867b9d4aff9d3",
+      "material": "Methanol",
+      "observation_sha256": "039aee87795da5a6157dba8c17dfa4c110b178d0a5cf8373f00019e3cac2c6a6",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 78",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.35,
+      "test_id": "FLEX-078",
+      "tokens": [
+        "sample:PSI-69:175F001",
+        "sample:PSI-69:175R001",
+        "session:PSI-69:3/29/2010"
+      ],
+      "uid": "PSI-69:FLEX-078"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.84,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 87.0,
+        "o2_initial_pct": 13.0,
+        "pressure_psi": 14.784897939585576
+      },
+      "geometry": "Droplet",
+      "group": "4af8635dc36f6c3b263444683e016378cc33582e8a3dded1406c077bbd45ec14",
+      "material": "Methanol",
+      "observation_sha256": "0ecaab49b734fac8eff26182577a7ac9a531e9ea1c66e7342d07506917efb954",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 82",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.35,
+      "test_id": "FLEX-082",
+      "tokens": [
+        "sample:PSI-69:304F001",
+        "sample:PSI-69:304R001",
+        "sample:PSI-69:304R002",
+        "sample:PSI-69:305F002",
+        "sample:PSI-69:305F003",
+        "session:PSI-69:4/19/2010"
+      ],
+      "uid": "PSI-69:FLEX-082"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.35,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 87.0,
+        "o2_initial_pct": 12.0,
+        "pressure_psi": 14.835173553819061
+      },
+      "geometry": "Droplet",
+      "group": "4af8635dc36f6c3b263444683e016378cc33582e8a3dded1406c077bbd45ec14",
+      "material": "Methanol",
+      "observation_sha256": "748a1aeddf90cf4197e4723af44d34f25b2155e8ebd11b5e5b51eb0d00300a60",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 84",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.35,
+      "test_id": "FLEX-084",
+      "tokens": [
+        "sample:PSI-69:304F001",
+        "sample:PSI-69:304R001",
+        "sample:PSI-69:304R002",
+        "sample:PSI-69:305F002",
+        "sample:PSI-69:305F003",
+        "session:PSI-69:4/19/2010"
+      ],
+      "uid": "PSI-69:FLEX-084"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.4,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 87.0,
+        "o2_initial_pct": 12.0,
+        "pressure_psi": 14.912520652639808
+      },
+      "geometry": "Droplet",
+      "group": "4af8635dc36f6c3b263444683e016378cc33582e8a3dded1406c077bbd45ec14",
+      "material": "Methanol",
+      "observation_sha256": "d468b7c4716f31941635d5802653ed069ba5628ee3e0c77501c7905de502fa27",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 85",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.35,
+      "test_id": "FLEX-085",
+      "tokens": [
+        "sample:PSI-69:304F001",
+        "sample:PSI-69:304R001",
+        "sample:PSI-69:304R002",
+        "sample:PSI-69:305F002",
+        "sample:PSI-69:305F003",
+        "session:PSI-69:4/19/2010"
+      ],
+      "uid": "PSI-69:FLEX-085"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.07,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 87.0,
+        "o2_initial_pct": 12.0,
+        "pressure_psi": 14.889316522993582
+      },
+      "geometry": "Droplet",
+      "group": "4af8635dc36f6c3b263444683e016378cc33582e8a3dded1406c077bbd45ec14",
+      "material": "Methanol",
+      "observation_sha256": "f1cf533d8c1f5ed10d86de34be72523f257da1a67c6e83a3d6736f3965705920",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 86",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.35,
+      "test_id": "FLEX-086",
+      "tokens": [
+        "sample:PSI-69:304F001",
+        "sample:PSI-69:304R001",
+        "sample:PSI-69:304R002",
+        "sample:PSI-69:305F002",
+        "sample:PSI-69:305F003",
+        "session:PSI-69:4/19/2010"
+      ],
+      "uid": "PSI-69:FLEX-086"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.64,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 87.0,
+        "o2_initial_pct": 12.0,
+        "pressure_psi": 14.912520652639808
+      },
+      "geometry": "Droplet",
+      "group": "4af8635dc36f6c3b263444683e016378cc33582e8a3dded1406c077bbd45ec14",
+      "material": "Methanol",
+      "observation_sha256": "f1146acc1fdaa7b24eef769ee7e703135d81a675aa8edf4b86f17408e4852ea0",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 87",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.38,
+      "test_id": "FLEX-087",
+      "tokens": [
+        "sample:PSI-69:304F001",
+        "sample:PSI-69:304R001",
+        "sample:PSI-69:304R002",
+        "sample:PSI-69:305F002",
+        "sample:PSI-69:305F003",
+        "session:PSI-69:4/19/2010"
+      ],
+      "uid": "PSI-69:FLEX-087"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 3.01,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 60.0,
+        "o2_initial_pct": 25.0,
+        "pressure_psi": 10.393516404037728
+      },
+      "geometry": "Droplet",
+      "group": "497da3c5f55c405756b9299fecfff647ed48343de3edb4665d09a53ce6e5b47c",
+      "material": "Methanol",
+      "observation_sha256": "bb91b0ff33fa29bb264188c21fe3b994c4c014239eae33f88e3aeb80dc9efac4",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 88",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.53,
+      "test_id": "FLEX-088",
+      "tokens": [
+        "sample:PSI-69:053F001",
+        "sample:PSI-69:053R001",
+        "sample:PSI-69:141F001",
+        "session:PSI-69:5/5/2010"
+      ],
+      "uid": "PSI-69:FLEX-088"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 3.7,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 60.0,
+        "o2_initial_pct": 25.0,
+        "pressure_psi": 10.39158272656721
+      },
+      "geometry": "Droplet",
+      "group": "497da3c5f55c405756b9299fecfff647ed48343de3edb4665d09a53ce6e5b47c",
+      "material": "Methanol",
+      "observation_sha256": "4be62f0c5a26b956e037b71b165713240b63000c0125ce7bd2c333d87eb18d95",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 89",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.51,
+      "test_id": "FLEX-089",
+      "tokens": [
+        "sample:PSI-69:053F001",
+        "sample:PSI-69:053R001",
+        "sample:PSI-69:141F001",
+        "session:PSI-69:5/5/2010"
+      ],
+      "uid": "PSI-69:FLEX-089"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 3.62,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 60.0,
+        "o2_initial_pct": 25.0,
+        "pressure_psi": 10.426388921036546
+      },
+      "geometry": "Droplet",
+      "group": "7fffa459352230d393453e0b6f05ec7ec235c7c0fff0b1aa6366a8e5a7307ca5",
+      "material": "Methanol",
+      "observation_sha256": "1e1afd9918ac023daa6f192c33b1aa1af8cbbc694c7cc6eba9d3cd45fd603d62",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 90",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.53,
+      "test_id": "FLEX-090",
+      "tokens": [
+        "sample:PSI-69:141R001",
+        "session:PSI-69:5/6/2010"
+      ],
+      "uid": "PSI-69:FLEX-090"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 3.51,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 60.0,
+        "o2_initial_pct": 25.0,
+        "pressure_psi": 10.408985823801876
+      },
+      "geometry": "Droplet",
+      "group": "497da3c5f55c405756b9299fecfff647ed48343de3edb4665d09a53ce6e5b47c",
+      "material": "Methanol",
+      "observation_sha256": "6c717038e9f8cbe7a11a0e9bfed9c270bd8256d0c62364e7a4721c1416ff87cf",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 91",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.51,
+      "test_id": "FLEX-091",
+      "tokens": [
+        "sample:PSI-69:053F001",
+        "sample:PSI-69:053R001",
+        "sample:PSI-69:141F001",
+        "session:PSI-69:5/5/2010"
+      ],
+      "uid": "PSI-69:FLEX-091"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 20.0,
+        "diameter_mm": 4.25,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 56.00000000000001,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.329705047510613
+      },
+      "geometry": "Droplet",
+      "group": "1a0834e996ac322bb8ede4a37ce65f1801dfc6579c4e72a26d157f8c0e4b2ee5",
+      "material": "Methanol",
+      "observation_sha256": "35d1fabbfba2b05d6fdc75b9a3b82ca94e1d46730549f1f41eb1e30952dfe72b",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 97",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.45,
+      "test_id": "FLEX-097",
+      "tokens": [
+        "sample:PSI-69:C08M101",
+        "sample:PSI-69:C08M201",
+        "sample:PSI-69:C08M301",
+        "sample:PSI-69:C08M401",
+        "session:PSI-69:6/16/2010"
+      ],
+      "uid": "PSI-69:FLEX-097"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 3.64,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 52.0,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.385781694155654
+      },
+      "geometry": "Droplet",
+      "group": "6d25222d3fffe9fc04f184ec991a52065be1791d4a57aee313010dd1099e5010",
+      "material": "Methanol",
+      "observation_sha256": "15dfa00bb935cf90e46aa5bcda1382c87beea7dd8d2ac5d6a556ee31c656f2b0",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 98",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.47,
+      "test_id": "FLEX-098",
+      "tokens": [
+        "sample:PSI-69:C09M101",
+        "sample:PSI-69:C09M201",
+        "sample:PSI-69:C09M301",
+        "sample:PSI-69:C09M401",
+        "session:PSI-69:6/21/2010"
+      ],
+      "uid": "PSI-69:FLEX-098"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 4.28,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 52.0,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.345174467274761
+      },
+      "geometry": "Droplet",
+      "group": "6d25222d3fffe9fc04f184ec991a52065be1791d4a57aee313010dd1099e5010",
+      "material": "Methanol",
+      "observation_sha256": "a2c1bdda7eecd56b54e487964c070dc538efb52186a7c0a71f40ae6d6bdf05e0",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 99",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.42,
+      "test_id": "FLEX-099",
+      "tokens": [
+        "sample:PSI-69:C09M101",
+        "sample:PSI-69:C09M201",
+        "sample:PSI-69:C09M301",
+        "sample:PSI-69:C09M401",
+        "session:PSI-69:6/21/2010"
+      ],
+      "uid": "PSI-69:FLEX-099"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 20.0,
+        "diameter_mm": 3.6,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 56.00000000000001,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.327771370040095
+      },
+      "geometry": "Droplet",
+      "group": "1a0834e996ac322bb8ede4a37ce65f1801dfc6579c4e72a26d157f8c0e4b2ee5",
+      "material": "Methanol",
+      "observation_sha256": "a083df2ae63cab7b99347336b16dc2e66a4d28c22ca75e65ae700d3ab3bb442c",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 104",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.49,
+      "test_id": "FLEX-104",
+      "tokens": [
+        "sample:PSI-69:C08M101",
+        "sample:PSI-69:C08M201",
+        "sample:PSI-69:C08M301",
+        "sample:PSI-69:C08M401",
+        "session:PSI-69:6/16/2010"
+      ],
+      "uid": "PSI-69:FLEX-104"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 20.0,
+        "diameter_mm": 4.17,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 56.00000000000001,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.337439757392687
+      },
+      "geometry": "Droplet",
+      "group": "1a0834e996ac322bb8ede4a37ce65f1801dfc6579c4e72a26d157f8c0e4b2ee5",
+      "material": "Methanol",
+      "observation_sha256": "4397124a95f49d67067d4e3a46d440877fa6f9ce1ff2543d41ca9071e978a2f7",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 105",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.47,
+      "test_id": "FLEX-105",
+      "tokens": [
+        "sample:PSI-69:C08M101",
+        "sample:PSI-69:C08M201",
+        "sample:PSI-69:C08M301",
+        "sample:PSI-69:C08M401",
+        "session:PSI-69:6/16/2010"
+      ],
+      "uid": "PSI-69:FLEX-105"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 3.08,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 52.0,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.408985823801876
+      },
+      "geometry": "Droplet",
+      "group": "6d25222d3fffe9fc04f184ec991a52065be1791d4a57aee313010dd1099e5010",
+      "material": "Methanol",
+      "observation_sha256": "945942f95028c726a2df514594868ebd8f41770838e4a1da502d5b838676d21b",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 106",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.51,
+      "test_id": "FLEX-106",
+      "tokens": [
+        "sample:PSI-69:C09M101",
+        "sample:PSI-69:C09M201",
+        "sample:PSI-69:C09M301",
+        "sample:PSI-69:C09M401",
+        "session:PSI-69:6/21/2010"
+      ],
+      "uid": "PSI-69:FLEX-106"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 20.0,
+        "diameter_mm": 3.18,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 56.00000000000001,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.345174467274761
+      },
+      "geometry": "Droplet",
+      "group": "1a0834e996ac322bb8ede4a37ce65f1801dfc6579c4e72a26d157f8c0e4b2ee5",
+      "material": "Methanol",
+      "observation_sha256": "474bd67262320f021ca19c2dedd0c37c2147c819368c57235113c05d2f6223c6",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 107",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.52,
+      "test_id": "FLEX-107",
+      "tokens": [
+        "sample:PSI-69:C08M101",
+        "sample:PSI-69:C08M201",
+        "sample:PSI-69:C08M301",
+        "sample:PSI-69:C08M401",
+        "session:PSI-69:6/16/2010"
+      ],
+      "uid": "PSI-69:FLEX-107"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 3.75,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 52.0,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.408985823801876
+      },
+      "geometry": "Droplet",
+      "group": "6d25222d3fffe9fc04f184ec991a52065be1791d4a57aee313010dd1099e5010",
+      "material": "Methanol",
+      "observation_sha256": "a98a6d12aeff27e72d13baced5db7bd626a5d5660646f40251474950d6a94f7e",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 108",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.47,
+      "test_id": "FLEX-108",
+      "tokens": [
+        "sample:PSI-69:C09M101",
+        "sample:PSI-69:C09M201",
+        "sample:PSI-69:C09M301",
+        "sample:PSI-69:C09M401",
+        "session:PSI-69:6/21/2010"
+      ],
+      "uid": "PSI-69:FLEX-108"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 30.0,
+        "diameter_mm": 3.56,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 49.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 10.374179629332541
+      },
+      "geometry": "Droplet",
+      "group": "aaaba0ca47d95ef86d25974f16c38c4a5f5e1c358f1ab8ba8cc975277a72faac",
+      "material": "Methanol",
+      "observation_sha256": "071ddda16e8b8e060a63847feabd36fa47ead73b8c16fc03a6c426f1dc3f7d97",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 109",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.42,
+      "test_id": "FLEX-109",
+      "tokens": [
+        "sample:PSI-69:C10M102",
+        "sample:PSI-69:C10M201",
+        "sample:PSI-69:C10M303",
+        "session:PSI-69:8/31/2010"
+      ],
+      "uid": "PSI-69:FLEX-109"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 30.0,
+        "diameter_mm": 2.83,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 49.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 10.383848016685135
+      },
+      "geometry": "Droplet",
+      "group": "aaaba0ca47d95ef86d25974f16c38c4a5f5e1c358f1ab8ba8cc975277a72faac",
+      "material": "Methanol",
+      "observation_sha256": "75f92ce4d8806036c452af4b259be7276eccfaf1c80cb35f8e9c132384ed08f2",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 110",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.45,
+      "test_id": "FLEX-110",
+      "tokens": [
+        "sample:PSI-69:C10M102",
+        "sample:PSI-69:C10M201",
+        "sample:PSI-69:C10M303",
+        "session:PSI-69:8/31/2010"
+      ],
+      "uid": "PSI-69:FLEX-110"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 30.0,
+        "diameter_mm": 3.37,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 49.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 10.381914339214616
+      },
+      "geometry": "Droplet",
+      "group": "aaaba0ca47d95ef86d25974f16c38c4a5f5e1c358f1ab8ba8cc975277a72faac",
+      "material": "Methanol",
+      "observation_sha256": "f011c5be08eabd38484803e28d012a6510e8d49cd8c5a220d557da974210e9bb",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 111",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.45,
+      "test_id": "FLEX-111",
+      "tokens": [
+        "sample:PSI-69:C10M102",
+        "sample:PSI-69:C10M201",
+        "sample:PSI-69:C10M303",
+        "session:PSI-69:8/31/2010"
+      ],
+      "uid": "PSI-69:FLEX-111"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 30.0,
+        "diameter_mm": 3.99,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 49.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 10.26202633604246
+      },
+      "geometry": "Droplet",
+      "group": "2639e3932ed502f1024b515fb37a6a96b4156b0f06b6b5fa5cea89d17e248065",
+      "material": "Methanol",
+      "observation_sha256": "1180b5d8a725475ed17e54ef298712cd30a04f44926565376c1ed2259106f258",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 112",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.43,
+      "test_id": "FLEX-112",
+      "tokens": [
+        "sample:PSI-69:C10M401",
+        "sample:PSI-69:C11M101",
+        "sample:PSI-69:C11M301",
+        "sample:PSI-69:C11M401",
+        "session:PSI-69:9/1/2010"
+      ],
+      "uid": "PSI-69:FLEX-112"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 35.0,
+        "diameter_mm": 4.2,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 45.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 10.337439757392687
+      },
+      "geometry": "Droplet",
+      "group": "2639e3932ed502f1024b515fb37a6a96b4156b0f06b6b5fa5cea89d17e248065",
+      "material": "Methanol",
+      "observation_sha256": "4b30f20f36d02fac84ceb14606bf5d2e77d82666f6257b20f4caf55dce581f29",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 113",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.49,
+      "test_id": "FLEX-113",
+      "tokens": [
+        "sample:PSI-69:C10M401",
+        "sample:PSI-69:C11M101",
+        "sample:PSI-69:C11M301",
+        "sample:PSI-69:C11M401",
+        "session:PSI-69:9/1/2010"
+      ],
+      "uid": "PSI-69:FLEX-113"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 35.0,
+        "diameter_mm": 3.23,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 45.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 0.0
+      },
+      "geometry": "Droplet",
+      "group": "2f1f69982e0725c70e57f063a9cd4e260ea269e20523253953c552006645b101",
+      "material": "Methanol",
+      "observation_sha256": "d78307f692b0fbe3353814af41576c99ccb7d23ac163d78dca272cddc43bfc97",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 114",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.42,
+      "test_id": "FLEX-114",
+      "tokens": [
+        "sample:PSI-69:C11M201",
+        "session:PSI-69:9/6/2010"
+      ],
+      "uid": "PSI-69:FLEX-114"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 35.0,
+        "diameter_mm": 3.97,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 45.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 10.36064388703891
+      },
+      "geometry": "Droplet",
+      "group": "2639e3932ed502f1024b515fb37a6a96b4156b0f06b6b5fa5cea89d17e248065",
+      "material": "Methanol",
+      "observation_sha256": "1d5a1aee9ca3b6cd657e7c9fa05d6fb96bd125ad9708d63d8d48a044fea15623",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 115",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.41,
+      "test_id": "FLEX-115",
+      "tokens": [
+        "sample:PSI-69:C10M401",
+        "sample:PSI-69:C11M101",
+        "sample:PSI-69:C11M301",
+        "sample:PSI-69:C11M401",
+        "session:PSI-69:9/1/2010"
+      ],
+      "uid": "PSI-69:FLEX-115"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 35.0,
+        "diameter_mm": 3.16,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 45.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 10.370312274391503
+      },
+      "geometry": "Droplet",
+      "group": "2639e3932ed502f1024b515fb37a6a96b4156b0f06b6b5fa5cea89d17e248065",
+      "material": "Methanol",
+      "observation_sha256": "0b07f43cf0ed3a252d338277afc466f83b1267d9cdf3ebcbfa2b7b4b96eeb476",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 116",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.46,
+      "test_id": "FLEX-116",
+      "tokens": [
+        "sample:PSI-69:C10M401",
+        "sample:PSI-69:C11M101",
+        "sample:PSI-69:C11M301",
+        "sample:PSI-69:C11M401",
+        "session:PSI-69:9/1/2010"
+      ],
+      "uid": "PSI-69:FLEX-116"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 40.0,
+        "diameter_mm": 4.25,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 42.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 10.17694452733964
+      },
+      "geometry": "Droplet",
+      "group": "bc716ef9eaffeb5093f4c4c06866041e69f7fca030e123ddc86621cc66c71734",
+      "material": "Methanol",
+      "observation_sha256": "dc844cac71fa7a1394c9128deb8fec1ba53ba65368d8e80bdaf154437b27b6da",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 121",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.34,
+      "test_id": "FLEX-121",
+      "tokens": [
+        "sample:PSI-69:C12M101",
+        "sample:PSI-69:C12M201",
+        "sample:PSI-69:C12M301",
+        "sample:PSI-69:C12M401",
+        "session:PSI-69:9/8/2010"
+      ],
+      "uid": "PSI-69:FLEX-121"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 40.0,
+        "diameter_mm": 3.46,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 42.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 10.271694723395054
+      },
+      "geometry": "Droplet",
+      "group": "bc716ef9eaffeb5093f4c4c06866041e69f7fca030e123ddc86621cc66c71734",
+      "material": "Methanol",
+      "observation_sha256": "3e205924e330f4d87bfb8ffdace7c4fd98dafb979f6199048b1e1fba12b07a29",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 122",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.41,
+      "test_id": "FLEX-122",
+      "tokens": [
+        "sample:PSI-69:C12M101",
+        "sample:PSI-69:C12M201",
+        "sample:PSI-69:C12M301",
+        "sample:PSI-69:C12M401",
+        "session:PSI-69:9/8/2010"
+      ],
+      "uid": "PSI-69:FLEX-122"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 40.0,
+        "diameter_mm": 4.13,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 42.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 10.287164143159202
+      },
+      "geometry": "Droplet",
+      "group": "bc716ef9eaffeb5093f4c4c06866041e69f7fca030e123ddc86621cc66c71734",
+      "material": "Methanol",
+      "observation_sha256": "c42f98d82dc4f5a98279a2e7fc7cc16ab61406d220b45144b54ae012b540b4c5",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 123",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.35,
+      "test_id": "FLEX-123",
+      "tokens": [
+        "sample:PSI-69:C12M101",
+        "sample:PSI-69:C12M201",
+        "sample:PSI-69:C12M301",
+        "sample:PSI-69:C12M401",
+        "session:PSI-69:9/8/2010"
+      ],
+      "uid": "PSI-69:FLEX-123"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 40.0,
+        "diameter_mm": 2.87,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 42.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 10.294898853041277
+      },
+      "geometry": "Droplet",
+      "group": "bc716ef9eaffeb5093f4c4c06866041e69f7fca030e123ddc86621cc66c71734",
+      "material": "Methanol",
+      "observation_sha256": "db53131ff738a50967701f1412cee913747f986725652db77687c19b5a6533a0",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 124",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.3,
+      "test_id": "FLEX-124",
+      "tokens": [
+        "sample:PSI-69:C12M101",
+        "sample:PSI-69:C12M201",
+        "sample:PSI-69:C12M301",
+        "sample:PSI-69:C12M401",
+        "session:PSI-69:9/8/2010"
+      ],
+      "uid": "PSI-69:FLEX-124"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 45.0,
+        "diameter_mm": 3.63,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 38.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 10.387715371626173
+      },
+      "geometry": "Droplet",
+      "group": "851fb4d501181f54b3a22f82bbc3683b777e014675564301a2a95a59cf8bcac7",
+      "material": "Methanol",
+      "observation_sha256": "d9fefb5a681bd34b0955159661841a526693f733a59ef57aca0b266d33ba29b5",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 125",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.35,
+      "test_id": "FLEX-125",
+      "tokens": [
+        "sample:PSI-69:C13M102",
+        "sample:PSI-69:C13M103",
+        "sample:PSI-69:C13M201",
+        "sample:PSI-69:C13M301",
+        "sample:PSI-69:C13M401",
+        "session:PSI-69:9/13/2010"
+      ],
+      "uid": "PSI-69:FLEX-125"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 45.0,
+        "diameter_mm": 2.8,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 38.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 10.366444919450467
+      },
+      "geometry": "Droplet",
+      "group": "851fb4d501181f54b3a22f82bbc3683b777e014675564301a2a95a59cf8bcac7",
+      "material": "Methanol",
+      "observation_sha256": "5508ff95ae7e8439cde83f8a8bd90baf0b89ca6be802c08f33ee4c5189da26c6",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 126",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.4,
+      "test_id": "FLEX-126",
+      "tokens": [
+        "sample:PSI-69:C13M102",
+        "sample:PSI-69:C13M103",
+        "sample:PSI-69:C13M201",
+        "sample:PSI-69:C13M301",
+        "sample:PSI-69:C13M401",
+        "session:PSI-69:9/13/2010"
+      ],
+      "uid": "PSI-69:FLEX-126"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 45.0,
+        "diameter_mm": 3.22,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 38.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 10.37804698427358
+      },
+      "geometry": "Droplet",
+      "group": "851fb4d501181f54b3a22f82bbc3683b777e014675564301a2a95a59cf8bcac7",
+      "material": "Methanol",
+      "observation_sha256": "44abc1f8ce2ed15713e3d15bb19ace3e8f21f3f79abd34e62bbfd23fa057c912",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 127",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.38,
+      "test_id": "FLEX-127",
+      "tokens": [
+        "sample:PSI-69:C13M102",
+        "sample:PSI-69:C13M103",
+        "sample:PSI-69:C13M201",
+        "sample:PSI-69:C13M301",
+        "sample:PSI-69:C13M401",
+        "session:PSI-69:9/13/2010"
+      ],
+      "uid": "PSI-69:FLEX-127"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 45.0,
+        "diameter_mm": 2.91,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 38.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 10.38964904909669
+      },
+      "geometry": "Droplet",
+      "group": "851fb4d501181f54b3a22f82bbc3683b777e014675564301a2a95a59cf8bcac7",
+      "material": "Methanol",
+      "observation_sha256": "c82ab853876929e575a1e66d493fa490933cdea44e927317d891dc7b9ea60f33",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 128",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.39,
+      "test_id": "FLEX-128",
+      "tokens": [
+        "sample:PSI-69:C13M102",
+        "sample:PSI-69:C13M103",
+        "sample:PSI-69:C13M201",
+        "sample:PSI-69:C13M301",
+        "sample:PSI-69:C13M401",
+        "session:PSI-69:9/13/2010"
+      ],
+      "uid": "PSI-69:FLEX-128"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 50.0,
+        "diameter_mm": 3.98,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 35.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 10.316169305216983
+      },
+      "geometry": "Droplet",
+      "group": "8d80fd791acc45a747f1dc90a3d39136a70c9ebf7cd046b7ba7e54c7737de076",
+      "material": "Methanol",
+      "observation_sha256": "e5893f1c7c22d866743868c01c8da3aa622e89eccdd2e4f22f4aa25e73dfeb7d",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 140",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.2,
+      "test_id": "FLEX-140",
+      "tokens": [
+        "sample:PSI-69:C14M101",
+        "sample:PSI-69:C14M201",
+        "sample:PSI-69:C14M301",
+        "sample:PSI-69:C14M302",
+        "session:PSI-69:11/4/2010"
+      ],
+      "uid": "PSI-69:FLEX-140"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 50.0,
+        "diameter_mm": 2.86,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 35.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 10.327771370040095
+      },
+      "geometry": "Droplet",
+      "group": "8d80fd791acc45a747f1dc90a3d39136a70c9ebf7cd046b7ba7e54c7737de076",
+      "material": "Methanol",
+      "observation_sha256": "a60d4b35834001aa741248c15d25d1f3017563be8051e5a4b320fb598d00c9c3",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 141",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.3,
+      "test_id": "FLEX-141",
+      "tokens": [
+        "sample:PSI-69:C14M101",
+        "sample:PSI-69:C14M201",
+        "sample:PSI-69:C14M301",
+        "sample:PSI-69:C14M302",
+        "session:PSI-69:11/4/2010"
+      ],
+      "uid": "PSI-69:FLEX-141"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 50.0,
+        "diameter_mm": 1.86,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 35.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 10.335506079922169
+      },
+      "geometry": "Droplet",
+      "group": "8d80fd791acc45a747f1dc90a3d39136a70c9ebf7cd046b7ba7e54c7737de076",
+      "material": "Methanol",
+      "observation_sha256": "f4e6ef9931df2e8593cfc622d52043fb7b1104af2e0bd71527a444cbb749f1c0",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 142",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.39,
+      "test_id": "FLEX-142",
+      "tokens": [
+        "sample:PSI-69:C14M101",
+        "sample:PSI-69:C14M201",
+        "sample:PSI-69:C14M301",
+        "sample:PSI-69:C14M302",
+        "session:PSI-69:11/4/2010"
+      ],
+      "uid": "PSI-69:FLEX-142"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 50.0,
+        "diameter_mm": 2.25,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 35.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 10.339373434863207
+      },
+      "geometry": "Droplet",
+      "group": "8d80fd791acc45a747f1dc90a3d39136a70c9ebf7cd046b7ba7e54c7737de076",
+      "material": "Methanol",
+      "observation_sha256": "c285af47221ac150c475a53ccb52cc1d3838ad6a16072f727ca064214c5d024c",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 143",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.36,
+      "test_id": "FLEX-143",
+      "tokens": [
+        "sample:PSI-69:C14M101",
+        "sample:PSI-69:C14M201",
+        "sample:PSI-69:C14M301",
+        "sample:PSI-69:C14M302",
+        "session:PSI-69:11/4/2010"
+      ],
+      "uid": "PSI-69:FLEX-143"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 5.0,
+        "diameter_mm": 3.53,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 75.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 14.732688647881572
+      },
+      "geometry": "Droplet",
+      "group": "f97f32ca8aaf8ed0dead95d1abf36ae16428230ff42551557aafec477ec0342e",
+      "material": "Methanol",
+      "observation_sha256": "df46a80d6a5c8479188d7f426d943eaf94eda480a33d3307ac3480310adad86f",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 144",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.45,
+      "test_id": "FLEX-144",
+      "tokens": [
+        "sample:PSI-69:C01M101",
+        "sample:PSI-69:C01M201",
+        "sample:PSI-69:C01M301",
+        "session:PSI-69:11/16/10"
+      ],
+      "uid": "PSI-69:FLEX-144"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 5.0,
+        "diameter_mm": 3.33,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 75.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 14.76362748740987
+      },
+      "geometry": "Droplet",
+      "group": "f97f32ca8aaf8ed0dead95d1abf36ae16428230ff42551557aafec477ec0342e",
+      "material": "Methanol",
+      "observation_sha256": "20b4d1617da6411485c5b716ec6482f8983d5d2c6da147299cdd79919b9c23ad",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 145",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.45,
+      "test_id": "FLEX-145",
+      "tokens": [
+        "sample:PSI-69:C01M101",
+        "sample:PSI-69:C01M201",
+        "sample:PSI-69:C01M301",
+        "session:PSI-69:11/16/10"
+      ],
+      "uid": "PSI-69:FLEX-145"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 5.0,
+        "diameter_mm": 4.35,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 75.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 14.802301036820243
+      },
+      "geometry": "Droplet",
+      "group": "f97f32ca8aaf8ed0dead95d1abf36ae16428230ff42551557aafec477ec0342e",
+      "material": "Methanol",
+      "observation_sha256": "fb2579db9ccd75eb730be33afddd31cb72c8b60ac024bb2160fa1c59cd5ae8d7",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 146",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.41,
+      "test_id": "FLEX-146",
+      "tokens": [
+        "sample:PSI-69:C01M101",
+        "sample:PSI-69:C01M201",
+        "sample:PSI-69:C01M301",
+        "session:PSI-69:11/16/10"
+      ],
+      "uid": "PSI-69:FLEX-146"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 45.0,
+        "diameter_mm": 3.02,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 38.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 10.358710209568393
+      },
+      "geometry": "Droplet",
+      "group": "851fb4d501181f54b3a22f82bbc3683b777e014675564301a2a95a59cf8bcac7",
+      "material": "Methanol",
+      "observation_sha256": "458e2a2d3bc2d4eb2fcc13651a4110431595c25e9725553a24c2a804cc5f3e1c",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 147",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.4,
+      "test_id": "FLEX-147",
+      "tokens": [
+        "sample:PSI-69:C13M102",
+        "sample:PSI-69:C13M103",
+        "sample:PSI-69:C13M201",
+        "sample:PSI-69:C13M301",
+        "sample:PSI-69:C13M401",
+        "session:PSI-69:9/13/2010"
+      ],
+      "uid": "PSI-69:FLEX-147"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 3.86,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.744290712704684
+      },
+      "geometry": "Droplet",
+      "group": "4a58a7b6c9d8494d76a44ac76157641ea37ea5b41ac2185cebbf35a8c789e076",
+      "material": "Methanol",
+      "observation_sha256": "e61ebec2160f00242777cdec88e01a3120ef7474bce886d920dffc0e609cf753",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 151",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.36,
+      "test_id": "FLEX-151",
+      "tokens": [
+        "sample:PSI-69:C03M101",
+        "sample:PSI-69:C03M201",
+        "sample:PSI-69:C03M301",
+        "session:PSI-69:12/8/2010"
+      ],
+      "uid": "PSI-69:FLEX-151"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 3.33,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.79263264946765
+      },
+      "geometry": "Droplet",
+      "group": "4a58a7b6c9d8494d76a44ac76157641ea37ea5b41ac2185cebbf35a8c789e076",
+      "material": "Methanol",
+      "observation_sha256": "831b42bf980098d09c099ccdaf80e8f92b6e0ac52427c88684b6f24b71805807",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 152",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.43,
+      "test_id": "FLEX-152",
+      "tokens": [
+        "sample:PSI-69:C03M101",
+        "sample:PSI-69:C03M201",
+        "sample:PSI-69:C03M301",
+        "session:PSI-69:12/8/2010"
+      ],
+      "uid": "PSI-69:FLEX-152"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 2.78,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.804234714290763
+      },
+      "geometry": "Droplet",
+      "group": "4a58a7b6c9d8494d76a44ac76157641ea37ea5b41ac2185cebbf35a8c789e076",
+      "material": "Methanol",
+      "observation_sha256": "a163afb6bebdec6b393aa88533e8d59116e1ffe53e1a149f1531e8964312640f",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 153",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.42,
+      "test_id": "FLEX-153",
+      "tokens": [
+        "sample:PSI-69:C03M101",
+        "sample:PSI-69:C03M201",
+        "sample:PSI-69:C03M301",
+        "session:PSI-69:12/8/2010"
+      ],
+      "uid": "PSI-69:FLEX-153"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 4.24,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 59.0,
+        "o2_initial_pct": 16.0,
+        "pressure_psi": 14.73655600282261
+      },
+      "geometry": "Droplet",
+      "group": "08681eb4646488d2ae71bc123fcd08aabe56acd46635119ebf4c5d69a29a41dd",
+      "material": "Methanol",
+      "observation_sha256": "43fc039b2d849e6510f3092364a26651783fbbe9341093e6e2634b392868bfce",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 157",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.3,
+      "test_id": "FLEX-157",
+      "tokens": [
+        "sample:PSI-69:C05M101",
+        "sample:PSI-69:C05M201",
+        "sample:PSI-69:C05M301",
+        "sample:PSI-69:C05M401",
+        "session:PSI-69:12/14/10"
+      ],
+      "uid": "PSI-69:FLEX-157"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 3.7,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 59.0,
+        "o2_initial_pct": 16.0,
+        "pressure_psi": 14.781030584644538
+      },
+      "geometry": "Droplet",
+      "group": "08681eb4646488d2ae71bc123fcd08aabe56acd46635119ebf4c5d69a29a41dd",
+      "material": "Methanol",
+      "observation_sha256": "791207ed9f254a0016045bee1b11678867b08790251c10ac3fff51a144549e98",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 158",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.37,
+      "test_id": "FLEX-158",
+      "tokens": [
+        "sample:PSI-69:C05M101",
+        "sample:PSI-69:C05M201",
+        "sample:PSI-69:C05M301",
+        "sample:PSI-69:C05M401",
+        "session:PSI-69:12/14/10"
+      ],
+      "uid": "PSI-69:FLEX-158"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 2.71,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 59.0,
+        "o2_initial_pct": 16.0,
+        "pressure_psi": 14.802301036820243
+      },
+      "geometry": "Droplet",
+      "group": "08681eb4646488d2ae71bc123fcd08aabe56acd46635119ebf4c5d69a29a41dd",
+      "material": "Methanol",
+      "observation_sha256": "e3c93c2df83473eefc8dcd87c948240e7d733c22c3427e39b41ea6862e4bd2f0",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 159",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.38,
+      "test_id": "FLEX-159",
+      "tokens": [
+        "sample:PSI-69:C05M101",
+        "sample:PSI-69:C05M201",
+        "sample:PSI-69:C05M301",
+        "sample:PSI-69:C05M401",
+        "session:PSI-69:12/14/10"
+      ],
+      "uid": "PSI-69:FLEX-159"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 2.77,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 59.0,
+        "o2_initial_pct": 16.0,
+        "pressure_psi": 14.842908263701135
+      },
+      "geometry": "Droplet",
+      "group": "08681eb4646488d2ae71bc123fcd08aabe56acd46635119ebf4c5d69a29a41dd",
+      "material": "Methanol",
+      "observation_sha256": "dd6ead93989c2ddbab2e9effc7093758cbc9fb2315eafa9937ce02e7780bc6b5",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 160",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.38,
+      "test_id": "FLEX-160",
+      "tokens": [
+        "sample:PSI-69:C05M101",
+        "sample:PSI-69:C05M201",
+        "sample:PSI-69:C05M301",
+        "sample:PSI-69:C05M401",
+        "session:PSI-69:12/14/10"
+      ],
+      "uid": "PSI-69:FLEX-160"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 32.0,
+        "diameter_mm": 3.72,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 54.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.759760132468832
+      },
+      "geometry": "Droplet",
+      "group": "9dafcfdb8ff0537744fe19bda8977b5cf829055c717e2c3a96435d69d14340d1",
+      "material": "Methanol",
+      "observation_sha256": "3dbf31f1b844c13032a2a16c04153b31661d32cc7f5bfde8e28554add9e66c14",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 161",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.28,
+      "test_id": "FLEX-161",
+      "tokens": [
+        "sample:PSI-69:C06M101",
+        "sample:PSI-69:C06M201",
+        "sample:PSI-69:C06M301",
+        "sample:PSI-69:C06M401",
+        "session:PSI-69:12/28/10"
+      ],
+      "uid": "PSI-69:FLEX-161"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 32.0,
+        "diameter_mm": 3.05,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 53.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.781030584644538
+      },
+      "geometry": "Droplet",
+      "group": "9dafcfdb8ff0537744fe19bda8977b5cf829055c717e2c3a96435d69d14340d1",
+      "material": "Methanol",
+      "observation_sha256": "78cc845ebc5c033dd16cb84b3f0f0e0cc754ba01a74eca840f4351a2929ce056",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 162",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.37,
+      "test_id": "FLEX-162",
+      "tokens": [
+        "sample:PSI-69:C06M101",
+        "sample:PSI-69:C06M201",
+        "sample:PSI-69:C06M301",
+        "sample:PSI-69:C06M401",
+        "session:PSI-69:12/28/10"
+      ],
+      "uid": "PSI-69:FLEX-162"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 32.0,
+        "diameter_mm": 2.59,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 53.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.810035746702317
+      },
+      "geometry": "Droplet",
+      "group": "9dafcfdb8ff0537744fe19bda8977b5cf829055c717e2c3a96435d69d14340d1",
+      "material": "Methanol",
+      "observation_sha256": "86d93d5cf1b1e4d156d509f7161bdbc831dc4cab45bb5a53e4132453615ec5ba",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 163",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.37,
+      "test_id": "FLEX-163",
+      "tokens": [
+        "sample:PSI-69:C06M101",
+        "sample:PSI-69:C06M201",
+        "sample:PSI-69:C06M301",
+        "sample:PSI-69:C06M401",
+        "session:PSI-69:12/28/10"
+      ],
+      "uid": "PSI-69:FLEX-163"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 32.0,
+        "diameter_mm": 2.59,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 53.0,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.813903101643355
+      },
+      "geometry": "Droplet",
+      "group": "9dafcfdb8ff0537744fe19bda8977b5cf829055c717e2c3a96435d69d14340d1",
+      "material": "Methanol",
+      "observation_sha256": "9ef9354c59787313e96e11f2b97d2648591da759bd90d7c183954d89e2e8a8b1",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 164",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.42,
+      "test_id": "FLEX-164",
+      "tokens": [
+        "sample:PSI-69:C06M101",
+        "sample:PSI-69:C06M201",
+        "sample:PSI-69:C06M301",
+        "sample:PSI-69:C06M401",
+        "session:PSI-69:12/28/10"
+      ],
+      "uid": "PSI-69:FLEX-164"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 36.0,
+        "diameter_mm": 3.22,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 50.0,
+        "o2_initial_pct": 14.000000000000002,
+        "pressure_psi": 14.711418195705866
+      },
+      "geometry": "Droplet",
+      "group": "b57aca6407de14ba834a986ed14847d37e22a45df044dc7ffcc3d2b795399b55",
+      "material": "Methanol",
+      "observation_sha256": "60c10f241fd6b8abe57e30821eb0c8da7da39f441ad004c8db78ea3360ccaca5",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 166",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.28,
+      "test_id": "FLEX-166",
+      "tokens": [
+        "sample:PSI-69:C07M101",
+        "sample:PSI-69:C07M201",
+        "session:PSI-69:1/12/2011"
+      ],
+      "uid": "PSI-69:FLEX-166"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 36.0,
+        "diameter_mm": 2.32,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 50.0,
+        "o2_initial_pct": 14.000000000000002,
+        "pressure_psi": 14.726887615470016
+      },
+      "geometry": "Droplet",
+      "group": "b57aca6407de14ba834a986ed14847d37e22a45df044dc7ffcc3d2b795399b55",
+      "material": "Methanol",
+      "observation_sha256": "cc7ac5913ca26bbed2248f1df7c8be8a0fa0af8d02ae1048aeea02542da85e3e",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 167",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.37,
+      "test_id": "FLEX-167",
+      "tokens": [
+        "sample:PSI-69:C07M101",
+        "sample:PSI-69:C07M201",
+        "session:PSI-69:1/12/2011"
+      ],
+      "uid": "PSI-69:FLEX-167"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 3.03,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 64.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.76169380993935
+      },
+      "geometry": "Droplet",
+      "group": "7917cbdcb9a9234c785704cf9f7ea5de9a57c80682869e8e1cffc9b9810a7605",
+      "material": "Methanol",
+      "observation_sha256": "5f2456f8ab6c81a9acf6b8a982f642ced9ed2afcc3e466b9b28061426392adac",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 168",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.48,
+      "test_id": "FLEX-168",
+      "tokens": [
+        "sample:PSI-69:C15M101",
+        "sample:PSI-69:C15M201",
+        "sample:PSI-69:C15M301",
+        "session:PSI-69:1/18/2011"
+      ],
+      "uid": "PSI-69:FLEX-168"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 3.05,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 64.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.813903101643355
+      },
+      "geometry": "Droplet",
+      "group": "7917cbdcb9a9234c785704cf9f7ea5de9a57c80682869e8e1cffc9b9810a7605",
+      "material": "Methanol",
+      "observation_sha256": "2cf913d8c6509296039de727257ab1ab60a1d5e1c4c80eb01e61b92a284256a9",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 169",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.51,
+      "test_id": "FLEX-169",
+      "tokens": [
+        "sample:PSI-69:C15M101",
+        "sample:PSI-69:C15M201",
+        "sample:PSI-69:C15M301",
+        "session:PSI-69:1/18/2011"
+      ],
+      "uid": "PSI-69:FLEX-169"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 3.53,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 64.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.825505166466469
+      },
+      "geometry": "Droplet",
+      "group": "7917cbdcb9a9234c785704cf9f7ea5de9a57c80682869e8e1cffc9b9810a7605",
+      "material": "Methanol",
+      "observation_sha256": "288bac4d6f48eab64dfa3da9e3dea54e6482a721ce29a5dcb1f2c322b160a56b",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 170",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.46,
+      "test_id": "FLEX-170",
+      "tokens": [
+        "sample:PSI-69:C15M101",
+        "sample:PSI-69:C15M201",
+        "sample:PSI-69:C15M301",
+        "session:PSI-69:1/18/2011"
+      ],
+      "uid": "PSI-69:FLEX-170"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 20.0,
+        "diameter_mm": 4.53,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 56.00000000000001,
+        "o2_initial_pct": 24.0,
+        "pressure_psi": 10.381914339214616
+      },
+      "geometry": "Droplet",
+      "group": "4b5abf9cfd2c9a392ec35d3d5e4948aa4edb3237de2cb0ad3784d1fda6695cd6",
+      "material": "Methanol",
+      "observation_sha256": "128f181bd9b43eded1cde52f06feffaf1a25f74495dd530be0fb33ac78d30751",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 176",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.46,
+      "test_id": "FLEX-176",
+      "tokens": [
+        "sample:PSI-69:C08M501",
+        "sample:PSI-69:C08M601",
+        "session:PSI-69:4/18/2011"
+      ],
+      "uid": "PSI-69:FLEX-176"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 20.0,
+        "diameter_mm": 3.02,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 56.00000000000001,
+        "o2_initial_pct": 24.0,
+        "pressure_psi": 10.383848016685135
+      },
+      "geometry": "Droplet",
+      "group": "4b5abf9cfd2c9a392ec35d3d5e4948aa4edb3237de2cb0ad3784d1fda6695cd6",
+      "material": "Methanol",
+      "observation_sha256": "da08a3289272a65ec3c4a5d3d4ebf5f2aa45871a000715501e145d06933dfeb1",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 177",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.52,
+      "test_id": "FLEX-177",
+      "tokens": [
+        "sample:PSI-69:C08M501",
+        "sample:PSI-69:C08M601",
+        "session:PSI-69:4/18/2011"
+      ],
+      "uid": "PSI-69:FLEX-177"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 3.72,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 52.0,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.333572402451649
+      },
+      "geometry": "Droplet",
+      "group": "cf2b7e853a3122f97808511e9892f80b9182cb10966e7e079ece2b4147585d0a",
+      "material": "Methanol",
+      "observation_sha256": "865281f4911897bd1aebb7845a49fb6f40397a28c6f2bf1278f22b7f89320f2d",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 183",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.53,
+      "test_id": "FLEX-183",
+      "tokens": [
+        "sample:PSI-69:C02M101",
+        "sample:PSI-69:C02M201",
+        "sample:PSI-69:C09M501",
+        "sample:PSI-69:C09M502",
+        "sample:PSI-69:C09M601",
+        "sample:PSI-69:C09M701",
+        "session:PSI-69:8/8/2011"
+      ],
+      "uid": "PSI-69:FLEX-183"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 3.42,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 52.0,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.347108144745281
+      },
+      "geometry": "Droplet",
+      "group": "cf2b7e853a3122f97808511e9892f80b9182cb10966e7e079ece2b4147585d0a",
+      "material": "Methanol",
+      "observation_sha256": "24dd96172921d99e66fd7db074d822c2bef3613280e47aefe28090028bf2ff54",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 184",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.51,
+      "test_id": "FLEX-184",
+      "tokens": [
+        "sample:PSI-69:C02M101",
+        "sample:PSI-69:C02M201",
+        "sample:PSI-69:C09M501",
+        "sample:PSI-69:C09M502",
+        "sample:PSI-69:C09M601",
+        "sample:PSI-69:C09M701",
+        "session:PSI-69:8/8/2011"
+      ],
+      "uid": "PSI-69:FLEX-184"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 2.8,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 52.0,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.3490418222158
+      },
+      "geometry": "Droplet",
+      "group": "cf2b7e853a3122f97808511e9892f80b9182cb10966e7e079ece2b4147585d0a",
+      "material": "Methanol",
+      "observation_sha256": "344adef07a3535434a1e3ba1a45fe668e595b1feab64dff6d144ed89046d48bf",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 185",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.51,
+      "test_id": "FLEX-185",
+      "tokens": [
+        "sample:PSI-69:C02M101",
+        "sample:PSI-69:C02M201",
+        "sample:PSI-69:C09M501",
+        "sample:PSI-69:C09M502",
+        "sample:PSI-69:C09M601",
+        "sample:PSI-69:C09M701",
+        "session:PSI-69:8/8/2011"
+      ],
+      "uid": "PSI-69:FLEX-185"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 25.0,
+        "diameter_mm": 2.47,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 52.0,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.368378596920987
+      },
+      "geometry": "Droplet",
+      "group": "cf2b7e853a3122f97808511e9892f80b9182cb10966e7e079ece2b4147585d0a",
+      "material": "Methanol",
+      "observation_sha256": "b3aef78088ac1b53ea095946631256de71cefa45d82f87e6067f482013d107d2",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 186",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.52,
+      "test_id": "FLEX-186",
+      "tokens": [
+        "sample:PSI-69:C02M101",
+        "sample:PSI-69:C02M201",
+        "sample:PSI-69:C09M501",
+        "sample:PSI-69:C09M502",
+        "sample:PSI-69:C09M601",
+        "sample:PSI-69:C09M701",
+        "session:PSI-69:8/8/2011"
+      ],
+      "uid": "PSI-69:FLEX-186"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 10.0,
+        "diameter_mm": 3.38,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 71.0,
+        "o2_initial_pct": 19.0,
+        "pressure_psi": 14.657275226531345
+      },
+      "geometry": "Droplet",
+      "group": "cf2b7e853a3122f97808511e9892f80b9182cb10966e7e079ece2b4147585d0a",
+      "material": "Methanol",
+      "observation_sha256": "750680728f680f2b1804bc4eae838fed0f34e45e314b4c31e7c3d51f643c4dcb",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 187",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.47,
+      "test_id": "FLEX-187",
+      "tokens": [
+        "sample:PSI-69:C02M101",
+        "sample:PSI-69:C02M201",
+        "sample:PSI-69:C09M501",
+        "sample:PSI-69:C09M502",
+        "sample:PSI-69:C09M601",
+        "sample:PSI-69:C09M701",
+        "session:PSI-69:8/8/2011"
+      ],
+      "uid": "PSI-69:FLEX-187"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 10.0,
+        "diameter_mm": 2.47,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 71.0,
+        "o2_initial_pct": 19.0,
+        "pressure_psi": 14.659208904001863
+      },
+      "geometry": "Droplet",
+      "group": "cf2b7e853a3122f97808511e9892f80b9182cb10966e7e079ece2b4147585d0a",
+      "material": "Methanol",
+      "observation_sha256": "abb4e1dc0cb6de825f6c082d78542a5311ad75810cb7f44195f9e3f2e779e88c",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 188",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.46,
+      "test_id": "FLEX-188",
+      "tokens": [
+        "sample:PSI-69:C02M101",
+        "sample:PSI-69:C02M201",
+        "sample:PSI-69:C09M501",
+        "sample:PSI-69:C09M502",
+        "sample:PSI-69:C09M601",
+        "sample:PSI-69:C09M701",
+        "session:PSI-69:8/8/2011"
+      ],
+      "uid": "PSI-69:FLEX-188"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 3.77,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.719152905587942
+      },
+      "geometry": "Droplet",
+      "group": "895c90a8f64562e6d2aa1b58e729e5d491ec44e53779f1225cb6e66cefea2590",
+      "material": "Methanol",
+      "observation_sha256": "6d2911bd3caa834dc288b65d0a37594b830543d34051155ac1dc59f3412f42d2",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 189",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.42,
+      "test_id": "FLEX-189",
+      "tokens": [
+        "sample:PSI-69:C03M501",
+        "sample:PSI-69:C03M601",
+        "sample:PSI-69:C03M701",
+        "sample:PSI-69:C04M101",
+        "sample:PSI-69:C04M201",
+        "session:PSI-69:8/9/2011"
+      ],
+      "uid": "PSI-69:FLEX-189"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 2.74,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.784897939585576
+      },
+      "geometry": "Droplet",
+      "group": "895c90a8f64562e6d2aa1b58e729e5d491ec44e53779f1225cb6e66cefea2590",
+      "material": "Methanol",
+      "observation_sha256": "5a13a0e422944e6815332d4bc1f1f9949ba57fd5ca70b2708fb8d4ed03448447",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 190",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.5,
+      "test_id": "FLEX-190",
+      "tokens": [
+        "sample:PSI-69:C03M501",
+        "sample:PSI-69:C03M601",
+        "sample:PSI-69:C03M701",
+        "sample:PSI-69:C04M101",
+        "sample:PSI-69:C04M201",
+        "session:PSI-69:8/9/2011"
+      ],
+      "uid": "PSI-69:FLEX-190"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 15.0,
+        "diameter_mm": 1.76,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.798433681879205
+      },
+      "geometry": "Droplet",
+      "group": "895c90a8f64562e6d2aa1b58e729e5d491ec44e53779f1225cb6e66cefea2590",
+      "material": "Methanol",
+      "observation_sha256": "675b6245644d941d4672e99c2e8f3600d237e5911a6617c0ca8831142add3384",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 191",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.46,
+      "test_id": "FLEX-191",
+      "tokens": [
+        "sample:PSI-69:C03M501",
+        "sample:PSI-69:C03M601",
+        "sample:PSI-69:C03M701",
+        "sample:PSI-69:C04M101",
+        "sample:PSI-69:C04M201",
+        "session:PSI-69:8/9/2011"
+      ],
+      "uid": "PSI-69:FLEX-191"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 20.0,
+        "diameter_mm": 3.46,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 63.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 14.686280388589125
+      },
+      "geometry": "Droplet",
+      "group": "895c90a8f64562e6d2aa1b58e729e5d491ec44e53779f1225cb6e66cefea2590",
+      "material": "Methanol",
+      "observation_sha256": "20cf717ad2ef6f5b85cd771e36085379ead10c5c7a3da75d669f2a9b14cb620c",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 192",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.39,
+      "test_id": "FLEX-192",
+      "tokens": [
+        "sample:PSI-69:C03M501",
+        "sample:PSI-69:C03M601",
+        "sample:PSI-69:C03M701",
+        "sample:PSI-69:C04M101",
+        "sample:PSI-69:C04M201",
+        "session:PSI-69:8/9/2011"
+      ],
+      "uid": "PSI-69:FLEX-192"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 20.0,
+        "diameter_mm": 2.77,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 63.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 14.678545678707051
+      },
+      "geometry": "Droplet",
+      "group": "895c90a8f64562e6d2aa1b58e729e5d491ec44e53779f1225cb6e66cefea2590",
+      "material": "Methanol",
+      "observation_sha256": "f8a67fcaca96ef7fdd14d78e268f8ae309f24b92847bd20e76a23e2827bf6535",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 193",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.4,
+      "test_id": "FLEX-193",
+      "tokens": [
+        "sample:PSI-69:C03M501",
+        "sample:PSI-69:C03M601",
+        "sample:PSI-69:C03M701",
+        "sample:PSI-69:C04M101",
+        "sample:PSI-69:C04M201",
+        "session:PSI-69:8/9/2011"
+      ],
+      "uid": "PSI-69:FLEX-193"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 5.0,
+        "diameter_mm": 3.37,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 75.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 14.579928127710598
+      },
+      "geometry": "Droplet",
+      "group": "53da3910725d56cbbe3eefaa13200adab8f37e3b367299a9b55e8392bb54dbdc",
+      "material": "Methanol",
+      "observation_sha256": "2940f4e61cf566d3887a38084dd655c4144b38250f8d86122a723470599e1672",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 199",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.49,
+      "test_id": "FLEX-199",
+      "tokens": [
+        "sample:PSI-69:C01M501",
+        "sample:PSI-69:C01M602",
+        "sample:PSI-69:C01M603",
+        "sample:PSI-69:N01M101",
+        "sample:PSI-69:N01M201",
+        "session:PSI-69:8/24/2011"
+      ],
+      "uid": "PSI-69:FLEX-199"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 5.0,
+        "diameter_mm": 2.57,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 75.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 14.62053535459149
+      },
+      "geometry": "Droplet",
+      "group": "53da3910725d56cbbe3eefaa13200adab8f37e3b367299a9b55e8392bb54dbdc",
+      "material": "Methanol",
+      "observation_sha256": "218e9b4e9a97612167cccaf317d37466ad64c8192d50579b27302240ba8a6bd3",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 200",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.47,
+      "test_id": "FLEX-200",
+      "tokens": [
+        "sample:PSI-69:C01M501",
+        "sample:PSI-69:C01M602",
+        "sample:PSI-69:C01M603",
+        "sample:PSI-69:N01M101",
+        "sample:PSI-69:N01M201",
+        "session:PSI-69:8/24/2011"
+      ],
+      "uid": "PSI-69:FLEX-200"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 5.0,
+        "diameter_mm": 2.4,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 75.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 14.636004774355639
+      },
+      "geometry": "Droplet",
+      "group": "53da3910725d56cbbe3eefaa13200adab8f37e3b367299a9b55e8392bb54dbdc",
+      "material": "Methanol",
+      "observation_sha256": "88173e8b373cec72728d0fbb96220d031c8f8b83aca851eaa721d5b9dcdf95b9",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 201",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.48,
+      "test_id": "FLEX-201",
+      "tokens": [
+        "sample:PSI-69:C01M501",
+        "sample:PSI-69:C01M602",
+        "sample:PSI-69:C01M603",
+        "sample:PSI-69:N01M101",
+        "sample:PSI-69:N01M201",
+        "session:PSI-69:8/24/2011"
+      ],
+      "uid": "PSI-69:FLEX-201"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.3,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.699816130882756
+      },
+      "geometry": "Droplet",
+      "group": "53da3910725d56cbbe3eefaa13200adab8f37e3b367299a9b55e8392bb54dbdc",
+      "material": "Methanol",
+      "observation_sha256": "4490dccccad4e13348497ace0782b8c30b8e4daf1995d7f4c7c0cb8eea98a7e3",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 202",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.47,
+      "test_id": "FLEX-202",
+      "tokens": [
+        "sample:PSI-69:C01M501",
+        "sample:PSI-69:C01M602",
+        "sample:PSI-69:C01M603",
+        "sample:PSI-69:N01M101",
+        "sample:PSI-69:N01M201",
+        "session:PSI-69:8/24/2011"
+      ],
+      "uid": "PSI-69:FLEX-202"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.75,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 79.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 14.726887615470016
+      },
+      "geometry": "Droplet",
+      "group": "53da3910725d56cbbe3eefaa13200adab8f37e3b367299a9b55e8392bb54dbdc",
+      "material": "Methanol",
+      "observation_sha256": "77005d2e0cefa6da1bd34d46350bdb6c280f4ff28b84ac739f279c19afd97ee6",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 203",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.52,
+      "test_id": "FLEX-203",
+      "tokens": [
+        "sample:PSI-69:C01M501",
+        "sample:PSI-69:C01M602",
+        "sample:PSI-69:C01M603",
+        "sample:PSI-69:N01M101",
+        "sample:PSI-69:N01M201",
+        "session:PSI-69:8/24/2011"
+      ],
+      "uid": "PSI-69:FLEX-203"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.5,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 86.0,
+        "o2_initial_pct": 14.000000000000002,
+        "pressure_psi": 14.649540516649271
+      },
+      "geometry": "Droplet",
+      "group": "0da13a5469ed675f151602d0e5fd59262408ef3bcfbdbb0df9b005009332a5d1",
+      "material": "Methanol",
+      "observation_sha256": "85bbfb886b58764ca2d941aac07d5fbe13a3890daa99260a2aa35dcf2bc2ec1a",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 215",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.3,
+      "test_id": "FLEX-215",
+      "tokens": [
+        "sample:PSI-69:N04M101",
+        "sample:PSI-69:N04M201",
+        "sample:PSI-69:N05M101",
+        "sample:PSI-69:N05M201",
+        "session:PSI-69:9/8/2011"
+      ],
+      "uid": "PSI-69:FLEX-215"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.67,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 86.0,
+        "o2_initial_pct": 14.000000000000002,
+        "pressure_psi": 14.6630762589429
+      },
+      "geometry": "Droplet",
+      "group": "0da13a5469ed675f151602d0e5fd59262408ef3bcfbdbb0df9b005009332a5d1",
+      "material": "Methanol",
+      "observation_sha256": "11e1726e60f60269a9492f32321ff8151b86da6f9024e70f383dd60583b8df64",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 216",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.38,
+      "test_id": "FLEX-216",
+      "tokens": [
+        "sample:PSI-69:N04M101",
+        "sample:PSI-69:N04M201",
+        "sample:PSI-69:N05M101",
+        "sample:PSI-69:N05M201",
+        "session:PSI-69:9/8/2011"
+      ],
+      "uid": "PSI-69:FLEX-216"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.46,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 87.0,
+        "o2_initial_pct": 13.0,
+        "pressure_psi": 14.684346711118605
+      },
+      "geometry": "Droplet",
+      "group": "0da13a5469ed675f151602d0e5fd59262408ef3bcfbdbb0df9b005009332a5d1",
+      "material": "Methanol",
+      "observation_sha256": "b86e2dab4e349bc9a481f20505b6b92d7d5c37a55f60ba0cf2030da7aa0b86b4",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 217",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.36,
+      "test_id": "FLEX-217",
+      "tokens": [
+        "sample:PSI-69:N04M101",
+        "sample:PSI-69:N04M201",
+        "sample:PSI-69:N05M101",
+        "sample:PSI-69:N05M201",
+        "session:PSI-69:9/8/2011"
+      ],
+      "uid": "PSI-69:FLEX-217"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.75,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 87.0,
+        "o2_initial_pct": 13.0,
+        "pressure_psi": 14.70755084076483
+      },
+      "geometry": "Droplet",
+      "group": "0da13a5469ed675f151602d0e5fd59262408ef3bcfbdbb0df9b005009332a5d1",
+      "material": "Methanol",
+      "observation_sha256": "7788b1a0b19ce957946c18641c4a64e4845a868c953a78be2b9342e6568e1be7",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 218",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.35,
+      "test_id": "FLEX-218",
+      "tokens": [
+        "sample:PSI-69:N04M101",
+        "sample:PSI-69:N04M201",
+        "sample:PSI-69:N05M101",
+        "sample:PSI-69:N05M201",
+        "session:PSI-69:9/8/2011"
+      ],
+      "uid": "PSI-69:FLEX-218"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.6,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 88.0,
+        "o2_initial_pct": 12.0,
+        "pressure_psi": 14.726887615470016
+      },
+      "geometry": "Droplet",
+      "group": "7b9086c930aebbac7fb1f83c825bbd1245ae33adfab68bf1785489293c0b1a26",
+      "material": "Methanol",
+      "observation_sha256": "8120c60f157944a9e5aa8ef28d11ebd46fe0f0a3101d12923c2908b9a9b8b78d",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 219",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.36,
+      "test_id": "FLEX-219",
+      "tokens": [
+        "sample:PSI-69:H01M102",
+        "sample:PSI-69:N06M101",
+        "sample:PSI-69:N06M201",
+        "sample:PSI-69:N06M202",
+        "session:PSI-69:9/9/2011"
+      ],
+      "uid": "PSI-69:FLEX-219"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 1.94,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 88.0,
+        "o2_initial_pct": 12.0,
+        "pressure_psi": 14.732688647881572
+      },
+      "geometry": "Droplet",
+      "group": "7b9086c930aebbac7fb1f83c825bbd1245ae33adfab68bf1785489293c0b1a26",
+      "material": "Methanol",
+      "observation_sha256": "df0ab4c57c5991d3fe448623428110270bb1e87af722840a798299c1458b84ce",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 220",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.35,
+      "test_id": "FLEX-220",
+      "tokens": [
+        "sample:PSI-69:H01M102",
+        "sample:PSI-69:N06M101",
+        "sample:PSI-69:N06M201",
+        "sample:PSI-69:N06M202",
+        "session:PSI-69:9/9/2011"
+      ],
+      "uid": "PSI-69:FLEX-220"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 1.84,
+        "he_diluent_pct": 0.0,
+        "n2_diluent_pct": 88.0,
+        "o2_initial_pct": 12.0,
+        "pressure_psi": 14.767494842350908
+      },
+      "geometry": "Droplet",
+      "group": "7b9086c930aebbac7fb1f83c825bbd1245ae33adfab68bf1785489293c0b1a26",
+      "material": "Methanol",
+      "observation_sha256": "37c46f5c0e3efd3f62eb08d6f1924af25cffc6489f5c0130bd3f21e9206ead60",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 221",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.38,
+      "test_id": "FLEX-221",
+      "tokens": [
+        "sample:PSI-69:H01M102",
+        "sample:PSI-69:N06M101",
+        "sample:PSI-69:N06M201",
+        "sample:PSI-69:N06M202",
+        "session:PSI-69:9/9/2011"
+      ],
+      "uid": "PSI-69:FLEX-221"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.91,
+        "he_diluent_pct": 5.0,
+        "n2_diluent_pct": 75.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 14.68047935617757
+      },
+      "geometry": "Droplet",
+      "group": "7b9086c930aebbac7fb1f83c825bbd1245ae33adfab68bf1785489293c0b1a26",
+      "material": "Methanol",
+      "observation_sha256": "4dd9cf82dfe85ce2e0037b92e257c158268a2156be506648657e5d1f9de5cabe",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 222",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.51,
+      "test_id": "FLEX-222",
+      "tokens": [
+        "sample:PSI-69:H01M102",
+        "sample:PSI-69:N06M101",
+        "sample:PSI-69:N06M201",
+        "sample:PSI-69:N06M202",
+        "session:PSI-69:9/9/2011"
+      ],
+      "uid": "PSI-69:FLEX-222"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.78,
+        "he_diluent_pct": 10.0,
+        "n2_diluent_pct": 71.0,
+        "o2_initial_pct": 19.0,
+        "pressure_psi": 14.568326062887486
+      },
+      "geometry": "Droplet",
+      "group": "c67dabdf3287039b6c0c2f1f8e6fa3e6dfeea830e412165db2b387c42ca2a6cf",
+      "material": "Methanol",
+      "observation_sha256": "38b00c99d01a344eac9fc08323a6c9babde85b9ed5b4a4e4615bb2470a6cd589",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 225",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.57,
+      "test_id": "FLEX-225",
+      "tokens": [
+        "sample:PSI-69:H02M101",
+        "session:PSI-69:9/21/2011"
+      ],
+      "uid": "PSI-69:FLEX-225"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.79,
+        "he_diluent_pct": 15.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.68047935617757
+      },
+      "geometry": "Droplet",
+      "group": "b85443ad793b5601e5f8fbf963a19ada3be599f138208af1e01ae51cbc20c89a",
+      "material": "Methanol",
+      "observation_sha256": "fee4902e52638c424f2941b60c0e98dd74c37624612e0c2ab96db47798c089b3",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 226",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.51,
+      "test_id": "FLEX-226",
+      "tokens": [
+        "sample:PSI-69:H03M101",
+        "sample:PSI-69:H03M201",
+        "session:PSI-69:9/22/2011"
+      ],
+      "uid": "PSI-69:FLEX-226"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.95,
+        "he_diluent_pct": 15.0,
+        "n2_diluent_pct": 67.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 14.701749808353274
+      },
+      "geometry": "Droplet",
+      "group": "b85443ad793b5601e5f8fbf963a19ada3be599f138208af1e01ae51cbc20c89a",
+      "material": "Methanol",
+      "observation_sha256": "92ed8ddb379ae36e2744278db85677e39f14c2f8e0a87172eba5339fec530997",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 227",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.53,
+      "test_id": "FLEX-227",
+      "tokens": [
+        "sample:PSI-69:H03M101",
+        "sample:PSI-69:H03M201",
+        "session:PSI-69:9/22/2011"
+      ],
+      "uid": "PSI-69:FLEX-227"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.99,
+        "he_diluent_pct": 20.0,
+        "n2_diluent_pct": 63.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 14.583795482651636
+      },
+      "geometry": "Droplet",
+      "group": "b8032e92bf4cc353d2a7b70efba29d0ad8efa65b3a0d5aa5b041d2081e4edd0b",
+      "material": "Methanol",
+      "observation_sha256": "7225db064c868f14efe67656ca1be965fa989cac01d0423a956b89258ec2f45f",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 239",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.49,
+      "test_id": "FLEX-239",
+      "tokens": [
+        "sample:PSI-69:H04M101",
+        "sample:PSI-69:H04M202",
+        "sample:PSI-69:H05M102",
+        "session:PSI-69:10/1/2011"
+      ],
+      "uid": "PSI-69:FLEX-239"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.9,
+        "he_diluent_pct": 20.0,
+        "n2_diluent_pct": 63.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 14.637938451826159
+      },
+      "geometry": "Droplet",
+      "group": "b8032e92bf4cc353d2a7b70efba29d0ad8efa65b3a0d5aa5b041d2081e4edd0b",
+      "material": "Methanol",
+      "observation_sha256": "b0a471def72f3270fc26eee2712b7a807256907fdad6068894df57e3567023d7",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 240",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.51,
+      "test_id": "FLEX-240",
+      "tokens": [
+        "sample:PSI-69:H04M101",
+        "sample:PSI-69:H04M202",
+        "sample:PSI-69:H05M102",
+        "session:PSI-69:10/1/2011"
+      ],
+      "uid": "PSI-69:FLEX-240"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.4,
+        "he_diluent_pct": 25.0,
+        "n2_diluent_pct": 59.0,
+        "o2_initial_pct": 16.0,
+        "pressure_psi": 14.6940150984712
+      },
+      "geometry": "Droplet",
+      "group": "b8032e92bf4cc353d2a7b70efba29d0ad8efa65b3a0d5aa5b041d2081e4edd0b",
+      "material": "Methanol",
+      "observation_sha256": "cafe2536b259b11c7f96387c0807770c0de736b7d33c1f367083799c7b2c6f3a",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 241",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.51,
+      "test_id": "FLEX-241",
+      "tokens": [
+        "sample:PSI-69:H04M101",
+        "sample:PSI-69:H04M202",
+        "sample:PSI-69:H05M102",
+        "session:PSI-69:10/1/2011"
+      ],
+      "uid": "PSI-69:FLEX-241"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.67,
+        "he_diluent_pct": 30.0,
+        "n2_diluent_pct": 55.00000000000001,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.610866967238898
+      },
+      "geometry": "Droplet",
+      "group": "874083be29234df2d91bf3a5630d9033241d07aa4374f96c6e869bec53457b0c",
+      "material": "Methanol",
+      "observation_sha256": "4947f9716de27bd2cc0cc8f0f84e3f529d223397af920b6db7c4f58802746e11",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 244",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.43,
+      "test_id": "FLEX-244",
+      "tokens": [
+        "sample:PSI-69:H06M102",
+        "sample:PSI-69:H06M201",
+        "sample:PSI-69:H07M101",
+        "sample:PSI-69:H07M202",
+        "session:PSI-69:10/7/2011"
+      ],
+      "uid": "PSI-69:FLEX-244"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.52,
+        "he_diluent_pct": 30.0,
+        "n2_diluent_pct": 55.00000000000001,
+        "o2_initial_pct": 15.0,
+        "pressure_psi": 14.632137419414603
+      },
+      "geometry": "Droplet",
+      "group": "874083be29234df2d91bf3a5630d9033241d07aa4374f96c6e869bec53457b0c",
+      "material": "Methanol",
+      "observation_sha256": "d350c77829e62c384b83a00fb57597d47398d2e6b950c85de1dcd679d843b9dc",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 245",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.56,
+      "test_id": "FLEX-245",
+      "tokens": [
+        "sample:PSI-69:H06M102",
+        "sample:PSI-69:H06M201",
+        "sample:PSI-69:H07M101",
+        "sample:PSI-69:H07M202",
+        "session:PSI-69:10/7/2011"
+      ],
+      "uid": "PSI-69:FLEX-245"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.44,
+        "he_diluent_pct": 35.0,
+        "n2_diluent_pct": 51.0,
+        "o2_initial_pct": 14.000000000000002,
+        "pressure_psi": 14.68047935617757
+      },
+      "geometry": "Droplet",
+      "group": "874083be29234df2d91bf3a5630d9033241d07aa4374f96c6e869bec53457b0c",
+      "material": "Methanol",
+      "observation_sha256": "fd3ee203d826f6325ba49e7b969b43fe8bfd681b8d4f06269fd027689b0a5f2b",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 246",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.56,
+      "test_id": "FLEX-246",
+      "tokens": [
+        "sample:PSI-69:H06M102",
+        "sample:PSI-69:H06M201",
+        "sample:PSI-69:H07M101",
+        "sample:PSI-69:H07M202",
+        "session:PSI-69:10/7/2011"
+      ],
+      "uid": "PSI-69:FLEX-246"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 1.88,
+        "he_diluent_pct": 35.0,
+        "n2_diluent_pct": 51.0,
+        "o2_initial_pct": 14.000000000000002,
+        "pressure_psi": 14.69208142100068
+      },
+      "geometry": "Droplet",
+      "group": "874083be29234df2d91bf3a5630d9033241d07aa4374f96c6e869bec53457b0c",
+      "material": "Methanol",
+      "observation_sha256": "7f6d382eef934066b217c1aee030e10227d923801f10c5c6b0442d02e395a191",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 247",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.58,
+      "test_id": "FLEX-247",
+      "tokens": [
+        "sample:PSI-69:H06M102",
+        "sample:PSI-69:H06M201",
+        "sample:PSI-69:H07M101",
+        "sample:PSI-69:H07M202",
+        "session:PSI-69:10/7/2011"
+      ],
+      "uid": "PSI-69:FLEX-247"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.56,
+        "he_diluent_pct": 40.0,
+        "n2_diluent_pct": 47.0,
+        "o2_initial_pct": 13.0,
+        "pressure_psi": 14.76362748740987
+      },
+      "geometry": "Droplet",
+      "group": "e4a382964ac067308739ac25c5c932f5375dfba750529e4c4f758900e0e58fe7",
+      "material": "Methanol",
+      "observation_sha256": "a04876d59e1f64aa4e653b7582c10b88f89d65825ffcee28745ac10ceac0eedf",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 248",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.51,
+      "test_id": "FLEX-248",
+      "tokens": [
+        "sample:PSI-69:H08M101",
+        "session:PSI-69:10/11/11"
+      ],
+      "uid": "PSI-69:FLEX-248"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.82,
+        "he_diluent_pct": 20.0,
+        "n2_diluent_pct": 56.00000000000001,
+        "o2_initial_pct": 24.0,
+        "pressure_psi": 10.331638724981131
+      },
+      "geometry": "Droplet",
+      "group": "f2b7b3035cb33b739b9506ad2555d015dc67173c760b02b3356800212e24158b",
+      "material": "Methanol",
+      "observation_sha256": "5e7ee3178c9c596817561298d14f5539b86df3d6a419707b947b7964b2306999",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 251",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.62,
+      "test_id": "FLEX-251",
+      "tokens": [
+        "sample:PSI-69:H10M101",
+        "sample:PSI-69:H10M102",
+        "sample:PSI-69:H11M101",
+        "sample:PSI-69:H11M102",
+        "sample:PSI-69:H12M101",
+        "sample:PSI-69:H12M102",
+        "sample:PSI-69:H12M201",
+        "session:PSI-69:11/18/11"
+      ],
+      "uid": "PSI-69:FLEX-251"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.79,
+        "he_diluent_pct": 20.0,
+        "n2_diluent_pct": 56.00000000000001,
+        "o2_initial_pct": 24.0,
+        "pressure_psi": 10.337439757392687
+      },
+      "geometry": "Droplet",
+      "group": "f2b7b3035cb33b739b9506ad2555d015dc67173c760b02b3356800212e24158b",
+      "material": "Methanol",
+      "observation_sha256": "707d628db1a4ddcbbbe9089cc72b774e7f203b3f2e8982967e2c4b437d0e46df",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 252",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.7,
+      "test_id": "FLEX-252",
+      "tokens": [
+        "sample:PSI-69:H10M101",
+        "sample:PSI-69:H10M102",
+        "sample:PSI-69:H11M101",
+        "sample:PSI-69:H11M102",
+        "sample:PSI-69:H12M101",
+        "sample:PSI-69:H12M102",
+        "sample:PSI-69:H12M201",
+        "session:PSI-69:11/18/11"
+      ],
+      "uid": "PSI-69:FLEX-252"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.45,
+        "he_diluent_pct": 25.0,
+        "n2_diluent_pct": 52.0,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.281363110747648
+      },
+      "geometry": "Droplet",
+      "group": "f2b7b3035cb33b739b9506ad2555d015dc67173c760b02b3356800212e24158b",
+      "material": "Methanol",
+      "observation_sha256": "36266ceb3b6595ae60dd7edc985577f6bcac53c35db850d56c890412aa70ac34",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 253",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.6,
+      "test_id": "FLEX-253",
+      "tokens": [
+        "sample:PSI-69:H10M101",
+        "sample:PSI-69:H10M102",
+        "sample:PSI-69:H11M101",
+        "sample:PSI-69:H11M102",
+        "sample:PSI-69:H12M101",
+        "sample:PSI-69:H12M102",
+        "sample:PSI-69:H12M201",
+        "session:PSI-69:11/18/11"
+      ],
+      "uid": "PSI-69:FLEX-253"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.61,
+        "he_diluent_pct": 25.0,
+        "n2_diluent_pct": 52.0,
+        "o2_initial_pct": 23.0,
+        "pressure_psi": 10.283296788218165
+      },
+      "geometry": "Droplet",
+      "group": "f2b7b3035cb33b739b9506ad2555d015dc67173c760b02b3356800212e24158b",
+      "material": "Methanol",
+      "observation_sha256": "990be6045b98a43ad976127dc005790e56ebf9085f2c549a05a701da74e1cab3",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 254",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.73,
+      "test_id": "FLEX-254",
+      "tokens": [
+        "sample:PSI-69:H10M101",
+        "sample:PSI-69:H10M102",
+        "sample:PSI-69:H11M101",
+        "sample:PSI-69:H11M102",
+        "sample:PSI-69:H12M101",
+        "sample:PSI-69:H12M102",
+        "sample:PSI-69:H12M201",
+        "session:PSI-69:11/18/11"
+      ],
+      "uid": "PSI-69:FLEX-254"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.22,
+        "he_diluent_pct": 30.0,
+        "n2_diluent_pct": 49.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 10.285230465688683
+      },
+      "geometry": "Droplet",
+      "group": "f2b7b3035cb33b739b9506ad2555d015dc67173c760b02b3356800212e24158b",
+      "material": "Methanol",
+      "observation_sha256": "ea3b20df2ed0287bd9c79329d2eaede395b04898b9eb83e88028dc8bd4dcae0f",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 255",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.56,
+      "test_id": "FLEX-255",
+      "tokens": [
+        "sample:PSI-69:H10M101",
+        "sample:PSI-69:H10M102",
+        "sample:PSI-69:H11M101",
+        "sample:PSI-69:H11M102",
+        "sample:PSI-69:H12M101",
+        "sample:PSI-69:H12M102",
+        "sample:PSI-69:H12M201",
+        "session:PSI-69:11/18/11"
+      ],
+      "uid": "PSI-69:FLEX-255"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.25,
+        "he_diluent_pct": 30.0,
+        "n2_diluent_pct": 49.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 10.271694723395054
+      },
+      "geometry": "Droplet",
+      "group": "f2b7b3035cb33b739b9506ad2555d015dc67173c760b02b3356800212e24158b",
+      "material": "Methanol",
+      "observation_sha256": "df206eda1ee4c5d96cb6df2ad6f4575ebbf3472c0a1bc8290515742d58489e9d",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 256",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.65,
+      "test_id": "FLEX-256",
+      "tokens": [
+        "sample:PSI-69:H10M101",
+        "sample:PSI-69:H10M102",
+        "sample:PSI-69:H11M101",
+        "sample:PSI-69:H11M102",
+        "sample:PSI-69:H12M101",
+        "sample:PSI-69:H12M102",
+        "sample:PSI-69:H12M201",
+        "session:PSI-69:11/18/11"
+      ],
+      "uid": "PSI-69:FLEX-256"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.67,
+        "he_diluent_pct": 30.0,
+        "n2_diluent_pct": 49.0,
+        "o2_initial_pct": 21.0,
+        "pressure_psi": 10.271694723395054
+      },
+      "geometry": "Droplet",
+      "group": "f2b7b3035cb33b739b9506ad2555d015dc67173c760b02b3356800212e24158b",
+      "material": "Methanol",
+      "observation_sha256": "1f0efd1c7e991ee45538ac15c49af17e68b0cc0a65ec8f58e37adad06c7f5083",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 257",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.7,
+      "test_id": "FLEX-257",
+      "tokens": [
+        "sample:PSI-69:H10M101",
+        "sample:PSI-69:H10M102",
+        "sample:PSI-69:H11M101",
+        "sample:PSI-69:H11M102",
+        "sample:PSI-69:H12M101",
+        "sample:PSI-69:H12M102",
+        "sample:PSI-69:H12M201",
+        "session:PSI-69:11/18/11"
+      ],
+      "uid": "PSI-69:FLEX-257"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.87,
+        "he_diluent_pct": 35.0,
+        "n2_diluent_pct": 45.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 10.202082334456382
+      },
+      "geometry": "Droplet",
+      "group": "1b8667723d3a7c63d1d5883f0e6272f5c291088f5806a00f3751c327ec2de867",
+      "material": "Methanol",
+      "observation_sha256": "70a57f71abbb73ae2a544d12b522eadbd11fd9d988c276e74091ecfd02be00cf",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 262",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.6,
+      "test_id": "FLEX-262",
+      "tokens": [
+        "sample:PSI-69:H13M102",
+        "sample:PSI-69:H13M201",
+        "sample:PSI-69:H14M101",
+        "sample:PSI-69:H14M201",
+        "sample:PSI-69:H14M202",
+        "session:PSI-69:11/28/11"
+      ],
+      "uid": "PSI-69:FLEX-262"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.95,
+        "he_diluent_pct": 35.0,
+        "n2_diluent_pct": 45.0,
+        "o2_initial_pct": 20.0,
+        "pressure_psi": 10.207883366867938
+      },
+      "geometry": "Droplet",
+      "group": "1b8667723d3a7c63d1d5883f0e6272f5c291088f5806a00f3751c327ec2de867",
+      "material": "Methanol",
+      "observation_sha256": "9881f053441d981adf93a0afb69af899d004320b3e03122d30012afab687757a",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 263",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.63,
+      "test_id": "FLEX-263",
+      "tokens": [
+        "sample:PSI-69:H13M102",
+        "sample:PSI-69:H13M201",
+        "sample:PSI-69:H14M101",
+        "sample:PSI-69:H14M201",
+        "sample:PSI-69:H14M202",
+        "session:PSI-69:11/28/11"
+      ],
+      "uid": "PSI-69:FLEX-263"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 3.5,
+        "he_diluent_pct": 40.0,
+        "n2_diluent_pct": 42.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 10.294898853041277
+      },
+      "geometry": "Droplet",
+      "group": "1b8667723d3a7c63d1d5883f0e6272f5c291088f5806a00f3751c327ec2de867",
+      "material": "Methanol",
+      "observation_sha256": "94ed0fa1f49743db542c1a723e2b72cdb9219d6a454d3f66794b9246595e2bd7",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 264",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.59,
+      "test_id": "FLEX-264",
+      "tokens": [
+        "sample:PSI-69:H13M102",
+        "sample:PSI-69:H13M201",
+        "sample:PSI-69:H14M101",
+        "sample:PSI-69:H14M201",
+        "sample:PSI-69:H14M202",
+        "session:PSI-69:11/28/11"
+      ],
+      "uid": "PSI-69:FLEX-264"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.7,
+        "he_diluent_pct": 40.0,
+        "n2_diluent_pct": 42.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 10.30456724039387
+      },
+      "geometry": "Droplet",
+      "group": "1b8667723d3a7c63d1d5883f0e6272f5c291088f5806a00f3751c327ec2de867",
+      "material": "Methanol",
+      "observation_sha256": "8b9b9e74cde8ff8bd245bf3f30124f965e99feaf6d257d8dcce1014500b8aa1e",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 265",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.63,
+      "test_id": "FLEX-265",
+      "tokens": [
+        "sample:PSI-69:H13M102",
+        "sample:PSI-69:H13M201",
+        "sample:PSI-69:H14M101",
+        "sample:PSI-69:H14M201",
+        "sample:PSI-69:H14M202",
+        "session:PSI-69:11/28/11"
+      ],
+      "uid": "PSI-69:FLEX-265"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 1.84,
+        "he_diluent_pct": 40.0,
+        "n2_diluent_pct": 42.0,
+        "o2_initial_pct": 18.0,
+        "pressure_psi": 10.310368272805427
+      },
+      "geometry": "Droplet",
+      "group": "1b8667723d3a7c63d1d5883f0e6272f5c291088f5806a00f3751c327ec2de867",
+      "material": "Methanol",
+      "observation_sha256": "14052d519976f66fadffccee953eb109fff4b218d2458d9a7ff78bab0460a23e",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 266",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.62,
+      "test_id": "FLEX-266",
+      "tokens": [
+        "sample:PSI-69:H13M102",
+        "sample:PSI-69:H13M201",
+        "sample:PSI-69:H14M101",
+        "sample:PSI-69:H14M201",
+        "sample:PSI-69:H14M202",
+        "session:PSI-69:11/28/11"
+      ],
+      "uid": "PSI-69:FLEX-266"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.79,
+        "he_diluent_pct": 45.0,
+        "n2_diluent_pct": 38.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 10.256225303630904
+      },
+      "geometry": "Droplet",
+      "group": "3ca6fa9b779a7951b3df061f5e58ab3005276a4433538c50eca8bcbcbd439bf3",
+      "material": "Methanol",
+      "observation_sha256": "ed6796f5ce630120828e357324395ca24efd0576c8d7b39582d4795c184b12dd",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 271",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.63,
+      "test_id": "FLEX-271",
+      "tokens": [
+        "sample:PSI-69:H15M102",
+        "sample:PSI-69:H15M201",
+        "session:PSI-69:12/5/2011"
+      ],
+      "uid": "PSI-69:FLEX-271"
+    },
+    {
+      "features": {
+        "co2_diluent_pct": 0.0,
+        "diameter_mm": 2.68,
+        "he_diluent_pct": 45.0,
+        "n2_diluent_pct": 38.0,
+        "o2_initial_pct": 17.0,
+        "pressure_psi": 10.277495755806608
+      },
+      "geometry": "Droplet",
+      "group": "3ca6fa9b779a7951b3df061f5e58ab3005276a4433538c50eca8bcbcbd439bf3",
+      "material": "Methanol",
+      "observation_sha256": "9f4e4efb4cdbfe82b78f34e4d667afa5665479994716dfd00570b3afe0bc52fb",
+      "protocol_id": "flex_initial_droplet_v1",
+      "psi_id": "PSI-69",
+      "scientific_status": "research_only",
+      "source": {
+        "source_doc": "PSI-69_Experimental table_FLEX.csv",
+        "source_record": "CSV record 272",
+        "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+      },
+      "target": 0.66,
+      "test_id": "FLEX-272",
+      "tokens": [
+        "sample:PSI-69:H15M102",
+        "sample:PSI-69:H15M201",
+        "session:PSI-69:12/5/2011"
+      ],
+      "uid": "PSI-69:FLEX-272"
+    }
+  ],
+  "source_hashes": {
+    "PSI-69_Experimental table_FLEX.csv": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96"
+  },
+  "task": {
+    "categorical_features": [],
+    "constant_conditions": {
+      "flow_velocity_initial_cm_s": 0.0,
+      "gravity_g": 0.0
+    },
+    "extractor": "flex_initial_droplet_v1",
+    "filters": {
+      "geometry": "Droplet",
+      "gravity_level": "0g",
+      "material_name": "Methanol"
+    },
+    "interval_alpha": 0.1,
+    "limitations": [
+      "FLEX liquid droplets only; not applicable to solid fires or operational suppression.",
+      "Grouped by test date and specimen identifiers; no independent investigation replication.",
+      "Only initial atmospheric composition, droplet diameter and pressure are predictors.",
+      "Scientific deployment tolerances require review; import eligibility does not authorize deployment."
+    ],
+    "numeric_features": [
+      "o2_initial_pct",
+      "pressure_psi",
+      "diameter_mm",
+      "co2_diluent_pct",
+      "he_diluent_pct",
+      "n2_diluent_pct"
+    ],
+    "phenomenon": "quiescent_microgravity_liquid_droplet",
+    "promotion": {
+      "max_interval_width": null,
+      "max_mae": null,
+      "max_rmse": null,
+      "min_local_groups": 3,
+      "min_test_coverage": 0.9
+    },
+    "scientific_review": "research_only",
+    "seed": 42,
+    "subtype": "OVERALL_DROPLET",
+    "target": "burning_rate_constant_mm2_s",
+    "target_bounds": [
+      0,
+      null
+    ],
+    "unit": "mm2/s",
+    "version": 1
+  }
+}

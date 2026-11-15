@@ -10,6 +10,7 @@ import re
 import subprocess
 import sys
 import uuid
+import time
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
@@ -24,8 +25,13 @@ from ml.registry import approved_version, assign_roles, promote, write_json
 
 def environment():
     packages = ("numpy", "pandas", "scipy", "scikit-learn", "joblib", "pint", "threadpoolctl", "cloudpickle")
-    return {"python": platform.python_version(), "platform": platform.platform(),
+    result = {"python": platform.python_version(), "platform": platform.platform(),
             "packages": {p: importlib.metadata.version(p) for p in packages}}
+    try:
+        result["packages"]["catboost"] = importlib.metadata.version("catboost")
+    except importlib.metadata.PackageNotFoundError:
+        pass
+    return result
 
 
 def git_state():
@@ -43,6 +49,7 @@ def frame(samples):
 
 
 def train(task_id, task, snapshot, registry):
+    started = time.perf_counter()
     import joblib
     from sklearn.base import clone
     from threadpoolctl import threadpool_limits
@@ -69,7 +76,7 @@ def train(task_id, task, snapshot, registry):
         cal_X, cal_y, cal_groups = frame(roles["calibration"])
         test_X, test_y, test_groups = frame(roles["benchmark"])
         benchmark_sha = fingerprint([{k: s[k] for k in ("uid", "observation_sha256")} for s in roles["benchmark"]])
-        code_paths = list(Path(__file__).parent.glob("*.py")) + [BASE_DIR / "core/normalization.py", BASE_DIR / "requirements-ml.txt"]
+        code_paths = list(Path(__file__).parent.glob("*.py")) + [BASE_DIR / "core/normalization.py", BASE_DIR / "scientific/archive.py", BASE_DIR / "requirements-ml.txt"]
         code = {str(p.relative_to(BASE_DIR)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(code_paths)}
         env = environment()
         version_id = fingerprint({"dataset": snapshot["dataset_sha256"], "split": split, "code": code,
@@ -119,6 +126,7 @@ def train(task_id, task, snapshot, registry):
         metadata = {"version_id": version_id, "task_id": task_id, "target": task["target"], "unit": task["unit"],
                     "phenomenon": task["phenomenon"], "trained_at_utc": datetime.now(timezone.utc).isoformat(),
                     "status": "APPROVED" if decision["approved"] else "RESEARCH_ONLY",
+                    "resource_usage": {"elapsed_seconds":time.perf_counter()-started,"parallel_training":False,"max_estimator_threads":2},
                     "model": winner, "hyperparameters": {k: v if isinstance(v, (str, int, float, bool, type(None)))
                         else repr(v) for k, v in fitted.get_params(deep=True).items()},
                     "dataset_sha256": snapshot["dataset_sha256"], "benchmark_sha256": benchmark_sha,
@@ -171,7 +179,7 @@ def write_report(directory, metadata):
     for role, counts in metadata["counts"].items():
         lines.append(f"| {role} | {counts['samples']} | {counts['groups']} |")
     lines += ["", "## Development grouped cross-validation", "",
-              "| Model | MAE (% CO2) | RMSE | R2 | Group MAE | Prediction coverage |",
+              f"| Model | MAE ({metadata['unit']}) | RMSE | R2 | Group MAE | Prediction coverage |",
               "| --- | ---: | ---: | ---: | ---: | ---: |"]
     def display(value):
         return "unavailable" if value is None else f"{value:.6g}"
@@ -180,7 +188,7 @@ def write_report(directory, metadata):
                      ("mae", "rmse", "r2", "group_mae", "prediction_coverage")]) + " |")
     test = metadata["evaluation"]["benchmark"]
     lines += ["", "## Independent benchmark", "", f"Selected model: **{metadata['model']}**",
-              f"MAE: {display(test['mae'])} percentage points of CO2.",
+              f"MAE: {display(test['mae'])} {metadata['unit']}.",
               f"RMSE: {display(test['rmse'])}; R2: {display(test['r2'])}.",
               f"Mean-baseline MAE: {display(metadata['evaluation']['baseline_benchmark']['mae'])}.",
               "", "## Promotion blockers", ""]
@@ -201,7 +209,15 @@ def main(argv=None):
     parser.add_argument("--raw-root", type=Path, default=RAW_DATA_DIR)
     parser.add_argument("--models-dir", type=Path, default=BASE_DIR / "models")
     parser.add_argument("--audit-only", action="store_true")
+    parser.add_argument("--all", action="store_true", help="Train every compatible configured task sequentially on CPU")
     args = parser.parse_args(argv)
+    if args.all:
+        for task_id in read_json(args.config):
+            command=[sys.executable,"-m","ml.train","--task",task_id,"--config",str(args.config),"--protocols",str(args.protocols),
+                "--db",str(args.db),"--raw-root",str(args.raw_root),"--models-dir",str(args.models_dir)]
+            if args.audit_only: command.append("--audit-only")
+            subprocess.run(command,check=True)
+        return 0
     if not re.fullmatch(r"[a-z][a-z0-9_]*", args.task):
         parser.error("Task ID must be a lowercase identifier.")
     task = read_json(args.config)[args.task]

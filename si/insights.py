@@ -63,6 +63,47 @@ def build_prompt(question, mission, evidence):
     )
 
 
+def structured_quote_match(quote, text):
+    """Resolve formatting-only JSON differences back to an original source excerpt."""
+    try:
+        requested=json.loads(quote)
+    except ValueError:
+        try: requested=json.loads("{"+quote+"}")
+        except ValueError: return None
+    if not isinstance(requested,dict) or not requested:return None
+    decoder=json.JSONDecoder()
+    for start,char in enumerate(text):
+        if char!="{":continue
+        try: node,length=decoder.raw_decode(text[start:])
+        except ValueError:continue
+        if not isinstance(node,dict):continue
+        # Compare canonical typed values, preserving units, string contents and numerical values.
+        if all(key in node and json.dumps(value,sort_keys=True,ensure_ascii=False)==json.dumps(node[key],sort_keys=True,ensure_ascii=False)
+               for key,value in requested.items()):
+            return text[start:start+length]
+    return None
+
+
+def citation_excerpts(text):
+    """Short verbatim JSON fields that a model can copy without reconstructing a raw record."""
+    excerpts=[]
+    decoder=json.JSONDecoder()
+    for start,char in enumerate(text):
+        if char!='"':continue
+        try:
+            key,end=decoder.raw_decode(text[start:])
+            pos=start+end
+            while pos<len(text) and text[pos].isspace():pos+=1
+            if not isinstance(key,str) or pos>=len(text) or text[pos]!=':':continue
+            pos+=1
+            while pos<len(text) and text[pos].isspace():pos+=1
+            _,end=decoder.raw_decode(text[pos:])
+            fragment=text[start:pos+end]
+            if 12<=len(fragment)<=400:excerpts.append(fragment)
+        except ValueError:continue
+    return list(dict.fromkeys(excerpts))[:40]
+
+
 def validate_citations(answer, evidence):
     """Check reference identities and verbatim excerpts, without claiming scientific validation."""
     registry = {s["source_id"]: s for s in evidence}
@@ -72,6 +113,11 @@ def validate_citations(answer, evidence):
             if source is None:
                 raise ValueError("The response cited a source outside the selected evidence.")
             quote = " ".join(citation.quote.split())
+            if len(quote)>=12 and quote not in " ".join(source["text"].split()):
+                original=structured_quote_match(citation.quote,source["text"])
+                if original is not None:
+                    citation.quote=original
+                    quote=" ".join(original.split())
             if len(quote) < 12 or quote not in " ".join(source["text"].split()):
                 raise ValueError("The response contained a quote that could not be matched to its source.")
     return answer

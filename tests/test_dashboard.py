@@ -81,6 +81,9 @@ class SourceTests(unittest.TestCase):
 
 class DashboardTests(unittest.TestCase):
     def setUp(self):
+        isolated_cache=patch("ui.intelligence_workspace.AssessmentCache",return_value={})
+        isolated_cache.start()
+        self.addCleanup(isolated_cache.stop)
         self.db_hash = hashlib.sha256(DB_PATH.read_bytes()).digest()
         self.app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60).run()
 
@@ -174,58 +177,58 @@ class DashboardTests(unittest.TestCase):
         self.assertNotIn("private-test-key", details)
         self.assertIn("[REDACTED]", details)
 
-    def test_unified_material_modes_optional_inputs_and_stale_results(self):
+    def test_three_pillars_optional_inputs_and_stale_results(self):
         self.app.switch_page("app_pages/5_SI_Insights.py").run()
-        for mode in ["Find Materials", "Compare Materials", "Predict Parameter", "Assess Material"]:
-            self.app.segmented_control(key="editorial_mode").set_value(mode).run()
+        self.assertEqual(self.app.segmented_control(key="si_pillar").options,["PREVENTION","DETECTION","SUPPRESSION"])
+        self.app.checkbox(key="si_synthesis").uncheck().run()
+        for pillar in ["DETECTION","SUPPRESSION","PREVENTION"]:
+            self.app.segmented_control(key="si_pillar").set_value(pillar).run()
+            self.app.button(key="si_analyze").click().run()
             self.assert_healthy()
-        self.app.selectbox(key="editorial_state_o2_initial_pct").set_value("Specified").run()
-        self.app.number_input(key="editorial_value_o2_initial_pct").set_value(21).run()
-        self.app.selectbox(key="editorial_state_gravity_g").set_value("Specified").run()
-        self.app.number_input(key="editorial_value_gravity_g").set_value(0).run()
-        self.app.button(key="editorial_assessment_submit").click().run()
-        self.assert_healthy()
-        self.assertIsNotNone(self.app.session_state.material_result)
-        self.app.number_input(key="editorial_value_gravity_g").set_value(.166).run()
+            self.assertTrue(self.app.session_state.scientific_answer["answer"])
+        self.app.selectbox(key="si_state_gravity_g").set_value("UNKNOWN").run()
         self.assertTrue(any("Conditions have changed" in x.value for x in self.app.caption))
-        self.app.button(key="editorial_assessment_submit").click().run()
-        self.assert_healthy()
-        report=self.app.session_state.material_result["reports"][0]
-        self.assertTrue(all(c["status"] == "UNAVAILABLE" for c in report["characteristics"]))
 
-    def test_find_and_compare_materials_produce_reports_without_safety_scores(self):
+    def test_material_comparison_preserves_separate_results(self):
         self.app.switch_page("app_pages/5_SI_Insights.py").run()
-        self.app.segmented_control(key="editorial_mode").set_value("Find Materials").run()
-        self.app.button(key="editorial_assessment_submit").click().run()
+        self.app.checkbox(key="si_synthesis").uncheck().run()
+        self.app.multiselect(key="si_materials").set_value(["PMMA","SIBAL"]).run()
+        self.app.text_area(key="si_question_PREVENTION").set_value("Compare final CO2 for PMMA and SIBAL").run()
+        self.app.button(key="si_analyze").click().run()
         self.assert_healthy()
-        self.assertTrue(self.app.session_state.material_result["reports"])
-        self.app.segmented_control(key="editorial_mode").set_value("Compare Materials").run()
-        self.app.multiselect(key="editorial_materials").set_value(["PMMA", "SIBAL"]).run()
-        self.app.button(key="editorial_assessment_submit").click().run()
-        self.assert_healthy()
-        result = self.app.session_state.material_result
-        self.assertEqual(len(result["reports"]), 2)
-        self.assertTrue(result["comparison"])
-        self.assertNotIn("safety_score", result)
+        result=self.app.session_state.scientific_answer
+        self.assertTrue(result["results"])
+        self.assertNotIn("safety_score",result)
+        self.assertTrue(all(r["material"] in ["PMMA","SIBAL"] for r in result["results"]))
 
     def test_b1_record_lookup_preserves_conditions_without_pressure_permission(self):
         self.app.switch_page("app_pages/5_SI_Insights.py").run()
-        self.app.selectbox(key="editorial_reference").set_value("PSI-25:B1").run()
-        self.app.button(key="editorial_record_load").click().run()
-        for field, value in {"o2_initial_pct":22.2, "pressure_psi":14.7, "gravity_g":0, "thickness_mm":.1}.items():
-            self.assertEqual(self.app.number_input(key=f"editorial_value_{field}").value,value)
-        self.app.selectbox(key="editorial_mission").set_value("Earth Spin-off").run()
-        self.assertEqual(self.app.number_input(key="editorial_value_gravity_g").value,0)
-        self.app.button(key="editorial_assessment_submit").click().run()
+        self.app.checkbox(key="si_synthesis").uncheck().run()
+        self.app.text_area(key="si_question_PREVENTION").set_value("What final CO2 was recorded?").run()
+        self.app.selectbox(key="si_reference").set_value("PSI-25:B1").run()
+        self.app.button(key="si_record_load").click().run()
+        self.assertEqual(self.app.number_input(key="si_value_gravity_g").value,0)
+        self.app.selectbox(key="si_mission").set_value("Earth").run()
+        self.assertEqual(self.app.number_input(key="si_value_gravity_g").value,0)
+        self.app.button(key="si_analyze").click().run()
         self.assert_healthy()
-        chars=self.app.session_state.material_result["reports"][0]["characteristics"]
-        c=next(c for c in chars if c["parameter"]=="co2_final_pct")
-        self.assertEqual((c["status"],c["value"]),("OBSERVED",.44))
-        self.app.button(key="editorial_mission_apply").click().run()
-        self.app.button(key="editorial_assessment_submit").click().run()
+        result=self.app.session_state.scientific_answer
+        self.assertEqual(result["origin_route"],"OBSERVED")
+        co2=next(r for r in result["results"] if r["parameter"]=="co2_final_pct")
+        self.assertEqual(co2["values"],[.44])
+        self.app.number_input(key="si_value_gravity_g").set_value(.166).run()
+        self.app.button(key="si_analyze").click().run()
+        self.assertEqual(self.app.session_state.scientific_answer["origin_route"],"INSUFFICIENT_DATA")
+
+    def test_ranking_inspection_survives_navigation_and_reruns(self):
+        self.app.switch_page("app_pages/4_Ranking.py").run()
+        self.app.button(key="ranking_inspect_button_PSI-25").click().run()
         self.assert_healthy()
-        chars=self.app.session_state.material_result["reports"][0]["characteristics"]
-        self.assertTrue(all(c["status"]=="UNAVAILABLE" for c in chars))
+        self.assertEqual(self.app.multiselect(key="explorer_ids").value,["PSI-25"])
+        self.app.switch_page("app_pages/4_Ranking.py").run()
+        self.app.run()
+        self.assert_healthy()
+        self.assertEqual(self.app.session_state.ranking_selected_psi_id,"PSI-25")
 
     def test_filters_survive_page_changes_and_send_to_compare_works(self):
         self.app.switch_page("app_pages/2_Explorer.py").run()

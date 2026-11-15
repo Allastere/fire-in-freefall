@@ -21,7 +21,7 @@ pages = [
 ]
 page = st.navigation(pages, position="hidden")
 for key, value in st.session_state.get("_workspace_filters", {}).items():
-    if key not in st.session_state:
+    if key not in st.session_state and not key.startswith("ranking_inspect_"):
         st.session_state[key] = value
 with st.container(key="editorial_nav"):
     columns = st.columns([3.3, 1, 1, 1, 1.2, .65], vertical_alignment="center")
@@ -42,8 +42,10 @@ page.run()
 # Keep page widgets alive across navigation, excluding buttons and uploaded file handles.
 st.session_state._workspace_filters = {
     key: value for key, value in st.session_state.items()
-    if isinstance(key, str) and key.startswith(("explorer_", "compare_", "ranking_", "range_", "insight_", "editorial_"))
+    if isinstance(key, str) and (key.startswith(("explorer_", "compare_", "ranking_", "range_", "insight_", "editorial_", "si_state_", "si_value_", "si_low_", "si_high_", "si_question_"))
+        or key in ("si_pillar","si_materials","si_mission","si_reference","si_detector","si_agent","si_synthesis"))
     and key not in ("insight_result", "insight_cache")
+    and not key.startswith(("ranking_inspect_", "editorial_record_", "editorial_mission_"))
     and not key.endswith(("_send", "_export", "_download", "_submit", "_load", "_apply", "_restore"))
     and isinstance(value, (str, int, float, bool, list, tuple))
 }

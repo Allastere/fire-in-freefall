@@ -1,3 +1,13 @@
+## Scientific intelligence update
+
+SI Insights now centers on Prevention, Detection and Suppression questions. Direct observations take priority;
+validated numerical estimates are used only when an independently approved model applies. All current model candidates
+remain RESEARCH_ONLY. Unknown conditions are never replaced with zero, and partial-gravity results are not invented.
+
+Run the app with `streamlit run app.py`; install optional training dependencies with `pip install -r requirements-ml.txt`.
+Audit with `python -m ml.audit`; retrain sequentially on CPU with `python -m ml.train --all`.
+See [scientific architecture and validation](docs/SCIENTIFIC_INTELLIGENCE.md) for current data counts, models and limitations.
+
 # Flame in Freefall
 
 Scientific material assessment and decision-support workspace for NASA combustion research, using Swiss Scientific Editorial V2.

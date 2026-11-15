@@ -1,0 +1,167 @@
+{
+  "contract_sha256": "b28d1f9ada81fcf7b9eaeb4b4432fcb19628b357866a8f225e74f53afb05bb0f",
+  "frozen": {
+    "PSI-69:FLEX-018": {
+      "observation_sha256": "301f80d5799bdf39a90ee1ad90bd07fea42bc48cd9067a1ce94b1c405ab538cb",
+      "role": "benchmark"
+    },
+    "PSI-69:FLEX-062": {
+      "observation_sha256": "afd1d920f9610d6171909ac72d78aa62f68d2c78e965dd5295bbaa5d2cf4d97b",
+      "role": "benchmark"
+    },
+    "PSI-69:FLEX-064": {
+      "observation_sha256": "e3f4ef475a905b22d251c43305bf285b56e67daff9343c783cc914fdd8eb0092",
+      "role": "benchmark"
+    },
+    "PSI-69:FLEX-119": {
+      "observation_sha256": "cb5b3bc9035f6e1bc851df40203f02c27972294a5a76cdc0c049da174add35a6",
+      "role": "calibration"
+    },
+    "PSI-69:FLEX-120": {
+      "observation_sha256": "28d2829da108e10150add2a208e2ba333197f91b25993791e6bccc86b83c539b",
+      "role": "calibration"
+    },
+    "PSI-69:FLEX-129": {
+      "observation_sha256": "16917d588d43be512f07731122b7ffe0dc2afb9e99443b1f68383cee5daa72e3",
+      "role": "benchmark"
+    },
+    "PSI-69:FLEX-130": {
+      "observation_sha256": "733674375f4793de31841d46a30847cfcab90340a75f6162bc279a16542f1839",
+      "role": "benchmark"
+    },
+    "PSI-69:FLEX-171": {
+      "observation_sha256": "28e1be37e4e171079bba5285c93cc0a45636cc9002b7f77baac91090ab6c8bfe",
+      "role": "calibration"
+    },
+    "PSI-69:FLEX-172": {
+      "observation_sha256": "1b90f8ad138928d6fd59c8eb3356528f466b7d7e6fb0de55c0f4f1721fb506af",
+      "role": "calibration"
+    },
+    "PSI-69:FLEX-194": {
+      "observation_sha256": "79f7e2849e8b0762c5521b1f427a53a1fb9e1e133c5e0cd88b9ffbed30c12395",
+      "role": "benchmark"
+    },
+    "PSI-69:FLEX-195": {
+      "observation_sha256": "ecb9321b8d1067d0b9b647d68b9f723368b6457d09aec3a493b209d44634d511",
+      "role": "benchmark"
+    },
+    "PSI-69:FLEX-196": {
+      "observation_sha256": "a5736de4353e5708540cd482b1b9bf7274bd69d9bcbb5f3fc6ec3abc32b0ed2b",
+      "role": "benchmark"
+    },
+    "PSI-69:FLEX-197": {
+      "observation_sha256": "f23f0fba36bc3bf71a094ecf7afaf6883c403c0cab4647650ffcc951501eb13d",
+      "role": "benchmark"
+    },
+    "PSI-69:FLEX-228": {
+      "observation_sha256": "f670aa87186fbe2f5a7d42ecdc030def6e1b8dd1f6ff6815d2a1ac0b3ba0c2c8",
+      "role": "calibration"
+    },
+    "PSI-69:FLEX-249": {
+      "observation_sha256": "44112b53a7633847b620ac67b699f9591c5c0c2cf6f8be498cb2cb7441c31300",
+      "role": "calibration"
+    },
+    "PSI-69:FLEX-267": {
+      "observation_sha256": "db3950733cac2a87c5bf3d604e68cea82b04988f1af3d50e30fcedec0f555c91",
+      "role": "benchmark"
+    },
+    "PSI-69:FLEX-268": {
+      "observation_sha256": "984f5b7d4b941a1058935c4f6773888535fd48eb201e0eddcfee5178509d70f7",
+      "role": "benchmark"
+    },
+    "PSI-69:FLEX-269": {
+      "observation_sha256": "82353509dabb0202911ca2f1ab7b0ba1079c29d0b8fe262260e9b82419a906d1",
+      "role": "benchmark"
+    }
+  },
+  "scientific_contract": {
+    "constant_conditions": {
+      "flow_velocity_initial_cm_s": 0.0,
+      "gravity_g": 0.0
+    },
+    "phenomenon": "quiescent_microgravity_liquid_droplet",
+    "unit": "s"
+  },
+  "seed": 42,
+  "tokens": {
+    "sample:PSI-69:181F001": "development",
+    "sample:PSI-69:193F001": "development",
+    "sample:PSI-69:209F003": "development",
+    "sample:PSI-69:209F004": "development",
+    "sample:PSI-69:248F001": "benchmark",
+    "sample:PSI-69:301F001": "benchmark",
+    "sample:PSI-69:302F001": "benchmark",
+    "sample:PSI-69:303F001": "development",
+    "sample:PSI-69:C01H501": "benchmark",
+    "sample:PSI-69:C01H601": "benchmark",
+    "sample:PSI-69:C02H101": "development",
+    "sample:PSI-69:C03H101": "development",
+    "sample:PSI-69:C03H201": "development",
+    "sample:PSI-69:C03H302": "development",
+    "sample:PSI-69:C03H501": "calibration",
+    "sample:PSI-69:C03H601": "calibration",
+    "sample:PSI-69:C04H101": "benchmark",
+    "sample:PSI-69:C04H201": "benchmark",
+    "sample:PSI-69:C08H101": "development",
+    "sample:PSI-69:C09H101": "development",
+    "sample:PSI-69:C09H201": "development",
+    "sample:PSI-69:C09H501": "development",
+    "sample:PSI-69:C10H101": "development",
+    "sample:PSI-69:C10H201": "development",
+    "sample:PSI-69:C11H101": "development",
+    "sample:PSI-69:C11H201": "development",
+    "sample:PSI-69:C12H103": "calibration",
+    "sample:PSI-69:C12H201": "calibration",
+    "sample:PSI-69:C13H102": "benchmark",
+    "sample:PSI-69:C13H201": "benchmark",
+    "sample:PSI-69:C21H401": "development",
+    "sample:PSI-69:H03H101": "development",
+    "sample:PSI-69:H04H101": "development",
+    "sample:PSI-69:H04H201": "development",
+    "sample:PSI-69:H05H103": "development",
+    "sample:PSI-69:H10H101": "calibration",
+    "sample:PSI-69:H12H101": "development",
+    "sample:PSI-69:H13H101": "development",
+    "sample:PSI-69:H13H201": "development",
+    "sample:PSI-69:H14H101": "benchmark",
+    "sample:PSI-69:H14H201": "benchmark",
+    "sample:PSI-69:H15H101": "benchmark",
+    "sample:PSI-69:H19H101": "development",
+    "sample:PSI-69:H19H201": "development",
+    "sample:PSI-69:N01H401": "calibration",
+    "sample:PSI-69:N01H601": "development",
+    "sample:PSI-69:N02H101": "development",
+    "sample:PSI-69:N02H203": "development",
+    "sample:PSI-69:N03H101": "development",
+    "sample:PSI-69:N04H101": "development",
+    "sample:PSI-69:N04H201": "development",
+    "session:PSI-69:1/19/2010": "development",
+    "session:PSI-69:1/29/2010": "development",
+    "session:PSI-69:10/12/11": "calibration",
+    "session:PSI-69:10/5/2011": "development",
+    "session:PSI-69:10/6/2010": "development",
+    "session:PSI-69:11/22/11": "development",
+    "session:PSI-69:11/27/09": "development",
+    "session:PSI-69:11/30/11": "benchmark",
+    "session:PSI-69:12/8/2011": "development",
+    "session:PSI-69:12/9/2010": "development",
+    "session:PSI-69:2/21/2011": "calibration",
+    "session:PSI-69:3/11/2010": "benchmark",
+    "session:PSI-69:3/23/2010": "development",
+    "session:PSI-69:4/20/2011": "development",
+    "session:PSI-69:6/15/2010": "development",
+    "session:PSI-69:6/29/2010": "development",
+    "session:PSI-69:7/1/2009": "benchmark",
+    "session:PSI-69:8/17/2011": "benchmark",
+    "session:PSI-69:8/18/2011": "benchmark",
+    "session:PSI-69:8/29/2011": "development",
+    "session:PSI-69:8/30/2011": "development",
+    "session:PSI-69:9/1/2011": "development",
+    "session:PSI-69:9/17/2010": "benchmark",
+    "session:PSI-69:9/23/2011": "calibration",
+    "session:PSI-69:9/24/2011": "development",
+    "session:PSI-69:9/27/2011": "development",
+    "session:PSI-69:9/6/2010": "development",
+    "session:PSI-69:9/7/2010": "calibration"
+  }
+}

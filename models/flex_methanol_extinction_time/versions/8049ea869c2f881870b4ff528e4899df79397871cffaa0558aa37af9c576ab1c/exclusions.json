@@ -1,0 +1,90 @@
+[
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-002"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-054"
+  },
+  {
+    "reason": "invalid_initial_composition",
+    "uid": "PSI-69:FLEX-075"
+  },
+  {
+    "reason": "invalid_initial_composition",
+    "uid": "PSI-69:FLEX-076"
+  },
+  {
+    "reason": "could not convert string to float: '–'",
+    "uid": "PSI-69:FLEX-083"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-086"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-099"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-110"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-121"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-127"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-145"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-161"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-188"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-190"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-199"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-215"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-221"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-223"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-242"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-245"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-247"
+  },
+  {
+    "reason": "unverified_censored_or_ineligible_target",
+    "uid": "PSI-69:FLEX-271"
+  }
+]

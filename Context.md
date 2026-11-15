@@ -1,3 +1,52 @@
+## Structured source quotation correction
+
+Gemini receives verbatim quote_options from structured evidence. Citation validation accepts JSON whitespace/key-order
+changes only when typed field values and units exactly match one source object, then replaces the quote with the original
+source substring. Plain-text quotations remain substring checked. Fabricated quotes, changed units/values and wrong source
+IDs still fail. Changes to si/insights.py now invalidate structured assessment caches. Live B1 and Kapton responses passed.
+
+## Gemini interpretation validation correction
+
+Verified with a live Gemini request: PSI-25:B1 final carbon dioxide is returned and accepted with source citations.
+The prior blanket digit ban incorrectly rejected source-backed quantities. Numerical claims now must match
+backend values linked to the cited source; unsupported numbers and fabricated references remain rejected.
+Structured citations take precedence over the historical inline DOI/page format; CSV records are never PDF pages.
+One bounded correction request is allowed for validation failures. API errors, schema failures and scientific
+validation errors have separate status/details with secret redaction. Rejected responses are not cached as success.
+
+# Current architecture ? question-first scientific intelligence (2026-11-15)
+
+This section supersedes the historical material-mode UI and five-page specifications below.
+
+Four pages remain: Overview, Explorer, Ranking, SI Insights. SI has exactly three primary tasks:
+PREVENTION, DETECTION, SUPPRESSION. Questions determine relevant target/material scope; users do not choose models.
+Optional conditions distinguish specified / any / unknown / explicit ranges, and zero is never missing.
+After submission, inputs collapse; the direct answer, available indicators, one Plotly figure and sources come first.
+
+`scientific/archive.py` reads the complete SQLite archive and verifies source hashes, original CSV rows and document-table traces.
+`scientific/intelligence.py` routes cached / observed / estimated / insufficient-data answers independently of Gemini.
+`scientific/cache.py` reuses SQLite llm_cache for full structured assessments, with source/model/code/prompt invalidation.
+`ui/intelligence_workspace.py` renders the three tasks and reuses existing comparison/document tools.
+`scientific/assessment.py` and materials.py retain strict BASS observed/interpolation/approved-model validation.
+Question-specific, multi-pillar research ranking is shared between SI and Ranking; relevance never means safety.
+
+Archive: 19 investigations, 1,810 experiments, 6,199 measurements, 15 catalog findings, 78 registered sources.
+The current independent provenance layer accepts 2,561 measurement rows; import labels alone do not establish source compatibility.
+Five tasks were retrained: existing PMMA slab CO2 plus separate methanol/heptane FLEX extinction-time and burning-rate models.
+All five remain RESEARCH_ONLY. No production numerical model is approved, and detection ML is not forced.
+Use `python -m ml.audit`, `python -m ml.train --all` or `python -m ml.train --task <id>` outside Streamlit.
+Target/regime registries preserve versions, source/dataset/code fingerprints, frozen grouped splits, uncertainty and promotion decisions.
+
+B1 archival lookup retains nominal-pressure provenance; changed conditions trigger reassessment.
+Ranking button keys are excluded from persisted widget state; persistent inspection uses a separate application key.
+Gemini receives fixed evidence/results and supplies source-cited interpretation only. Failure preserves backend results.
+Raw scientific sources are unchanged. No automatic remote commits, pushes or branch operations.
+
+Full audit, model metrics, limitations and file inventory: docs/SCIENTIFIC_INTELLIGENCE.md,
+docs/SCIENTIFIC_DATA_AUDIT.json and docs/SCIENTIFIC_TRAINING_SUMMARY.json.
+
+---
+
 # Current architecture ? Swiss Scientific Editorial V2 (2026-11-15)
 
 This section supersedes the historical five-page dashboard specification below wherever it conflicts.

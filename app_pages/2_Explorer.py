@@ -63,7 +63,7 @@ else:
         st.write(row.get("observations") or "No recorded observations.")
         frame = measurements[(measurements.test_id == selected) & (measurements.psi_id == row["psi_id"])]
         if not frame.empty:
-            table(frame[["parameter", "value", "unit", "value_type", "source_doc", "verification_status"]], alt="Stored physical measurements")
+            table(frame[["parameter", "value", "unit", "value_type", "subtype", "statistic_type", "instrument", "eligibility_status", "source_doc", "verification_status"]], alt="Stored physical measurements and their scientific definitions")
         else:
             st.caption("No stored sensor measurements.")
     with st.expander("Complete experimental table"):

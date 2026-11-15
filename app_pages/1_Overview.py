@@ -4,13 +4,21 @@ import streamlit as st
 from ui.common import attribution, filtered_data, source_files
 from ui.data import CSV_BACKED
 from ui.design import chart, metric_row, page_header, section
+from ui.intelligence_workspace import current_archive
+from scientific.intelligence import PILLARS, pillars_for
 
 investigations, runs, measurements, findings = filtered_data(include_uploads=False)
 page_header("Combustion in\nmicrogravity.", "An experimental research archive for understanding material behaviour, environmental applicability and scientific knowledge gaps.", "01 / editorial research index")
 st.page_link("app_pages/5_SI_Insights.py", label="Run a material assessment →")
-metric_row([("Investigation series", len(investigations)), ("Experimental runs", len(runs)), ("Materials in catalog", runs.material_name.nunique())])
+metric_row([("Investigation series", len(investigations)), ("Experimental runs", len(runs)), ("Measurements", len(measurements))])
+archive=current_archive()
+with st.expander("Scientific coverage across three tasks"):
+    for pillar in PILLARS:
+        count=sum(pillar in pillars_for(inv) for inv in investigations)
+        st.write(f"{pillar.title()} · {count} relevant investigation series")
 section("Figure 1.0 / experimental landscape")
-scope = runs[runs.data_origin == CSV_BACKED]
+source_ids={r['test_id'] for r in archive['rows'] if r['verified'] and r['test_id']}
+scope = runs[runs.test_id.isin(source_ids)]
 characteristic = st.selectbox("Landscape characteristic", ["Oxygen and airflow", "Oxygen and nominal pressure"], key="editorial_overview_figure")
 if not scope.empty:
     y = "flow_velocity_initial_cm_s" if characteristic == "Oxygen and airflow" else "pressure_psi"

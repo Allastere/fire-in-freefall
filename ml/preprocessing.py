@@ -51,22 +51,27 @@ class LocalLinearInterpolation(RegressorMixin, BaseEstimator):
 
 
 def candidates(task):
+    from sklearn.linear_model import Ridge
     seed = task["seed"]
     models = {
         "mean_baseline": DummyRegressor(strategy="mean"),
         "linear_interpolation": LocalLinearInterpolation(),
         "linear_regression": LinearRegression(),
+        "ridge": Ridge(alpha=1.),
         "random_forest": RandomForestRegressor(n_estimators=200, min_samples_leaf=2, max_features=1.0,
                                                n_jobs=1, random_state=seed),
         "gaussian_process": GaussianProcessRegressor(
             kernel=ConstantKernel(1.0, (0.01, 100)) * Matern(length_scale=1.0, nu=1.5)
                    + WhiteKernel(noise_level=0.1, noise_level_bounds=(1e-5, 10)),
             normalize_y=True, random_state=seed, n_restarts_optimizer=1),
-        "mlp": TransformedTargetRegressor(
-            regressor=MLPRegressor(hidden_layer_sizes=(8,), activation="tanh", solver="lbfgs",
-                                   alpha=0.1, max_iter=3000, random_state=seed),
-            transformer=StandardScaler()),
     }
+    # CPU-only CatBoost is evaluated when its optional dependency is installed.
+    try:
+        from catboost import CatBoostRegressor
+        models["catboost"] = CatBoostRegressor(iterations=180, depth=4, learning_rate=.04,
+            loss_function="RMSE", thread_count=2, random_seed=seed, verbose=False, allow_writing_files=False)
+    except ImportError:
+        pass
     return {name: Pipeline([
         ("features", ColumnTransformer([
             ("numeric", StandardScaler(), task["numeric_features"]),

@@ -110,9 +110,9 @@ def render_characteristic_chart(characteristic, material=None, oxygen=None, pred
         interval = estimate.prediction_interval
         label = estimate.evidence[0].get("material", "") if estimate.evidence else ""
         fig.add_trace(go.Scatter(x=[oxygen], y=[estimate.value], mode="markers", name=f"{label} / {estimate.status.title()}",
-            marker=dict(color="#E47B42", symbol="diamond", size=12),
+            marker=dict(color="#C88A60", symbol="diamond", size=12),
             error_y=dict(type="data", symmetric=False, array=[interval[1]-estimate.value],
-                         arrayminus=[estimate.value-interval[0]], color="#8399BD") if interval else None))
+                         arrayminus=[estimate.value-interval[0]], color="#7B9DB8") if interval else None))
     chart(fig, "Recorded observations grouped by material and geometry; no fitted response curve", height=430)
     st.caption("Individual source observations. Different geometry, gravity, apparatus or airflow does not establish a controlled material comparison.")
 

@@ -4,14 +4,37 @@
     "phenomenon": "solid_combustion_chamber_co2",
     "target": "co2_final_pct",
     "unit": "%",
-    "filters": {"material_name": "PMMA", "geometry": "Thick Slab", "flow_direction": "Opposed", "gravity_level": "0g"},
-    "numeric_features": ["o2_initial_pct", "flow_velocity_initial_cm_s", "thickness_mm", "width_cm", "co2_initial_pct", "is_reused_sample"],
-    "categorical_features": ["burn_sides"],
-    "constant_conditions": {"pressure_psi": 14.7, "gravity_g": 0.0},
+    "filters": {
+      "material_name": "PMMA",
+      "geometry": "Thick Slab",
+      "flow_direction": "Opposed",
+      "gravity_level": "0g"
+    },
+    "numeric_features": [
+      "o2_initial_pct",
+      "flow_velocity_initial_cm_s",
+      "thickness_mm",
+      "width_cm",
+      "co2_initial_pct",
+      "is_reused_sample"
+    ],
+    "categorical_features": [
+      "burn_sides"
+    ],
+    "constant_conditions": {
+      "pressure_psi": 14.7,
+      "gravity_g": 0.0
+    },
     "seed": 42,
     "interval_alpha": 0.1,
     "scientific_review": "research_only",
-    "promotion": {"max_mae": null, "max_rmse": null, "max_interval_width": null, "min_test_coverage": 0.9, "min_local_groups": 3},
+    "promotion": {
+      "max_mae": null,
+      "max_rmse": null,
+      "max_interval_width": null,
+      "min_test_coverage": 0.9,
+      "min_local_groups": 3
+    },
     "limitations": [
       "Research candidate only: measurement duration, complete airflow history and independent campaign validation are unavailable.",
       "14.7 psi is an importer assumption, not a measured pressure feature.",
@@ -19,5 +42,205 @@
       "Material reuse and burn-side descriptions require scientific review before deployment.",
       "No production quality tolerances have been approved. Training does not imply promotion."
     ]
+  },
+  "flex_methanol_extinction_time": {
+    "version": 1,
+    "extractor": "flex_initial_droplet_v1",
+    "phenomenon": "quiescent_microgravity_liquid_droplet",
+    "target": "extinguishing_time_s",
+    "subtype": "RADIATIVE_DIFFUSIVE_DROPLET_EXTINCTION_TIME",
+    "unit": "s",
+    "filters": {
+      "material_name": "Methanol",
+      "geometry": "Droplet",
+      "gravity_level": "0g"
+    },
+    "numeric_features": [
+      "o2_initial_pct",
+      "pressure_psi",
+      "diameter_mm",
+      "co2_diluent_pct",
+      "he_diluent_pct",
+      "n2_diluent_pct"
+    ],
+    "categorical_features": [],
+    "constant_conditions": {
+      "gravity_g": 0.0,
+      "flow_velocity_initial_cm_s": 0.0
+    },
+    "seed": 42,
+    "interval_alpha": 0.1,
+    "scientific_review": "research_only",
+    "target_bounds": [
+      0,
+      null
+    ],
+    "promotion": {
+      "max_mae": null,
+      "max_rmse": null,
+      "max_interval_width": null,
+      "min_test_coverage": 0.9,
+      "min_local_groups": 3
+    },
+    "limitations": [
+      "FLEX liquid droplets only; not applicable to solid fires or operational suppression.",
+      "Grouped by test date and specimen identifiers; no independent investigation replication.",
+      "Only initial atmospheric composition, droplet diameter and pressure are predictors.",
+      "Scientific deployment tolerances require review; import eligibility does not authorize deployment."
+    ],
+    "inference_categories": {
+      "geometry": "Droplet",
+      "fuel_phase": "Liquid"
+    }
+  },
+  "flex_methanol_burning_rate": {
+    "version": 1,
+    "extractor": "flex_initial_droplet_v1",
+    "phenomenon": "quiescent_microgravity_liquid_droplet",
+    "target": "burning_rate_constant_mm2_s",
+    "subtype": "OVERALL_DROPLET",
+    "unit": "mm2/s",
+    "filters": {
+      "material_name": "Methanol",
+      "geometry": "Droplet",
+      "gravity_level": "0g"
+    },
+    "numeric_features": [
+      "o2_initial_pct",
+      "pressure_psi",
+      "diameter_mm",
+      "co2_diluent_pct",
+      "he_diluent_pct",
+      "n2_diluent_pct"
+    ],
+    "categorical_features": [],
+    "constant_conditions": {
+      "gravity_g": 0.0,
+      "flow_velocity_initial_cm_s": 0.0
+    },
+    "seed": 42,
+    "interval_alpha": 0.1,
+    "scientific_review": "research_only",
+    "target_bounds": [
+      0,
+      null
+    ],
+    "promotion": {
+      "max_mae": null,
+      "max_rmse": null,
+      "max_interval_width": null,
+      "min_test_coverage": 0.9,
+      "min_local_groups": 3
+    },
+    "limitations": [
+      "FLEX liquid droplets only; not applicable to solid fires or operational suppression.",
+      "Grouped by test date and specimen identifiers; no independent investigation replication.",
+      "Only initial atmospheric composition, droplet diameter and pressure are predictors.",
+      "Scientific deployment tolerances require review; import eligibility does not authorize deployment."
+    ],
+    "inference_categories": {
+      "geometry": "Droplet",
+      "fuel_phase": "Liquid"
+    }
+  },
+  "flex_heptane_extinction_time": {
+    "version": 1,
+    "extractor": "flex_initial_droplet_v1",
+    "phenomenon": "quiescent_microgravity_liquid_droplet",
+    "target": "extinguishing_time_s",
+    "subtype": "RADIATIVE_DIFFUSIVE_DROPLET_EXTINCTION_TIME",
+    "unit": "s",
+    "filters": {
+      "material_name": "n-Heptane",
+      "geometry": "Droplet",
+      "gravity_level": "0g"
+    },
+    "numeric_features": [
+      "o2_initial_pct",
+      "pressure_psi",
+      "diameter_mm",
+      "co2_diluent_pct",
+      "he_diluent_pct",
+      "n2_diluent_pct"
+    ],
+    "categorical_features": [],
+    "constant_conditions": {
+      "gravity_g": 0.0,
+      "flow_velocity_initial_cm_s": 0.0
+    },
+    "seed": 42,
+    "interval_alpha": 0.1,
+    "scientific_review": "research_only",
+    "target_bounds": [
+      0,
+      null
+    ],
+    "promotion": {
+      "max_mae": null,
+      "max_rmse": null,
+      "max_interval_width": null,
+      "min_test_coverage": 0.9,
+      "min_local_groups": 3
+    },
+    "limitations": [
+      "FLEX liquid droplets only; not applicable to solid fires or operational suppression.",
+      "Grouped by test date and specimen identifiers; no independent investigation replication.",
+      "Only initial atmospheric composition, droplet diameter and pressure are predictors.",
+      "Scientific deployment tolerances require review; import eligibility does not authorize deployment."
+    ],
+    "inference_categories": {
+      "geometry": "Droplet",
+      "fuel_phase": "Liquid"
+    }
+  },
+  "flex_heptane_burning_rate": {
+    "version": 1,
+    "extractor": "flex_initial_droplet_v1",
+    "phenomenon": "quiescent_microgravity_liquid_droplet",
+    "target": "burning_rate_constant_mm2_s",
+    "subtype": "OVERALL_DROPLET",
+    "unit": "mm2/s",
+    "filters": {
+      "material_name": "n-Heptane",
+      "geometry": "Droplet",
+      "gravity_level": "0g"
+    },
+    "numeric_features": [
+      "o2_initial_pct",
+      "pressure_psi",
+      "diameter_mm",
+      "co2_diluent_pct",
+      "he_diluent_pct",
+      "n2_diluent_pct"
+    ],
+    "categorical_features": [],
+    "constant_conditions": {
+      "gravity_g": 0.0,
+      "flow_velocity_initial_cm_s": 0.0
+    },
+    "seed": 42,
+    "interval_alpha": 0.1,
+    "scientific_review": "research_only",
+    "target_bounds": [
+      0,
+      null
+    ],
+    "promotion": {
+      "max_mae": null,
+      "max_rmse": null,
+      "max_interval_width": null,
+      "min_test_coverage": 0.9,
+      "min_local_groups": 3
+    },
+    "limitations": [
+      "FLEX liquid droplets only; not applicable to solid fires or operational suppression.",
+      "Grouped by test date and specimen identifiers; no independent investigation replication.",
+      "Only initial atmospheric composition, droplet diameter and pressure are predictors.",
+      "Scientific deployment tolerances require review; import eligibility does not authorize deployment."
+    ],
+    "inference_categories": {
+      "geometry": "Droplet",
+      "fuel_phase": "Liquid"
+    }
   }
 }
