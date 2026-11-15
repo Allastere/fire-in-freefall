@@ -225,3 +225,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Internal AI agent skills, prompts, and design mockups (dev-only)
+.agents/
+skills-lock.json
+Context.md
+design_reference/
+test_gemini.py
+docs/SI_INSIGHTS_AUDIT_RU.md
+.claude/
+CLAUDE.md
+.cursor/
+.gemini/
+scratch/
