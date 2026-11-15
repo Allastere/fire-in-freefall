@@ -1,0 +1,30 @@
+# Git and local environments
+.git/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Python caches
+__pycache__/
+**/__pycache__/
+*.pyc
+**/*.pyc
+*.py[cod]
+**/*.py[cod]
+*$py.class
+
+# Secrets and local environment files
+.env
+.streamlit/secrets.toml
+
+# Raw downloaded NASA files (the prebuilt DB data/database/research.db stays included)
+data/raw/
+
+# Local dev / AI workspace artifacts
+.agents/
+design_reference/
+scratch/
+Context.md
+skills-lock.json
+test_gemini.py
+docs/SI_INSIGHTS_AUDIT_RU.md
