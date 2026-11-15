@@ -1,0 +1,282 @@
+{
+  "artifact_sha256": "1ce38539ed36755796e45904867e0a726de5dc80a424455077356b1334718e7c",
+  "benchmark_sha256": "e73c91001312fa8e31b66a11ba8261175c51c6c7e2bdb3fc1a27bed5cf5a24b3",
+  "code_files": {
+    "__init__.py": "5d4cda51e641f4e1ad28d7a61d477e3dcbe7265e6e1159f6b1b1d747a38ab76f",
+    "dataset.py": "1c47360b00fe8e60db175ab7ad4a51bfdabeb5df0440cfca02b85348be2d471d",
+    "evaluate.py": "c3c77214ab8f26cd8dc73afca6a7567d57be28556bd8a04216fe315d0ca0a3a5",
+    "predict.py": "a28cfec47b8a35fc48e9c62b96ec14ae3eb3b1fc8111c49d113df6c0842e7f38",
+    "preprocessing.py": "030460417bceb1ce3a711faba5515a59f429ea39f00d9788c2dd0c5a186deccd",
+    "registry.py": "0817443406fa17f435ae2cea22b0fe6717b453d64f1b7120263ced3a9022b650",
+    "train.py": "8a25c02ef32006ca4c7c072bd30e3029b9d648c31114e9537f214646d8114f54",
+    "uncertainty.py": "999209d024e7fd4c67b7010d520123a2b7f604c4695460969bf5f0ac5e1f23b5"
+  },
+  "code_sha256": "63de95acea67932955b92c88eced0e2a94b045830e18cfd57450f02ea56330e6",
+  "counts": {
+    "benchmark": {
+      "groups": 2,
+      "samples": 6
+    },
+    "calibration": {
+      "groups": 1,
+      "samples": 4
+    },
+    "development": {
+      "groups": 4,
+      "samples": 9
+    }
+  },
+  "dataset_sha256": "4e90a4be7254f210e54543c323a0d0c8ca6e1096cda389abea3f0c8f691aa0d6",
+  "environment": {
+    "packages": {
+      "joblib": "1.6.0",
+      "numpy": "2.5.4",
+      "pandas": "3.1.1",
+      "pint": "0.26.2",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "threadpoolctl": "3.8.0"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.0"
+  },
+  "evaluation": {
+    "baseline_benchmark": {
+      "group_mae": 0.4205555555555558,
+      "mae": 0.42055555555555574,
+      "n": 6,
+      "n_predicted": 6,
+      "prediction_coverage": 1.0,
+      "r2": -2.5685631171532206,
+      "rmse": 0.4957068777432642
+    },
+    "benchmark": {
+      "group_mae": 0.37217123015873077,
+      "mae": 0.37217123015873077,
+      "n": 6,
+      "n_predicted": 6,
+      "prediction_coverage": 1.0,
+      "r2": -1.8361147292835973,
+      "rmse": 0.44191643259850194
+    },
+    "cross_validation": {
+      "gaussian_process": {
+        "folds": 4,
+        "group_mae": 0.39625666860031367,
+        "mae": 0.3926393770532456,
+        "n": 9,
+        "n_predicted": 9,
+        "prediction_coverage": 1.0,
+        "r2": -0.24672154082997144,
+        "rmse": 0.4588083306383511,
+        "warnings": [
+          "The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-05. Decreasing the bound and calling fit again may find a better value."
+        ]
+      },
+      "linear_interpolation": {
+        "folds": 4,
+        "group_mae": null,
+        "mae": null,
+        "n": 9,
+        "n_predicted": 0,
+        "prediction_coverage": 0.0,
+        "r2": null,
+        "rmse": null,
+        "warnings": []
+      },
+      "linear_regression": {
+        "folds": 4,
+        "group_mae": 0.7707817768135498,
+        "mae": 1.1299258878992102,
+        "n": 9,
+        "n_predicted": 9,
+        "prediction_coverage": 1.0,
+        "r2": -22.466648087806732,
+        "rmse": 1.9905454281929789,
+        "warnings": []
+      },
+      "mean_baseline": {
+        "folds": 4,
+        "group_mae": 0.3615089285714284,
+        "mae": 0.360813492063492,
+        "n": 9,
+        "n_predicted": 9,
+        "prediction_coverage": 1.0,
+        "r2": -0.12163855180395977,
+        "rmse": 0.4351841077345501,
+        "warnings": []
+      },
+      "mlp": {
+        "folds": 4,
+        "group_mae": 0.4849245745713335,
+        "mae": 0.49384132764080113,
+        "n": 9,
+        "n_predicted": 9,
+        "prediction_coverage": 1.0,
+        "r2": -0.6454201567979934,
+        "rmse": 0.527090234227563,
+        "warnings": []
+      },
+      "random_forest": {
+        "folds": 4,
+        "group_mae": 0.38730940476190506,
+        "mae": 0.3882332208994711,
+        "n": 9,
+        "n_predicted": 9,
+        "prediction_coverage": 1.0,
+        "r2": -0.2041041351081181,
+        "rmse": 0.4508982887993903,
+        "warnings": []
+      }
+    },
+    "domain_coverage": 0.0,
+    "previous_approved_benchmark": null
+  },
+  "features": [
+    "o2_initial_pct",
+    "flow_velocity_initial_cm_s",
+    "thickness_mm",
+    "width_cm",
+    "co2_initial_pct",
+    "is_reused_sample",
+    "burn_sides"
+  ],
+  "git": {
+    "head": "dac9e1639e7020586be409634d12a7e96ce36397",
+    "tracked_diff_sha256": "b424de4da3e587360b569a818faf72dfce3d6593866f26e5f2927cd2ec3aaa64"
+  },
+  "hyperparameters": {
+    "features": "ColumnTransformer(transformers=[('numeric', StandardScaler(),\n                                 ['o2_initial_pct',\n                                  'flow_velocity_initial_cm_s', 'thickness_mm',\n                                  'width_cm', 'co2_initial_pct',\n                                  'is_reused_sample']),\n                                ('categorical',\n                                 OneHotEncoder(handle_unknown='ignore',\n                                               sparse_output=False),\n                                 ['burn_sides'])])",
+    "features__categorical": "OneHotEncoder(handle_unknown='ignore', sparse_output=False)",
+    "features__categorical__categories": "auto",
+    "features__categorical__drop": null,
+    "features__categorical__dtype": "<class 'numpy.float64'>",
+    "features__categorical__feature_name_combiner": "concat",
+    "features__categorical__handle_unknown": "ignore",
+    "features__categorical__max_categories": null,
+    "features__categorical__min_frequency": null,
+    "features__categorical__sparse_output": false,
+    "features__n_jobs": null,
+    "features__numeric": "StandardScaler()",
+    "features__numeric__copy": true,
+    "features__numeric__with_mean": true,
+    "features__numeric__with_std": true,
+    "features__remainder": "drop",
+    "features__sparse_threshold": 0.3,
+    "features__transformer_weights": null,
+    "features__transformers": "[('numeric', StandardScaler(), ['o2_initial_pct', 'flow_velocity_initial_cm_s', 'thickness_mm', 'width_cm', 'co2_initial_pct', 'is_reused_sample']), ('categorical', OneHotEncoder(handle_unknown='ignore', sparse_output=False), ['burn_sides'])]",
+    "features__verbose": false,
+    "features__verbose_feature_names_out": true,
+    "memory": null,
+    "model": "RandomForestRegressor(min_samples_leaf=2, n_estimators=200, n_jobs=1,\n                      random_state=42)",
+    "model__bootstrap": true,
+    "model__ccp_alpha": 0.0,
+    "model__criterion": "squared_error",
+    "model__max_depth": null,
+    "model__max_features": 1.0,
+    "model__max_leaf_nodes": null,
+    "model__max_samples": null,
+    "model__min_impurity_decrease": 0.0,
+    "model__min_samples_leaf": 2,
+    "model__min_samples_split": 2,
+    "model__min_weight_fraction_leaf": 0.0,
+    "model__monotonic_cst": null,
+    "model__n_estimators": 200,
+    "model__n_jobs": 1,
+    "model__oob_score": false,
+    "model__random_state": 42,
+    "model__verbose": 0,
+    "model__warm_start": false,
+    "steps": "[('features', ColumnTransformer(transformers=[('numeric', StandardScaler(),\n                                 ['o2_initial_pct',\n                                  'flow_velocity_initial_cm_s', 'thickness_mm',\n                                  'width_cm', 'co2_initial_pct',\n                                  'is_reused_sample']),\n                                ('categorical',\n                                 OneHotEncoder(handle_unknown='ignore',\n                                               sparse_output=False),\n                                 ['burn_sides'])])), ('model', RandomForestRegressor(min_samples_leaf=2, n_estimators=200, n_jobs=1,\n                      random_state=42))]",
+    "transform_input": null,
+    "verbose": false
+  },
+  "investigations": [
+    "PSI-25"
+  ],
+  "limitations": [
+    "Research candidate only: measurement duration, complete airflow history and independent campaign validation are unavailable.",
+    "14.7 psi is an importer assumption, not a measured pressure feature.",
+    "Only the source-backed PMMA slab/opposed-flow series is used; no partial-gravity or high-oxygen predictions are supported.",
+    "Material reuse and burn-side descriptions require scientific review before deployment.",
+    "No production quality tolerances have been approved. Training does not imply promotion."
+  ],
+  "model": "random_forest",
+  "phenomenon": "solid_combustion_chamber_co2",
+  "previous_approved": null,
+  "promotion": {
+    "approved": false,
+    "reasons": [
+      "Scientific protocol review is incomplete.",
+      "No approved physical tolerance configured: max_mae.",
+      "No approved physical tolerance configured: max_rmse.",
+      "No approved physical tolerance configured: max_interval_width.",
+      "Too few independent calibration groups for a finite requested coverage interval.",
+      "Supported-domain gate failed on the independent benchmark."
+    ]
+  },
+  "split_sha256": "4f2e606be0553da907b86e885ebedd29c570e9276a56bc388364ad73f579712c",
+  "status": "RESEARCH_ONLY",
+  "supported_materials": [
+    "PMMA"
+  ],
+  "target": "co2_final_pct",
+  "task": {
+    "categorical_features": [
+      "burn_sides"
+    ],
+    "constant_conditions": {
+      "gravity_g": 0.0,
+      "pressure_psi": 14.7
+    },
+    "filters": {
+      "flow_direction": "Opposed",
+      "geometry": "Thick Slab",
+      "gravity_level": "0g",
+      "material_name": "PMMA"
+    },
+    "interval_alpha": 0.1,
+    "limitations": [
+      "Research candidate only: measurement duration, complete airflow history and independent campaign validation are unavailable.",
+      "14.7 psi is an importer assumption, not a measured pressure feature.",
+      "Only the source-backed PMMA slab/opposed-flow series is used; no partial-gravity or high-oxygen predictions are supported.",
+      "Material reuse and burn-side descriptions require scientific review before deployment.",
+      "No production quality tolerances have been approved. Training does not imply promotion."
+    ],
+    "numeric_features": [
+      "o2_initial_pct",
+      "flow_velocity_initial_cm_s",
+      "thickness_mm",
+      "width_cm",
+      "co2_initial_pct",
+      "is_reused_sample"
+    ],
+    "phenomenon": "solid_combustion_chamber_co2",
+    "promotion": {
+      "max_interval_width": null,
+      "max_mae": null,
+      "max_rmse": null,
+      "min_local_groups": 3,
+      "min_test_coverage": 0.9
+    },
+    "scientific_review": "research_only",
+    "seed": 42,
+    "target": "co2_final_pct",
+    "unit": "%",
+    "version": 1
+  },
+  "task_id": "pmma_slab_co2_final",
+  "trained_at_utc": "2026-11-14T17:39:23.649263+00:00",
+  "training_mode": "full_retraining",
+  "uncertainty": {
+    "alpha": 0.1,
+    "benchmark_coverage": null,
+    "calibration_groups": 1,
+    "half_width": null,
+    "limitation": "Requires exchangeable experimental groups; domain transfer is not established.",
+    "method": "group_max_absolute_residual_split_conformal",
+    "quantile_rank": 2
+  },
+  "unit": "%",
+  "version_id": "71349e058a0e01017345ab644244889a74a18793d967f657033ea51670cfaf1f"
+}

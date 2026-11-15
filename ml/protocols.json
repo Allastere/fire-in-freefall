@@ -1,0 +1,14 @@
+{
+  "protocols": [
+    {
+      "id": "bass2_master_csv_v1",
+      "psi_id": "PSI-25",
+      "file_name": "PSI-25_Experimental table_BASS-II.csv",
+      "scientific_status": "research_only",
+      "compatible_phenomena": ["solid_combustion_chamber_co2"],
+      "raw_columns": {"test_id": "Test #", "sample_id": "Sample #", "session": "Date", "material": "Fuel Sample Material", "oxygen": "Calibrated  initial O2 % by vol", "final_oxygen": "Calibrated final O2 % by vol", "airflow": "Air display", "co2_initial_pct": "Initial CO2 % by vol", "co2_final_pct": "Final CO2 % by vol"},
+      "source_target_units": {"co2_final_pct": "%"},
+      "notes": "Raw CSV identity and unit mapping checked. Scientific equivalence across campaigns is not approved; unknown sources remain excluded."
+    }
+  ]
+}

@@ -1,3 +1,77 @@
+# Current architecture ? Swiss Scientific Editorial V2 (2026-11-15)
+
+This section supersedes the historical five-page dashboard specification below wherever it conflicts.
+The existing SQLite schema, source files, ingestion repositories, trained artifacts and ML validation gates remain unchanged.
+
+## Navigation and interface
+
+Exactly four registered pages: Overview, Explorer, Ranking, SI Insights. Horizontal editorial navigation replaces the permanent sidebar.
+The shared paper/cobalt/burnt-orange system is implemented in `.streamlit/config.toml` and `ui/design.py`.
+`ui/material_workspace.py` is the central workspace, with Assess Material (default), Find Materials, Compare Materials and Predict Parameter.
+The standalone Compare page was removed; its run-level plotting, exports and source tables are preserved in `ui/run_comparison.py`.
+The original grounded document assistant remains in `ui/source_research.py`; uploads remain session-only in `ui/uploads.py`.
+Conclusion first, one dominant figure, two to four available characteristic summaries, secondary evidence collapsed by default.
+Inputs collapse after assessment; modified inputs hide the old conclusion until reassessment.
+
+## Scientific services
+
+- `scientific/materials.py`: validated Parameter / MaterialQuery / Characteristic / MaterialReport / MaterialAssessment contracts,
+  dynamic target discovery, partial-condition retrieval, independent per-characteristic assessments and comparison strata.
+- `scientific/assessment.py`: existing strict numerical router, reviewed interpolation and approved serialized-model inference.
+- `scientific/evidence.py`: SHA-256 / original-row / unit / source-condition verification; no synthetic production records.
+- `scientific/synthesis.py`: structured overall Gemini synthesis, concise cited conclusion, per-session validated caching and graceful failure.
+- `scientific/labels.py`: human-readable scientific names and canonical input units.
+
+Parameter semantics: specified has an exact non-null value; any is an unrestricted retrieval wildcard;
+unknown represents missing physical information; range has explicit ordered bounds and no midpoint.
+Both any and unknown allow evidence discovery, but only specified values satisfy strict model input requirements.
+Missing values are nullable; zero remains a valid value for gravity, gas concentration and airflow.
+No imputation, Gemini-generated inputs or unreviewed missing-feature strategy is used.
+
+Characteristics independently report OBSERVED, INTERPOLATED, PREDICTED or UNAVAILABLE.
+OBSERVED may be an explicit recorded observation or clearly labelled conditional evidence under partial conditions.
+Conditional evidence reports ranges/distributions, never a single presumed physical outcome or pooled incompatible average.
+Grouping separates investigation/source apparatus, units, geometry, gravity, pressure, airflow/history, dimensions, reuse and burn-side regimes.
+Unknown or unrestricted features cannot silently become exact conditions or model inputs.
+One unavailable target never discards successful characteristics or qualitative source records.
+
+## Recorded-observation regression and nominal pressure
+
+The B1 regression arose from conflating historical record retrieval with strict applicability of a fully measured environment:
+nominal importer pressure blocked the existing verified measurement, then routing fell through to unavailable prediction and a future proposal.
+`AssessmentRequest.reference_uid` now expresses an explicit source-record lookup. It permits retrieval of that observation with its
+nominal-condition limitation; it does not certify pressure, remove provenance checks or relax feature equality.
+There is no B1-specific value or bypass. Original B1 final carbon dioxide is 0.44 percent; M1 is 0.61 percent.
+Source conditions load atomically through callbacks. Mission selection alone does not apply a preset;
+applying a mission reference explicitly changes the environment and invalidates the report.
+Changing physical conditions must be reassessed; the old observation is never shown as an applicable prediction.
+
+## Material discovery, comparison and limitations
+
+Find Materials returns evidence-bearing research candidates, not a material safety score or quantity-based ranking.
+Optional physical selection criteria are available, but an unsupported criterion cannot generate a winner.
+Comparisons require shared investigation/source and physical-condition strata and preserve missing quantities and different units.
+Even shared recorded conditions do not prove material-property equivalence or certification.
+Current source-verified quantities are predominantly initial/final gas concentrations and calibrated oxygen in BASS-II.
+Catalog-only flame spread, heat release and other seeded measurements are not promoted into verified production evidence.
+The current Random Forest remains RESEARCH_ONLY. No training or promotion occurs during assessment.
+No production interpolation policy is approved. Models and policies must independently pass existing scientific gates.
+Future compatible records and model metadata are discovered dynamically; unknown source protocols remain conservative.
+
+Gemini receives fixed structured results and bounded original excerpts. Factual claims require supplied IDs and exact quotations;
+its primary conclusion is at most two sentences / forty words. Numerical prose, invented sources and invalid structures are rejected.
+The renderer obtains values/intervals from Python only. Gemini cannot mutate those results or assign safety scores.
+A record lookup never becomes a future experimental proposal. Proposals for genuine gaps are labelled as SI-generated research,
+not existing NASA evidence, validated protocols or operationally safe instructions.
+API/ML/individual-characteristic failures are independent; original observations survive all external-service failures.
+The footer states: Experimental decision-support tool. Not a certified spacecraft fire safety assessment.
+
+See `docs/EDITORIAL_V2_UPGRADE.md` for verification, changed files, limits and visual differences.
+
+---
+
+## Historical project specification (retained for reference)
+
 # Контекст проекта: Flame in Freefall — SI-дашборд аналитики пожарной безопасности в микрогравитации
 
 ## 1. Миссия, контекст хакатона и регламент 2026 года

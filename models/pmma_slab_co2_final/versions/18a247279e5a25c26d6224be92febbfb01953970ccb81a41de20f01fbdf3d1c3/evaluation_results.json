@@ -1,0 +1,104 @@
+{
+  "baseline_benchmark": {
+    "group_mae": 0.4205555555555558,
+    "mae": 0.42055555555555574,
+    "n": 6,
+    "n_predicted": 6,
+    "prediction_coverage": 1.0,
+    "r2": -2.5685631171532206,
+    "rmse": 0.4957068777432642
+  },
+  "benchmark": {
+    "group_mae": 0.37217123015873077,
+    "mae": 0.37217123015873077,
+    "n": 6,
+    "n_predicted": 6,
+    "prediction_coverage": 1.0,
+    "r2": -1.8361147292835973,
+    "rmse": 0.44191643259850194
+  },
+  "cross_validation": {
+    "gaussian_process": {
+      "folds": 4,
+      "group_mae": 0.39625666860031367,
+      "mae": 0.3926393770532456,
+      "n": 9,
+      "n_predicted": 9,
+      "prediction_coverage": 1.0,
+      "r2": -0.24672154082997144,
+      "rmse": 0.4588083306383511,
+      "warnings": [
+        "The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-05. Decreasing the bound and calling fit again may find a better value."
+      ]
+    },
+    "linear_interpolation": {
+      "folds": 4,
+      "group_mae": null,
+      "mae": null,
+      "n": 9,
+      "n_predicted": 0,
+      "prediction_coverage": 0.0,
+      "r2": null,
+      "rmse": null,
+      "warnings": []
+    },
+    "linear_regression": {
+      "folds": 4,
+      "group_mae": 0.7707817768135498,
+      "mae": 1.1299258878992102,
+      "n": 9,
+      "n_predicted": 9,
+      "prediction_coverage": 1.0,
+      "r2": -22.466648087806732,
+      "rmse": 1.9905454281929789,
+      "warnings": []
+    },
+    "mean_baseline": {
+      "folds": 4,
+      "group_mae": 0.3615089285714284,
+      "mae": 0.360813492063492,
+      "n": 9,
+      "n_predicted": 9,
+      "prediction_coverage": 1.0,
+      "r2": -0.12163855180395977,
+      "rmse": 0.4351841077345501,
+      "warnings": []
+    },
+    "mlp": {
+      "folds": 4,
+      "group_mae": 0.4849245745713335,
+      "mae": 0.49384132764080113,
+      "n": 9,
+      "n_predicted": 9,
+      "prediction_coverage": 1.0,
+      "r2": -0.6454201567979934,
+      "rmse": 0.527090234227563,
+      "warnings": []
+    },
+    "random_forest": {
+      "folds": 4,
+      "group_mae": 0.38730940476190506,
+      "mae": 0.3882332208994711,
+      "n": 9,
+      "n_predicted": 9,
+      "prediction_coverage": 1.0,
+      "r2": -0.2041041351081181,
+      "rmse": 0.4508982887993903,
+      "warnings": []
+    }
+  },
+  "domain_coverage": 0.0,
+  "previous_approved_benchmark": null,
+  "previous_research_benchmark": {
+    "metrics": {
+      "group_mae": 0.37217123015873077,
+      "mae": 0.37217123015873077,
+      "n": 6,
+      "n_predicted": 6,
+      "prediction_coverage": 1.0,
+      "r2": -1.8361147292835973,
+      "rmse": 0.44191643259850194
+    },
+    "version_id": "71349e058a0e01017345ab644244889a74a18793d967f657033ea51670cfaf1f"
+  }
+}

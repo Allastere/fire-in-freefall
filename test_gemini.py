@@ -82,6 +82,13 @@ class CacheTests(unittest.TestCase):
         self.db_path.unlink()
         self.assertFalse(self.db_path.exists())
 
+    def test_private_requests_do_not_write_shared_cache(self):
+        self.client.cache_writes = False
+        self.client.generate("private question")
+        with closing(sqlite3.connect(self.db_path)) as conn:
+            self.assertEqual(conn.execute("SELECT COUNT(*) FROM llm_cache").fetchone()[0], 0)
+        self.api.models.generate_content.assert_called_once()
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
