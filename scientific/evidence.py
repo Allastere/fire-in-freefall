@@ -13,7 +13,7 @@ import pandas as pd
 from core.normalization import normalize_pressure_to_psi, parse_fuel_sample_material
 from database.repository import get_experiments_df, get_measurements_df
 from ingestion.schema_mapper import map_csv_columns
-from ingestion.file_loader import resolve_psi_folder
+from ingestion.file_loader import matches_sha256, resolve_psi_folder
 from config.settings import BASE_DIR
 from ui.data import csv_sources, read_csv
 
@@ -53,9 +53,9 @@ def source_index(db_path, raw_root):
         path = folder / name
         try:
             content = path.read_bytes()
-            digest = hashlib.sha256(content).hexdigest()
-            if digest != expected_hash:
+            if not matches_sha256(content, expected_hash):
                 raise ValueError("registered checksum mismatch")
+            digest = expected_hash
             frame = read_csv(content)
             frame.columns = frame.columns.str.strip()
             plan = map_csv_columns(list(frame.columns), frame.head(3).to_dict("records"), pid)

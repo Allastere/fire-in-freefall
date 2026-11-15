@@ -17,8 +17,7 @@ __pycache__/
 .env
 .streamlit/secrets.toml
 
-# Raw downloaded NASA files (the prebuilt DB data/database/research.db stays included)
-data/raw/
+# Keep data/raw/ and data/database/research.db in the build context for runtime hash checks & source links
 
 # Local dev / AI workspace artifacts
 .agents/

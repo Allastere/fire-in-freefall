@@ -12,7 +12,10 @@ from ml.registry import approved_version
 
 
 def load_version(registry, version, require_approved=True):
-    import joblib
+    try:
+        import joblib
+    except ImportError as exc:
+        raise ValueError("ML runtime packages unavailable.") from exc
 
     if not re.fullmatch(r"[0-9a-f]{64}", version):
         raise ValueError("Invalid model version identifier.")

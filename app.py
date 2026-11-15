@@ -23,6 +23,7 @@ page = st.navigation(pages, position="hidden")
 for key, value in st.session_state.get("_workspace_filters", {}).items():
     if key not in st.session_state and not key.startswith("ranking_inspect_"):
         st.session_state[key] = value
+investigations = catalog()[0]
 with st.container(key="editorial_nav"):
     columns = st.columns([3.3, 1, 1, 1, 1.2, .65], vertical_alignment="center")
     with columns[0]:
@@ -31,7 +32,6 @@ with st.container(key="editorial_nav"):
         with column, st.container(key="nav_active" if destination == page else f"nav_{destination.title.replace(' ', '_')}"):
             st.page_link(destination, label=destination.title)
     with columns[5], st.popover(":material/tune:", help="Archive scope and SI settings"):
-        investigations = catalog()[0]
         st.selectbox("Safety pillar", ["All", *sorted({i["safety_pillar"] for i in investigations})], key="safety_pillar")
         st.selectbox("Research facility", ["All", *sorted({i["hardware_facility"] for i in investigations})], key="facility")
         st.toggle("Show Earth spin-offs", key="show_spinoffs")

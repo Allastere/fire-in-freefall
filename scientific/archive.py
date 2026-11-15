@@ -6,7 +6,7 @@ from contextlib import closing
 from pathlib import Path
 
 from config.settings import DB_PATH, RAW_DATA_DIR
-from ingestion.file_loader import resolve_psi_folder
+from ingestion.file_loader import matches_sha256, resolve_psi_folder
 from ml.dataset import fingerprint
 from ui.data import read_csv
 
@@ -30,7 +30,7 @@ def load_archive(db_path=DB_PATH, raw_root=RAW_DATA_DIR):
         name = str(source["file_path"]).replace("\\", "/").rsplit("/", 1)[-1]
         folder = resolve_psi_folder(pid, raw_root)
         path = folder / name if folder else None
-        if not path or not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != source["sha256_hash"]:
+        if not path or not path.is_file() or not matches_sha256(path.read_bytes(), source["sha256_hash"]):
             problems.append(f"Missing or changed source: {pid}/{name}")
             continue
         source_map[pid, name] = {"path": str(path), "sha256": source["sha256_hash"]}

@@ -74,9 +74,18 @@ def register_file(
         conn.close()
 
 
+def matches_sha256(content: bytes, expected_hash: str) -> bool:
+    """Return True if raw bytes or LF/CRLF line-ending normalized variants match expected_hash."""
+    lf = content.replace(b"\r\n", b"\n")
+    variants = (content, lf, lf.replace(b"\n", b"\r\n"))
+    return any(hashlib.sha256(variant).hexdigest() == expected_hash for variant in variants)
+
+
 def resolve_psi_folder(psi_id: str, raw_root: Path | str = RAW_DATA_DIR) -> Path | None:
     """Resolve a folder in raw_root by exact psi_id ('PSI-25') or prefix ('PSI-25 Burning...')."""
     root = Path(raw_root)
+    if not root.is_dir():
+        return None
     exact = root / psi_id
     if exact.is_dir():
         return exact
