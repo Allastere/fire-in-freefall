@@ -49,7 +49,9 @@ def get_all_investigations(
         SELECT
             psi_id, acronym, title, doi, psi_url, citation_text,
             safety_pillar, fuel_category, hardware_facility,
-            objectives, summary, earth_spinoff_text, related_psi_ids
+            objectives, summary, earth_spinoff_text, related_psi_ids,
+            pi_names, pillar_classifications_json, objective_tags_json,
+            hardware_relationships_json, cross_relationships_json, limitations_json
         FROM investigations
         WHERE 1 = 1
     """
@@ -106,20 +108,33 @@ def get_experiments_df(
             e.flow_direction,
             e.outcome,
             s.material_name,
+            s.original_material_designation,
+            s.material_family,
+            s.fuel_phase,
             s.geometry,
             s.thickness_mm,
             s.width_cm,
+            s.length_cm,
             s.diameter_mm,
             c.o2_initial_pct,
             c.o2_final_pct,
+            c.oxygen_location,
             c.pressure_psi,
             c.diluent_gas,
             c.diluent_pct,
+            c.co2_diluent_pct,
+            c.he_diluent_pct,
+            c.n2_diluent_pct,
+            c.ambient_temp_k,
             c.flow_velocity_initial_cm_s,
             c.flow_velocity_min_cm_s,
             c.flow_velocity_extinction_cm_s,
             c.flow_sequence_raw,
             c.gravity_level,
+            c.ignition_outcome,
+            c.propagation_outcome,
+            c.suppression_outcome,
+            c.material_behaviour,
             e.observations,
             e.raw_attributes_json
         FROM experiments e
@@ -170,19 +185,30 @@ def get_measurements_df(
             i.doi,
             m.test_id,
             s.material_name,
+            s.material_family,
+            s.fuel_phase,
             c.o2_initial_pct,
+            c.oxygen_location,
             c.pressure_psi,
             c.flow_velocity_initial_cm_s,
             c.flow_velocity_min_cm_s,
             c.gravity_level,
             e.outcome,
             m.parameter,
+            m.subtype,
             m.value,
+            m.value_min,
+            m.value_max,
             m.unit,
+            m.statistic_type,
+            m.instrument,
+            m.ignition_method,
             CAST(m.is_over_range AS INTEGER) AS is_over_range,
             m.value_type,
+            m.eligibility_status,
             m.source_doc,
             m.source_page,
+            m.source_trace_json,
             m.verification_status
         FROM measurements m
         JOIN investigations i ON m.psi_id = i.psi_id
@@ -234,6 +260,10 @@ def get_findings(
             i.hardware_facility,
             i.doi,
             i.psi_url,
+            f.finding_title,
+            f.finding_type,
+            f.safety_pillar AS finding_safety_pillar,
+            f.objective_tag,
             f.category,
             f.claim,
             f.evidence_quote,
@@ -309,17 +339,19 @@ if __name__ == "__main__":
     meas_df = get_measurements_df()
     finds = get_findings()
     ranked_df = get_ranked_experiments_df(mission_profile="Lunar Base")
-    assert len(invs) == 5, f"Expected 5 investigations, got {len(invs)}"
-    assert len(exp_df) >= 134, f"Expected >= 134 experiments, got {len(exp_df)}"
-    assert len(meas_df) >= 100, f"Expected >= 100 measurements, got {len(meas_df)}"
-    assert len(finds) == 6, f"Expected 6 findings, got {len(finds)}"
+    assert len(invs) == 19, f"Expected 19 investigations, got {len(invs)}"
+    assert len(exp_df) >= 750, f"Expected >= 750 experiments, got {len(exp_df)}"
+    assert len(meas_df) >= 2500, f"Expected >= 2500 measurements, got {len(meas_df)}"
+    assert len(finds) >= 15, f"Expected >= 15 findings, got {len(finds)}"
     assert len(ranked_df) == len(exp_df)
     assert len(get_experiments_df(psi_id="'; DROP TABLE investigations; --")) == 0
     cir_mdca_invs = get_all_investigations(hardware_facility="CIR / MDCA")
-    assert {i["psi_id"] for i in cir_mdca_invs} == {"PSI-69", "PSI-159"}, cir_mdca_invs
+    assert {i["psi_id"] for i in cir_mdca_invs} == {
+        "PSI-10", "PSI-20", "PSI-21", "PSI-22", "PSI-23", "PSI-39", "PSI-68", "PSI-69", "PSI-159"
+    }, cir_mdca_invs
     saffire_invs = get_all_investigations(hardware_facility="Saffire / Cygnus")
-    assert {i["psi_id"] for i in saffire_invs} == {"PSI-98"}, saffire_invs
-    assert len(get_ranked_investigations(mission_profile="Lunar Base", hardware_facility="CIR / MDCA")) == 2
+    assert {i["psi_id"] for i in saffire_invs} == {"PSI-98", "PSI-99", "PSI-100"}, saffire_invs
+    assert len(get_ranked_investigations(mission_profile="Lunar Base", hardware_facility="CIR / MDCA")) == 9
     print(
         f"Repository self-check PASSED: {len(invs)} investigations, "
         f"{len(exp_df)} experiments, {len(meas_df)} measurements, {len(finds)} findings."

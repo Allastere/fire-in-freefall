@@ -1,8 +1,10 @@
-"""SHA-256 file deduplication, source registry, and PSI-25 directory file discovery."""
+"""SHA-256 file deduplication, source registry, and NASA PSI directory file discovery."""
 
 import hashlib
+import re
 import sqlite3
 from pathlib import Path
+from typing import Any
 from config.settings import DB_PATH, RAW_DATA_DIR
 from database.connection import get_connection
 
@@ -72,22 +74,79 @@ def register_file(
         conn.close()
 
 
-def discover_psi_files(psi_id: str = "PSI-25", raw_root: Path | str = RAW_DATA_DIR) -> dict[str, Path | None]:
-    """Locate master CSV, summary PDF, and FAQ DOCX files for a given PSI investigation folder."""
-    folder = Path(raw_root) / psi_id
-    discovered: dict[str, Path | None] = {"csv": None, "pdf": None, "docx": None}
-    if not folder.exists():
+def resolve_psi_folder(psi_id: str, raw_root: Path | str = RAW_DATA_DIR) -> Path | None:
+    """Resolve a folder in raw_root by exact psi_id ('PSI-25') or prefix ('PSI-25 Burning...')."""
+    root = Path(raw_root)
+    exact = root / psi_id
+    if exact.is_dir():
+        return exact
+    for item in sorted(root.iterdir()):
+        if item.is_dir() and (item.name == psi_id or item.name.startswith(psi_id + " ")):
+            return item
+    return None
+
+
+def parse_doi_file(txt_path: Path | str) -> dict[str, str]:
+    """Extract official citation text and normalized DOI from a NASA PSI DOI.txt file."""
+    path = Path(txt_path)
+    if not path.exists():
+        return {"doi": "", "citation_text": ""}
+    raw = ""
+    for enc in ("utf-8-sig", "cp1252", "latin-1"):
+        try:
+            raw = path.read_text(encoding=enc).strip()
+            break
+        except Exception:
+            continue
+    # Match standard 10.60555/xxxx-xxxx or malformed httpdoi.org10.60555xxxx-xxxx
+    m = re.search(r"10\.60555/?([a-z0-9]{4}-[a-z0-9]{4})", raw, flags=re.IGNORECASE)
+    doi = f"10.60555/{m.group(1).lower()}" if m else ""
+    # Fix malformed URL inside citation text if present
+    citation = re.sub(
+        r"httpdoi\.org10\.60555([a-z0-9]{4}-[a-z0-9]{4})",
+        r"https://doi.org/10.60555/\1",
+        raw,
+        flags=re.IGNORECASE,
+    )
+    return {"doi": doi, "citation_text": citation}
+
+
+def discover_psi_files(psi_id: str = "PSI-25", raw_root: Path | str = RAW_DATA_DIR) -> dict[str, Any]:
+    """Locate master CSVs, XLSX spreadsheets, summary PDFs, FAQ DOCXs, and DOI.txt for a PSI folder."""
+    folder = resolve_psi_folder(psi_id, raw_root=raw_root)
+    discovered: dict[str, Any] = {
+        "folder": folder,
+        "csv": None,
+        "csv_files": [],
+        "xlsx_files": [],
+        "pdf": None,
+        "pdf_files": [],
+        "docx": None,
+        "docx_files": [],
+        "doi_txt": None,
+    }
+    if folder is None or not folder.exists():
         return discovered
 
     for path in sorted(folder.iterdir()):
         if not path.is_file() or path.name in SKIPPED_DUPLICATE_FILES:
             continue
         suffix = path.suffix.lower()
-        if suffix == ".csv" and discovered["csv"] is None:
-            discovered["csv"] = path
-        elif suffix == ".pdf" and discovered["pdf"] is None:
-            discovered["pdf"] = path
-        elif suffix == ".docx" and discovered["docx"] is None:
-            discovered["docx"] = path
+        if suffix == ".csv":
+            discovered["csv_files"].append(path)
+            if discovered["csv"] is None:
+                discovered["csv"] = path
+        elif suffix == ".xlsx":
+            discovered["xlsx_files"].append(path)
+        elif suffix == ".pdf":
+            discovered["pdf_files"].append(path)
+            if discovered["pdf"] is None:
+                discovered["pdf"] = path
+        elif suffix in {".docx", ".doc"}:
+            discovered["docx_files"].append(path)
+            if suffix == ".docx" and discovered["docx"] is None:
+                discovered["docx"] = path
+        elif suffix == ".txt":
+            discovered["doi_txt"] = path
 
     return discovered
